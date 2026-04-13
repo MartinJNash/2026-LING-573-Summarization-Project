@@ -11,3 +11,7 @@ We might need to install a different version of pytorch which enables CUDA to us
 Create a copy of the conda environment
 
 `conda env create -f environment.yml`
+
+Use it:
+
+`conda activate medjargone`
