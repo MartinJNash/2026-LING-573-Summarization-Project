@@ -1,0 +1,22 @@
+A 4-year-old girl with T-cell lymphoblastic lymphoma was admitted for chemotherapy at Shahid Baghaei Hospital, Ahvaz, Iran.
+On the first day of admission (day 0), the patient had no symptoms but as soon as a needle entered IVAP to inject normal saline, her body temperature rose to 39°C (102°F).
+Due to the presence of fever, antibiotic therapy started with cefepime (50 mg per kg) every 8 hours to diminish the febrile status.
+During this period, the erythrocyte sedimentation rate (ESR) of the patient was equal to 47, and C-reactive protein (CRP) was three plus (+3) with WBC count of 2500/µl.
+After 48 hours of antibiotic therapy, the fever did not improve. On the third day of hospitalization, a blood culture from the port was sent to
+the medical mycology laboratory for fungal detection. White to cream, smooth, and glossy yeast colonies grew on Sabouraud dextrose agar medium (Merck Co., Darmstadt, Germany)
+at 37℃ but no hyphae or pseudohyphae was
+observed in wet mount examination .
+Genomic DNA of isolate was extracted using SinaPureTMDNA kit (SinaClonBioScience, Tehran, Iran) according to the manufacturer’s instructions.
+The internal transcribed spacer 1 (ITS1) and ITS2 regions and the 5.8S ribosomal DNA (rDNA) region of the fungi were amplified and sequenced by using universal primers ITS1/ITS4.
+Using BLAST analysis, the ITS sequences of isolate exhibited 100% homology with W. myanmarensis. Sequence with 778bp length was deposited in
+GenBank with the accession no. OQ455736. The patient was treated with intravenous voriconazole at a dosage of 9 mg on the first day and then 6 mg on the second day.
+After taking voriconazole for 48 hours, the fever was resolved in the patient. However, the treatment continued with intravenous voriconazole for seven days, namely the
+time the antifungal susceptibility profile became available. In vitro antifungal susceptibility testing (AFST) was performed using the broth microdilution CLSI M27-A3 method . Antifungals (Sigma-Aldrich, St. Louis, MO, USA) used in this study had MICs for amphotericin B, 0.25 μg/ml; anidulafungin, ≤0.015 μg/ml; micafungin,
+0.06 μg/ml; caspofungin, 0.125 μg/ml; fluconazole, 2 μg/ml; voriconazole, ≤0.03 μg/ml; posaconazole, 0.25 μg/ml; isavuconazole,0.06 μg/ml; ibrexafungerp,
+0.25 μg/ml; Itraconazole,0.125 μg/ml .
+There are no interpretative breakpoints available for W. myanmarensis. On the 7th day of hospitalization and during maintenance of therapy,
+two blood cultures from the vein and port were sent to the medical mycology laboratory for monitoring of the treatment regimen, and the results of both were negative.
+Fortunately, after seven days of treatment, there was a significant improvement in laboratory indices such as ESR (8) and CRP (negative) with 9.7/ µL WBC count without fever.
+Eventually, after normal results of echocardiography, brain Magnetic Resonance Imaging (MRI), abdominal and pelvic ultrasound scanner, the patient was discharged with
+voriconazole maintenance therapy. On the first day, treatment started with intravenous voriconazole at a dosage of 9 mg/kgevery 12 h, then 6 mg/kg every 12 h for one week,
+followed by oral voriconazole at a dosage of 6 mg/kg every 12 h for two weeks.

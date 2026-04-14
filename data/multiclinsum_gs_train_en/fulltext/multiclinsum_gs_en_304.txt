@@ -1,0 +1,13 @@
+In December 2020, a 43-year-old man with a 9-year-history of hepatitis B underwent an ultrasound scan during a routine medical examination in Ruian People’s Hospital, which revealed several hypoechoic lesions in his liver.
+
+Laboratory tests showed a slight elevation in alpha-fetoprotein (AFP) levels (AFP: 32.9 ng/ml) while other tumor markers such as carbohydrate antigens 19–9, 125, and 153, and carcinoembryonic antigen were within normal limits. The lesions appeared as low density with unclear margins on plain computed tomography (CT) imaging, and showed centripetal enhancement from the arterial to the portal phase on dynamic contrast-enhanced CT imaging. The sizes of the lesions varied, with the largest being an irregularly shaped lesion measuring 4.1 × 4.3 cm in diameter.
+
+On dynamic contrast-enhanced magnetic resonance imaging (MRI), the largest lesion exhibited immediate peripheral ring-like enhancement, followed by progressive continuous enhancement and a central enhancing scar. Meanwhile, smaller lesions exhibited ring-like enhancement with gradual centripetal enhancement during the portal venous and delayed phases. For further examination, the patient was referred to Shanghai Huashan Hospital on December 30th, 2020.
+
+The patient promptly underwent [18F]-FDG positron emission tomography (PET)-CT, which revealed no obvious uptake. However, [11C]-acetate PET/CT indicated slight uptake only for the largest lesion located in lobe VII (maximum standardized uptake value [SUVmax] = 4.21, tumour-to-background ratio (TBR) = 1.45), whereas other smaller ones exhibited no uptake. Interestingly, [68Ga] Ga-FAPI-04 PET/CT scan not only showed strong, high uptake for the largest lesion (SUVmax = 1.94, TBR = 3.08), but also for the smaller intrahepatic lesions (SUVmax = 1.47, TBR = 2.33).
+
+Based on the existing examinations, a preliminary diagnosis of hepatocellular carcinoma (HCC) was made. The patient then received partial hepatectomy in 6 days, and the diagnosis was confirmed by pathological analysis. The largest lesion located in segment VII was identified as a solitary HCC, while the other smaller lesions were diagnosed as hepatic epithelioid hemangioendothelioma (HEHE).
+
+Microscopically, smaller lesions appeared as nests and cords of epithelioid endothelial cells, with intracytoplasmic lumina spread throughout the myxohyaline stroma. CD31 and ERG1 staining was strongly positive, confirming the diagnosis of HEHE (Fig. 4A–E). The segment VII hepatic lesion exhibited Hep1 positivity on immunohistochemistry, confirming the diagnosis of HCC.
+
+The patient was discharged on postoperative day 9 and no recurrence has been detected during his follow-up until now.

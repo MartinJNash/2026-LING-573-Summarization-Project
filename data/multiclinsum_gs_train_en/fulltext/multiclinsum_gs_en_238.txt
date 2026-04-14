@@ -1,0 +1,30 @@
+Chief Complaints
+A 38-year-old patient was admitted to the hospital with recurrent abdominal pain and diarrhea for more than 2 years, with fecal residue in the urine for 6 days.
+
+History of Present Illness
+The patient had developed abdominal distension, abdominal pain, diarrhea and mucus in the stool 2 years prior to admission. The symptoms of the patient had worsened 1 year prior, and he went to Zhejiang Provincial People’s Hospital and was diagnosed with Crohn’s disease. The patient was given mesalazine orally. After discharge, the patient stopped taking mesalazine. The patient developed diarrhea that occurred more than 10 times per day, accompanied by dysuria, fecal residue in the urine, and decreased urine volume 6 days prior to admission.
+
+History of Past Illness
+The patient underwent anal fistula surgery 1 year prior to admission.
+
+Physical Examination
+The patient was malnourished and was positive for subumbilical tenderness.
+
+Laboratory Examinations
+The auxiliary examinations after admission showed that the white blood cell count was 9.9 * 10 ^ 9/L, neutrophil proportion was 66.1%, hemoglobin level was 98 g/L, CRP level was 139.9 mg/L, and serum albumin level was 24.5 g/L. Laboratory examinations showed the following: autoantibody (-), immunization (-), tuberculosis antibody (-), and T-SPOT (-). Test for inflammatory bowel disease-associated antibodies showed positivity for ASCA IgG, ASCA IgA, and F12Y IgG and negativity for AYMA IgG, AYCA IgA, and pANCA. The calprotectin level was greater than 1800 ug/g.
+
+Imaging Examinations
+Colonoscopy revealed the normal mucosa in the terminal ileum, and paving stone-like changes in the colon, ulcers in the local mucosa, and fistulas 25 cm away from the anus on November 30, 2020. The colonoscopic biopsy pathology showed chronic mucosal inflammation with erosion, focal inflammatory exudation, necrosis, infiltration of a large number of plasma cells and neutrophils in the stroma, no granuloma formation, and mild dysplasia of the local glands. The patient underwent enhanced pelvic magnetic resonance imaging, and the results showed multiple abnormal signal shadows in and around the prostate and urethra, an unclear boundary between the lesions and the anorectal canal, and infection with fistula formation. Capsule endoscopy revealed chronic inflammation of the small intestine with villous atrophy.
+
+
+Further Diagnostic Work-Up
+The patient was admitted to our hospital again for 5 days due to swelling and pain in the left lower abdomen. There was a palpable mass 10 cm in size in the left lower abdomen of the patient, with obvious swelling and tenderness, increased skin temperature, and local tenderness. The white blood cell count was 17.6 * 10 ^ 9/L, and the CRP level was 139.9 mg/L. B-ultrasound showed a hypoechoic mass and abundant blood supply in the left lower abdomen, with a range of approximately 6.0 * 2.4 * 3.5 cm. Considering the presence of the inflammatory mass and the unclear boundary between the hypoechoic mass and the abdominal cavity, a local sinus was suspected of having formed. Enhanced pelvic magnetic resonance imaging suggested local wall thickening of the sigmoid colon and rectum and inflammatory bowel disease; infection of the left lower abdominal wall with subcutaneous pneumatosis and local communication with the sigmoid colon, suggesting fistula formation; and multiple abnormal signals around the anus and corpus cavernosum, suggesting sinus and fistula formation with infection.
+
+Final Diagnosis
+The final diagnosis was severely active CD with enterovesical and enterocutaneous fistulas.
+
+Treatment
+The patient was administered an intravenous infusion of ustekinumab 260 mg on December 4, 2020. Anti-infective treatment and nutritional support were given. The symptoms of the patient significantly improved. The patient was admitted due to the development of an extraintestinal fistula on January 18, 2021. The patient had multiple internal fistulas and infections, and lacked surgical conditions. Moreover, after undergoing an anal fistula surgery, the patient refused to undergo surgery again, and conservative drug treatment was administered. Conservative drug treatment was administered. Fasting was suggested, and somatostatin was administered to inhibit the secretion of digestive juice. The patient was given an intravenous infusion of ustekinumab 90 mg on February 8, 2021, with anti-infective treatment, nutritional support, and regulation of the intestinal flora. Drainage and debridement of the cutaneous fistula were performed and treated with dressing changes.
+
+Outcome and Follow-Up
+After discharge, the patient was given mesalazine orally, supplemented by enteral nutrition support. The cutaneous fistula was treated with a dressing change. The patient’s clinical symptoms significantly improved, CRP had successfully declined from 139.9 mL/L to 25 mL/L, and the cutaneous fistula healed. The patient had been suggested to another dose of ustekinumab after 12 weeks.

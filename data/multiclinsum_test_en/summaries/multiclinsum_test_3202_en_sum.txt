@@ -1,0 +1,13 @@
+Patient: Male, 85
+
+Final Diagnosis: Spontaneous bacterial peritonitis
+
+Symptoms: Abdomen distension • confusion • lethargy
+
+Medication: —
+
+Clinical Procedure: Paracentesis
+
+Specialty: Gastroenterology and Hepatology
+
+Here we present a unique case of a patient who was admitted for advanced cardiorenal syndrome in the setting of a viral colitis that likely promoted a bacterial translocation resulting in spontaneous bacterial peritonitis.

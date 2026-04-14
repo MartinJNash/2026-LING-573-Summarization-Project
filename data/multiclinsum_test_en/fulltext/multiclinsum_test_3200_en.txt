@@ -1,0 +1,23 @@
+History of Presentation
+A 58-year-old woman presented to the emergency department with palpitations and diarrhea, which had started 1 day before admission. She reported 5 episodes of watery stools, without associated abdominal pain, nausea, or vomiting. The palpitations were of sudden onset, irregular, and not accompanied by chest pain or shortness of breath.
+Upon initial evaluation in the emergency department, her heart rate was 150 beats/min with an irregular rhythm. During subsequent examination, her heart rate stabilized at 80 beats/min. Blood pressure was 138/70 mm Hg, respiratory rate 20 breaths/min, and oxygen saturation 98% on room air. Physical examination revealed no jugular venous distension, and heart sounds were rhythmic without audible murmurs. The rest of the physical examination was unremarkable. At the time of examination, she was asymptomatic.
+An initial electrocardiogram revealed atrial fibrillation with a heart rate of 150 beats/min and a right bundle branch block. Shortly thereafter, spontaneous conversion to sinus rhythm was observed. A follow-up electrocardiogram showed sinus rhythm with a heart rate of 82 beats/min. Pathological Q waves were noted in leads V1 and V2, indicative of prior myocardial necrosis, along with T-wave inversions in leads I, aVL, V5, and V6.
+
+Upon arrival, a bedside point-of-care ultrasound revealed a large, irregular, hyperechoic, spiculated mass within the left ventricle. The chest radiograph revealed calcification within the cardiac silhouette.
+
+Past Medical History
+Her medical history was significant for type 2 diabetes mellitus and hypertension, both diagnosed in 2019 and managed with insulin, metformin, and losartan. However, she admitted to irregular adherence to her prescribed treatments. A review of her health records revealed 2 episodes of non–ST-segment elevation myocardial infarction (MI) in 2019 and 2022, both medically treated. During her 2022 hospitalization for non–ST-segment elevation MI, renal function was within normal limits, with a creatinine level of 0.8 mg/dL. Additionally, there was no evidence of infections, parasitic diseases, or sepsis in her medical history. Unfortunately, no additional medical records or documentation of these events were available.
+The patient had no relevant family history or gynecological/obstetric background.
+
+Differential Diagnosis
+The differential diagnoses for a left ventricular intraventricular mass include thrombus, primary or metastatic tumors, vegetations, intracardiac calcifications, and parasitic infections such as infectious endomyocardial fibrosis.
+
+Investigations
+A transthoracic echocardiogram demonstrated a normally sized left ventricle with a preserved ejection fraction of 56%. However, regional wall motion abnormalities were present, including akinesia in the anterior, lateral, and inferior walls. Mild diastolic dysfunction was also noted. The right ventricle was normal in both size and function. A hyperechoic, irregular mass, previously identified on point-of-care ultrasound, measuring 3 × 5 cm, was located in the apex and lateral wall of the left ventricle, suggesting myocardial calcification.
+
+Laboratory evaluations revealed normal renal function, electrolytes, and calcium-phosphorus metabolism, with calcium at 9.5 mg/dL, phosphorus at 2.8 mg/dL, PTH at 27 pg/mL, and creatinine at 0.9 mg/dL. Liver function tests and stool analysis were unremarkable, and a normal eosinophil count (0.001 K/μL) excluded parasitic infections. Additionally, there was no documented history of severe sepsis.
+Coronary computed tomography (CT) angiography was performed to further evaluate coronary anatomy and the myocardial mass. Interestingly, the coronary calcium score was 0 Agatston units, with no evidence of obstructive coronary artery disease. However, extensive, thick, and irregular subendocardial calcifications measuring 66 mm in length were identified in the inferior, lateral, and apical walls of the left ventricle, extending into both papillary muscles.
+
+Management
+The characteristics of the mass were consistent with dystrophic myocardial calcification. Rehydration therapy was initiated, and the patient did not experience further episodes of diarrhea. Antiarrhythmic therapy and anticoagulation were started because of evidence of paroxysmal atrial fibrillation, likely precipitated by dehydration.
+Hemodynamic monitoring was maintained throughout her stay. The calcification was considered an incidental finding, because the patient exhibited no signs of systolic dysfunction, and her arrhythmia was well controlled. Given that she had been asymptomatic before this hospitalization, a plan for continued medical surveillance was established.

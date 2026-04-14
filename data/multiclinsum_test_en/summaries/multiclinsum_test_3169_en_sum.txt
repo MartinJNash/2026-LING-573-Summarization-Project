@@ -1,0 +1,13 @@
+Patient: Female, 86
+
+Final Diagnosis: Advanced heart failure
+
+Symptoms: Dyspnea
+
+Medication: —
+
+Clinical Procedure: Medications for advanced heart failure
+
+Specialty: Cardiology
+
+An 86-year-old woman with a history of chronic HF with a preserved ejection fraction due to obstructive hypertrophic cardiomyopathy and severe aortic stenosis was transferred to our hospital complaining of persistent dyspnea (New York Heart Association class IV). She did not respond to standard therapy with tolvaptan (15.0 mg/day). However, the present case demonstrated that adding high-dose spironolactone (100 mg/day) to low-dose tolvaptan (15.0 mg/day) is safe and well tolerated, resulting in an increase in urine output and improvement of the symptoms or signs of ADHF in a patient who was refractory to loop diuretics and tolvaptan.

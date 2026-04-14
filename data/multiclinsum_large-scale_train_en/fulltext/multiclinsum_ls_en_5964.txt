@@ -1,0 +1,9 @@
+A 51 years old male patient suffering from cholelithiasis was admitted to our clinic for a scheduled laparoscopic cholecystectomy and there was implemented the first usage of freehand laparoscopic camera controller in our hospital.
+The operation was performed by only one surgeon, without any assistants .
+The surgeon followed a three port-laparoscopic technique and the FHLCC was placed in the umbilical port, giving him the ability to have a direct control of the scope position.
+The camera controller is a hands free device that was attached to the surgeon’s cap.
+An indicator unit, attached on the monitor, showed the direction selected for the scope movement.
+The surgeon selected the direction of tilt and pan with head movements while the scope was held stationary until the surgeon initiated a new head movement .
+The visual image of the surgical field presented completely stable with a rock steady visualization (“tremor free”).
+The operation was uneventful and the duration of it was 50 minutes.
+The patient had good postoperative course and he was discharged on the first post-operative day.

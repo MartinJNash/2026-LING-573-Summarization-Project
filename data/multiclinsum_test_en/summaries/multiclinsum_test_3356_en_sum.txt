@@ -1,0 +1,13 @@
+Patient: Male, 56
+
+Final Diagnosis: ANCA associated vasculitis
+
+Symptoms: Dyspnea
+
+Medication: —
+
+Clinical Procedure: —
+
+Specialty: Cardiology
+
+We present the case with a 56-year-old male diagnosed with ANCA associated vasculitis, who began experiencing respiratory symptoms primarily thought to be respiratory tract affection. These symptoms worsened, and an echocardiography revealed heart failure with decreased left ventricular ejections fraction (EF=30–35%) and a severe insufficiency of the aortic valve. The patient underwent aortic valve replacement with symptomatic relief. Pathological examination of aortic valve resectates revealed inflammation and thickening of the aortic cusps.

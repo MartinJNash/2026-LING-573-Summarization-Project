@@ -1,0 +1,39 @@
+A 42-year-old man, from Baluchistan, Pakistan, with no significant prior comorbidity, presented with a 5 to 7-day history of
+left frontal and retro-orbital headache, left facial numbness, right upper limb weakness, and speech difficulty.
+He had no prior history of immunosuppression or weight loss and had no recent travel. Prior to these complaints,
+he had a one-month history of injudicious detention in prison with reported torture. On examination, he was afebrile,
+alert, and oriented to time, place, and person. He had dysarthria, left-sided facial weakness, and reduced power in the right upper limb.
+Magnetic resonance imaging (MRI) of the brain with contrast showed a space-occupying lesion in the basal ganglia region .
+Other investigations performed at admission are summarized in . The patient underwent supratentorial craniotomy
+for the excision of the left thalamic space-occupying lesion, revealing thick-walled cavity with gross purulent (greenish-brown)
+discharge. He was subjected to maximum excision, and the tissue specimen was sent for histopathological and microbial examinations.
+Apart from becoming aphasic, the patient recovered rapidly in the postoperative period.
+The tissue sample was mixed with 10% KOH and visualized at 10× and 40× magnification. It was initially examined with hematoxylin
+and eosin stain revealing glial parenchyma with chronic granulomatous inflammation, showing the collection of histiocytes
+and multinucleated giant cells . Further staining with periodic acid-Schiff highlighted the presence of moderate
+to darkly pigmented septate hyphae with no yeast formation .
+The patient was empirically treated with intravenous (IV) voriconazole (200 mg) 12 h after loading a dose of 400 mg every 12 h.
+However, he developed worsening drowsiness and complete right- sided hemiplegia. A non-contrast computed tomography (CT) scan
+of the head showed signs of mass effect with a midline shift of 10 mm towards the right side. In view of disease progression,
+voriconazole was switched to IV amphotericin B deoxycholate (1 mg/kg/day). Furthermore, 3% hypertonic saline and dexamethasone
+were continued to reduce intracranial pressure. In order to determine the microbiological identification of the organism,
+the brain tissue specimen was inoculated on sheep blood agar (Merck, Germany), Saboraud’s dextrose agar (Merck, Germany),
+and potato dextrose agar (Merck, Germany). The plates were incubated at 27oC and 37oC and were observed daily. After 5 weeks,
+the growth of black yeast-like fungi was observed . Slide culture was prepared on malt extract agar (Merck, Germany),
+and the Rhinocladiella-type sporulation (“Mickey Mouse” appearance) of fungi were seen ,
+which were morphologically classified as R. mackenziei.
+Since no facility was available at our institute for the molecular testing of rare fungi,
+the diagnosis of cerebral phaeohyphomycosis secondary to R. mackenziei was made on the basis
+of morphological characteristics. It was not possible to perform antifungal susceptibility testing.
+The patient was started on oral posaconazole (300 mg) once a day, in addition to IV amphotericin B deoxycholate.
+Despite being kept on hyperosmolar therapy and antifungals, the patient condition deteriorated after 18 days and
+the Glasgow coma scale (GCS) dropped from 11 to 4. Urgent non-contrast CT scan of the head showed an increased
+midline shift of up to 11.2 mm towards the right side resulting in diffuse cerebral edema and left uncal herniation .
+The patient underwent emergent decompressive craniectomy. Postoperatively, the GCS improved to 11/15, and he
+was able to localize from the left side. Along with amphotericin B and posaconazole, a therapeutic trial of flucytosine (3 gm)
+was also initiated every 6 h but later discontinued as there was no meaningful improvement, and financial constraints
+led to difficulty in procurement. Currently, the patient has recovered with neurologic sequelae and is still undergoing
+treatment with IV amphotericin B and oral posaconazole, along with neurorehabilitation therapy.
+Ethical considerations
+Informed consent was obtained from the next of kin, and the study was approved as an exemption by the Ethical
+Review Committee of Aga Khan University Hospital, Karachi, Pakistan (Reference # 2019-1792- 4664).

@@ -1,0 +1,69 @@
+An 8-year-old neutered male domestic shorthair cat was presented with a 1-week
+history of anorexia, vomiting and lethargy. On presentation, the cat weighed 5.7 kg
+with a body condition score of 7/9; rectal temperature was 39.2°C (102.5°F). The cat
+had no history of surgical procedures other than castration. Physical examination
+was unremarkable and it showed no signs of icterus. Mild leukocytosis was noted in
+the complete blood count, and mild hypoalbuminemia and elevated serum amyloid A were
+observed on serum biochemistry .
+Abdominal ultrasonography revealed ascites, and a hyperechoic structure that was
+suspicious for cholelith. No gallbladder could be identified. Ascites was collected
+by ultrasound-guided abdominocentesis from the caudal abdomen and identified as
+exudative with degenerate neutrophils, macrophages and intracellular bacteria (cell
+count 71,890/µl). Bilirubin concentration was normal (0.1 mg/dl). Bacterial culture
+of ascites was positive for Enterococcus faecalis with scant growth
+and sensitivity to ampicillin and enrofloxacin.
+Sixteen-slice contrast-enhanced CT (Aquilion; Canon Medical Systems) revealed two
+choleliths in the common bile duct (CBD) and duodenum. The diameters of the
+choleliths were 8 mm and 6 mm, with attenuation values of 242 Hounsfield units (HU)
+and 265 HU, respectively. Ascites was seen surrounding the liver, which appeared
+normal. No gallbladder was apparent in the cranial abdominal region.
+On day 1, exploratory laparotomy was performed because bacterial peritonitis was
+suspected, based on examination findings. General anaesthesia was induced with
+propofol (7 mg/kg IV [Propoflo; Zoetis]) and maintained with sevoflurane (Sevoflo;
+Zoetis) in oxygen. Analgesia was provided by robenacoxib (2 mg/kg SC [Onsior;
+Novartis Animal Health]) and a continuous rate infusion of fentanyl (20 µg/kg/h
+[Fentanyl; Terumo]) and ketamine (0.6 mg/kg/h [KETALAR; Daiichi Sankyo])
+intraoperatively and buprenorphine (0.02 mg/kg IV q12h [Lepetan; Otsuka
+Pharmaceutical]) postoperatively. During surgery, a perforation of the CBD
+approximately 5 mm in diameter was identified, and a 6 mm yellow cholelith was found
+in the peritoneal cavity. Bile ascites (bilirubin; 3.1 mg/dl) was detected in the
+perihepatic space, and the distal part of the CBD from the rupture site was dilated
+and tortuous. No gallbladder structures or ectopic gallbladder were visualised
+around the gallbladder fossa .
+Catheter insertion was attempted from the rupture in the CBD, but passage into the
+duodenum proved impossible, so choledochotomy of the dilated part was performed to
+insert a 6 F catheter; duct patency was confirmed by antegrade flushing of the CBD
+with saline. The rupture site and the incision in the dilated CBD were closed in a
+simple interrupted suture pattern with 4-0 polydioxanone (Monodiox; Alfresa Pharma)
+and 7-0 polydioxanone (PDSII; Ethicon) .
+The liver appeared normal, but a liver biopsy was not performed. The cat recovered
+uneventfully and was eating well on day 2. The cat was discharged 6 days
+postoperatively and was treated with ampicillin (20 mg/kg IV q12h [Viccillin; Meiji
+Seika Pharma]), enrofloxacin (5 mg/kg SC q24h [Baytril; Bayer]) and prednisolone
+(0.5 mg/kg SC q24h [Prednisolone KS; Kyoritsu Seiyaku]), to reduce the postoperative
+inflammatory response from day 2. Orbifloxacin (3.5 mg/kg PO q24h [VICTAS SS;
+Sumitomo Pharma Animal Health]), prednisolone (0.2 mg/kg PO q24h [Predonine;
+Shionogi Pharma]) and ursodeoxycholic acid (8.9 mg/kg PO q24h [URSO; Mitsubishi
+Tanabe Pharma]) were continued for 7 days after discharge. Cholelith analysis showed
+a composition of 55% cholesterol, 10% calcium carbonate and 35% other material.
+Three months postoperatively, CT cholangiography was performed without anaesthesia to
+confirm gallbladder agenesis and evaluate bile duct patency. Meglumine iotroxate
+(100 mgI/kg [Biliscopin DIC 50; Bayer]) was administered over a 30 min period, as
+described by Tanaka et al. CT was performed 45 and 60 mins after the start of contrast
+medium injection and analysed using DICOM imaging software (Osirix version 3.9.2
+64-bit open-source DICOM viewer; Osirix Imaging Software). The biliary ducts were
+well visualised at 45 mins after contrast injection, revealing intrahepatic ducts,
+three hepatic ducts and the CBD, but no gallbladder was visualised in the
+gallbladder fossa .
+In addition, two cystic dilations were found at the ends of the cystic ducts, with
+diameters of 5.45 mm and 3.64 mm, respectively. These were considered to represent
+vestigial remnants of a hypoplastic duplicated gallbladder. No ectopic gallbladder
+was identified in the abdominal cavity. A diagram of the biliary tree of the case is
+shown in .
+The CBD was not dilated (2.1 mm) or obstructed, and contrast medium entered into the
+duodenum at 45 mins. At 60 mins, more contrast medium was excreted into the
+duodenum, resulting in insufficient contrast enhancement in the intrahepatic bile
+ducts .
+No adverse reactions to meglumine iotroxate were observed, and no recurrence of
+choleliths was confirmed. The cat remained alive and asymptomatic 13 months
+postoperatively.

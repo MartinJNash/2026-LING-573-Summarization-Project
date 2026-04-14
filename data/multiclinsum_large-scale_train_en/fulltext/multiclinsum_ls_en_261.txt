@@ -1,0 +1,62 @@
+A four-year-old female patient was admitted to the pediatric infectious ward due to a fever of unknown origin in January 2020.
+She was a known case of Marfan syndrome with a family history of this syndrome in her mother. Both of them had a history of anterior
+lens dislocation that led to surgery.
+She also had a history of congenital heart disease, including atrial septal defect type 2 (ASD2), mitral regurgitation (MR),
+and MV prolapse regarding fever, headache, and meningeal signs a lumbar puncture was performed. She was treated for probable
+bacterial meningitis since the result of her cerebrospinal fluid (CSF) test was positive and active; moreover, the white blood
+cell was observed in CSF fluid.
+After five days and secondary to the changing of heart murmur intensity that revealed progressive severe MR, she was referred to
+a tertiary referral center for the evaluation of cardiac involvement. Transthoracic echocardiography (TTE) revealed a large dense
+heterogeneous and oscillating mass (18 mm×12 mm in size) attached to the atrial septum closed to the hinge point of the anterior
+leaflet of MV with independent movement towards the heart valve (an argument for the fungal endocardial vegetation)
+.
+Results of color Doppler flow imaging revealed an abnormal regurgitation flow at the areas of A3 anterior leaflet of mitral suggestive
+of perforation of MV. In addition, valvular destruction, perforation of the anterior leaflet at the site of the lesion, as well as
+the existence of perivalvular infection and severe eccentric MR reduced left ventricular ejection fraction. Sub-systemic pulmonary
+hypertension was found with mild pericardial effusion due to acute heart failure, previous history of congenital heart disease, and ASD2.
+Neurologic physical examination for the evaluation of meningeal involvement contains clinical examination and paraclinical data.
+The cerebrospinal fluid analysis showed meningeal irritation and brain magnetic resonance imaging revealed a small subcortical
+focus of involvement probably due to post-endocarditis embolic lesions.
+Infective endocarditis (IE) was diagnosed according to the DUKE criteria. Regarding the clinical and paraclinical criteria,
+one major criterion and two minor criteria were observed. Persistent fever and the presence of refractory heart failure due to
+severe acute MR led to surgery for vegetation removal, MV repair, and ASD closure. Surgical findings in the operation room
+indicated large fungal vegetation with perforation in the infection site. She was discharged after daily slow intravenous (IV)
+injection of liposomal amphotericin B dose 0/3 mg/kg for four-week. Moreover, the daily consumption of oral antifungal Voriconazole
+200 mg film-coated tablets was continued for one month at home.
+The results of the present study showed in vitro resistance to fluconazole (minimum inhibitory concentration> 16 µg/mL).
+The TTE in the outpatient clinic after two weeks, as well as one, three, and six months after discharge showed no recurrence
+except mild eccentric non-significant MR.
+summarize the results of the hematologic indices. Biochemical test results revealed
+creatinine 0.3L mg/dl (NR: 0.6-1.4); AST(SGOT) 70H IU/L (NR 5-40); ALT(SGPT) 83H IU/L (NR 5-40).
+The peripheral blood sample was taken and inoculated into an anaerobic blood culture medium (manufactured in BC, USA)
+at 30ºC for five days in an automated blood culture system (manufactured in BC, USA); at 30ºC for five days; however,
+no growth was observed. The resected vegetation was inoculated into formalin and normal saline solution. The pathology result
+revealed a fibrohyalinized tissue with an area of fibrinoleukocytic exudate, mixed inflammatory cell infiltration,
+and neovascularization consistent with endocarditis. Furthermore, the hematoxylin and eosin staining showed a few
+thin hyphae-like elements. To confirm the fungal infection, the second portion of the specimen was sent to the Medical
+Mycology Laboratory of the Center for Research and Training in Skin Diseases and Leprosy in Tehran, Iran for further evaluations.
+Initially, the biopsy specimen of the MV was taken and a sub-culture was made on Sabouraud Dextrose Agar (SDA)
+(manufactured in Merck, Germany) at 35ºCfor seven days. After seven days, the colonies of Aspergillus spp.
+were grown in the SDA medium. The PCR for the amplification of the β-tubulin gene was conducted to identify the species precisely.
+Genomic DNA was obtained from the colonies cultured on the Czapek’s Agar (manufactured in Merck, Germany)
+forseven days at 35ºC using the genomic DNA extraction kit (manufactured in Roche Life Science, Germany).
+In this study, the amplification of the β-tubulin gene was performed using the β-tubulin forward and β-tubulin reverse primers
+. The PCR amplicon was subjected to sequence using the same primers.
+Subsequently, the sequences were compared with reference data available from the Gene Bank database using the BLAST
+sequence search tool .
+The antifungal susceptibility test was performed by the broth microdilution methodusing four antifungal agents,
+including voriconazole, itraconazole, fluconazole, and amphotericin B (manufactured in Sigma-Aldrich, USA).
+Based on the Clinical and Laboratory Standards Institute (CLSI) M38 3rd ed ,
+Candida parapsilosis (ATCC 22019) was chosen as a quality control strain in every run.
+The culture on SDA revealed green and powdery surface colonies. The microscopic examination of the colonies was compatible
+with A.flavus. The sequencing result was interpreted and deposited in the GenBank under accession no: MW195498.
+The A. flavus strain showed resistance to fluconazole with minimum inhibitory concentration (MIC>16 µg/mL).
+Furthermore, susceptibility to voriconazole (MIC 0.313 µg/mL), amphotericin B (MIC 0.313 µg/ML), and itraconazole
+(MIC 0.25 µg/mL) was noted in this study.
+The patient was first treated with vancomycin and ceftriaxone which was
+later switched to the combination of meropenem, ciprofloxacin, and vancomycin when the fever continued and the clinical
+status deteriorated. The patient was treated with liposomal amphotericin B regarding the result of cultures and the diagnosis
+of IA. She was discharged after four weeks of treatment with IV amphotericin B. It is worth mentioning that the antifungal
+treatment was continued with oral voriconazole for an additional four weeks after the performance of the susceptibility test.
+This case report was performed in compliance with the Declaration of Helsinki and written informed consent was obtained
+from the legal guardians of the patient. The details will be included in the manuscript for publication.

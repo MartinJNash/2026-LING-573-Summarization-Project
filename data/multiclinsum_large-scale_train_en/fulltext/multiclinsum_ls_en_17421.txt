@@ -1,0 +1,101 @@
+A 2-year-old spayed female domestic longhair cat was presented for chronic ocular
+discharge and occasional vomiting. Since adoption at approximately 8 weeks old, the
+cat had lived indoors and eaten wet and dry commercially available feline-formulated
+food. Physical examination identified bilateral watery ocular discharge, nasal
+planum ulceration, submandibular lymphadenopathy, mildly depressed mentation and
+pyrexia (103.0°F) – findings consistent with an upper respiratory infection (URI). A
+complete blood count was unremarkable and feline pancreas-specific lipase was within
+normal limits; however, serum chemistry revealed increased alanine aminotransferase
+(ALT; 996 U/l, 28–109 U/l) and alkaline phosphatase (ALP; 111 U/l, 11–49 U/l)
+activities; both were within their respective reference interval before the cat’s
+ovariohysterectomy 18 months prior. Ultrasonographic examination of the abdomen
+identified diffusely coarse echotexture of the liver and hyperechoic gallbladder
+walls. The following tests were all negative: fluorescein for corneal ulceration;
+IgG and IgM titers for Toxoplasmosis gondii; PCR for feline
+infectious peritonitis (sample: liver tissue); and serologic testing for feline
+leukemia virus (FeLV) antigens, feline immunodeficiency virus (FIV) antibodies and
+heartworm antigens.
+After administration of buprenorphine (0.06 mg/kg, SC) and vitamin K (2 mg/kg, SC,
+preoperatively; PO, q24h, 30 days postoperatively), anesthesia was induced with
+alfaxalone (2 mg/kg, titrated to effect over 30 mins) and maintained with inhalant
+isoflurane throughout an ultrasound-guided Tru-Cut biopsy of the left medial liver
+lobe. Histopathologic examination of hematoxylin and eosin-stained biopsy sections
+identified cytoplasmic copper aggregates in hepatocytes with greatest accumulation
+in centrilobular regions . Subsequent copper-specific rhodanine staining permitted digital quantification
+of the copper (dry weight copper = 3051 µg/g, normal <400 µg/g, secondary copper
+hepatopathy <700 µg/g, primary copper hepatopathy >700 µg/g) and the results
+were strongly suggestive of primary copper hepatopathy (PCH). A cytologic re-examination of a modified Wright’s-stained smear of a liver
+aspirate identified cytoplasmic blue-green refractile and non-refractile aggregates
+in hepatocytes – the former consistent with copper and the latter possibly
+lipofuscin or a copper variant .
+To treat the liver disease, metronidazole (20 mg/kg, PO, q12h, 7 days; 10 mg/kg, PO,
+q12h, 14 days), ursodiol (10 mg/kg, PO, q24h) and Denamarin (18 mg/kg
+S-adenosyl-l-methionine and 1.8 mg/kg silybin A+B, PO, q24h)
+were prescribed. To reduce nausea and hepatic inflammation, maropitant (1 mg/kg, PO,
+q24h) and prednisolone (1 mg/kg, PO, q12h) were also prescribed. The cat refused a
+copper-free diet, so commercially available low-copper wet (Salmon and Rice Entrée
+in Sauce; Purina Pro Plan) and dry (Urinary Care c/d; Hills) foods were fed instead.
+Despite the administration of zinc gluconate (10 mg/kg, PO, q24h) to reduce enteric
+copper absorption, liver enzyme activities continued to increase (maximum: ALT
+>2000 U/l, ALP = 255 U/l), so the zinc gluconate was replaced with
+D-penicillamine (15 mg/kg, PO, q12h), which chelates copper systemically.
+To treat the URI, famciclovir (50 mg/kg, PO, q12h, 14 days) and Clavamox (10 mg/kg
+amoxicillin trihydrate and 2.5 mg/kg clavulanate potassium, PO, q12h, 5 days) were
+prescribed. The ocular discharge persisted with intermittent conjunctivitis
+progressing to corneal opacity and ulceration of the right eye, which was
+appreciable grossly and highlighted by fluorescein, although corneal cytology was
+unremarkable. Erythromycin (1 cm of 5 mg/g ointment, OD, q6h, 5 days) was prescribed
+for its dual antibiotic and anti-inflammatory properties. In addition, intermittent nausea/vomiting and inappetence were treated using
+fluid therapy (20–40 ml/kg lactated Ringer’s solution (LRS) with 37.5 mg/cat B
+Complex 150 and 0.25 mg/cat B12, SC), mirtazapine (0.4 mg/kg, TD, q48h) and
+ondansetron (0.2 mg/kg, PO, q12h).
+Serial serum and urine chemistries were performed after 1, 3, 11 and 12 months of
+chelation therapy; minor abnormalities (hyperalbuminemia, hyperbilirubinemia,
+azotemia and proteinuria) were all characteristic of PCH pathogenesis or treatment. After 12 months of chelation therapy, liver enzyme activities had normalized,
+and all ocular signs had resolved. Client concerns precluded repeating aspiration or
+biopsy of the liver, so serum copper was measured and found to be within reference
+limits (Cu = 0.77 ppm, 0.6–1.4 ppm), suggesting copper homeostasis. However, the
+lack of a pre-treatment serum copper level for comparison and minimal evidence of
+correlation between serum and liver copper levels were limitations of this approach. Considering these indicators of copper
+homeostasis, the cat was transitioned from D-penicillamine back to zinc gluconate as
+previously prescribed; however, the cat continued to vomit. Decreasing the zinc
+gluconate dose (6 mg/kg, PO, q24h) substantially reduced vomiting, and the cat’s
+liver enzyme activities have remained within reference limits for almost 3 years,
+which suggests that this regimen – in combination with the low-copper diet – will
+effectively manage the PCH in the long term. The cat continues to receive Denamarin,
+maropitant and ondansetron, as previously prescribed, to support the liver and
+manage occasional vomiting. The cat has remained chronically pyrexic (103.0–105.0°F)
+in hospital; however, the cat’s temperature cannot be taken at home to rule out
+stress.
+Other cases of feline PCH have been linked to variations in copper-transporting
+ATPase 2, a transmembrane
+protein encoded by the ATP7B gene that maintains copper homeostasis
+by exporting excess cellular copper. Using previously published methods, genomic DNA extracted from the cat’s whole blood was Sanger sequenced, and
+the coding regions of the cat’s ATP7B gene were aligned with a
+feline consensus sequence (NCBI: XM_023251165.1) using CLC Sequence Viewer.
+Alignment identified 23 single nucleotide variations (SNVs), which included six
+missense variations, two of which had not been previously reported in healthy cats
+(c.1268c/t and c.3670t/a) . Using the 99 Lives Consortium data set (n = 340 cats),
+c.1268c/t was called with an allele frequency of 0.134, whereas c.3670t/a was not
+called.
+To determine whether these novel SNVs were pathogenic, the consensus amino acid
+sequence of the feline ATP7B gene was aligned with seven other
+species using previously described methods . Substitutions in functionally important amino acids are more likely to be
+pathogenic and therefore purged by natural selection (ie, functionally important
+amino acids are highly conserved across species). While the amino acid affected by
+the c.1268c/t SNV (p.Thr423Ile) was only conserved across three of the eight species
+, the amino
+acid affected by the c.3670t/a SNV (p.Trp1224Arg) was conserved across all eight
+species , which
+suggests that the c.3670t/a SNV and resulting p.Trp1224Arg substitution could be
+pathogenic.
+The effects of both amino acid substitutions on the function of ATPase
+2 were predicted using PolyPhen2, SIFT, PROVEAN and PANTHER, using
+previously described methods . Substantial effects were not predicted for p.Thr423Ile but were predicted for
+p.Trp1224Arg. The p.Trp1224Arg substitution changes the primary structure of
+copper-transporting ATPase 2’s ATP-binding cytoplasmic domain,
+which would likely prevent active transport of copper across membranes.
+Collectively, these results support conservative characterization of the c.3670t/a
+SNV as ‘likely pathogenic’ and a
+likely cause of this cat’s PCH despite occurring on only one chromosome (ie, the cat
+is heterozygous for this SNV).

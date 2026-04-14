@@ -1,0 +1,29 @@
+An elderly 70-year-old female patient was hospitalized for receiving her regular chemotherapy dose and with no specific complaints.
+She reports history of diabetes mellitus (DM), hypertension (HTN), and on chemotherapy treatment for acute lymphocytic leukemia (ALL) including vincristine and idarubicin.
+During admission, regular PCR screening for SARS-CoV-2 came positive.
+On day two of admission, patient developed dry cough and chest pain and acute dyspnea.
+On physical examination, patient was afebrile, however, looked weak and fragile with dyspnea NYHA class III. She had mild petechiae and ecchymosis on lower limbs.
+Blood pressure was 105/70 mm Hg, pulse was equal on both sides with heart rate of 90 bpm, respiratory rate 30/min, and oxygen saturation (SpO2) 92% at room air.
+There were no cardiac murmurs on cardiac auscultation.
+Chest examination revealed coarse crackles on both lungs.
+Investigations including lab and imaging were as follows:
+Electrocardiogram (ECG) showed normal sinus rhythm with a rate of 95 bpm Computed tomographic pulmonary angiography (CTPA) showed picture of acute pulmonary thromboembolism (PTE) involving subsegmental branches of both lower lung lobes. CT depicted subpleural ground glass opacities as well on both lungs . Fasting blood sugar, 189 Serum creatinine, 0.95 mg/dL Creatine phosphokinase, 500 IU/L Creatine kinase myocardial band (CK-MB), 75 IU/l Serum potassium (K), 4.4 mEq/L Serum sodium (Na), 138 mEq/L Prothrombin time (PT), 17 s (normal 12–14 s) Partial thromboplastin time (PTT), 48 s (normal 25–35 s) International normalized ratio (INR), 1.5 Hemoglobin, 8 g/dl WBC, 2.0 × 1000/Ul Hematocrit, 24 % Platelet count (PLT), 0 × 109 per/L (recorded zero by lab) Lymphocytes, 61% COVID-19 IgM 0.10 (positive >1.1) COVID-19 IgG 3.45 (positive >1.1) D-dimer >10,000 μg/L Echocardiography (Echo): mild left ventricular (LV) dysfunction with LV ejection fraction (EF) 55%. Mildly enlarged right ventricle with normal pulmonary pressure. No resting wall motion abnormality. Pelvi-abdominal ultrasound abdomen: dilated inferior vena cava 24 mm with right kidney larger than normal with a size of 145 mm. Chest X-ray: bilateral lung infiltrations with classic ground glass opacities.
+Cardiac and hematologic team together decided not to start anti-coagulation for her PTE because the patient’s platelet (PLT) count was 0 × 109 per/L after repeating twice, supposedly due to chemotherapy-induced thrombocytopenia (CIT); however, disseminated intravascular coagulation (DIC) cannot be ruled out especially in presence of high D-dimer and prolonged PT and aPTT. In addition, patient was hemodynamically stable, and hence, we have not opted for anti-coagulation.
+Patient started to be hypoxic with SpO2 89%; however, blood pressure was maintained at normal values. Hypoxia improved on supplemental oxygen.
+Urgent transfusion of random donor platelets and fresh frozen plasma was done.
+On day three of admission, patient developed excruciating central chest pain with raised ST segment on ECG.
+Via a trans-radial access through a 4-French size sheath, primary percutaneous coronary intervention (PCI) to left anterior descending artery (LAD) was performed.
+Before PCI, elective endotracheal intubation was done to prevent nasogastric blood aspiration resulted from iatrogenic severe epistaxis induced by nasogastric tube insertion.
+Our priority during PCI was to achieve successful revascularization through performing only plain old balloon angioplasty (POBA) without using a coronary stent to avoid starting dual antiplatelet therapy (DAPT) for the patient in view of her severe thrombocytopenia.
+However, after multiple runs of thrombosuction to remove the heavy thrombus burden followed by POBA, we encountered abrupt reclosure of the LAD artery and no-reflow phenomenon with continuous reformation of coronary thrombi. Accordingly, we had to deploy the newest second-generation drug-eluting stent (DES) with optimal results and TIMI (thrombolysis in myocardial infarction) grade III flow with full resolution of chest pain.
+Patient received total of 20 units of platelets, after which PLT count improved to 20 × 109 per/L.
+During PCI, patient developed rapid atrial fibrillation (AF) that responded successfully to 150 mg intravenous bolus dose of amiodarone with reversion to sinus rhythm.
+INR was 1.5, and active clotting time (ACT) during PCI was 381 s without anti-coagulants which posed an extremely high risk of bleeding. Hence, no anti-coagulant was given during or after the PCI procedure.
+Medications during admission were as follows:
+Remdesivir loading dose of 200 mg IV infused over 30–120 min on day 1, then day 2 and thereafter, 100 mg IV qDay for total of 7 days. Meropenem, insulin, ticagrelor, carvedilol, amiodarone, amlodipine, furosemide, N-acetyl cysteine, oral hypoglycemic agents, fentanyl drip, pantoprazole, fresh frozen plasma, random donor platelets transfusion.
+During coronary care unit admission, we decided to start ticagrelor as a single anti-platelet agent post-PCI after 180 mg of a loading dose given before PCI.
+LVEF improved to 35% compared to 20% before PCI.
+After ensuring all weaning criteria are present, patient was extubated after 3 days and was more stable in terms of hemodynamics and oxygen saturation.
+Moreover, LVEF further improved to 50% on screening Echo 3 days later. And PLT count increased to 25 × 109 per/L.
+However, on day six, the patient’s condition quickly deteriorated due to acute severe respiratory failure with hypoxia.
+The patient was intubated and mechanically ventilated. However, she had cardiac arrest with pulseless electrical activity and then asystole. Cardiopulmonary resuscitation (CPR) could not revive the patient, and she died.

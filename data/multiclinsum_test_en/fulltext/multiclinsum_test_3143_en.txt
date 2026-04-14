@@ -1,0 +1,29 @@
+We report the case of an 11-year-old girl who had been presenting a severe asthenia for a month, orthostatic dizziness, headaches and abdominal pain. Patient familial history was remarkable due to the total absence of the pericardium associated with hypo-gammaglobulinemia and bronchiectasis in her 9-year-old sister [5]. Patient personal history was uneventful.
+
+A previous recent laboratory examination had revealed moderate inflammation (leucocyte count: 13,440/mm; CRP: 30 mg/L) but increased sedimentation rate (68 mm/h), and slightly increased fasting glycemia (106 mg/dL) with a normal insulin concentration. Urine analysis showed bacteriuria. On that basis, she received a treatment with sulfamethoxazol.
+
+Patient status did not improve, and thus, she was referred to our institution for endocrinological and cardiological advice. A physical examination confirmed recent weight loss (2.5 kg in 10 days), systemic arterial hypertension (147/104 mm Hg) in an upright position dropping in a supine position (80/60 mm Hg), a normal heart rate and normal transcutaneous oxygen saturation.
+
+The patient was pale with wet and cold extremities. Precordium was hyperactive, and cardiac and pulmonary auscultation was normal as was abdominal palpation.
+
+An electrocardiogram showed left ventricular hypertrophy according to Davignon’s criteria with non-specific repolarization anomalies and a prolonged QT interval corrected by the Bazzett’s formula (QTc: 470 ms).
+
+Echocardiography demonstrated global left ventricular hypertrophy with a dilated aortic root (Z-score calculated according to: 2.5) and grade I aortic insufficiency.
+
+Abdominal ultrasound showed the presence of a right-sided adrenal mass.
+
+The left-sided adrenal gland and all other intra-abdominal organs were normal.
+
+An oral glucose tolerance test showed moderate hyperglycemia associated with hyperinsulinemia. Cortisol- and thyroid hormone serum levels were normal. Noradrenaline and normetanephrine urine concentrations were strongly increased (>711 μg/24H and >9000 μg/24H, respectively). The right-sided adrenal mass was confirmed via magnetic resonance imaging, and iodine-123-metaiodobenzylguathdine ([123I]-mIBG) scintigraphy confirmed isolated tracer fixation on the right adrenal gland.
+
+The patient was scheduled for surgery and stabilized until then using a combination of a β-blocker and calcium channel antagonist, allowing for blood pressure control. She underwent total adrenalectomy via laparoscopy. Anatomo-pathology confirmed the diagnosis of a typical pheochromocytoma without any signs of malignancy.
+
+Microscopic analysis showed a nest-shaped tumor architecture with large polygonal cells. The central part of the tumor presented some ischemic necrotic areas and vascular structures with recent thrombosis but no signs of vascular invasion. There was no mitotic activity.
+
+Immune-histological examination proved a high degree of positivity for the neural cell adhesion molecule CD56 and for the markers of neuroendocrine tumors chromogranine and synatophysine. The level of cell proliferation was estimated to be lower than 1%.
+
+A genetic evaluation was carried out. DNA sequence analysis allowed for the exclusion of pathogenic gene mutations implicated in hereditary paragangliomas and pheochromocytoma (SDHA, SDHB, SDHC, SDHD, SDHAF2, TMEM 127, MAX, VHL, FH, MDH2 and exons 10, 11, 13, 14 and 16 of the RET gene) but demonstrated a somatic mutation c.57C>T in exon 3 of the tumor suppressor gene von Hippel-Lindau.
+
+Cardiac examination, including echocardiography performed 2 weeks after right-sided adrenalectomy, showed residual left ventricular hypertrophy but normalization of the aortic root dimension (Z-score: 0.7) and QTc duration.
+
+Two years after the operation, the patient complained about dizziness, palpitations and chest pain. The clinical examination, including blood pressure, was normal. Concentrations of blood and urine catecholamines were in the normal range. Abdominal MRI showed a normal left-sided adrenal gland an empty right-sided adrenal lodge. Endocrinological and cardiological examinations, including echocardiography and abdominal MRI, were repeated and remain normal after a follow-up period of 5 years.

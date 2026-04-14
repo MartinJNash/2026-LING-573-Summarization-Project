@@ -1,0 +1,45 @@
+M.N.S., seven years old, male, has right spastic hemiplegic CP, level I, according to
+the Gross Motor Function Classification System (GMFCS), caused by a hypoxic-ischemic injury at two years old. The child has
+participated in a physical therapy intervention program based on the Bobath
+Neuroevolutive Concept twice a week for four years. His main complaint is the difficulty
+in participating in games that include jumping and overcoming obstacles at school with
+his friends.
+The proposed intervention was approved by the Ethics Committee on Human Research of the
+institution where the research took place (Case N. 190 903), in accordance with
+Resolution 196/96 of the National Health Council. The child's guardian authorized his
+participation in the study by signing the Free and Informed Consent form.
+The study involved the use of multiple repeated measures in a single subject, according
+to the A-B-A model.
+- A trained physical therapist, blinded to the
+study, performed all assessments during the three phases of the study: baseline 1 (B1),
+two weeks prior to the trial; baseline 2 (B2), on the day immediately prior to the
+intervention period; baseline 3 (B3), on the day after the intervention was finished.
+Assessments of the child's motor performance through the Motor Development Scale
+(MDS), and of the functional balance through
+the Pediatric Balance Scale (PBS) were performed.
+The MDS tool assesses the following areas of development: fine motor skills (MA1), gross
+motor skills (MA2), balance (MA3), body schema (MA4), spatial organization (MA5),
+temporal organization (MA6) and laterality. With the exception of laterality, the other
+areas are evaluated by ten tasks each, distributed in progressive difficulty, between
+the ages of 2 and 11 years. The child should start with the tasks related to the age
+immediately below theirs. Each successfully completed task determines one point in the
+correspondent Motor Age (MA). Based on the calculation of the motor ages in each area,
+the calculation of the General Motor Quotient (GMQ) is carried out. The values ​​of GMQ
+are quantified and categorized, allowing the classification of analyzed skills as: much
+superior (130 or more), superior (120-129), high-normal (110-119), medium-normal
+(90-109), low-normal (80-89), inferior (70-79), and much inferior (69 or less).
+The PBS questionnaire, adapted from the Berg Balance Scale, assesses the balance in
+children with neuromotor dysfunction. It
+consists of 14 activities, scored from zero to four, with zero indicating maximum or
+full assistance to perform the activity, and four indicating the independent performance
+of a task. The total score is the sum of all the scores, ranging from zero to 56, with
+higher scores indicating better skills in balance control.
+The intervention program using VR-based therapy consisted of 12 sessions of 45 minutes
+each, with two sessions a week. During the intervention period, the child underwent
+normal physical therapy sessions. The child attended all sessions. At each therapy
+session, the child had contact with two distinct games for a period of 20 minutes each,
+with a resting interval of five minutes between them. The two games used for the
+protocol were: a) A game in which the child saw himself projected inside an aquarium,
+which contained holes that had to be stopped using the upper or lower limbs; and b) A
+game in which the child, on top of a moving trailer, had to overcome obstacles by
+jumping, squatting and performing side-to-side movements of the body.

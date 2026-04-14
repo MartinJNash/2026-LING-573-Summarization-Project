@@ -1,0 +1,27 @@
+A 70-year-old man presented with dyspnoea and palpitations on exertion to the emergency department (ED). His medical history was significant for stage IV clear cell RCC, chronic atrial fibrillation on anticoagulation with warfarin, coronary artery disease status post the placement of two stents with an ischaemic cardiomyopathy and a LVEF of 40%–45%. He was recently started on pazopanib for systemic treatment of metastatic RCC. Pazopanib was started at 75% of the recommended dose. At the initiation of therapy, the patient had a creatinine of 1.2 mg/dL and was able to walk 90 min a day without any complaints.
+
+Within the first week of starting pazopanib, the patient developed dyspnoea on exertion that progressed rapidly to dyspnoea on minimal exertion. He was no longer able to conduct his daily walks. On the 10th day after starting pazopanib, he was unable to shave himself due to dyspnoea, which prompted his ED presentation. In the ED, his blood pressure (BP) was 122/70 mm Hg, heart rate (HR) was 93 beats per minute (bpm), respiratory rate (RR) was 22 breaths/min, and oxygen saturation was 94% on room air. On physical examination, auscultation of the heart was significant for an irregular rhythm with no additional heart sounds or signs of volume overload. His lungs were clear to auscultation, and the remainder of the examination was unremarkable.
+
+Initial labs were significant for a creatinine of 1.4 mg/mL and a supratherapeutic international normalised ratio of 4.0. Blood counts, electrolytes and liver function tests were within normal limits. His B-natriuretic peptide (BNP) was 2685 pg/mL. His troponin results were negative. An ECG showed atrial fibrillation without significant changes compared with previous tracings. A CT angiogram (CTA) of the chest in the ED showed heterogeneous opacification of the left main pulmonary artery with concern for a non-occlusive thrombus.
+
+The patient was admitted to the hospital and empirically started on anticoagulation with enoxaparin for presumed pulmonary embolism (PE). On the second day, he presented with worsening shortness of breath and compromised mental status. On physical examination, he was dyspnoeic and tachypnoeic with RR of 40 breaths/min and oxygen saturation of 95% on 2 L of oxygen by nasal cannula. His HR ranged between 140 and 150 bpm and his BP was 96/53 mm Hg. He was in respiratory distress, unable to speak in full sentences but alert and following commands.
+
+
+Investigations
+
+Stat labs including blood counts, electrolytes and kidney function did not reveal significant change. Troponin-I was mildly elevated at 0.10 ng/mL (normal range <0.08). A chest X-ray revealed enlargement of the cardiac silhouette and mild vascular congestion. Review of prior CTA with radiology suggested that the findings were more consistent with an old thrombotic event rather than an acute PE. A transthoracic echocardiogram (TTE) revealed a severely dilated left ventricle with severely reduced systolic function and an estimated LVEF of 15%–20%, severe global hypokinesis and some regional variation in the anterior wall. When compared with prior EF of 40%–45%, the LVEF was significantly lower.
+
+
+Differential diagnosis
+
+The differential diagnosis of his acutely worsened cardiomyopathy includes new ischaemia, tachycardia induced or pazopanib induced. The mild elevation of patient’s troponin, in the setting of negative ECG changes, was thought to be most likely secondary to Type 2 myocardial ischaemia. His TTE findings showed global hypokinesis compared with prior echo instead of new focal dysfunction, which again supports non-ischaemic cardiomyopathy. His tachycardia began after the worsening of his EF. Given the rapid onset of his symptoms shortly after starting pazopanib, in the setting of no other obvious causes, pazopanib-induced cardiomyopathy remained as the most likely diagnosis.
+
+
+Treatment
+
+The patient was transferred to ICU and intubated due to continued respiratory distress and shock requiring blood pressure support with norepinephrine. A pulmonary artery (PA) catheter was placed for close monitoring of haemodynamics and vasopressor management and revealed low cardiac output and a cardiac index of 1.7 L/min/m2 concerning for cardiogenic shock. Inotropic support with dobutamine was started and norepinephrine was continued. Beta-blocker therapy was started to control his heart rate. His course was complicated by aspiration pneumonia that required broad-spectrum antibiotics. The patient was weaned off vasopressors and was successfully extubated on ICU day 9. His hospital stay lasted 29 days with management of multiple medical complications including shock, acutely decompensated CHF, aspiration pneumonia, atrial fibrillation with a rapid ventricular response, toxic metabolic encephalopathy and acute kidney injury.
+
+
+Outcome and follow-up
+
+The patient was discharged to a rehabilitation centre where he was able to participate in physical therapy. He was discharged home after his rehabilitation. His follow-up TTE 3 months after his discharge showed an estimated EF of 20%.

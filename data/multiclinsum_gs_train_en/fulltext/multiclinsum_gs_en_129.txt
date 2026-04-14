@@ -1,0 +1,11 @@
+Patient presentation: This is a 37-year-old female patient who presented with a mixed dysphagia of gradual onset in the context of weight loss and altered general condition. The history was unremarkable. The evolution was marked by a progressive worsening of inspiratory dyspnoea. The patient presented with laryngeal dyspnoea which led to an emergency tracheotomy.
+
+Clinical findings: the general clinical examination found a patient well oriented in time and space, with a stable haemodynamic state. The ENT examination revealed a right parapharyngeal mass that almost completely filled the pharyngeal lumen and obstructed the upper airway.
+
+Timeline: After the clinical examination, the patient underwent a cervical MRI and a biopsy of the parapharyngeal mass under local anaesthesia. The pathological examination of the biopsy led to the performance of a thoraco-abdomino-pelvic tomodensitometry (TDM) and bone scintigraphy.
+
+Diagnostic approach: MRI of the cervical region showed a tumour process in the right parapharyngeal space bulging into the pharynx with a T2 hyper signal with diffusion restriction and enhancement after gadolinium injection. It measures 47 x 40 x 50 mm. The tumour occupies almost the entire pharyngeal lumen and invades the upper palatal arch. The latter is swollen with areas of necrosis. A biopsy of the mass with histopathological examination showed basophilic round tumour cells. The immunohistochemical study was positive for CD99, anti-S100 antibodies and Ki67. In addition, a cytogenetic study was performed on the sample to look for a EWS/FLI1 translocation, which was positive. The final pathological result concluded that it was an extraosseous Ewing sarcoma of the parapharyngeal space. The extension assessment was negative.
+
+Therapeutic intervention: the patient was referred to oncology for first-line chemotherapy with vincristine, ifosfamide, doxorubicin and etoposide.
+
+Follow-up and results of therapeutic interventions: after 6 courses of chemotherapy, the progression of the tumour continued and the patient died due to the extension of the disease to the base of the skull.

@@ -1,0 +1,18 @@
+History of Presentation
+A 50-year-old man with paroxysmal atrial fibrillation (AF) presented to our institution (University of Illinois-Chicago, Chicago, Illinois, USA) for AF ablation and left atrial appendage occlusion (LAAO) device placement. His blood pressure was 138/81 mm Hg, his heart rate was 73 beats/min, his temperature was 37.1 °C, and his oxygen saturation was 99% on room air. He had unremarkable physical examination findings.
+
+Past Medical History
+The patient’s past medical history was otherwise significant for hypertension and coronary artery disease with previous percutaneous coronary intervention to the left anterior descending and circumflex arteries. His CHA2DS2-VASc score was elevated at 2, but he was hesitant to start therapeutic anticoagulation because he was a boxer and occasionally received blows to the head. An performed echocardiogram in 2021 found mild dilatation of the left atrium (LA) and an ejection fraction of 55% by visual estimate.
+
+Investigations
+While evaluating the left atrial appendage (LAA) for LAAO device closure, a transesophageal echocardiogram (TEE) was performed because computed tomography was not performed preoperatively. The TEE appeared to show a membrane covering the ostium of the LAA. Color Doppler imaging did not reveal any flow in or out of the LAA past the membrane. Further imaging with intracardiac echocardiography (ICE) was performed to confirm this finding.
+
+The ICE catheter was advanced into the LA directly, and color Doppler imaging again demonstrated no flow into or out of the appendage through or around the membrane. A force-sensing ablation catheter was advanced under direct ICE and electroanatomical mapping (EAM) visualization, and stable contact and recordable electrograms were confirmed on the membrane. Intravenous ultrasound contrast material was administered, and no contrast flow was noted into the LAA beyond the membrane. For additional confirmation, an iodinated contrast injection at the mouth of the appendage under fluoroscopy demonstrated no connection to the main body of the LA.
+
+Conventional 3-dimensional EAM was then performed of the LA by using a mapping catheter. Appropriate signals were observed from the pulmonary veins. When the catheter was carefully advanced toward the LAA, it could not enter the appendage ostium. Instead, the catheter detected electrical activity. Electroanatomical mapping of the LAA membrane was performed. Notably, the ablation catheter and the high-density mapping catheter detected normal atrial voltage on the membrane. They demonstrated general atrial capture with low output pacing on the membrane, a finding suggesting atrial myocardial tissue.
+
+Management
+The LAAO device was not implanted in the patient because of the presence of the membrane. AF ablation was still performed with successful radiofrequency pulmonary vein isolation. No ablation was performed directly over the membrane. At the end of the procedure, the membrane covering the orifice of the LAA was confirmed to be still intact and completely obstructed flow into the appendage on the basis of color Doppler and repeat bubble study. The patient was then extubated and had an uncomplicated recovery.
+
+Follow-Up
+The patient was in sinus rhythm at 2- and 4-week follow-up visits post ablation and was asymptomatic from the standpoint of AF. The patient did not have any complications after the procedure. He received maintenance oral anticoagulation for the postablation blanking period, with plans to discontinue it afterward.

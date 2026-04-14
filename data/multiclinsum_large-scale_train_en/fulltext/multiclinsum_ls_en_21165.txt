@@ -1,0 +1,69 @@
+A 36-year-old free working male presented with pain on the right hip in April 2018.
+Positron emission computed tomography (CT) was performed, demonstrating probable bone
+metastasis and surrounding soft tissue masses in the pelvis and the upper lobe of the right lung
+. Emission CT of the
+bone was performed, which revealed bone metastasis. Pelvic puncture of the soft tissue
+masses in the posterior superior acetabulum and the iliac crest indicated poorly
+differentiated mucinous adenocarcinoma. Immunohistochemistry confirmed the presence of
+mucinous adenocarcinoma, with some cells being signet-ringoid, cytokeratin 7 (CK7) (+), CK19
+(+), thyroid transcription factor-1 (−), anaplastic lymphoma kinase-CST (−), CK20 (−),
+caudal-related homeodomain transcription 2 (CDX2) (−), and Napsin A (−). Pathological
+consultation at the Fudan University Shanghai Cancer Center indicated that the tumors were
+derived from the digestive tract. However, following gastroscopic and colonoscopic
+examination, the primary site remained unknown. The patient was subjected to immune-related
+gene testing. The results showed programmed cell death 1 ligand 1 (PD-L1) positivity (25%),
+the tumor mutational burden (10.48%), and mutation abundance of exon 5 in TP53 (49.49%).
+Therefore, the patient was diagnosed with CUP.
+In May 2018, the patient received palliative care to alleviate the pain and special
+conformal radiotherapy with DT40GY/20F for the bone metastasis and surrounding soft tissue
+mass . Subsequently,
+in June 2018, he received chemotherapy with the XELOX regimen (i.e., capecitabine 1500 mg in
+the morning and 2000 mg in the evening per os, d1–14+oxaliplatin
+130 mg/m2 intravenous d1). The selection of the regimen was based on
+recommendations pertaining to first-line chemotherapy in the treatment of advanced tumors of
+the digestive tract.
+During the treatment period, the pain in the left ilium intensified. Conformal radiotherapy
+with DT40GY/20F to the site was initiated on June 15, 2018. The size of the mass on the
+chest wall was 15 × 15 mm , and the mass in the lung increased in size . These findings indicated a progressive
+disease. A biopsy of the mass of the chest wall was performed to identify the primary
+lesion. Based on the morphology with H&E staining, ×40 and H&E staining, ×100 , the pathological analysis
+indicated the presence of poorly differentiated mucinous adenocarcinoma, solid type
+(signet-ring cell). Immunohistochemistry results excluded mesothelium and mammary gland
+sources. Based on clinical endoscopy and other tests, the digestive tract was excluded as
+the source of the cancer. It was considered that the tumor originated in the lung.
+Subsequently, the patient received second-line chemotherapy (paclitaxel 200 mg d1–8 plus
+cisplatin 30 mg d1–3) for two cycles on July 3, 2018 and July 31, 2018. The levels of tumor
+marker carcinoembryonic antigen (CEA) and carbohydrate antigen 199 (CA199) progressively
+declined .
+From September 8, 2018, the patient was treated with immunotherapy (nivolumab
+[Bristol-Myers Squibb, Opdivo, Brooklyn, NY, USA] 100 mg/m2) every 2 weeks.
+Nivolumab was approved by the China Food and Drug Administration on June 15, 2018.
+Meanwhile, chemotherapy was used continually, and suspended after six cycles. Subsequently,
+the patient continued to receive treatment with immunotherapy. The levels of CEA,
+cytokeratin, and CA199 progressively decreased. In addition, the size of the masses in the
+lung and pelvis was also reduced . The observed changes in tumor markers were consistent with the
+therapeutic efficacy and tumor load .
+According to the follow-ups performed between October 2018 and April 2019, the patient had
+been able to conduct normal daily life activities, with a markedly improved quality of life
+and absence of additional abnormalities.
+However, the patient presented with recurrent cough and hemoptysis on April 18, 2019. Lung
+CT imaging revealed the presence of new tissues . These new tissues detected in the right
+main bronchus were removed using an endoscope . The size of the largest new tissue was 3
+× 1 cm, and the pathological diagnosis suggested hemorrhage and fibrous exudation . The new tissues were
+detected through a second respiratory endoscopy suggested the presence of malignant
+epithelial tumors of the salivary gland type, based on the morphology of H&E staining,
+×40 and H&E
+staining, ×100 . The
+immunohistochemistry results showed CD117(+/−), DOG-1(−), CK7(+), CK5/6(−), P63(−), CEA
+minority (+), thyroid transcription factor-1(−), Napsin A (−), CR (−), P40(−), P53 mutant,
+smooth muscle actin (+), S-100(−), and Ki-67(+) (approximately 50%). The masses did not show
+significant change in the lung CT image . These findings indicated progressive disease. After consultation
+with the Fudan University Shanghai Cancer Center, the use of local radiotherapy was
+suggested after discontinuation of immunotherapy. In June 2019, the patient received
+radiotherapy with DT45GY/15F for the lesions in the right lung, and mediastinal and hilar
+lymph nodes. The treatment alleviated the patient’s cough and hemoptysis did not recur. Two
+weeks later, it was observed that the mass in the lung had decreased in size . However, interstitial
+inflammation occurred after DT36Gy/12F radiotherapy . Radiotherapy was discontinued and
+anti-infective and anti-inflammatory treatments were administered. The inflammation in the
+lung was resolved . In
+the end, this patient died from recurrent pneumonia in December 2019.

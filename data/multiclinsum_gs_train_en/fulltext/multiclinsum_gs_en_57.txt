@@ -1,0 +1,40 @@
+63-year-old patient with a diagnosis of diabetes, hypertension and hypercholesterolemia, with a history of myocardial infarction, who takes 9 medicines, and presents the chronic treatment plan.
+
+Study and Evaluation
+On 22/12/22 the patient went to the Emergency Department (ED) presenting redness, itching and eye inflammation, with both eyes affected. She later went to the FC with a diagnosis of conjunctivitis to withdraw the treatment prescribed in an electronic prescription (EP).
+
+The dispensing service (SD) is used to intervene with pharmacological advice in order to guarantee the correct use of both drugs. Therefore, in addition to dispensing both drugs, a series of recommendations are made aimed at achieving correct administration of both the eye drops and the ophthalmic ointment. (1,2)
+
+In addition, when there is a time coincidence in some of the applications of the drugs, special emphasis is placed on the fact that in the case of co-administration of both forms of the medicine, it is correct to always apply the eye drops first and wait between 5 and 10 minutes for the application of the ointment (3).
+
+After 6 days of treatment with no improvement, the patient comes back to the ED, where a new antibiotic is prescribed in ER.
+
+In this case, a possible error of prescription was detected through the FC Dispensation Service, which could compromise the safety of the patient, as ear drops were prescribed instead of ophthalmic eye drops.
+
+The product information for the medicine is reviewed, and it is noted that the only indication for the prescribed medicine is the treatment of acute external otitis and the administration route is the auricular route. The use of this route and not another is reiterated in the warnings and precautions section. This would therefore be a Problem Related to the Medicinal Product (PRM) of error in the prescription, which could have an associated Negative Result associated with the medication (RNM) in the case of using the prescribed medicine if it is administered ophthalmically.
+
+Intervention
+Following the detection of the error, in the absence of an effective communication channel between doctors and pharmacists and given the impossibility, despite trying, of contacting the emergency department by telephone, a verbal referral is made from the pharmacist to the emergency doctor through the patient herself, attaching a copy of the RE indicating the error, urging him to go back to the emergency department so that the doctor can assess the pharmacological substitution for an appropriate pharmaceutical form for administration by ophthalmic route, as there is an alternative therapeutic option with the same composition, namely ciprofloxacin 3 mg/ml eye drops in solution.
+
+After a few hours, the patient returned to the pharmacy with the unchanged RE after going to the emergency room, as the doctor reiterated that these drops can be used without problems by ophthalmic route. She even commented that the doctor himself consulted another emergency doctor, both confirming the use by the previously indicated route.
+
+In view of this, the FC printed the leaflet for ciprofloxacin 0.3% 5 ml ear drops, emphasizing the following paragraphs, which reflect the ear as the only authorized route for administration of the drug:
+
+What it is and what it is used for. This medicine is used for the treatment of acute external otitis.
+
+What you need to know before you start using. Warnings and Precautions: "Use this medicine only in your ear(s).
+
+How to use. "This medicine should only be administered by the otic route, i.e. as ear drops."
+
+This document is given to the patient with the aim of them returning to the SU with documentation to prove the referral.
+
+On 28/12/22 the patient did not return to the pharmacy, so the pharmacist made a follow-up call on 29/12/22. In this case, and despite the insistence of the pharmacist the day before given the need to start with the new treatment, the patient, given the level of saturation of the emergency department, decided not to go again to the emergency department and wait for the appointment with her Primary Care Physician (PCP) on 30/12/22.
+
+RESULTS
+On 12/30/22, the patient goes to the appointment with the MAP, to whom she comments on the incident, providing the documentation provided from the SU, including the technical data sheet of the drug provided from the FC.
+
+The MAP accepted the proposed intervention from the FC and ratified the prescription error detected by the FC, without understanding why the SU did not proceed with the requested pharmacological substitution. However, in this case, given the level of inflammation and ocular redness that the patient presented at the time of the consultation, the MAP prescribed a corticoid eye drop and cancelled the previous prescription of antibiotics.
+
+The patient went to the pharmacy to pick up the prescribed treatment. She took the opportunity to comment on the similarity of clinical criteria between the pharmacist and the MAP, as well as to thank the MAP for the intervention.
+
+A few days later (03/01/23) the FC contacted the patient by phone to follow up on the health issue, noting an improvement in the reduction of redness and ocular inflammation, and again took the opportunity to thank the pharmacy for its treatment and involvement.

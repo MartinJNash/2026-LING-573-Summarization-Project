@@ -1,0 +1,19 @@
+This is a 46-year-old male patient who was operated on in 2016 to remove a diffuse grade II astrocytoma of the right gyrus cinguli, through an ipsilateral interhemispheric approach with the head in neutral position. The follow-up with brain MRI showed no recurrence until April 2021, when a new MRI demonstrated a local recurrence. At that time, the patient complained only of a mild headache with no neurological deficits.
+The MRI showed a FLAIR hyperintense and T1 hypointense, no-enhanced lesion at the level of the anterior third of the right gyrus cinguli, suggestive of low-grade glioma recurrence .
+Our patient was placed in a left lateral position. The head was fixed in a three-pin non-magnetic headholder with the hemisphere contralateral to the lesion below and the falx parallel to the floor. The head was angled about 45° upward to optimize the angle of view toward the right hemisphere .
+In this surgery, we decided to use intraoperative low-field MRI for better control of the tumor resection .
+In addition to the 4K-3D exoscope and intraoperative MRI, a neuronavigation system, an ultrasound scanner and the neurophysiological monitoring device were set up for this procedure .
+During surgery, the surgeon was positioned with head, shoulders, and back in an upright position, while the orbital camera is aligned with the surgical corridor .
+A linear skin incision was performed in the frontal region crossing the midline followed by a craniotomy to expose the superior sagittal sinus.
+From this time, the procedure continued by visualization with a 4K-3D exoscope . If you wear 3D polarized glasses, an additional 3D movie file shows you the OR setup and the key points of the procedure in more detail (Additional file ).
+The dura was opened with a horseshoe-shaped flap based along the sinus.
+Tack-up sutures were performed for greater rotation of the sagittal sinus and better exposure of the interhemispheric fissure, the falx, and contralateral gyrus cinguli.
+The falx was then cut for wider exposure of the tumor.
+An intraoperative ultrasound check with a high-frequency straight probe was performed to assess the limits of the tumor.
+In addition, a blue light filter was used to check the 5-ALA tumor metabolism, with no fluorescence to further confirm the low malignancy of this glioma. The corpus callosum were clearly visible inferior to the tumor.
+Finally, the tumor could be easily removed using an ultrasonic aspirator. During removal, ultrasound was frequently used to rule out any residual tumor. At the end of the procedure, no more tumor was visible.
+At the end of the resection, the iMRI scan showed complete removal of the lesion .
+Histological and molecular examinations concluded IDH mutant 1p/19q non-codeleted diffuse grade II astrocytoma. Adjuvant therapy was not deemed necessary based on the histology and extent of removal.
+The patient’s clinical outcome was optimal, with no postoperative deficits and excellent surgical wound healing.
+The patient was discharged on postoperative day 4 with an excellent performance on neuropsychological examination, which was then repeated three months later with the same results.
+Three months later, a new MRI found no residual or recurrent tumor .

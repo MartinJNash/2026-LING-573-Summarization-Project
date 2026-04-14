@@ -1,0 +1,5 @@
+In November 2018, a 46-year-old female never-smoker presented in our clinic with a complaint of persistent dry cough.
+The cough had been lasted for over a week.
+Past medical history was not remarkable for this patient.
+Histopathological analysis of tissue biopsy samples collected from the right lung revealed poorly differentiated NSCLC with the immunohistochemistry results of AE1/AE3 (+), SMACA4 BRG1 (+), CK18 (+), INI-1 (+), CD56 (-), chromogranin A (-), synaptophysin (-), CK7 (-), ERG (-), GATA3 (-), CD34 (-), CDX2 (-), P40 (-), SALL4 (-), TTF-1 (-), Desmin (-), and S-100 (-). In addition, PD-L1 expression analysis revealed a tumor proportion score of 80%. Molecular analysis of the biopsies detected no driver alterations in EGFR, ALK, or ROS1.
+Computed tomography (CT) and magnetic resonance imaging revealed a tumor in the lower lobe of the right lung, right hilar and mediastinal lymph node involvement, and multi-organ metastasis including the left pleura, liver, pericardium, and bone.

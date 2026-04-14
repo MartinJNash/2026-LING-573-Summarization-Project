@@ -1,0 +1,21 @@
+A 62-year-old female patient with a history of hypertension, rheumatoid arthritis since 2010 and osteoporosis since 2015, treated with ibandronic acid (Bonames® tablets) 150 mg, orally, once a month, presented with bone exposure in the alveolar margin of the third quadrant after extraction in the area, accompanied by pain and bleeding to the touch at the periphery of the lesion.
+
+Histopathologic examination showed bone tissue with areas of necrosis, extensive chronic inflammation, prominent foci of neutrophilic polymorphonuclear cells, and abundant bacterial colonies. Computed tomography revealed a hyperdense image with irregular borders consistent with bone sequestration. Based on clinical, radiographic, and histopathologic findings, the diagnosis of stage II medication-related osteonecrosis of the jaw (MRONJ) was made according to the classification of the American Association of Oral and Maxillofacial Surgeons (AAOMS).
+
+A visual analogue scale (VAS) was used to assess pain, where 0 represents no pain and 10 represents the worst possible pain. Before any intervention, the patient reported a VAS score of 3/10.
+
+Treatment protocol
+With prior informed consent, minimally invasive surgery was performed on the affected area. Under local anesthesia, tissue debridement was performed for the excision of the bone sequestrum with a piezoelectric (piezotome®). The surgery continued until the bone began to bleed, indicating the arrival of healthy bone. Then, Blue®M gel was applied, left on for 2 minutes and washed off with saline. Platelet-rich fibrin (PRF) was then applied and finished with simple stitches using 5/0 non-absorbable nylon suture (ARIZI®).
+
+The following postoperative care was indicated: antibiotic therapy with amoxicillin plus clavulanic acid (875+125 mg) once daily for 7 days, and ibuprofen (400 mg) every 8 hours for 3 days, only in case of pain. In addition, a daily tablet of Teeth&Bone formula Blue®M was prescribed for 30 days. Mouth rinsing was not recommended during the first 72 hours; after this period, the use of mouth rinse Blue®M was indicated once daily by swishing for 60 seconds. In the immediate postoperative period, topical therapy with gel Blue®M was performed on the wound, leaving it to act for 2 minutes, and its application was continued on an outpatient basis every morning for 15 days.
+
+FBM therapy was performed using a dual diode laser 650-808 (model Therapy EC DMC®) with a power of 100 mW. An infrared wavelength of 808 nm with continuous emission was selected for application, with an irradiation area of 0.0984 cm². Laser application was performed with perpendicular contact to the area, in a point-like manner and following the protocol described in the literature, with a distance of 1 cm between points along the wound path. FBM therapy was performed in daily sessions of 4 joules per 2 cm² until day 3, and then twice a week for 4 weeks.
+
+The energy density was calculated as dE = E/A. As a result, the following energy densities were used:
+
+dE = E/A dE = Energy density E = energy (4J) A = area (0.0984 cm2)
+
+dE = 4J/ 0.0984 cm2 = 40.64 J/cm2
+
+Evolution
+Daily checks were performed during the first 4 days, and then at 7, 15, 25, 30 and 60 days. At the beginning of treatment, the patient reported a pain of 3/10, according to EVA, which decreased to 0/10 at the end of treatment. Clinically, a complete healing of the soft tissue was observed 30 days after the start of treatment. In the tomographic control performed at 60 days, a hyperdense spongy bone was observed with a well-formed cortical and without alterations. The patient reported being satisfied with the treatment, highlighting the absence of pain and a significant improvement in the ability to swallow and the quality of life.

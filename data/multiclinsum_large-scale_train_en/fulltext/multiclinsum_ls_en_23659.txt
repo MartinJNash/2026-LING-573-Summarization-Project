@@ -1,0 +1,57 @@
+A two-month-old male infant weighing 6.9 kg was admitted to the pediatric ICU with
+respiratory distress, tachycardia, hypotonia, cold extremities, and fever. About three
+days earlier, the infant started with fever (37.8ºC to 38.5ºC), vomiting, apathy and
+eventually progressed to respiratory distress and cardic arrest. No relevant facts about
+his previous health history were available.
+At admission, the infant was hypotonic, with moderate subdiaphragmatic and intercostal
+retractions; the skin was pale and cold. Breathing rate was 80 incursions/minute and
+heart rate was 180 bpm. It was interpreted as circulatory collapse and the infant was
+put in orotracheal intubation. The nurses tried a peripheral venous access, but
+dehydration made it difficult. An intraosseous access was achieved. A total of 40
+­mL/­kg of saline solution was infused in 20 minutes. After that, a peripheral venous
+line was inserted and another 40 ­mL/­kg of saline solution was administered to the
+patient in 60 minutes. Perfusion was regular and the mean arterial pressure (MAP) was
+low (30 mmHg). Milrinone (0.5 mcg/kg/min) and norepinephrine (0.2 mcg/kg/min) was
+started and perfusion improved 30 minutes later. MAP raised to 50 mmHg. Ceftriaxone 100
+­mg/­kg/­day and acyclovir (45 mg/kg/day) were administered in the first hour of
+admission, as per institutional sepsis protocol. A lumbar puncture was performed to
+collect cerebrospinal fluid (CSF) and study the hypothesis of central nervous system
+virus infection.
+Peripheral blood count showed 21,780 leucocytes (58% neutrophils, 4% bands, and 54%
+segmented), 12.6 g/dL hemoglobin, 34.9% hematocrit, and 482,000/mm3
+platelets. C-protein reaction (CPR) level was 2.48 mg/dL (normal <0.6 mg/dL).
+Procalcitonin concentration was 7.6 ­ng/­mL (normal <0.5 ng/mL). Lactate level was 50
+mg/dL (normal <11.3 mg/dL). Troponin I was 1.67 ng/mL (normal <0.16 ­ng/­mL).
+Creatine kinase (CK) level was 926 U/L (normal: 38-174 U/L) and creatine kinase MB
+(CKMB) was 24.1 ng/mL (normal <5 ng/mL). CSF analysis showed white blood cells (WBC)
+count of 174/mm3 (60% polymorphonuclear cells), protein at 100 mg/dL, glucose
+at 92 mg/dL, and lactate at 33 mg/dL. Diagnosis of viral meningoencephalitis was
+considered, but CSF cultures for bacteria, fungi, herpes virus, and enterovirus resulted
+negative. Acyclovir was then suspended. A doppler echocardiography showed moderate left
+ventricular dysfunction (ejection fraction: 45%) and mild pulmonary hypertension (35
+mmHg) while in milrinone (0.5 mcg/kg/min).
+Seven days after admission, hemodynamics and infectious status improved. However, there
+was no sign of neurological improvement. The patient had no respiratory drive or cough
+reflex, and Ramsay scale was 6 even after sedation was removed.
+MR showed: “T1-D1 hypointense, T2/Flair hyperintense images in diffusion sequence at the
+dorsal medulla oblongata and pons, with involvement of VI cranial pair” . Hyperintense lesion was seen in the
+diffusion sequence, affecting the corpus callosum. These alterations
+were compatible with the Dorsal Brainstem Syndrome (DBSS), a condition occurring after
+hypoxic-ischemic injury in neonates and infants. The pattern of brain injury relates to
+the pathogenetic mechanism and provides information about outcomes and prognosis.
+Two weeks after admission, vasoactive drugs started being removed, the cardiovascular
+function had improved, and CSF was normal. On week 3, we started weaning the patient
+from MV. However, the procedure was not successful and pCO2 would raise every
+time we tried to wean MV. Hence, the patient remained dependent of MV with no
+improvement in respiratory drive, although his neurological status improved and he
+started moving the limbs, doing eye contact, and reacting to painful stimuli.
+Tracheostomy and gastrostomy were performed at this time.
+Since the MV weaning was challenging and the medical staff were in doubt about neural
+conduction integrity, we decided to use neurally-adjusted ventilatory assist (NAVA).
+After adequate eletrode positioning, Edi signal was detected (8 mV) and confirmed neural
+conduction . After that, a program of MV
+weaning using NAVA was proposed; each day the patient remained four hours in NAVA,
+switching to pressure support for another four hours and synchronized intermitent
+mandatory ventilation (SIMV) during the night. The patient was discharged from the
+hospital three months after admission, and is currently in homecare, receiving
+nebulization during the day, and bilevel positive airway pressure (BiPAP) overnight.

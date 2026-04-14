@@ -1,0 +1,63 @@
+A 14-year 3-month-old spayed female mixed-breed cat exhibited jaundice and anorexia.
+Complete blood count revealed severe non-regenerative anaemia (haematocrit 18%,
+reference interval [RI] 30.3–52.3) and thrombocytopenia (47,000/μl; RI
+151,000–600,000). Serum chemistry tests revealed an increased bilirubin (4.6 mg/dl;
+RI 0–0.9) and a mild elevation in alanine aminotransferase (171 U/l; RI 12–130) and
+alkaline phosphatase (253 IU/L; RI 14–111I). On fine-needle aspiration of the spleen
+and liver, a large population of pleomorphic lymphocytes of intermediate size
+(10–15 μm diameter) was found . Their nuclei were round or indented with a stippled or fine,
+evenly distributed chromatin. Nucleoli were multiple and of variable size. These
+cells occasionally contain erythrocytes; mitotic figures were rare. In addition,
+hepatocytes with green pigments, consistent with bile, were seen in the liver.
+The cat was treated with prednisolone at a dose of 1.0 mg/kg/day and L-asparaginase
+at a dose of 400 U/kg at days 2, 15, 36 and 58 of treatment. After 15 days, the
+treatment induced clinical remission and improvement of the thrombocytopenia
+(298,000/μl) and bilirubin (0.6 mg/dl). Administration of prednisolone was continued
+and L-asparaginase was administered on days 15, 36 and 58 of follow-up.
+Seventy-three days after the initial treatment, the cat showed loss of appetite and
+thrombocytopenia (121,000/μl) and high bilirubin concentration (2.5 mg/dl). The cat
+was subsequently treated with an intravenous administration of nimustine at a dose
+of 20 mg/m2; administration of prednisolone was terminated gradually. The
+treatment induced clinical remission again until 114 days after initial treatment,
+and the cat was maintained with nimustine and prednisolone. However, the cat died
+176 days after initial treatment owing to loss of appetite, severe anaemia
+(haematocrit 12%) and liver dysfunction. A complete necropsy was performed on the
+day by a clinician at the animal hospital.
+At necropsy, the cat presented with severe jaundice, and mild hepatomegaly and
+splenomegaly. No lymphadenopathy was confirmed at necropsy. On the cut surface, the
+spleen was reddish-brown, and the serosal surface was rough. The liver was also
+reddish-brown and bile ducts were enlarged and filled with greenish-brown bile. The
+liver and spleen were collected and fixed in 10% neutral-buffered formalin for
+histopathological examination.
+Formalin-fixed and paraffin-embedded tissues were sectioned at a thickness of 3 μm
+and stained with haematoxylin and eosin. Serial sections were subjected to
+immunohistochemistry using the primary antibodies listed in . After a reaction with the primary
+antibodies, the sections were incubated with the Envision polymer (Dako), an
+optiview DAB detection kit (Roche Diagnostics) or biotinylated rabbit anti-rat IgG
+(Funakoshi) followed by peroxidase-conjugated streptavidin. Finally, the sections
+were visualised with diaminobenzidine tetrahydrochloride and counter-stained with
+haematoxylin. The antibodies were validated by a positive reaction in feline lymph
+node and brain tissues, and negative reaction by omitting primary antibody. For
+electron microscopy, small pieces of formalin-fixed liver were re-fixed in 1% osmium
+tetroxide in 0.1 M phosphate buffer and then embedded in epoxy resin. Ultrathin
+sections were stained with uranyl acetate and lead citrate and examined using a
+transmission electron microscope (JEM-1400Plus; JEOL).
+In the spleen, extensive necrosis and haemorrhage with infiltration of neoplastic
+lymphoid cells were observed . The neoplastic lymphoid cells diffusely infiltrated the
+hepatic sinusoids and hepatic cords in the liver . Neoplastic lymphoid cells were
+often observed in the cytoplasm of hepatocytes. Necrosis of affected hepatocytes and
+intracanalicular bile plugs were frequently observed. The neoplastic lymphoid cells
+were of variable size and had scarce cytoplasm. The size of the nuclei was 2–2.5
+times the diameter of an erythrocyte, and had coarse chromatin, prominent nucleoli
+and an irregular nuclear membrane. Mitotic count was 4/10 high-power fields
+(2.37 mm2 field of view); apoptotic bodies were frequently observed.
+Neoplastic lymphoid cells often contained erythrocytes in both the liver and
+spleen.
+Ultra-structurally, the neoplastic cells were often located in the cytoplasm of
+degenerated hepatocytes and they often contained one or more erythrocytes .
+Immunohistochemically, the membrane of neoplastic cells was strongly positive for
+CD3 . Granular
+positivity for granzyme B and T-cell intracellular antigen 1 (TIA-1/GMP-17) were
+observed in the cytoplasm of neoplastic lymphoid cells ( and ). Neoplastic lymphoid cells were negative
+for CD8, CD20, CD30, CD56, CD57, CD79a and Iba-1. The Ki-67 index of the neoplastic
+lymphoid cells was 50.2% in the liver and 56.8% in the spleen.

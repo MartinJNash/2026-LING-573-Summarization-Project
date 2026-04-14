@@ -1,0 +1,47 @@
+This 53-year-old man initially presented with acute-onset chest discomfort as an isolated symptom. He was previously an active, fit and well non-smoker with no medical nor family history.
+
+On examination, he had normal heart sounds with no murmurs. His jugular venous pressure was not elevated. His chest was clear and there was no ankle oedema.
+
+His blood pressure was 98/78 mm Hg and his heart rate was 62 beats per minute. His oxygen saturations were 100% on room air and his respiratory rate was 16 breaths per minute. He was apyrexial with a temperature of 37.1°C.
+
+
+Investigations
+
+ECG showed LVH and widespread T wave inversions. Serum high-sensitivity cardiac troponin I (hs-cTnI) levels rose from 28 ng/L (0 hour) to 77 ng/L (6 hours) (male upper reference limit for this assay: 34 ng/L). He was managed with dual antiplatelet therapy for a working diagnosis of non-ST elevation myocardial infarction.
+
+CT coronary angiography showed calcific plaque in two coronary arteries. Conventional angiography confirmed no flow limitation. Transthoracic echocardiography showed moderate LVH with significant outflow tract obstruction. There was a mild systolic impairment with localised inferior wall akinesia. A cardiac MRI was requested as an outpatient investigation.
+
+One month later, the patient was readmitted with further chest discomfort. Four days of telemetry revealed no dysrhythmia during these episodes of discomfort. ECG showed no dynamic changes. There was a static low-level hs-cTnI rise at 37 ng/L, 30 ng/L and 33 ng/L, respectively, taken daily due to multiple intermittent episodes of chest pain over several days. C reactive protein level was less than 3 mg/L and he was afebrile.
+
+Cardiac MRI showed concentric LVH, an area of basal inferolateral probable oedema and an unusual pattern of predominantly endocardial late gadolinium enhancement (LGE) with patchy septal mid-wall enhancement and diffuse subendocardial enhancement. He had normal LV volumes and ejection fraction (61%) but an elevated mass at 221 g (101 g/m2) consistent with hypertrophy. As his blood pressure remained normal, we were reluctant to put the LVH down to hypertensive heart disease.
+
+
+Differential diagnosis
+
+Due to the unusual nature of the case, it was discussed at the regional multidisciplinary team meeting. The MRI was not felt to be classical of either myocarditis or amyloid, but the outcome of the meeting had suggested to screen for amyloid cardiomyopathy and Anderson-Fabry disease.
+
+Alpha galactosidase level was normal, effectively excluding Fabry disease.
+
+Serum free (SF) light chain showed raised SF Kappa at 253.20 mg/L (reference range: 3.3–19.4) with normal SF Lambda 9.6 mg/L (reference range: 5.7–26.3). The kappa/lambda ratio was 26.375 (reference range: 0.26–1.65).
+
+Bone marrow aspirate showed particles largely obscured by amorphous cloudy blue extracellular proteinaceous deposits. These deposits stained salmon-pink on Congo red staining. When visualised under polarised-light microscopy, they gave a characteristic apple green birefringence—consistent with amyloid deposition. There was a slight excess of plasma cells, which was insufficient to diagnose a plasma cell dyscrasia.
+
+Staining of fat pad aspirate with Congo red did not demonstrate convincing evidence of amyloid deposition.
+
+A CT abdomen and pelvis showed nothing else to account for his amyloidosis. Hepatitis B, hepatitis C and HIV screen were negative. Serum electrophoresis showed no abnormal monoclonal band detected and immunoglobulins were normal.
+
+
+Treatment
+
+The patient was referred to the National Amyloidosis Centre in London where the diagnosis was confirmed. At their recommendation, the local haematology team oversaw administration of chemotherapy for primary AL amyloidosis with cardiac involvement. He received a 21-day cycle of VCD (bortezomib, cyclophosphamide and dexamethasone).
+
+Additional supportive medications were provided, including doxycycline, aciclovir and allopurinol for the first 2 cycles of chemotherapy.
+
+
+Outcome and follow-up
+
+Follow-up at 1 year from diagnosis showed that the patient remained stable, his chest pain had completely resolved, and he still did not exhibit any symptoms of heart failure.
+
+However, when the COVID-19 pandemic hit the country, his chemotherapy was stopped by his clinicians at the National Amyloidosis Centre, given his good progress with treatment and the associated risks of COVID-19.
+
+Two months following this, he represented with a further episode of chest pain and low-level hs-cTnI rise. His chemotherapy was, therefore, reintroduced, and his chest pain had subsequently resolved.

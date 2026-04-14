@@ -1,0 +1,7 @@
+A 44-year-old woman was admitted to our hospital for dyspnea with chest pain in April 2018.
+The patient had no history of present illness.
+The patient had no history of past illness.
+The patient had no personal and family history.
+No obvious abnormalities were found on physical examination.
+Laboratory tests showed elevated levels of several serum tumor markers (CA19-9, 483.98 U/mL; CA125, 111.44 IU/mL; CA242, 138.50 IU/mL; cytokeratin-19 fragment, 5.34 ng/mL; and carcinoembryonic antigen, 20.07 ng/mL). Liver and kidney function tests were normal. The pericardial effusion was bloody, and tumor cells were detected. Mediastinal mass biopsy showed pathological adenocarcinoma infiltration . Immunohistochemical staining showed that the tumor cells were positive for CK20 , CDX2 , villin, and EGFR; partially positive for CA15-3; and negative for lung cancer markers, including CK7, TTF-1, and Napsin A. The Ki-67 index was 70%. Moreover, wild types of KRAS, NRAS, and BRAF were detected. The pathological results suggested intestinal metastatic adenocarcinoma. However, no other primary tumor was found on systemic examination.
+Whole-body positron emission computed tomography (CT) showed an anterior calcified mediastinal mass measuring approximately 43 mm × 38 mm with an increased edge radioactivity uptake [maximum standardized uptake value (SUV) of 6.4; CT value of 41.8 HU]; increased pericardial radioactive uptake and a fluid density shadow; and increased sternal spot-like radioactivity uptake (maximum SUV value of 3.4).

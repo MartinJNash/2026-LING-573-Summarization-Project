@@ -1,0 +1,16 @@
+A 51-year-old Caucasian woman presented to the outpatient clinic with spinal, pelvic, and sternal inflammatory pain lasting for many years. The symptoms had a strong negative impact on her quality of life. She did not present palmoplantar pustulosis. There was no context of fever.
+She had been diagnosed with synovitis, acne, pustulosis, hyperostosis, and osteitis (SAPHO) syndrome at the age of 40 years. She had received sulfasalazine and nonsteroidal anti-inflammatory drugs (NSAIDs) for many years with incomplete pain relief.
+She also had a history of cervical and lumbar arthrodesis, hypertension, and thyroidectomy.
+Total spine and pelvis magnetic resonance imaging (MRI) showed a short tau inversion recovery (STIR) hypersignal on several thoracic vertebrae (T6, T7, T8, and T9) and on the sternal part of the right clavicle. Bone marrow oedema was also found on the right iliac bone, though the sacroiliac joints were preserved . Bone scintigraphy showed anterior chest wall involvement with right sternoclavicular hyperostosis on computed tomography.
+The C-reactive protein (CRP) was found to be 89.2 mg/L (reference range, 0–5 mg/L). Several blood tests performed earlier had already shown elevation of inflammation parameters. HLA B27 antigen was negative.
+We confirmed the diagnosis of active SAPHO syndrome.
+We did not consider administering conventional synthetic disease-modifying antirheumatic drug (csDMARD) as methotrexate, which is more effective on peripheral arthritis. Indeed, methotrexate has not shown comparable activity in axial disease in patients with axial spondyloarthritis.
+Moreover, we could not prescribe anti-tumour necrosis factor (TNF) drugs because the criteria for reimbursement of these drugs in Belgium were not met in the absence of sacroiliitis.
+Given some encouraging results reported with JAK-inhibitors in the literature [, ], we initiated tofacitinib 5 mg twice daily.
+The patient reported rapid and significant reduction of pain within weeks of starting the treatment.
+Blood tests performed one month after the onset of treatment showed a clear regression of inflammatory parameters, with a CRP at 25.5 mg/L (reference range, 0–5 mg/L), followed by 14 mg/L and 9.9 mg/L after 4 and 10 months of treatment, respectively .
+Total spine and pelvis MRI performed after 3 months of treatment showed regression of the STIR hypersignal on the body of the thoracic vertebrae, as well as the disappearance of the hypersignal of the right iliac bone .
+We could therefore conclude that the rheumatic evolution was favourable from a clinical, biological, and radiological point of view since the introduction of a JAK-inhibitor.
+Unfortunately, the treatment had to be discontinued due to pulmonary embolism occurring after 8 months on tofacitinib.
+Gradually, spinal, pelvic, and chest (sternal and costal) pain reappeared along with the elevation of inflammatory parameters.
+Written informed consent was obtained from the patient for the publication of this report and its accompanying images.

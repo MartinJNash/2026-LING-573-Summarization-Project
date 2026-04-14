@@ -1,0 +1,101 @@
+An 8-year-old spayed female British Shorthair cat weighing 4.3 kg presented to the
+University of Zurich Small Animal Hospital with ptyalism, weakness and facial muscle
+twitching intermittently for less than 1 week.
+On complete neurological examination, mentation and cranial nerves were normal. The main
+abnormalities were generalised weakness with crouched walking and rapid exhaustion,
+spontaneous tremors, muscle twitching, reduced proprioception and increased patellar
+reflex.
+Serum biochemistry revealed the following abnormalities: increased ammonia (313.3 µmol/l;
+reference interval [RI] <70), increased postprandial bile acids 76 µmol/l (RI <25),
+decreased cholesterol (1.9 mmol/l; RI 2.6–6.8), decreased alanine aminotransferase (26 U/l;
+RI 34–98), slightly decreased urea (7.3 mmol/l; RI 7.4–12.6) and decreased creatinine
+(86 µmol/l; RI 98–163). Complete blood cell counts revealed leukopenia (3.900/μl; RI
+4.6–12.8) with the presence of bands (1650/μl; RI 232–1010).
+Based on these findings, the primary differential diagnosis was HE. The cat was
+hospitalised pending further diagnostics and treated with levetiracetam (20 mg/kg IV q8h
+[Levetiracetam mepha; Mepha Pharma]), amoxicillin–clavulanic acid (20 mg/kg IV q8h [Co-Amoxi
+Mepha Trockensub 550 mg; Mepha Pharma]) and lactulose (0.5 ml/kg PO q6h [Rudolac, Streuli
+Pharma]) and intravenous maintenance fluid therapy with isotonic crystalloids at 2 ml/kg/h
+(Ringer-Acetat; Fresenius Kabi).
+Abdominal CT was performed and revealed an intrahepatic PSS. Medical management for HE was
+continued in the hospital, as indicated above.
+After 24 h without any focal seizures and an improved neurological status, the cat was
+discharged home with medical management in preparation for the PSS attenuation with oral
+levetiracetam (30 mg/kg q8h [Levetiracetam mepha; Mepha Pharma]), amoxicillin–clavulanic
+acid (20 mg/kg q8h [Co-Amoxi Mepha Trockensub 550 mg; Mepha Pharma]) and lactulose
+(0.5 ml/kg q8h [Rudolac; Streuli Pharma]).
+The cat remained asymptomatic following discharge until 2 weeks later when a
+fluoroscopy-guided coil embolisation of the intrahepatic shunt was performed under general
+anaesthesia without any complications.
+The cat was discharged 3 days after shunt ligation with no clinical signs of HE or any
+evidence of portal hypertension after the embolisation. Medical therapy was continued at
+home with addition of the antithrombotic clopidogrel (4 mg/kg PO q24h for 8 days
+[Clopidogrel 75 mg; Sandoz–Novartis]).
+One week after the procedure, the cat presented with recurrence of weakness, apathy and ear
+twitching. The following day, it developed generalised tonic–clonic seizures, which stopped
+with the administration of midazolam (0.5 mg/kg IV [Dormicum; Roche]). Owing to the increase
+in seizure activity, the cat was additionally treated with phenobarbital (3 mg/kg IV q12h
+[Phenobarbital; Bichsel]).
+An abdominal ultrasound was performed on the same day to evaluate the correct localisation
+of the intrahepatic coil. The coil was detected in the shunt vessel, with no remaining blood
+flow and no primary or secondary signs of portal hypertension.
+The biochemistry profile showed the following abnormalities: mildly increased postprandial
+bile acids (32 µmol/l; RI <25), increased alanine aminotransferase (137 U/l; RI 34–98)
+and decreased urea (4.7 mmol/l; RI 7.4–12.6). Ammonia was normal (31.7 µmol/l; RI
+<70 µmol/l).
+The cat’s mentation declined rapidly over the following night with an increased number of
+seizure events that were no longer controllable with antiepileptic therapy. The cat was
+induced into general anaesthesia for a 3T MRI of the brain. MRI revealed bilateral
+symmetrical areas of increased T2 signal intensity at the lateral geniculate nuclei,
+tegmental reticular formation and pons. Moreover, bilateral and symmetrical, fine, laminar
+areas of increased T2 signal intensity were visible at the cortical grey matter, adjacent to
+the grey–white matter transitions of the occipital lobes . The lentiform nuclei showed a diffusely and
+symmetrically moderate increased T1 signal intensity .
+Imaging diagnosis of a multifocal symmetrical encephalopathy was determined. The primary
+differential diagnosis for the changes was a metabolic toxic disease, in line with the
+presumptive diagnosis of PANS. The bilateral changes in the pons mirror recently reported
+changes in suspected osmolar myelinolysis. Additionally, concomitant postictal cortical brain oedema or early-stage laminar
+cortical necrosis were considered the most plausible cause of the occipital lobe bilateral
+T2W hyperintensities. The T1 hyperintensities at the lentiform nuclei were compatible with
+manganese deposition and were considered to be residual from the PSS.
+The cat was kept under total intravenous anaesthesia with ketamine (Ketanarkon 100; Streuli
+Pharma), dexmedetomidine (Dexdomitor; Zoetis) and midazolam (Dormicum; Roche) continuous
+rate infusion, and mechanically ventilated (Hamilton Medical) with synchronised intermittent
+mandatory ventilation for 24 h.
+Because of the patient’s rapid decline in neurological status despite the aggressive
+medical management, failed attempt to wean the patient without re-occurrence and following
+discussion on the prognosis with the owners, the decision was made to attempt rescue therapy
+with TPE for the PANS-associated refractory seizures.
+A 6 F × 10 cm haemodialysis catheter was placed percutaneously in the right jugular vein. A
+single standard session of TPE was performed using the PrisMax device (Baxter Healthcare)
+with a paediatric Prismaflex TPE 1000 set (Baxter Healthcare) as an extracorporeal circuit.
+The TPE session lasted 2.5 h, exchanging a total of 300 ml plasma, representing 200% of the
+patient’s plasma volume (154 ml) estimated using the formula 55 ml × BW (kg) × (1 – PCV),
+where BW denotes body weight and PCV the packed cell volume. Isovolaemic fluid replacement with type-matched feline fresh frozen plasma was used
+during TPE. Circuit anticoagulation was maintained using ACDA 30% solution (ACD A; Bichsel)
+at an infusion rate automatically adjusted for by the TPE device to maintain a constant
+circuit citrate concentration of 3 mmol/l. Calcium substitution with calcium gluconate 2.5%
+solution (B Braun Medical) was administered to maintain normal serum ionised calcium
+concentration.
+During TPE the cat was maintained under general anaesthesia and mechanically ventilated as
+prior to the session. Electrocardiography, capnography, pulse oximetry and non-invasive
+blood pressure measurements were monitored during the session. No significant adverse events
+were present during the TPE session, besides a self-resolving period of bradycardia. At the
+end of TPE, the cat was spontaneously breathing, maintaining a normal oxygen saturation on
+room air and was then extubated. There was no evidence of seizure activity in the recovery
+period or thereafter. The cat became conscious and responsive within 24 h. Medical
+management with anticonvulsants and antibiotics was continued post-TPE. Reduced
+neuromuscular function persisted for 48 h before the cat was able to stand. On day 5
+post-TPE the cat had normal motor function, was ambulatory and eating spontaneously.
+The following abnormalities were noted on serum biochemistry 24 h post-TPE: increased total
+bilirubin (98.3 µmol/l; RI 0.1–3.5), total proteins dropped to 45 g/l (from 70 g/l prior to
+TPE), low serum albumin (19 g/l: RI 32–42) and decreased phosphate (0.68 mmol/l: RI
+0.9–1.8). Packed cell volume dropped to 23% from 35% prior to TPE. Serum ammonia was
+55.4 µmol/l.
+The cat remained hospitalised with supportive care and monitoring for almost 2 weeks before
+discharge. The cat was discharged with phenobarbital (2 mg/kg PO q12h [Phenobarbital;
+Bichsel]) and levetiracetam (15 mg/kg PO q8h [Levetiracetam Mepha; Mepha Pharma]).
+Neuromuscular function had improved dramatically at the 1-month recheck and no seizure
+activity was reported by the owner. Complete blood count and serum biochemistry were normal.
+The last follow-up was 2 months after discharge and the cat was in good general condition,
+without any seizure activity.

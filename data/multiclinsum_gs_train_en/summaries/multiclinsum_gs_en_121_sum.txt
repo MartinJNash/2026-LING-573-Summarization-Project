@@ -1,0 +1,13 @@
+Patient: Female, 25
+
+Final Diagnosis: Peripartum cardiomyopathy
+
+Symptoms: Fatigue • orthopnoea • pulmonary edema • tachycardia
+
+Medication: —
+
+Clinical Procedure: —
+
+We report the case of a 25-year-old woman with a severe course of PPCM with left ventricle ejection fraction of 25–30%, complicated by ventricular arrhythmia and postpartum thyroiditis. As no traditional risk factors of PPCM were identified, the patient was referred for genetic testing. Next-generation sequencing revealed a novel titin gene-truncating mutation NM_001267550: p.Leu23499fs/c.70497_40498insT in the proband as well as in her mother.
+
+In the patient, a very late recovery >12 months postpartum was observed, which required long-term medical treatment with bromocriptine.

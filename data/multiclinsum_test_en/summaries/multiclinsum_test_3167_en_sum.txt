@@ -1,0 +1,11 @@
+Patient: Female, 79
+
+Final Diagnosis: Hemoptysis
+
+Symptoms: Hemoptysis
+
+Medication: —
+
+Clinical Procedure: —
+
+The patient was a 79-year-old female with NYHA class III heart failure with non-ischemic cardiomyopathy (LVEF 40%) and chronic atrial fibrillation who was referred for CardioMEMS implantation. The procedure was completed uneventfully. The patient was transferred out of the procedure suite to the recovery area where she developed a slight cough approximately 20 minutes after the implantation. Within a few coughs the patient started having hemoptysis. She was transferred to the cardiac intensive care unit for observation. She was kept off warfarin and aspirin and her hemoptysis resolved 3 days later. While the exact etiology of hemoptysis in this patient was unclear, we felt that it may have been precipitated by a minor wire-induced distal branch pulmonary artery injury.

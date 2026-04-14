@@ -1,0 +1,25 @@
+50-year-old man, congenital single-sided deafness with adequate renal function, consults for a 18-month history that begins with general condition compromise and a feeling of proximal muscular weakness. Initial evaluation shows M5 strength in all muscle groups, associated with a study with normal electromyography and elevation of erythrocyte sedimentation rate (ESR) and C-reactive protein (CRP). The need for further study is raised, but the patient misses the controls.
+
+Twelve months later, he developed decreased visual acuity associated with epiphora and exophthalmos, palpebral skin lesions, and persistence of elevated VHS and PCR, which is why he was hospitalized for study. A brain and orbital magnetic resonance imaging (MRI) was performed, which showed a non-specific retro-orbital mass, and a positron emission tomography (PET-CT) was performed, which showed a non-specific retroperitoneal mass with pancreatic and periaortic involvement, cardiac involvement, mild splenomegaly and hypermetabolic bone involvement of appendicular predominance of metaphyseal and diaphyseal origin.
+
+IgG4-associated disease versus lymphoma is a diagnostic hypothesis, so the study is expanded:
+
+Bone marrow biopsy: overall cellularity preserved in all 3 series with signs of adequate maturation.
+
+Retroperitoneal mass biopsy (percutaneous puncture by interventional radiology): retroperitoneal-type adipose tissue with inflammatory lympho-histiocytic foci, accumulations of foamy histiocytes and areas with marked fibrosis. Immunohistochemistry confirmed polyclonal/reactive nature of plasma cell component (CD138+) that expressed kappa and lambda chains in similar proportions. The study of the biopsy tissue was complemented with antibodies against immunoglobulins IgG and IgG4, demonstrating a low presence of these cells, so it was concluded that IgG4-associated disease is unlikely.
+
+Protein electrophoresis: hypoproteinemia and hypoalbuminemia, without paraproteina.
+
+ANA (-), ANCA (-), anti-Trab (-), anti-thyroglobulin (-), complement C3 182.9 and C4 41.8 mg/dl (normal).
+
+IgA 280.4, IgG 1320 and IgM 52.5 mg/dl, IgG subclasses with IgG4 count in normal range.
+
+Human immunodeficiency virus serology, hepatitis B surface antigen and hepatitis C virus serology negative.
+
+Given the imaging findings, which showed multi-organ involvement, with initial immunohistochemical evidence of plasma cells, Erdheim-Chester disease was considered a differential diagnosis. Corticosteroid therapy with prednisone 1 mg/kg/day was initiated empirically, and the study was expanded with a new computed tomography (CT) scan and a new biopsy of retroperitoneal tissue, omentum and Gerota's capsule.
+
+In TC, multifocal soft tissue involvement persists at the perirenal level, left excretory system, adrenal glands, periaortic tissue and appendicular skeleton, suggesting ECD as a first diagnostic possibility.
+
+The new biopsy shows fibroadipose tissue with proliferation of foamy histiocytes, with small central nucleus, in irregular pattern, associated with foci of hemorrhage and scarce lymphoplasmocitary inflammatory infiltrate, with fragments of necrosis, without multinucleated giant cells or peripheral cellularity. Immunohistochemistry reports presence of histiocytes positive for CD68 and negative for CD1a, compatible with an atypical histiocytosis of Erdheim Chester. It is complemented with search for truncated BRAF protein, showing mild-moderate positivity in histiocytes, in addition to genetic study by polymerase chain reaction (PCR) that confirms V600E mutation.
+
+With this study, the diagnosis of systemic ECD disease, positive for BRAFV600 mutation, is confirmed, so treatment with Vemurafenib (B-raf serine/threonine kinase enzyme inhibitor), 960 mg every 12 hours, is initiated. It evolves with good clinical response, with evidence of regression of involvement described in control images after 6 months of treatment, with reduction of up to 90% of the size of the masses described.

@@ -1,0 +1,25 @@
+A 45-year-old merchant from Cali who consulted a level IV center in May 2022 for a persistent cough of four months accompanied by fever and significant weight loss (8 kg). He did not have any relevant medical history, except for a non-complicated respiratory infection by SARS-CoV-2 two months earlier.
+
+On initial physical examination, he was pale and hypotensive with decreased breath sounds in both lung fields. On admission chest X-ray showed predominantly alveolar infiltrates in the basal field of the right lung. Severe pneumonia was diagnosed and treatment with antibiotics of piperacillin-tazobactam and vancomycin was initiated.
+
+A chest computed tomography scan showed idiopathic pneumonia; admission laboratory tests showed: procalcitonin elevated, 22.51 ng/ml (normal <0.5); no leukocytosis (4,610 cells/μl) with neutrophils (2,480 cells/μl), lymphocytes (1,520 cells/μl) and monocytes (560 cells/μl) normal. The respiratory panel (Filmarray™) was negative in the nasopharyngeal swab. In the complementary infectious studies of the bronchoalveolar lavage by fibrobroncoscopy, a viral load positive for cytomegalovirus (CMV) of 995,000 copies/ml was found; the result was negative for bacteria, tuberculosis, fungi and for Pneumocystis jirovecii.
+
+A transbronchial biopsy confirmed the presence of intra-nuclear basophilic inclusions indicative of active CMV infection with positive PCR for P. jiroveccii in the lung tissue.
+
+During the hospital stay, he had multiple episodes of diarrhea, and a colonoscopy was performed, which revealed ulcers in the colon. Colon biopsy and immunohistochemistry demonstrated chronic colitis and ulceration, reported as CMV negative. CMV viral load in blood was positive at 890 copies/ml. Ganciclovir was prescribed for active CMV infection and was administered for 21 days.
+
+HIV testing (4th generation ELISA and viral load) was negative, and other chronic infections such as HTLV, HCV, or HBV were ruled out.
+
+As a patient who was HIV negative and had an opportunistic infection, further studies were performed to exclude hematological malignancies or solid tumours as a cause of his immunosuppressed state and the development of the severe CMV infection. Bone marrow biopsy showed an 80% increase in the number of cells, with preservation of all three cell lines and no morphological alterations.
+
+Bone marrow flow cytometry revealed asynchrony in the expression of CD13 and CD10 antigens on granulocytes and neutrophils. Total B lymphocytes represented 0.35% of total leukocytes (extremely low), with a complete absence of mature B lymphocytes and very few plasma cells.
+
+In the head and neck PET-CT, no metabolic changes were found; in the thorax, there were bilateral infiltrates predominantly in the right lung, which were interpreted as secondary to pneumonia, while the mediastinal ganglion component showed no infectious changes. The liver and spleen showed no apparent alterations.
+
+In view of the patient's immunological compromise, the possibility of an innate immunity defect was considered. The evaluation of the humoral immune response showed agammaglobulinemia in the protein electrophoresis and a complete absence of serum immunoglobulins, given by: IgA < 0.13 g/L (0.7 - 4.9), IgG < 3 g/L (7 - 16) and IgM < 0.25 g/L (<0.25) ]. The total lymphocyte count was discretely increased, so CD3+, 3,424 cells/μl (849 - 1,963), with normal CD4+ T lymphocytes, 1,115 cells/μl (477 - 1,140) (31.9 % of the T lymphocytes), but the CD4/CD8 ratio was reversed (0.48). B lymphocytes and NK cells were not quantified at that time.
+
+In view of the finding of severe hypogammaglobulinemia in the range of agammaglobulinemia, in addition to the severe pneumonia and multisystem involvement by CMV, the patient was considered to have a primary immunodeficiency or congenital immunodeficiency of predominantly antibody deficiency type. The absence of serum immunoglobulins was confirmed with a second sample, but, given the urgency and severity of the clinical picture, no functional evaluation of the humoral immune reaction was performed and intravenous immunoglobulin was initiated every 28 days at a dose of 400 mg/kg.
+
+The patient has been on continuous immunoglobulin replacement therapy, but has had two respiratory infections that required antibiotic treatment.
+
+The patient was evaluated by the adult clinical immunology group, who considered advancing extension studies and ordered a diagnostic test.

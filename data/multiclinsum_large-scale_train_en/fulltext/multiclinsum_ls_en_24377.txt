@@ -1,0 +1,37 @@
+A 38-year-old male presented to our outpatient department with a 7-month history of
+left limbs weakness. He had no history of smoking, hypertension, diabetes, or any
+other risk factors for cerebrovascular diseases. Physical examination upon admission
+revealed paralysis of the left limbs and slight paralysis of the face. Babinski and
+Chaddock signs on the left side were positive, whereas other nervous system
+examination results were negative. Brain CT showed multiple high-density shadows,
+which indicated a tendency for calcification . For further diagnosis, MRI was
+performed, and more lesions were found with MRI compared with CT. The brain lesions
+were partly hypo-intense on T1-weighted imaging, whereas they were significantly
+more intense on T2-weighted imaging. The other lesions were hyper-intense in the
+center and surrounded by a hypo-intense rim on T1/T2-weighted imaging. SWI displayed
+more hypo-intense lesions, indicating hemorrhage . Investigation of the family
+history showed that his relatives also suffered from physical disorders, albeit to
+different degrees. His mother suffered from progressive limb paralysis, and had been
+bedridden for a long time. Her brain MRI showed leukoaraiosis and multiple
+hypo-intense lesions on T2/T1 and diffusion weighted imaging (DWI), indicating
+hemorrhage. His older brother had suffered from headache for several years without
+any symptoms of limb paralysis. His younger brother was asymptomatic. Although his
+brothers had different symptoms, we noted similar findings on the brain CT and MRI scans. All
+observations indicated that the patient probably had a genetic disease.
+To examine the genetic cause of the disease, after obtaining written informed
+consent from the family members, DNA sequencing was performed. Genomic DNAs were
+extracted from the peripheral venous blood of all the family members using a
+blood DNA extraction Kit (CWE9600). DNA was prepared in the laboratory using a
+KAPA Library Preparation Kit; sequencing was then performed using Illumina
+NovaSeq. Sequence analysis of the CCM1, CCM2, and
+CCM3 genes identified a novel heterozygous deletion in the
+CCM3 gene (c.165delT, p.N55fs) . The 165th nucleotide in the
+coding region of the CCM3 gene had a heterozygous deletion,
+which resulted in a frameshift mutation leading to prematurely terminated
+translation of the protein. The same mutation in the CCM3 gene
+was found in the proband’s brothers and mother, indicating that the mutation is
+associated with the disease in the family, and has not been reported before.
+So far, no medical therapy has been proven to be useful for CCM, especially for
+small multiple lesions. Symptomatic treatment, such as controlling blood
+pressure and relieving headache, is the treatment of choice for the proband and
+his relatives at present.

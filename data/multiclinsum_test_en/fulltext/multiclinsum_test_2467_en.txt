@@ -1,0 +1,65 @@
+The patient was a 70-year-old Japanese man (172.0 cm tall, weighing 68.0 kg, body
+mass index 23.0 kg/m2) who had smoked 20 cigarettes a day for 47 years
+until 5 years ago. He was under treatment and follow-up for essential hypertension,
+dyslipidemia and chronic kidney disease, and his blood pressure and lipid levels
+were well controlled with administration of 40 mg of olmesartan medoxomil (Olm) and
+5 mg of atorvastatin calcium hydrate. His renal function was stable. The patient
+presented with nasal discharge, malaise and a mild cough, and tested positive for
+SARS-CoV-2 by the polymerase chain reaction (PCR) test three days after coming in
+extended contact with a colleague who was also diagnosed with SARS-CoV-2. Since he
+had many risk factors for disease aggravation, he was urgently admitted to our
+hospital (Day 1) the day after symptom onset and confirmation of the diagnosis.
+At admission, his body temperature was 36.4 °C, blood pressure was 185/72 mm Hg,
+pulse was 86 beats/min, respiratory rate was 20 beats/min and peripheral oxygen
+saturation on pulse oximetry (SpO2) was 97.0%. Laboratory findings at
+this time showed lymphocyte depletion and coagulation abnormalities [lymphocytes
+8.5%, fibrinogen 518 mg/dL, fibrinogen degradation products 5.26 μg/mL and D-dimer
+(D-D) 1.68 μg/mL] . In addition, iron deficiency anemia was observed (he was
+scheduled for close examination of the gastrointestinal tract after COVID-19 was
+cured), and hence, it was difficult to evaluate the clinical implication of the
+observed low ferritin level . CT showed emphysematous changes in the lung field. Ground
+glass opacities with neither a crazy-paving pattern nor consolidation was found
+below the dorsal pleura of the upper right lobe, and the total CT score was 1/25
+points (upper right lobe 1/5 points, middle lobe 0/5 points, lower right lobe 0/5
+points, upper left lobe 0/5 points and lower left lobe 0/5 points), based on the
+scoring system described by Pan et al. In addition, fibrosis, subpleural lines, the reversed “halo sign”, pleural
+effusion and lymphadenopathy were not observed. It was considered to be a typical
+findings of early mild COVID-19 pneumonia .
+Although no decrease in SpO2 was observed, administration of favipiravir
+(Fav) 3600 mg daily was started from the evening of the same day, due to the
+presence of mild pneumonia as seen on CT and the presence of multiple comorbidities.
+In addition, since SpO2 decreased a little the following day, 1 L/min
+oxygen administration via a nasal cannula was also started. Weakness and a decreased
+level of consciousness (tendency to somnolence) appeared from the early morning of
+Day 2, but a neurologist ruled out stroke. Since somnolence and weakness were
+considered as side effects of Fav, the drug was discontinued on the evening of Day
+2, and his symptoms improved by the morning of Day 3. Thereafter, since his
+temperature increased again, the frequency of administration of acetaminophen 500 mg
+was increased from 0 to 3 times a day. In addition, his CRP level increased and
+SpO2 decreased, requiring an increase in oxygen flow rate from 1 to
+3 L/min by nasal cannula. CT performed on Day 4 showed slight deterioration in the
+pneumonia. The total CT score was 2/25 points (ground-glass opacities only below the
+dorsal pleura of the upper right lobe) . Therefore, 200 mg of remdesivir
+(Rem) was administered on Day 4, with 100 mg daily being administered from Day 5
+until Day 10, for a total of seven days . On Day 7, blood gas data under
+administration of 4 L/min oxygen by nasal cannula showed that the alveolar-arterial
+oxygen difference (A-aDO2) had increased to 122.1 mm Hg , indicating an
+imbalance between ventilation and blood flow. However, no pulmonary hypertension was
+observed on electrocardiogram or echocardiography. Furthermore, since a tendency of
+increasing D-D levels was also observed , the combination of nafamostat
+mesylate (Naf) 100 mg daily by continuous intravenous infusion and dexamethasone
+(Dex) 6 mg daily was administered for four days from Day 7 . The treatment was remarkably
+effective, resulting in fever reduction and a decrease in CRP and D-D levels (, c and d). On Day
+10, oxygen administration could be discontinued, and at the same time , his blood
+pressure control improved . By Day 13, A-aDO2 had also significantly improved
+to 33.2 mm Hg without supplementary oxygen , and CT showed a tendency for
+improvement in pneumonia. The total CT score at this time was still 2/25 points
+(ground-glass opacities only below the dorsal pleura of the upper right lobe) .
+For blood pressure control during the course of his hospitalization, continuous
+intravenous infusion of pernidipine (4-9 mg/h) was performed for two days when oral
+intake was difficult due to the decreased consciousness level, and from day 4, Olm
+40 mg and nifedipine 20 mg were administered in combination. With the treatment of
+COVID-19, his blood pressure gradually stabilized, and the dose of nifedipine was
+reduced from Day 14 to 10 mg, and nifedipine was discontinued from Day 19 .
+It took some more time for SpO2 to stabilize, but it eventually improved
+and the patient was discharged on Day 21 .

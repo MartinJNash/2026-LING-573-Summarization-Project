@@ -1,0 +1,14 @@
+Patient: Female, 67-year-old
+
+Final Diagnosis: Heart failure
+
+Symptoms: Chest pain • dyspnoea • poor exercise tolerance
+
+Medication: —
+
+Clinical Procedure: Intraoartic baloon pump insertion – new technique
+
+Specialty: Cardiac surgery
+
+Case Report:
+A 67-year-old woman presented with a history of heart failure. She had New York Heart Association (NYHA) Functional Class IV symptoms. The patient had a history of chronic heart failure due to dilated cardiomyopathy with a left ventricular ejection fraction of 25%, severe mitral regurgitation, paroxysmal atrial fibrillation, and hypothyroidism. Immediate pharmacological treatment began, and an IABP catheter was initially inserted using femoral artery access. During 115 days of hospital treatment, several unsuccessful attempts were made to remove the IABP catheter. Due to prolonged patient immobility, the IABP catheter access was changed from the femoral artery to the external iliac artery. A prosthetic Dacron graft and a subcutaneous channel were used. Optimal pharmacotherapy commenced, and the patient underwent rehabilitation and mobilization with significant improvement in cardiac function. At 195 days after changing the IABP catheter access, the patient underwent successful heart transplantation.

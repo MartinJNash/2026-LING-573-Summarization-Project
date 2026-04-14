@@ -1,0 +1,46 @@
+A 56-year-old Caucasian man presented to cardiology clinic with several months of
+fatigue, reduced exercise tolerance, palpitations, atypical chest pain, and lower
+extremity oedema.
+He had a history of hypertension, well-controlled diabetes mellitus type 2,
+dyslipidaemia, obesity, and prior 15-pack year tobacco use. Additionally, he had
+progressive muscle weakness and a family history of genetically confirmed DM2 due to
+ZFN9 mutation in his brother and daughter. Based on his symptoms and family history,
+he had an electromyogram that was consistent with myotonic dystrophy, but he did not
+have genetic testing performed due to the cost. He had no history of significant
+alcohol or illicit substance use, malignancy, HIV, family history of cardiomyopathy
+or premature coronary disease, or personal history of cardiovascular disease
+including myocardial infarction or myocarditis.
+Medications at that time included the following: lisinopril (10 mg daily),
+ezetimibe (statin intolerance), insulin, and metformin.
+Physical exam showed normal vital signs, no jugular venous distention, clear lungs,
+regular heart rate and rhythm without murmurs, presence of peripheral oedema, and
+mild proximal muscle weakness.
+Laboratory testing revealed an elevated creatine kinase of 495 U/L (ref range
+30–300 U/L), elevated N-terminal prohormone of brain natriuretic peptide of
+384 pg/mL (ref range 0–125 pg/mL), but normal Troponin I.
+Other labs including electrolytes, renal and liver function, and complete blood
+count were normal. An electrocardiogram (ECG) demonstrated normal sinus rhythm with
+inverted T waves in V4 and flat T waves in V5–6 . A 72-h
+ambulatory cardiac monitor recorded sinus rhythm with short runs of non-sustained
+ventricular tachycardia but no atrioventricular conduction issues. Given his history
+of DM2, suspicion for heart failure, atypical chest pain, and coronary artery
+disease (CAD) risk factors, we pursued a cardiac magnetic resonance (CMR) imaging
+with contrast and regadenoson stress to assess for function, scar, and perfusion.
+Cardiac magnetic resonance revealed a left ventricular ejection fraction (LVEF) of
+28%, global hypokinesis, and a severely enlarged (6.9 cm) LV cavity
+(; Videos 1 and 2). Regadenoson stress perfusion imaging showed no
+ischaemia. Late gadolinium enhancement (LGE) imaging showed mid-myocardial
+enhancement in the basal and mid-septal and lateral segments with a total scar
+burden of 12% (, red arrows).
+This was consistent with non-ischaemic scar seen in muscular dystrophies, and other
+causes of non-ischaemic systolic heart failure including alcohol, toxic, viral, and
+chemotherapy-induced cardiomyopathy were excluded based on history.
+Our investigations demonstrated severe LV dysfunction and LGE pattern consistent with
+DM2 associated cardiomyopathy. We initiated goal-directed medical therapy for heart
+failure including lisinopril, metoprolol succinate, and spironolactone with
+titration to maximally tolerated doses. After 1 year, his LVEF remained
+<35% and he received a primary prevention implantable
+cardioverter-defibrillator (ICD). Now 3 years later, his LVEF has not decreased, his
+scar burden on CMR has not increased, and his symptoms have improved. Additionally,
+we have changed lisinopril to sacubitril-valsartan and also added dapagliflozin
+based on current heart failure guidelines.

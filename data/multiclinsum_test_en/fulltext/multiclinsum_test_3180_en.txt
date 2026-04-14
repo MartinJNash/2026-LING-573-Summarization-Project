@@ -1,0 +1,14 @@
+Female patient, 43 years old, with uterine diffuse large B-cell lymphoma, stage IIIB, undergoing hysterectomy followed by chemotherapy (QT) and radiotherapy (RT). As a background, she had a diagnosis of chronic renal disease in renal replacement therapy (TSR), due to bilateral ureterohydronephrosis by uterine primary disease. Pre-QT echocardiogram with concentric left ventricular hypertrophy (HVE) and preserved left ventricular ejection fraction (FEVE) (66%).
+
+The patient underwent eight cycles of the R-CHOP (Rituximab, Cyclophosphamide, Doxorubicin, Vincristine) treatment schedule. Due to refractoriness to the primary treatment, she underwent rescue therapy with the R-ICE (Mesna, Ifosfamide, Etoposide, Carboplatin) schedule for four cycles, but she was intolerant to Carboplatin. The treatment was switched to GEMOX (Oxaliplatin, Gencitabine) and was completed after four cycles. She then underwent 28 sessions of RT and has not shown signs of oncological recurrence since then.
+
+Two years after the start of the QT, she was admitted with a picture of heart failure (IC). A new echocardiogram showed a FEVE of 35%. Myocardial perfusion scintigraphy showed a reduction in the FEVE (37%) by gated SPECT and transient hypoperfusion in the apical and inferoseptal walls of the left ventricle (LV). A cineangiocoronariography did not show epicardial coronary artery disease.
+
+Since then, there have been four hospitalizations for decompensated HF, the last one a year ago. Cardiac MRI (CMR) showed a LVEF of 39% and non-ischaemic late enhancement in the inferior left wall of the LV.
+
+The patient is currently stable on Carvedilol 25 mg/day, Losartan 100 mg/day and Furosemide 40 mg/day. The diagnosis of cardiotoxicity (CTX) was considered the most likely etiology of the HF with reduced LVEF (HFrEF).
+
+Evolution of Cardiological Imaging Exams
+Due to the evolution of the case, the cardiac imaging exams were allocated chronologically, for a better understanding. A decrease in the LVEF was observed in the echocardiogram performed at the time of the diagnosis of HF. This LVEF had a recovery in 2019, with new decreases in the following echocardiograms, as well as in the MUGA.
+
+In a retrospective evaluation of myocardial uptake of fluorodeoxyglucose-fluorine-18 (18F-FDG) by positron emission tomography, coupled with computed tomography (PET/CT), an increase in uptake was observed from the first examination, performed after the initiation of QT. The standard uptake value (SUV) remained elevated in subsequent examinations, reaching its highest value in the last examination.

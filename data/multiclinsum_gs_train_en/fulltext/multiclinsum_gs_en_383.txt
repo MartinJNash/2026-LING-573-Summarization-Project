@@ -1,0 +1,22 @@
+A 27-year-old woman with multiple colorectal cancers on a background of FAP was presented to our department. Notably, a large lesion was detected in the ascending, transverse, and sigmoid colon and the upper rectum, and pathological examination confirmed some of them as adenocarcinoma. Preoperative computed tomography revealed multiple lymph node swellings along the inferior mesenteric artery (IMA) and middle colic artery, without any evidence of distant metastases. After a comprehensive evaluation by a multidisciplinary cancer board, we decided to perform TPC with lymph node dissection of the entire colorectal region, using the Hugo RAS system as a surgical device.
+
+Robot-assisted TPC using the Hugo RAS system was approved by the Evaluating Committee for Highly Difficult New Medical Technologies (approval number H-0051) and the Institutional Review Board at Kyoto University.
+
+Under general anesthesia, the patient was placed in a lithotomy position with the arms tucked. After a 5-cm vertical skin incision was made at the umbilicus, a wound-protecting device was applied. After pneumoperitoneum, 4 robotic trocars and 2 assistant trocars were placed. The instruments used in robot-assisted TPC with Hugo were a camera, monopolar curved shears for the right hand, bipolar fenestrated forceps for the left hand, and Cadiere/double fenestrated forceps for the reserve arm. Robot-assisted TPC with Hugo consists of 3 distinct steps, followed by transanal specimen extraction, ileal pouch construction through a small laparotomy, and ileal pouch-anus anastomosis (IPAA). Two table positions, Trendelenburg and flat, were required, each with specific docking tilts but the same angles of the arm carts throughout the robotic procedure. The detailed operative procedure is presented in Supplementary Videos.
+
+Step 1: Ascending colon complete mesocolic excision (CME)
+
+The ascending colon CME from the caudal approach proceeded until the completion of the hepatic flexure mobilization (Supplementary Video S1).
+
+Step 2: Central vessel ligation (CVL) of the IMA, descending colon CME, and total mesorectal excision (TME)
+
+After CVL of the IMA, descending colon CME proceeded until the completion of splenic flexure mobilization, followed by TME until the intersphincteric space was fully exposed (Supplementary Video S2).
+
+Step 3: CVL along the superior mesenteric artery (SMA)
+
+After undocking all the robotic arms, the patient was placed in a flat position. Then, CVL along the SMA was performed to ligate the ileocolic, right colic, and middle colic vessels (Supplementary Video S3). The final step of this procedure was the ligation of the inferior mesenteric vein (IMV) at its root, which was exposed in Step 2.
+
+Transanal and small laparotomy procedures
+After transection of the terminal ileum, we extracted the specimen transanally by excising the rectal mucosa entirely from just below the dentate line because of multiple adenomas in the anal canal. After constructing the ileal pouch through the small umbilical incision and confirming that the ileal pouch could reach the bottom of the anal canal for anastomosis, transanal hand-sewn IPAA was performed. A diverting ileostomy was not performed.
+
+All 3 steps were completed without conversion to open surgery. After undocking Hugo when we finished Step 3, we performed a laparoscopy to confirm hemostasis, specimen extraction, and appropriate anastomosis. The operative time was 632 min (36 min for Step 1, 160 min for Step 2, 188 min for Step 3, and 248 min for other procedures such as positioning, docking, specimen extraction, and anastomosis), with a minimal intraoperative estimated blood loss of 20 mL. The patient exhibited an uneventful postoperative recovery, with gas passage and initiation of liquid nutrition on postoperative day 1 (POD 1) and a solid diet on POD 3 with a functional ileal pouch and satisfactory anal function. Pathological examination revealed 2 sigmoid colon cancers (S1, Type 0-Ip, 55 × 50 mm, tub1, T1b, ly0, v0; S2, Type 0-Isp, 55 × 50 mm, tub1, Tis, ly0, v0) and 1 rectal cancer (R1, Type 0-Ip, 40 × 35 mm, tub1, Tis, ly0, v0). It also revealed 18 out of 89 positive lymph nodes, all of which belonged to the sigmoid colon and rectosigmoid lesions (stations #241, 242, and 251), resulting in UICC pT1bN2b stage.

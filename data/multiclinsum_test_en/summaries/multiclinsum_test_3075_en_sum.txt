@@ -1,0 +1,7 @@
+Patient concerns: In this report, we discuss the case of a 15-year-old male patient. The patient started with epilepsy and dystonia and was treated with antiepileptic seizure medication, then he was admitted to our hospital for recurrent seizures of epilepsy and dystonia, and the diagnosis of NEDAMSS was confirmed by whole exome genetic testing.
+
+Diagnoses: Exome-wide genetic testing confirmed the diagnosis of NEADMSS due to IRF2BPL.
+
+Interventions: Exome-wide genetic testing reveals mutations in the IFR2BPL gene.
+
+Outcomes: Symptoms improved from before after antiepileptic seizure medication combined with drugs to improve dystonia.

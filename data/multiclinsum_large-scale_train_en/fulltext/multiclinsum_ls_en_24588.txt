@@ -1,0 +1,7 @@
+A 28-years-old woman was diagnosed in 2000 with a ductal carcinoma of the left breast.
+After radical mastectomy, histologic analysis revealed a 20 mm tumour with an infiltrating ductal carcinoma. Immunologic analysis demonstrated no expression of oestrogen and progesterone receptors (ER- and PR-) and no overexpression of HER2.
+The patient was staged as T1N0M0 stage IA and received FEC adjuvant chemotherapy (FEC: Fluorouracil, Epirubicin, Cyclophosphamide). The proliferation marker Ki67 was expressed by 50% of the tumour cells.
+Six years later, the patient developed a glioblastoma. After complete macroscopic surgical resection, the tumour was characterized as stage IV according to the WHO classification. The proliferative marker Ki67 was expressed by 40% of the tumour cells. The patient received temozolomide chemotherapy and radiotherapy followed by chemotherapy alone (6 cycles).
+Two years after her diagnosis of GBM, she developed a carcinoma in the right breast. After mastectomy, the histologic and immunologic analysis of the 26 mm tumour revealed an infiltrating ductal carcinoma, negative for oestrogen and progesterone receptors but with HER2 gene amplification. The patient was staged as T2N0M0 stage IIA and received adjuvant chemotherapy targeted therapy (docetaxel and trastuzumab) for one year.
+She died in 2012 after two relapses of the GBM.
+BRCA1 genetic testing was performed after the first breast cancer. The family tree is represented in Figure .A.

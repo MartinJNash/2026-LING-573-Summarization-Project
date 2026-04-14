@@ -1,0 +1,30 @@
+A 55-year-old female, who was a resident of a small village in the foothills of the Himalayas, presented to the emergency department of a tertiary healthcare institute in the State of Uttarakhand, India, with the chief complaints of fever for 1 month, headache, sudden onset of right-sided upper and lower limb weakness, and loss of speech for 10 days, as well as urinary incontinence for 7 days. Fever was mild to moderate and was not associated with any diurnal variation, chills and rigors, or rashes. It was associated with headache and 5-6 episodes of non- projectile vomiting. There was no history of breathing difficulties, burning micturition, seizures, or a history of weight loss. Additionally, there was no personal or family history of diabetes mellitus, hypertension, or tuberculosis. The systemic examination at the time of admission was indicative of a Glasgow coma scale (GCS) score of 15/15 (E4V5M6), blood pressure of 100/80 mm Hg, pulse rate of 110 per minute, and temperature of 98.4℉ with pallor.
+On CNS examination, she was conscious and well oriented to time, place, and person; however, left-sided facial deviation was present. Plantar reflex was extensor on the right side, and deep tendon reflexes were exaggerated on the right knee and ankle. The grading of muscle power was 1/5 in the right-sided upper and lower limb. Respiratory system and abdominal examinations were within the normal limits. Meropenem (1 g, intravenous ), injectable mannitol (100 ml, IV), tablet phenytoin (100 mg), and injectable dexamethasone (4 mg) were started.
+Laboratory investigations revealed a white blood cell count of 12,000 per microliter in complete
+blood count. Differential leucocyte count showed neutrophil, lymphocyte, monocyte, eosinophil,
+and basophil percentages of 87.1%, 8.5%, 3.9%, 0.3%, and 0.2%, respectively. In addition, total cell count
+in the cerebrospinal fluid (CSF) was 500 cells/mm3, and differential leucocyte count revealed 80% mononuclear cells.
+The CSF biochemistry indicated the protein levels of 251 mg/dl and sugar levels of 73 mg/dl. Furthermore, the India ink preparation for CSF was negative.
+Contrast-enhanced magnetic resonance imaging scan revealed a large, peripherally
+enhancing, well- defined, cystic, space-occupying, axial lesion (measuring approximately 33×36×44 mm)
+in the left parietal lobe with a mass effect . It showed internal septa and smaller satellite lesions in the surrounding parenchyma. Accordingly, the patient was diagnosed with parietal lobe brain abscess with interventricular rupture.
+Surgical intervention was planned, and the patient was subjected to craniotomy. After the radical surgical debridement of necrotic tissue, the pus aspirated from the lesion was sent to the Department of Microbiology for microbiological investigations, including Cepheid's Xpert MTB/RIF assay (Sunnyvale, CA, USA) for tuberculosis, aerobic and anaerobic bacterial culture, and fungal culture. Postoperatively, the GCS score deteriorated to 8/15; therefore, the patient was transferred to the intensive care unit for ventilator support.
+On potassium hydroxide mount examination, the pus sample showed numerous pigmented septate hyphae .
+Gram staining showed numerous Gram variable hyphae and occasional pus cells; however, no chlamydospores were
+observed. Culture was performed on selective fungal media, such as Sabouraud dextrose agar and Potato dextrose agar, and
+then incubated at both 25℃ and 37℃. After 72 h of incubation, the culture tube showed olivaceous black velvety texture
+colonies on the obverse side and black non-diffusible pigment on the reverse side .
+For the identification of the fungal species, slide culture was performed. Microscopically, the hyphae were brown and septate similar
+to vegetative hyphae. Long sparsely branched wavy chains of smooth oval conidia that did not display the dark scars of attachment
+were observed . A presumptive diagnosis of cerebral phaeohyphomycosis due to
+C. bantiana was established. However, given the lack of facilities at the institute, it was not possible to perform antifungal susceptibility testing on the isolates.
+Amphotericin B at a dose of 0.5 mg/kg (IV) once a day and voriconazole at a loading dose of 180 mg, followed by 120 mg (IV),
+twice a day were added to the treatment. The GCS score improved to 12/15 (E3V4M5) 5 days post-operation, and the vital signs
+were stable. She was gradually weaned off from the ventilator and shifted to the ward with ongoing antifungal treatment.
+On day 20 postoperation, she developed acute respiratory distress for which she was again transferred to receive ventilator support.
+Gradually, she developed multi-organ failure and succumbed to brain abscess caused by C. bantiana 27 days after the operation.
+One of the limitations of the present study was that because of the financial constraints of the patient’s family, no postoperative
+radiological imaging could be performed to assure the complete surgical resection of infective foci.
+Molecular identification
+The molecular sequencing of the ITS region (ITS1- 5.8S-ITS2) by the National Culture Collection Of Pathogenic Fungi,
+Post-Graduate Institute of Medical Sciences, Chandigarh, India, conclusively identified the isolate as C. bantiana (deposited in the Genbank under the accession number of MT742842).

@@ -1,0 +1,24 @@
+A 59-year-old man with a history of hospitalization due to COVID-19 infection was referred to our ward three days after discharge on account of mild hemoptysis. He was a known hypertensive who underwent coronary artery bypass graft 3 years ago and was on aspirin, metoprolol, and losartan at the time of admission. He mentioned that he had had one episode of hemoptysis and coughed blood-streaked sputum a few times. The patient had an occupational history of working in a leather shoe factory for 32 years.
+As mentioned earlier, the patient had been previously hospitalized for one month due to COVID-19 infection confirmed by positive nasopharyngeal polymerase chain reaction.
+During the aforementioned hospitalization, his chest computerized tomography (CT) scan (performed on the first day of admission) had revealed ground-glass opacity and consolidation
+involving more than 40% of the pulmonary field . Besides, there had been a cavitary lesion measured 20 mm in diameter with intracavitary soft tissue density in the left lung.
+It is noteworthy that the results of his HIV and tuberculosis screening had been negative.
+He had been treated with sofosbuvir/daclatasvir (for 10 days), interferon beta-1-a (five doses), and low-dose dexamethasone (8 mg/day for 5 days followed by 4 mg/day for 2 weeks).
+In the third week of the disease, he had had one episode of hemoptysis, and a repeat chest CT had revealed evidence of necrotizing pneumonia with a widening of the cavitary lesion to about 30 mm. Therefore, he had received broad-spectrum antibiotics and the corticosteroid had been discontinued.
+The conditions of the patient had remarkably improved and he had been discharged at the end of the fourth week.
+On the current admission, his condition was stable, his blood pressure was 120/80 mmHg, his respiratory rate was 18/min, and his SpO2 in room air was 90%.
+His laboratory findings were anemia (Hb=11.7 gr/dL), mild leukocytosis (13200/mL, polymorphonuclear leukocytes=71.7%, lymphocyte=24.1%), and elevated inflammatory markers
+(erythrocyte sedimentation rate=34 mm/h, c-reactive protein=61 mg/L, lactic acid dehydrogenase=558 U/L). Results of other tests, including platelet count, coagulation test,
+liver, and renal function tests were within the normal range. It must also be mentioned that the SARS-CoV-2 polymerase chain reaction test was negative.
+Another chest CT scan showed two cavitary lesions in both of his lungs; the larger lesion measured 50×80 mm, was located at the site of the previous lesion with a thick wall, and contained soft dense material ( and ).
+A suspicion of fungal infection was raised and the patient underwent a trans-thoracic biopsy of the cavitary lesion. Supposedly, the direct examination of the biopsy material revealed
+septal and branching hyphae, and a fungal culture grew Aspergillus species.
+Fungal DNA was extracted using a DNA extraction kit (Gene All DNA extraction kit; Gene All, Germany) according to the instructions of the manufacturer.
+The beta-tubulin region was sequenced to confirm the identification of Aspergillus species. The yielded sequence was subjected to the Basic Local Alignment Search Tool (BLAST)
+program . The DNA sequence of the beta-tubulin region matched that of Aspergillus tubingensis species, showing 99% similarity
+with the ex-type strain of the species. However, a histologic assessment revealed marked infiltration of a mixed population of inflammatory cells, including
+lymphoplasma cells, macrophages, and neutrophils .
+Moreover, large fragments of necrotic tissue containing degenerated forms of hyaline fungal elements were noted, which were more characterized in special Grocott's methenamine
+silver stain . The patient was treated with oral voriconazole (800 mg/day for 5 days followed by 400 mg/day).
+After starting the treatment, hemoptysis was stopped and a CT scan was performed two weeks later. The results showed that the bigger cavity was slightly larger
+while its wall was thinner and the mass was smaller. It was also found that the other cavity was changed into a small boll.

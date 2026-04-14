@@ -1,0 +1,73 @@
+A two-year and six-month-old female patient, weighing 10295 g, was admitted to the
+pediatric emergency room with a five-day history of runny nose, fever, productive
+cough and vomiting. Tests were requested and clavulanate-associated amoxicillin (50
+mg/kg) was introduced due to initial suspected diagnosis of bacterial pneumonia,
+with a hemoglobin of 11.5 g:dL; hematocrit 34.3%; 14,570 mm3 leukocytes
+(neutrophils: 80.7%, eosinophils: 0%, basophils: 0.2%, lymphocytes: 13.6%,
+monocytes: 5.5%); 476 mil/mm3 platelets; and C-reactive protein 6.96
+mg/dL (reference value: above 5 mg/dL, indicative of bacterial infections and
+systemic inflammatory processes). She presented worsening in breathing pattern and
+was transferred to the Pediatric Intensive Care Unit (PICU), initially receiving
+support with a high-flow nasal cannula (HFNC). Antibiotic therapy with cefepime (150
+mg/kg/day) that was increased due to clinical worsening, with increased respiratory
+rate (RR). After 48 hours of admission to the PICU, she was positive for adenovirus
+(collected in nasopharyngeal secretion). All blood cultures were negative.
+She presented radiological worsening with veiling of the right hemithorax . She then received noninvasive MV,
+without clinical improvement after three hours, and presenting increased RR (65
+incursions per minute - ipm) and heart rate (HR) (161 beats per minute - bpm).
+Orotracheal intubation was chosen by the medical team and conventional mechanical
+ventilation (CMV) was started with Servo-i® (Maquet, Rastatt, Germany),
+in intermittent synchronized mandatory mode (SIMV) with pressure support (PS), and
+Fraction of inspired oxygen (FiO2) of 70%; inspiratory time of 0.62
+seconds; pressure control (PC) of 17 mmHg; PS of 15 mmHg; positive end expiratory
+pressure (PEEP) of 8 mmHg; RR of 30 ipm. She was initiated on analgesia with
+fentanyl (2 mcg/kg/hour) and sedation with midazolam (0.2 mg/kg/hour). Increased
+ventilatory parameters were required, with PEEP titration up to 12 and
+FiO2 up to 100%.
+The patient maintained hypercapnia (carbon dioxide partial pressure -
+pCO2: 98 mmHg) and hypoxemia (oxygen partial pressure - pO2:
+61 mmHg), with hemodynamic instability, and dobutamine was initially indicated at
+5.0 mcg/kg/min, later on increased to 7.5 mcg/kg/min. Norepinephrine was associated
+after 12 hours due to a decrease in mean arterial pressure up to 44 mmHg at the
+initial dose of 0.1 mcg/kg/min, which was titrated according to blood pressure and
+peripheral perfusion parameters up to 0.2 mcg/kg/min.
+Two-dimensional Doppler echocardiography was performed, showing ejection fraction of
+75%, pulmonary artery outlet pressure of 45 mmHg, mild right ventricular dilation
+and mild tricuspid regurgitation. The team opted to institute adjuvant therapies.
+iNO (20 ppm) was initiated; and dobutamine was replaced with milrinone (0.5
+mcg/kg/min) due to increased pulmonary artery outlet pressure. The child was placed
+in prone position due to refractory ARDS for the initial 12-hour period, according
+to current recommendations reviewed by Koulouras et al.
+On the fifth day of evolution, with no clinical improvement, methylprednisolone was
+used as an adjuvant measure at a dose of 4 mg/kg/day and maintained for 48 hours.
+Respiratory acidosis and hypoxemia persisted, with average arterial oxygen
+saturation (SatO2) of 77% and pCO2>100 mmHg, radiological
+worsening, and bilateral interstitial pulmonary veiling. Despite the therapeutic
+support, there was no clinical or blood gas improvement - pH 6.93; pO2 53
+mmHg; pCO2 128 mmHg; sodium bicarbonate (BicNa) 26 mmol/l; base excess
+(EB) -10.6; and SatO2 67%, with oxygenation index (OI) of 39. It was then
+decided to institute HFOV (Draegger® VN500, Lubeck, Germany) with 100%
+FiO2, frequency of 8 Hz, amplitude of 34 cmH2O, mean
+airway pressure (MAP) of 24 cmH2O, maintaining iNO at the initial dose of 20 ppm and
+prone position for an additional 12 hours, plus initiation of cisatracurium
+curarization at 1.2 mcg/kg/min.
+Despite the change in ventilatory strategy, initially there was worsening of blood
+gas parameters (pH 6.87, pO2 66 mmHg, pCO2 169 mmHg, BicNa 30
+mmol/L, EB -8.7, SatO2 84%). ECMO was indicated. The patient was already
+on norepinephrine of 0.4 mcg/kg/min with IO 53. While providing ECMO, cisatracurium
+curarization was titrated with the train-of-four, showing good synchronization with
+the VM device. HFOV parameters were changed to MAP of 35 cmH2O, frequency
+of 5 Hz and amplitude of 35 cmH2O, maintaining FiO2 at
+100%.
+The patient had progressive improvement and, after eight hours of HFOV, was
+hemodynamically stable using 0.2 mcg/kg/min adrenaline and 0.4 mcg/kg/min
+norepinephrine and improved gas exchange (pH 7.23; pCO2 59 mmHg;
+pO2 85 mmHg; BicNa 24 mmol/L; EB 3.4 and SatO2 96%). After
+five days, gradual reduction in HFOV began. The patient showed radiological
+improvement . She was moved after
+three days to CMV (SIMV + PS) and three days later was successfully extubated.
+The child was discharged for home care after 26 days of hospitalization, with
+adequate saturation in ambient air without respiratory distress. Chest X-ray
+performed two days after discharge from the PICU showed improvement, with only a few
+nodular infiltrates in the upper field . The recommendation was Pediatric follow-up for pneumonia because of
+the severity of the condition. There was no apparent neurological impairment.

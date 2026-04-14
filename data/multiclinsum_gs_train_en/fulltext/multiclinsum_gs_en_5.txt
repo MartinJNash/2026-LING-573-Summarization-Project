@@ -1,0 +1,11 @@
+A 64-year-old female patient presented to the emergency department after falling from her own height, resulting in a head injury.
+
+He had a history of hypertension, hypothyroidism, and rheumatoid arthritis that had been treated with 5 mg prednisolone daily and 5 mg tofacitinib every 12 hours for three years. He had not reported adverse effects associated with the medication.
+
+On admission, no structural abnormality was reported on the head CT scan. Although she did not have urinary symptoms, a urine test was performed that suggested infection, so cefepime was started and a urine culture was requested. In addition, because she was an immunosuppressed patient, blood cultures were requested.
+
+The basic laboratory tests performed at admission are summarized in Table 1. The patient's relative leukocytosis and lymphopenia are noteworthy. The MALDI-TOF blood culture revealed the presence of Cryptococcus neoformans.
+
+The second skull CT scan revealed noncommunicating hydrocephalus. The lumbar puncture yielded a cloudy cerebrospinal fluid with a viscosity that did not allow the opening pressure to be measured. The protein count was 1000 mg/dL, the leukocytes 2 per mm3, the glucose 33 mg/dL, and the Cryptococcus antigen was positive. C. neoformans was detected in the cerebrospinal fluid culture. In addition, a high resolution chest CT scan demonstrated multilobar nodular involvement.
+
+With these findings, acute meningitis caused by C. neoformans and disseminated cryptococcosis were diagnosed. Treatment with liposomal amphotericin B was initiated at a daily dose of 5 mg/kg and fluconazole was initiated at a daily dose of 400 mg/day, as 5-fluorocytosine was not available. Despite the treatment initiated, the clinical condition of the patient worsened and she eventually died.

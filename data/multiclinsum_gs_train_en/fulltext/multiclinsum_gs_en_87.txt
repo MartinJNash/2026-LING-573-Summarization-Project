@@ -1,0 +1,23 @@
+A 44-year-old woman with no known cardiovascular risk factors or other relevant medical history and not under medication presented at our emergency department after experiencing six hours of chest tightness radiating to the shoulder, following emotional stress, with no relieving or aggravating factors. There were no other associated symptoms or clinical context (e.g. infection).
+
+At admission, she still had chest pain, and blood pressure of 140/74 mmHg, tachycardia (140 ppm), slight polypnea but with no need for supplementary oxygen, and bibasilar rales; there was no peripheral edema. Laboratory findings were leukocytosis, normal C-reactive protein, mild elevation of troponin T (112 ng/ml; cut-off <14 ng/l), N-terminal pro-brain natriuretic peptide 950 pg/ml and dyslipidemia. The electrocardiogram (ECG) revealed sinus tachycardia, QS pattern from V1-V4, and first-degree atrioventricular block following one premature ventricular contraction. Arterial blood gas analysis showed hyperlactacidemia (maximum 3 mmol/l). The chest X-ray showed signs of pulmonary congestion. Transthoracic echocardiography (TTE) revealed akinesia of the mid-distal walls, hyperkinesia of the basal segments, severe left ventricular (LV) dysfunction and no LV outflow tract obstruction.
+
+She was admitted to the coronary care unit with a provisional diagnosis of Takotsubo (stress) cardiomyopathy.
+
+Within three hours she progressed to cardiogenic shock with need for mechanical ventilation, and inotropic and vasopressor support with dobutamine and noradrenaline was begun. Sinus tachycardia continued but there were no changes on the ECG.
+
+She underwent coronary angiography (CA) during which selective cannulation of the left coronary artery (LCA) was not possible, and a non-selective injection disclosed no coronary artery arising from the left coronary sinus. On selective injection of the right coronary sinus, a single ostium was visualized. The right coronary artery (RCA) was a great vessel, with no stenosis. A hypoplastic left anterior descending artery (LAD) and left circumflex artery (LCx) were perfused from RCA collateral vessels, both without lesions. Left ventriculography revealed apical ballooning akinesis, basal hyperkinesis and severe LV dysfunction.
+
+The most likely hypothesis was anomalous coronary artery origin, but an ostial left main lesion could not be excluded.
+
+Coronary computed tomography angiography (CCTA) revealed a single coronary artery with its ostium in the right sinus of Valsalva (RSV), agenesis of the left main artery and a hypoplastic LAD, the RCA with a normal course, antegrade flow through a posterior lateral branch (PLB) to the LCx and LAD, and collaterals originating from the posterior descending artery (PDA) to the distal segment of the LAD. All coronary arteries were patent and with no evidence of atherosclerotic plaque.
+
+The patient's clinical course was favorable, with spontaneous ventilation and withdrawal of inotropic and vasopressor support at 48 hours, optimal diuretic response, and gradual recovery of global and segmental LV function.
+
+Cardiac magnetic resonance imaging (MRI), performed six days after admission, showed mild hypokinesia of the mid segments of both anterior and anteroseptal walls, preserved global LV systolic function, and diffuse myocardial edema, with no significant late enhancement and no perfusion defects, which was a clue to the diagnosis of Takotsubo cardiomyopathy.
+
+A diagnosis of Takotsubo syndrome was made with an incidental finding of a right single coronary artery.
+
+The patient's clinical course was uneventful and she was discharged on day 7, medicated with low-dose beta-blockers and angiotensin-converting enzyme inhibitors.
+
+At two-month follow-up she was in New York Heart Association class I. TTE revealed normal global and segmental LV function and the ECG was normal.

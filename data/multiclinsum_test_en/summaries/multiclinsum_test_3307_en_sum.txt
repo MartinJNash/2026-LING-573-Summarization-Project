@@ -1,0 +1,11 @@
+Patient concerns:
+A 68-year-old man was admitted to our hospital with dyspea and general fatigue. He was diagnosed with acute decompensated heart failure due to ischemic cardiomyopathy. In order to improve fluid retention and relieve his dyspnea, low-dose TLV (7.5 mg qd) was performed. After the 3-day treatment using TLV, we observed that he became delirious and his limbs shook uncontrollably. High serum sodium 173 mmol/L was noted compared to the results of the first examination (137 mmol/L). After intensive rescue, serum sodium was restored to normal (135 mol/L). Later, when the patient refused continuous renal replacement therapy (CRRT), we tried again to use a lower dose of TLV to improve diuretic resistance. Two days later, Serum sodium rose again (162 mmol/L).
+
+Diagnoses:
+During the course of therapy, we did not strictly require the patient to control the fluid intake. No other medication could cause elevation of serum sodium. Therefore, we suspected a high sensitivity to the side effect of TLV.
+
+Intervention:
+Stop the use of TLV and encourage the patient to drink plenty of water. Gastric tube was inserted orally to increase the intake of fresh water.
+
+Outcomes:
+His serum sodium decreased gradually and his psychiatric symptom recovered. During this period, Overall condition of the patient was stable. After being discharged from the hospital, the patient eventually died of cardiac arrest due to critically ill heart failure.

@@ -1,0 +1,55 @@
+The patient is a 65-year-old male who presented with progressive lower back pain accompanied by complete bilateral lower limb paralysis and was urgently admitted to Hunan Provincial People’s Hospital for treatment under the diagnosis of “intraspinal mass”. The patient reported waking up in the morning with unexplained lower back pain, which progressed steadily, culminating in complete paralysis of both lower limbs after 36 hours, with a complete loss of sensation and motor function. At the onset, there were no complaints of headache, dizziness, nausea, vomiting, chest or lumbar pain, and normal urinary and bowel habits.
+
+Physical Examination
+Vital signs: normal, blood pressure: 18.7/12.0 kPa (140/90 mmHg).
+
+Conscious and oriented with normal heart and lung function.
+
+No palpable splenomegaly.
+
+Normal sensation and motor function in both upper limbs.
+
+Tenderness and percussion pain over the T12-L3 spinous processes.
+
+Diminished sensation in the thighs bilaterally.
+
+Complete loss of deep and superficial sensation below both knees and in both lower limbs.
+
+Reduced muscle tone, muscle strength graded as 0.
+
+Absent anal reflex, bilateral absent knee and ankle reflexes.
+
+Normal biceps and triceps reflexes, negative Hoffmann and Babinski signs.
+
+Negative meningeal signs.
+
+Laboratory Results on Admission
+WBC: 37.52 x 10^9 g/l.
+
+HGB: 176 g/l.
+
+Platelet count: 1694 x 10^9/l.
+
+PCT: 1.77.
+
+Normal red blood cell and platelet distribution width, coagulation function, and blood glucose.
+
+Emergency Lumbar Spine Interlaminar CT Findings
+L2-4 intraspinal wedge-shaped high-density lesion.
+
+Treatment
+After fluid resuscitation and symptomatic treatment, and completion of preoperative examinations, the patient underwent decompressive surgery under general anesthesia. Intraoperatively, a mass consistent with an epidural hematoma was identified, extending from the posterior aspect of the L1 vertebra to the lower border of the L3 vertebra. The hematoma was situated on the right side of the spinal cord, causing compression and flattening. The intraoperative diagnosis was confirmed as spontaneous spinal epidural hematoma. Microscopic exploration after hematoma evacuation did not reveal vascular rupture or significant bleeding within the spinal canal. The compressed spinal cord was irrigated with ice saline solution, and after confirming the absence of intraspinal vascular bleeding, posterior spinal fusion with pedicle screw fixation and bilateral bone grafting was performed. A negative-pressure drainage tube was placed, and the wound was closed after careful inspection, indicating normal bone quality in the thoracic and lumbar spine with mild soft tissue edema in the surgical area.
+
+Owing to early application of hyperbaric oxygen therapy (HBOT) can reduce spinal cord hemorrhage, edema and hypoxia, and is beneficial to the recovery of spinal cord function. After surgery, the patient underwent hyperbaric oxygen therapy (HBOT) and emerged from the hyperbaric oxygen chamber two weeks later. Subsequent blood routine examinations revealed a persistent elevation of platelet count, significantly exceeding the normal range. Bone marrow aspiration and peripheral blood smears were performed, along with JAK2, CALR, and MPL gene testing. The results indicated active bone marrow proliferation with a clustered distribution of platelets. The JAK2V617F mutation was identified as positive, while CALR and MPL gene mutations were negative. Comprehensive analysis could not definitively distinguish between primary thrombocythemia and early-stage primary myelofibrosis. Hydroxyurea therapy was initiated, resulting in a gradual normalization of platelet levels.
+
+Upon discharge, the patient still had motor dysfunction and was unable to walk unaided, and reported sensory deficits extending from the left lateral surface of the leg to the outer side of the calf and from the right lateral surface of the thigh to the middle of the outer side. Muscle strength assessments revealed:
+
+Left lower limb: Iliopsoas muscle at grade III, Extensor hallucis longus muscle at grade I–II.
+
+Left thigh: Quadriceps femoris muscle at grade II–III.
+
+Right thigh: Quadriceps femoris muscle at grade I.
+
+Howbeit at the 12-month follow-up post-discharge, routine blood examinations and other assessments returned to normal. Bladder and bowel functions were restored, and muscle strength in both lower limbs had reached grade 4. The patient was able to walk normally but with a slight limp and had a history of overall good health, with no trauma, hypertension, diabetes, family hereditary diseases, or infectious disease history.
+
+This study adhered to ethical standards established by the ethics committee, and the subject was well-informed and provided consent for participation in the research.

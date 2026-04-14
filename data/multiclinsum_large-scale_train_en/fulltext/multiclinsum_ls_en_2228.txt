@@ -1,0 +1,87 @@
+A 4-month-old male entire British Shorthair cat was referred with a 2 week history of
+ptyalism, head pressing, ataxia, lethargy and constipation. On physical examination,
+vital signs were within normal limits. The cat weighed 1.4 kg, was of small stature,
+had a body condition score of 4/9 and was mildly obtunded. A bile acid stimulation
+test was markedly increased (fasting 191 μmol/l, reference interval [RI] 0–16
+μmol/l; postprandial 138 μmol/l, RI 0–25). Haematology and serum biochemistry were
+within the RIs.
+Abdominal CTA consisting of pre- and post-contrast scans was performed under general
+anaesthesia with a 16-slice multi-detector CT scanner (Philips Brilliance, 16 Slice;
+Philips Medical Systems). A soft tissue algorithm reconstruction filter was used.
+The cat received 740 mgI/kg of an iso-osmolar iodinated intravenous contrast medium
+(Omnipaque; GE Healthcare) using a concentration of 370 mgI/ml at 2 ml/kg
+administered over 20 minutes via the cephalic vein by means of an automated injector
+(Empower CTA; EZ-EM). A single, slightly tortuous, anomalous vessel was identified
+arising from the portal vein junction between the left gastric and splenic vein.
+This vessel coursed dorsally and slightly caudally before anastomosing with the left
+side of the caudal vena cava. This vessel measured 4.2 mm at its widest point. A
+single extrahepatic portocaval shunt (left gastric to caudal vena cava) was
+diagnosed . A
+retained left inguinal testicle was also noted. Medical management was commenced
+with amoxicillin–clavulanate (12.5 mg/kg PO q12 h), lactulose (0.5 ml PO q12 h),
+levetiracetam (20 mg/kg PO q8h) and a restricted protein prescription diet (Hill’s
+k/d; Hills’ Pet Nutrition) for 2 weeks prior to surgery.
+A routine midline coeliotomy was performed and allowed visualisation of the anomalous
+vessel cranial to the right kidney, creating a communication between the left
+gastric vein and the caudal vena cava. A band of commercial cellophane roll (10 cm
+long × 1.2 cm wide) was prepared as previously described. Briefly, the band of cellophane was folded longitudinally to form a
+three-layered strip (10 cm long, approximately 4 mm wide). The cellophane was placed circumferentially around the vessel and secured
+with a single polymer-ligating clip (Hem-o-lok; Teleflex). The final internal
+diameter of the cellophane band was based on portal pressure changes (portal
+pressure ⩽16 mmHg) and changes in colour and motility of the small intestine and pancreas. A single polypropylene suture was placed around the shunt to serve as a
+potential point of reference. Hepatic biopsies were collected via the guillotine
+method. Open castration was performed (left inguinal, right scrotal testicle).
+Opioid analgesia was provided intraoperatively (fentanyl 3–5 μg/kg/h IV via constant
+rate infusion) and postoperatively (methadone 0.2 mg/kg IM q4h).
+The cat recovered uneventfully and was discharged 3 days later on continued medical
+management. Hepatic histopathology revealed moderate portal arteriole hyperplasia,
+mild hepatocellular vacuolation, biliary hyperplasia and portal fibrosis, which were
+all consistent with a congenital vascular anomaly, such as a PSS.
+Two months after surgical attenuation, the cat was doing well, with a good appetite
+and weight gain. Repeat abdominal CTA revealed significant reduction in the size of
+the shunt vessel (2 mm diameter), moderate increase in size of the post-shunt portal
+vein and improved visualisation of intrahepatic portal veins . Repeat serum bile acids were
+within the RI (fasting <1 μmol/l [RI 0–11 μmol/l]; postprandial 2 μmol/l [RI 0–21
+μmol/l]).
+The cat re-presented 6 months postoperatively for recurrence of clinical signs
+compatible with hepatic encephalopathy. Oral medications had been discontinued 6
+weeks earlier and the cat had started to receive a non-protein-restricted commercial
+diet. Serum bile acids were increased (fasting 33 μmol/l [RI 0–16 μmol/l];
+postprandial 111 μmol/l [RI 0–25 μmol/l]). Abdominal CTA revealed the shunt had
+enlarged (3.5 mm) compared to the study performed 2 months postoperatively (2 mm),
+consistent with recanalisation . There was no evidence of the development
+of acquired shunts. Medical management was recommenced prior to repeat surgical
+attenuation.
+Two weeks later, the cat underwent exploratory laparotomy. The previously attenuated
+shunt vessel was identified and associated with fibrous adhesions. The polymer clip
+was palpable and surrounded by fibrous tissue; however, the cellophane band was no
+longer distinguishable. An attempt was made to ligate the shunt vessel, but there
+was evidence of intraoperative portal hypertension. It was not possible to insert an
+ameroid constrictor owing to the presence of the polymer clip and the short distance
+between the caudal vena cava and the first vessel anastomosing into the shunt.
+Cellophane banding was repeated as previously described, this time using pure
+cellophane (Cello sheet, Clear Cello; Hallmark Cards) and a polypropylene ligature
+was tied loosely over the shunt vessel as a reference. Opioid analgesia was provided
+as described previously. Recovery from general anaesthesia and surgery was, again,
+uneventful.
+Four months later, serum bile acids were within the RI (fasting <1 μmol/l [RI 0–11
+μmol/l; postprandial 12 μmol/l [RI 0–21 μmol/l]). Abdominal CTA revealed increased
+liver volume and vascularisation, as well as nearly complete closure of the PSS
+(<1 mm diameter) . Seven months postoperatively, clinical signs of hepatic
+encephalopathy recurred. Serum bile acids were markedly increased (fasting 115
+μmol/l [RI 0–11 μmol/l]). CTA findings were again consistent with recanalisation of
+the shunt vessel (3 mm diameter) without evidence of acquired shunting . The cat again
+underwent exploratory laparotomy, where it was possible to ligate the shunt using a
+polypropylene suture and a titanium ligating clip (Hemoclip; Teleflex). There was no
+evidence of intraoperative portal hypertension.
+Two days postoperatively, the cat developed a chylo abdomen, suspected owing to mild
+portal hypertension. The fluid leaked through the abdominal wall via the surgical
+incision. The chyloabdomen resolved spontaneously after 5 days. The cat also
+developed an oesophageal fistula following removal of an oesophageal feeding tube
+(in situ for 3 days). The fistula was surgically explored and closed 1 week
+following shunt ligation.
+One month later, the cat was doing well with serum bile acids within the RI (fasting
+1 μmol/l, RI 0–11; postprandial 4 μmol/l, RI 0–21). Abdominal CTA revealed closure
+of the shunt . At
+the most recent follow-up 5 months after the final surgery, the cat had had no
+recurrence of hepatic encephalopathy.

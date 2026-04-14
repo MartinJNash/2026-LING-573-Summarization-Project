@@ -1,0 +1,35 @@
+A 5-month-old male infant was admitted to the pediatric emergency department with a history of cough and nasal obstruction for three days. He had a worsening of his general condition in the previous 24 hours, with fever, respiratory effort, reduced appetite and vomiting after feedings.
+
+He was a previously healthy infant, with a gestational history of a low-risk pregnancy, with late-onset prenatal care (3rd trimester), normal obstetric ultrasonography (at 26 weeks of gestational age); however, morphological ultrasonography was not performed. He was born by vaginal delivery, at full-term, with adequate weight for gestational age, without complications.
+
+On physical examination at admission, he was afebrile (36.8°C), tachycardic (158 bpm); tachypneic (50 bpm); with hypoxemia (SpO2 92%). Pulmonary auscultation showed reduced breath sounds on the left hemithorax and the presence of fine rales, rhonchi and diffuse wheezing bilaterally. Hyaline coryza and respiratory distress were observed, with moderate to severe intercostal, subcostal and sternal retraction. Cardiac auscultation showed muffled heart sounds. There was an improvement in oxygen saturation (98%) and respiratory effort with the administration of oxygen by a nasal catheter.
+
+The patient was diagnosed with AVB and admitted to the pediatric ward due to the need of supplemental oxygen and moderate to severe respiratory effort. Laboratory and imaging tests were requested.
+
+Respiratory syncytial virus was detected on nasopharyngeal swab. Complete blood count revealed normal leukocyte count (8,000/μL), with a predominance of lymphocytes (72%=5,760/μL) and the presence of reactive lymphocytes (2%=160/μL), in addition to mild thrombocytosis (487,000/μL). C-reactive protein (CRP) was normal (5.8 mg/L; reference value: less than 10 mg/dL). Chest radiography showed an enlargement of the cardiac silhouette.
+
+Due to the radiographic finding, cardiac investigation was performed, identifying troponin levels of 86.5 pg/mL (reference value: up to 19.8 pg/mL) and creatine phosphokinase-MB mass (CKMB mass) levels of 18 U/L (reference value: up to 16U/L). Electrocardiogram showed alteration of left ventricular (LV) repolarization. Echocardiogram showed a heterogeneous mass, measuring 52×38 mm, on the lateral wall of the LV, with areas of calcification, preserving the LV inflow and outflow tract.
+
+Chest CT angiography showed a large intramural cardiac mass in the LV with significant ventricular volume restriction and extracardiac extension, small foci of central calcification and small pericardial effusion.
+
+Cardiac MRI showed a mass in the LV, measuring 5.5×5.3 cm, mobile with the cardiac cycle, extending closely to the pulmonary artery and into the mediastinum. A large mass effect was noted in the LV, with reduction of the ventricular cavity, moderately impairing its global function (LV Ejection Fraction [EF]=46%). T2-weighted images showed a mild myocardial hypersignal and markedly delayed contrast uptake (>10 minutes).
+
+The extracardiac extension of the lesion and pericardial effusion suggested aggressive behavior. However, the site and tissue characterization, i.e. foci of calcification and markedly slowed enhancement, suggested fibrotic components. Therefore, the hypotheses suggested by the imaging tests were rhabdomyosarcoma and cardiac fibroma.
+
+A Holter was performed and showed a pattern of complete right bundle branch block and isolated supraventricular extrasystoles. A total abdominal MRI and transfontanellar ultrasound were performed, due to the possibility of cardiac rhabdomyosarcoma, both being normal.
+
+The patient underwent cardiac catheterization for biopsy, and fragments were sent for histopathological and immunohistochemical analysis. Since the biopsy was inconclusive, it was decided to start an off-label use of sirolimus.
+
+During the use of sirolimus, periodic echocardiograms were performed, in addition to weekly laboratory tests, including blood count, CRP, serum sirolimus dosage, renal function, liver function, and lipid profile. During this period, serum sirolimus was maintained within the therapeutic range, between 5 and 10 ng/mL, with no changes in other laboratory tests.
+
+The echocardiogram in the second week of sirolimus use identified significant pericardial effusion, causing right ventricle (RV) dysfunction, and a pericardiocentesis was performed, draining 48 mL of serosanguineous fluid.
+
+After three weeks of sirolimus use, a control MRI was performed and there were no significant changes in the size or characteristics of the tumor mass, therefore the off-label use of sirolimus was discontinued.
+
+A new cardiac catheterization with biopsy was performed. Two tissue fragments were sent for anatomopathological analysis, the largest measuring 1.5 cm in length and 0.1 cm in diameter. Histopathological analysis this time was conclusive for cardiac fibroma.
+
+The mass was a histologically benign tumor, but with aggressive behavior due to its size, location and infiltration in the myocardium. The patient required prolonged hospitalization, with the use of vasoactive drugs due to hemodynamic compromise. The tumor was not responsive to the off-label use of sirolimus, requiring cardiological polypharmacy, multiple hospitalizations due to cardiac decompensation, and the patient evolved with functional class 3 congestive heart failure (CHF), reaching an EF of 35%.
+
+Due to the progressive worsening of the EF and, consequently, of the functional class of CHF, it was decided to include the patient in the heart transplantation list, since the tumor resection was impossible due to its infiltration in the left ventricular myocardial wall.
+
+Six months after diagnosis, the patient underwent heart transplantation at the same hospital where the diagnosis was made, with a good postoperative course. Anatomy and histopathological findings of the surgical specimen confirmed the diagnosis of cardiac fibroma.

@@ -1,0 +1,11 @@
+A 73-year-old man was referred to cardiology consultation for a 1-month complaint of near-syncope and light-headedness during exercise and at rest, with associated diaphoresis. His cardiac history was remarkable for arterial hypertension treated with ramipril and hydrochlorothiazide and a previous diagnosis of MVP. There was no family history of heart disease or SCD.
+Physical examination was unremarkable, and a 24 h Holter monitoring, echocardiogram, and blood tests were requested.
+Electrocardiogram (ECG) showed sinus rhythm 77 b.p.m. and one ventricular extrassystole but otherwise unremarkable. Laboratory evaluation revealed creatinine 1.02 mg/dL, sodium 139 mmol/L, potassium 3.85 mmol/L, magnesium 2.1 mg/dL, thyroid-stimulating hormone 1.01 μIU/mL, hs-cTnT 8 ng/L, and NT-proBNP 88 pg/mL.
+A 24 h Holter monitoring showed multiple episodes of non-sustained ventricular tachycardia (VT), the longest with 15 s at 220 b.p.m. with associated light-headedness and paroxysmal atrial fibrillation.
+Due to symptomatic VT, the patient was admitted to the Cardiology ward for additional workup.
+Echocardiogram showed moderate left ventricular (LV) hypertrophy with preserved LV function and increased peak systolic strain dispersion (PSD; 61 ms). It was most notable for mitral valve disease such as bileaflet billowing with trace mitral regurgitation, annular disjunction (MAD), and systolic curling ( and ).
+Cardiac magnetic resonance (CMR) unveiled concurrent tricuspid annular disjunction. Late gadolinium sequences (LGEs) revealed non-ischaemic LV basal inferolateral enhancement ( and ).
+There were no coronary artery lesions on angiography.
+After discussion in the Heart Team, a cardioverter defibrillator (ICD) was implanted for primary prevention of SCD due to AMVD with high-risk features.
+The patient was discharged medicated with amiodarone 200 mg, bisoprolol 2.5 mg, edoxaban 60 mg, and ramipril plus hydrochlorothiazide.
+Two years after ICD, he suffered an appropriate shock due to VT at 200 b.p.m. Follow-up echocardiogram showed similar findings such as mitral valve regurgitation severity, MAD height, and LV ejection fraction.

@@ -1,0 +1,10 @@
+In July 2019, an 83-year-old female with oral squamous cell carcinoma presented to a Medical Center in Babol, Iran, and received radiation treatment twice a month. In June 2020, during the second wave of the COVID-19 pandemic, this case was admitted to the hospital with a diagnosis of COVID-19 pneumonia. After the COVID-19 recovery, the tongue appeared white and yellow; therefore, this patient was referred to Babol University-based medical science
+laboratory setting .
+A tongue dorsum swab was examined with hydrogen peroxide. Afterward, this sample was detected as C. glabrata with
+culturing on CHROMagarTM
+Candida (CHROMagar Candida, France) medium and confirmed with sequencing internal transcribed spacer region . The sequence was submitted to the GenBank database under the accession number OR484916.1.
+Subsequently, this patient was treated with fluconazole three times per day, and topical antifungal miconazole four times per day, and her symptoms started to
+improve within 3 weeks of starting antifungals. Furthermore, the in vitro activities of 10 antifungals, including caspofungin, nystatin, amphotericin B, tioconazole,
+voriconazole, itraconazole, econazole, ketoconazole, clotrimazole, and fluconazole against this species was studied according to the Clinical and Laboratory
+Standard Institute (M27-A3/S4) broth microdilution document .
+Candida glabrata showed low activity against tioconazole, amphotericin B, clotrimazole, voriconazole, itraconazole, econazole, ketoconazole, with minimum inhibitory concentration (MIC) values of 64, 32, 8, 8, 4, 4, and 4 µg/ml, respectively. However, this species was susceptible to fluconazole, nystatin, and caspofungin with MIC values of 8, 0.5, and 0.25, respectively.

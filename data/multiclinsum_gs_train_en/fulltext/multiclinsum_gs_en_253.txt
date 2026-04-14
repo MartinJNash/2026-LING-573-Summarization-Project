@@ -1,0 +1,19 @@
+24-year-old woman with no relevant medical history. She has a history of 6 months of intermittent episodes of syncope, with no obvious trigger. She has repeatedly consulted the emergency department of the hospital where she is based, where low capillary blood glucose levels have been detected, and she has been treated with oral glucose. Given the recurrence of symptomatic hypoglycaemia, a possible insulinoma was suspected, and an imaging study was requested. In an abdominal and pelvic magnetic resonance (MR) scan, an 8.5 × 4.2 cm tumour and another lesion smaller than 2 cm in the junction of the body and tail of the pancreas are observed.
+
+She is transferred to the San Borja Arriarán Clinical Hospital for surgical resolution. Remote anamnesis is performed, where the presence of multiple tumours in relatives by paternal line is highlighted (pancreatic insulinoma, pituitary and parathyroid tumours in father, pituitary macroadenoma and parathyroid tumours in aunt and adrenal and pituitary tumours in uncle), with this background the possibility of NEM1 is raised. A directed study is performed, highlighting:
+
+Fasted state test compatible with endogenous hyperinsulinism (Glucose: 35 mg/dl, Cortisol: 15.9 µg/dl, Insulin: 55.6 µ Ul/ml at 4 hours)
+
+Calcemia: 11.8 mg/dl; Phosphemia: 2.3 mg/dl; Creatininemia: 1.05 mg/dl; PTH: 205 pg/ml; Gastrin: 14.4 pg/ml
+
+Cervical ultrasound and Tc-99m MIBI SPECT parathyroid scintigram suggestive of lower right parathyroid adenoma
+
+Turkey-cock's-eye MRI with finding of a pituitary macroadenoma. PRL: 7.5 ng/ml; IGF-1: 346 ng/ml; TSH: 1.49 µUI/L; FSH: 3.5 mUI/ml.
+
+A total pancreatectomy was performed, with the presence of three tumour lesions: in the head and tail, without locoregional lymph node involvement. In the postoperative period, pancreatic enzyme, insulin glargine and insulin aspart boosting were initiated. The histological study showed:
+
+Immunohistochemistry: Synaptophysin: intense and diffuse positive in cytoplasm of tumour cells; Chromogranin A: Mild positive in cytoplasm of some tumour cells.
+
+Cell proliferation index KI67: 5%
+
+Findings consistent with G2 neuroendocrine tumour (WHO 2010). Given the strong family history, a genetic study was requested that demonstrated a c.375_376delAT (p.lle 125 Metfs*54) mutation in exon 2 of the MEN1 gene, consistent with the diagnosis of NEM1. The surgical resolution of primary hyperparathyroidism (subtotal parathyroidectomy) was deferred.

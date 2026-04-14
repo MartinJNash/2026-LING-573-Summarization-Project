@@ -1,0 +1,11 @@
+Patient: Male, 46
+
+Final Diagnosis: Yolk Sac tumor
+
+Symptoms: Shortness of breath
+
+Medication: —
+
+Clinical Procedure: Cardiac MRI • tumor resection
+
+The patient is a 46-year-old male with a history of testicular cancer that presented with dyspnea on exertion. He was found to have two large right sided intracardiac masses on echocardiography. Cardiac magnetic resonance imaging (MRI) was obtained to further investigate these masses. Right ventricular function was decreased and concern for right ventricular outflow tract (RVOT) obstruction was present. The patient was taken to the operating room (OR) for resection of the cardiac masses. Pathology revealed the masses to be yolk sac tumors. Despite urgent resection of the tumors, the patient deteriorated clinically, ultimately succumbing to heart failure.

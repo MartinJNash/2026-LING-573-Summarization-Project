@@ -1,0 +1,24 @@
+A 65-year-old man was diagnosed with pulmonary adenocarcinoma, then treated with chemotherapy. The cancer metastasized, and the patient was diagnosed with end-stage lung cancer. Cancer pain was treated with oral opioid therapy. Metastasis of the cancer caused obstructive jaundice and cholangitis, and the patient experienced septic shock. The attending physician performed emergent endoscopic biliary stent placement, in order to treat obstructive jaundice. The patient was medicated with continuous infusion of noradrenaline (0.2 μg/kg/min) through a peripheral vein, in order to maintain blood pressure. He underwent repeated placement of peripheral venous catheters, such that it became difficult to identify adequate peripheral veins for placement and maintenance of indwelling catheters. In the context of this treatment, the patient's congestive heart failure continued, which caused ascites and edema of the lower extremities.
+
+The patient experienced orthopnea and could not sleep at night. The attending physician requested that the anesthesiologists secure a reliable venous line. The anesthesiologists checked the patient's groin and thighs; they excluded the femoral vein as a candidate for central venous access due to massive edema of the thighs. The anesthesiologists attempted to allow the patient to assume the supine or reverse Trendelenburg position; however, these positions caused worsening of the patient's dyspnea. The patient could solely tolerate the sitting position. The anesthesiologists then discontinued attempts to catheterize via the internal jugular and subclavian veins, because of the risk of air embolism during central venous catheterization of the patient in the sitting position.
+
+The right subclavian vein was suspected to exhibit narrowing, based on computed tomography scan images. Thus, the anesthesiologists chose the left arm for insertion of a PICC, and found that the medial brachial vein exhibited sufficient size (diameter 4 mm) to place a PICC with ultrasound examination. The anesthesiologists allowed the patient to assume the sitting position, and placed the patient's arm on an over-bed table. PICC placement (4.5 Fr, double lumen, Argyle PICC Kit, Nippon Covidien, Inc., Tokyo, Japan) was performed using ultrasound guidance (6-15 MHz, SonoSite Edge, SonoSite Japan Co., Tokyo, Japan) with maximal sterile barrier precaution. Cannulation was performed without complications. The technique is summarized as follows.
+
+(1) The patient was allowed to sit on chair with a backrest.
+(2) The patient's stability was ensured (e.g., with aid from an assistant or nurse).
+(3) The patient's arm was raised and cleaned with disinfectants (1% chlorhexidine alcohol).
+(4) The adjustable over-bed table was covered with a disinfected drape.
+(5) The patient's arm was placed on the table.
+(6) The arm was allowed to abduct approximately 90° via adjustment of the height of the table.
+(7) The operator wore a cap, mask, and surgical gown (maximal sterile barrier precaution).
+(8) The assistant placed a towel between the drape and table to ensure that the medial side of the patient's arm faced upwards.
+(9) The ultrasound probe was covered with a sterile plastic cover.
+(10) Local anesthetic (1% lidocaine 3 mL) was injected with a 25-G needle.
+(11) A 20-G over-the-needle catheter (48 mm in length) was inserted into the skin.
+(12) The vein was accessed using a short-axis out-of-plane approach; the anterior wall of the vein was penetrated using a long-axis in-plane approach.
+(13) The PICC was placed using the modified Seldinger technique.
+
+The anesthesiologists attempted to locate the catheter tip in the inferior vena cava or upper right atrium; however, the catheter tip could not proceed to the vena cava. Therefore, the catheter tip was placed in the left brachiocephalic vein. The left brachial vein and left subclavian vein appeared to maintain blood flow after PICC placement.
+
+
+Continuous infusion of noradrenaline and opioid therapy was initiated through the PICC. The patient's orthopnea was slightly ameliorated, and he could sleep at night; however, he remained in the sitting position. The patient died 11 days after insertion of the PICC due to respiratory failure. The PICC was used without difficulty until his death.

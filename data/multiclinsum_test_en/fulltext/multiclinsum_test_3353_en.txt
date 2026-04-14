@@ -1,0 +1,61 @@
+Patient details and presentation
+A male Japanese patient in their 30s developed epilepsy in 2017, initially attributed to behavioral anomalies during sleep. Focal epilepsy was diagnosed and controlled with levetiracetam 1500 mg and clonazepam 1 mg until 2019. However, in 2021, the patient began experiencing focal impaired awareness seizures. Owing to the occurrence of seizures approximately once per month, the patient was referred to the epilepsy department of our hospital. These seizures involved loss of consciousness following “déjà vu” sensations. At the time of referral, the patient was on four antiepileptic drugs: levetiracetam, 1500 mg; lacosamide, 300 mg; perampanel, 2 mg; and clonazepam, 1 mg. Despite using multiple antiepileptic drugs with different mechanisms of action, seizure suppression remained suboptimal, leading to the decision to implement a surgical approach.
+
+
+Summary of progress
+
+Preoperative course	
+2017: onset of seizure symptoms with behavioral abnormalities during sleep
+
+2018: start of LEV
+
+2019: seizures suppressed by adding CZP
+
+2021: the patient was referred to our hospital because his seizures were not controlled despite the addition of CZP, LCM, and PER
+
+Test results	
+Electroencephalography: spiny waves were observed in the bilateral antero-medial temporal regions
+
+It was difficult to identify the starting point from EEG findings during seizure
+
+Head MRI: no obvious abnormal findings. No hippocampal sclerosis or atrophy
+
+FDG-PET: hypoglycemia in the left anterolateral temporal region
+
+Surgery	
+Intracranial electrode implantation: subdural electrodes were implanted in the lateral and medial left temporal lobe, and in the frontal lobe. Intracranial electrodes were placed in the lateral and medial left temporal lobe, and frontal lobe.
+
+Intracranial EEG during seizure showed repeated spikes in the temporal pole followed by propagation to the lateral temporal lobe
+
+Focal resection: resection of the left lateral temporal lobe, including the temporal pole, was performed. Intraoperative hippocampal wave recordings showed a low frequency of spikes, so the hippocampus was preserved
+
+Post-surgery	Four months postoperatively, FAS recurred. One year after surgery, FIAS disappeared
+
+
+Glu-CEST MRI
+Pre-surgery MRI was performed using a UHF (7 Tesla) MRI system (MR950; GE Healthcare, Chicago, IL, USA) with a 32-channel head coil (Nova Medical, Houston, TX, USA) at the Center for Integrated Brain Function Research, Niigata University Brain Research Institute. T1-weighted three-dimensional magnetization-prepared rapid acquisition gradient echo scans were acquired with the following parameters: field of view = 220 × 220 mm2, matrix = 220 × 220, repetition time/echo time = 4.1/1.4 ms, flip angle = 4°, and slice thickness = 1 mm.
+
+On the basis of the three-dimensional T1 data, the CEST image slice was determined. CEST images were corrected for the B0 field distribution using water saturation acquisition [14]. To correct for B1 inhomogeneity, we followed the method of Cember et al. which leverages classification based on T1 values and a measured effective B1 irradiation pulse intensity distribution map to enhance CEST imaging [15]. A single-slice CEST image sequence based on fast spin echo was then acquired with the following parameters: field of view = 220 × 220 mm2, matrix = 128 × 128, repetition time/echo time = 10,000/5.8 ms, flip angle = 70°, and slice thickness = 4 mm. CEST imaging was conducted using a pulsed CEST preparation of eight sinc pulses of 100 ms each with a 10 ms interpulse delay (total saturation time of 800 ms) and a root mean square (RMS) amplitude of 3.0 μT. A total of 31 frequencies were acquired, each spaced by 100 Hz, ranging from −1500 to +1500 Hz.
+
+B0 and B1 corrected CEST images were used to calculate the Glu-CEST MRI using the following equation:, where S (−3.0 ppm) denotes the signal intensity after the saturation pulse with an offset of −3.0 ppm from the water peak, and S (+3.0 ppm) represents the signal intensity after the saturation pulse with an offset of +3.0 ppm from the water peak. Glutamate exhibits a CEST effect at approximately +3.0 ppm downfield from the bulk water resonance.
+
+
+Observations
+The patient exhibited no obvious paralysis, sensory disturbances, or other abnormal neurological findings. In addition, there was no history of cerebrovascular or cardiovascular disease that could have contributed to loss of consciousness.
+
+Interictal EEG revealed sharp waves localized at F7 and F8, although seizure recordings failed to demonstrate a distinct onset pattern. MRI revealed no evident abnormalities, while magnetoencephalography identified a cluster of dipoles within the left insular cortex. Fluorodeoxyglucose-positron emission tomography (FDG-PET) indicated reduced glucose metabolism in the left temporal pole. Neuropsychological testing showed normal intellectual and memory functions.
+
+All tests were performed without administering sedatives or other medications. FDG-PET was performed after the patient fasted for at least 6 hours. These tests were performed 1 year before surgery.
+
+On the basis of the findings, epileptogenic regions were suspected within the left frontal and temporal lobes. However, the precise focus could not be determined, making it difficult to differentiate between medial and lateral lobe epilepsy. Consequently, intracranial subdural electrodes were implanted in the lateral and basal regions of the left frontal lobe, the lateral aspect of the left temporal lobe, and the medial temporal lobe. Interictal intracranial EEG revealed discrete spikes from the basal left temporal lobe, anterior to the left parahippocampal gyrus, and from the lateral aspect of the left temporal lobe. During three recorded intracranial EEG seizures, a pronounced spike was identified in electrodes located between the distal portion of the left temporal lobe and the parahippocampal gyrus, followed by propagation to the lateral temporal cortex (Fig. 1A). Subsequently, anterior temporal lobectomy was performed, encompassing the distal tip of the left temporal lobe, the basal region, and the middle and inferior temporal gyri (Fig. 1D and E). Intraoperative EEG recordings from the surface of the amygdala and hippocampus revealed no discernible spikes from the amygdala, with sporadic low-frequency spikes detected in the posterior aspect of the hippocampus. Therefore, the language-dominant hippocampus and amygdala were preserved to prevent postoperative verbal memory loss.
+
+
+Postoperative MRI indicated no obvious neurological deficits. Focal aware seizures (FAS) recurred 4 months postoperatively; however, no focal impaired awareness seizures were observed 1 year postoperatively. During evaluation 1 year after surgery, the patient was classified as Engel Class Ib. There were no postoperative neurological abnormalities, and psychological tests showed no deterioration.
+
+Glu-CEST MRI was performed the day before intracranial EEG electrode placement. It delineated an elevation in glutamate concentration extending from the left temporal pole to the medial temporal lobe. Subsequently, a 1 × 8 strip electrode was positioned in the corresponding area, revealing a prominent spike in EEG activity at seizure onset from the electrode proximate to the region with heightened Glu concentration. The region exhibiting increased Glu concentration, as identified by Glu-CEST MRI, was encompassed within the resection area (Fig. 1D and E). Histopathological examination of the resected tissue revealed focal cortical dysplasia type IIa (FCD type IIa).
+
+FCD type IIa causes drug-resistant epilepsy and is characterized by histopathologic findings of dysmorphic neurons and absence of balloon cells. Complete resection of the focal area is expected to suppress seizures; however, MRI often shows no abnormalities. The resected area was associated with abnormal EEG activity during seizures and an elevated Glu concentration as detected by Glu-CEST MRI.
+
+In addition, Glu-CEST MRI revealed an increased Glu concentration within the hippocampal head, albeit at a lower magnitude than that in the left temporal pole (Fig. 1C and F). The highest Glu concentrations were observed in the tip of the temporal lobe, followed by the head of the hippocampus.
+
+The Glu-CEST results suggested that the residual seizures were caused by the preserved hippocampal head and may be useful for considering additional surgical treatment in the future.

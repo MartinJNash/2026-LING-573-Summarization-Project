@@ -1,0 +1,59 @@
+A 49-year-old male with a history of gastric ulcer presented to the emergency department
+early in the morning with abdominal pain which started during the night. He was assessed
+by a surgeon and the symptoms were interpreted as gastritis (electrocardiogram showing
+Q-wave inferiorly and poor R-wave progression but troponin levels were not measured) and
+the surgeon discharged the patient. He returned to the emergency department the same day
+with increased abdominal pain, right bundle branch block (RBBB), and high troponin and
+N-terminal prohormone of brain natriuretic peptide (NT-proBNP) levels (3060 and 4370 ng/L,
+respectively). Echocardiographic examination revealed a severely reduced ejection fraction
+of 15–20% and ventricular akinesia/hypokinesia corresponding to the left anterior
+descending (LAD) coronary artery. Coronary angiography showed proximal occlusion of the
+LAD and chronic total occlusion of the right coronary artery. The patient was treated with
+percutaneous coronary intervention with stent implantation in the LAD and initiated on
+medications for heart failure with reduced ejection fraction including
+angiotensin-converting enzyme inhibitor, beta-blockers, and mineralocorticoid antagonist.
+The patient was kept in hospital post-MI because of hypotension and severe heart failure.
+Treatment with the intravenous inotropic agent levosimendan was used 15 days post-MI.
+Nineteen days after the MI, the patient started to experience recurrent attacks of VT,
+which were initially responsive to administration of amiodarone, beta-blockers, magnesium,
+and electrical cardioversion. Subsequently, the VT attacks became more frequent and
+non-responsive to medical treatment including lidocaine. The patient developed cardiogenic
+shock with pulmonary oedema (Troponin and NT-proBNP levels were 863 and 5530 ng/L,
+respectively) and a decision was made to institute veno-arterial extracorporeal membrane
+oxygenation (VA-ECMO).
+The patient underwent peripheral ECMO cannulation (femoral vein, common femoral artery,
+and distal perfusion catheter) 20 days post-MI. The ECMO circuit included the Cardiohelp
+system (Maquet, Germany). Continuous monitoring of invasive arterial pressure, pulse
+oximetry, electrocardiography, urine output, and central venous pressure was performed.
+The patient was supported with ECMO for 32 days because of heart failure, refractory VT,
+and recurrent infections. Refractory VT continued after placing the patient on ECMO. A
+temporary pacemaker was used for overdrive pacing with 100 b.p.m. Amiodarone infusion
+with a total dose of 6.6 g over 7 days was used together with ECMO and temporary
+pacemaker, to no avail.
+An electrophysiological study was performed 24 days post-MI and 4 days after ECMO
+initiation. A diagnostic catheter was applied to the coronary sinus/right ventricle
+through the right femoral vein. A PentaRay diagnostic catheter and a 3.5 mm open irrigated
+tip Thermocool ablation catheter (Biosense Webster, Inc., Diamond Bar, CA, USA) was used
+for the mapping and ablation of the left ventricle by trans-septal puncture. High-density
+electro-anatomical mapping with the CARTO 3 (Biosense Webster, Inc., Diamond Bar, CA, USA)
+was performed .
+Simultaneous bipolar and unipolar maps were acquired to define areas of low voltage
+(respectively, <1.5 and <8.3 mV) or scar (<0.5 and <5.0 mV).
+Electrophysiological study revealed a large scar area anteriorly and inferiorly near
+septum in the left ventricle. Ventricular tachycardia with RBBB morphology and a frequency
+of 160 b.p.m. was induced . Exit of this VT was identified using Paso mapping (Carto, Biosense
+Webster, Diamond Bar, CA, USA) and was located at the mid-ventricular infero-lateral scar
+boarder. Radiofrequency energy (40 W at ∼60 s per ablation site, irrigation 30 mL/min) was
+applied 69 times inferiorly and near septum with a total ablation time of 3440 s,
+rendering the VT non-inducible. We did not experience any interference with the catheter
+visualization in carto due to the haemodynamic support with ECMO.
+Two days after ablation, the patient suffered from 10 VT attacks that were responsive to
+electrical cardioversions, amiodarone and lidocaine infusion. Repeat ablation was
+considered too high risk due to large scar area and was not performed. However,
+subsequently, VT attacks disappeared and the patient was weaned from ECMO after
+32 days.
+The patient received a left ventricular assist device (LVAD; Heartmate 3, Abbott, Lake
+Bluff, IL, USA) 58 days post-MI and 5 days post-ECMO weaning as a bridge to decision and
+subsequently, an implantable cardioverter-defibrillator few weeks later. No VT attacks
+were detected during the waiting time for heart transplantation. The patient underwent
+heart transplantation 1 year after LVAD implantation.

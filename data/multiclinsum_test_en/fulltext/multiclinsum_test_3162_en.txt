@@ -1,0 +1,19 @@
+The patient was a 33-year-old Caucasian man with a history of untreated AIDS for 1 year who presented to the emergency department with progressive dyspnoea for 3 weeks followed by treatment with levofloxacin for 5 days and amoxicillin + clavulanic acid for 7 days with no adequate response. On admission, he presented with tachypnoea, fever of 39.1ºC, dry cough and hypoxaemia. Chest radiography and computed tomography revealed bilateral pulmonary infiltrates with no localized alveolar opacities. Non-invasive ventilation (NIV) was immediately established and sputum, blood and urine samples were collected and empirical antibiotic therapy was initiated.
+
+The patient was admitted to the intensive care unit (ICU) on NIV with a Glasgow Coma Scale of 15/15, respiratory rate of 28-34 breaths per minute (bpm), dyspnea score of 8/10 (zero for no dyspnea and ten for worst possible dyspnea), comfort 8/10, accessory muscle use and a four-point Heart Rate, Acidosis, Consciousness, Oxygenation, and Respiratory Rate (HACOR) score. After 1 hour on NIV, arterial blood gas revealed a pH of 7.38, carbon dioxide partial pressure (PaCO2) of 38 mmHg, oxygen partial pressure (PaO2) of 78.1 mmHg, bicarbonate (HCO3) of 22.2 mEq/L, base excess (BE) of -2.4 mEq/L, and PaO2/FiO2 ratio of 156.2 mmHg.
+
+Considering the initial clinical picture, it was decided to change from NIV to nasal cannula of high flow (NCHF) using flow of 60L/minute with FiO2 of 0.50. Initially the patient had a decrease in respiratory rate to 23rpm and improvement in oxygenation, dyspnea and comfort. The ROX index after 1 hour of NCHF was 8.33.
+
+After 48 hours with CNAF, the patient had increased RT and worsened oxygenation, requiring endotracheal intubation and invasive MV.
+
+First period of ventilation in controlled mode
+Advanced monitoring of SR mechanics was performed during the time of invasive VM by esophageal manometry. Initially, protective VM was instituted with use of tidal volume (TV) of 4-6L/kg predicted body weight (PBW), titration of end-expiratory positive pressure (PEEP) to best SR compliance (Crs), target plateau pressure (Pplat) > 30cmH2O, driving pressure in the airways (∆Paw) < a 15cmH2O, driving transpulmonary pressure (∆PL) < a 12cmH2O, deep sedation, use of neuromuscular blocking agents (BNM) and prone position (PP).
+
+On day 4 of invasive VM, after a marked improvement in oxygenation, the sedation levels were reduced in an attempt to initiate the partial ventilatory support phase, with ventilation changed from controlled VM to pressure support ventilation (VPS).
+
+First period of partial ventilatory support
+An attempt was made to titrate PEEP down to optimize the ventilatory strategy. It was observed that higher levels of PEEP did not improve the esophageal pressure oscillation (∆Pes) or ∆PL and even seemed to increase them; thus, low PEEP values were given priority to reduce the stress and mechanical energy applied to the lungs.
+
+On the sixth day of invasive MV, the patient met the classic criteria for weaning; thus, a spontaneous breath test (SBT) was performed with a support pressure level of 5 cm H2O to assess the chance of extubation. The patient failed the SBT after 20 minutes due to hypoxemia.
+
+On the 7th day of invasive VM, due to persistent worsening of oxygenation, a new computed tomography was performed, which showed clear progression of the pulmonary lesion, with the appearance of bilateral diffuse alveolar infiltrate, primarily in pulmonary regions. In this context, it was decided to reinstitute controlled VM and deep levels of sedation.

@@ -1,0 +1,11 @@
+Patient concerns:
+A 41-year-old man who presented with acute onset of right-hand clumsiness and aphasia even under high international normalized ratio (INR: 7.64) from warfarin use. He was previously treated with warfarin for the LV thrombus and non-valvular AF. Brain magnetic resonance imaging (MRI) showed multiple acute infarction in the cortex of the bilateral frontal lobes, left parietal lobe, and bilateral central semiovale, which highly suggested embolic stroke.
+
+Diagnosis:
+The repeated transthoracic echocardiogram still revealed LV thrombus (1.27 × 0.90 cm), which failed to respond to warfarin therapy.
+
+Interventions:
+Due to acute infarctions occurred under supratherapeutic range of INR, we switched warfarin to edoxaban (dose: 60 mg/day) after INR decreased to less than 2.
+
+Outcomes:
+The thrombus disappeared after receiving edoxaban for 23 days, and no more recurrent stroke was noted for more than 6 months.

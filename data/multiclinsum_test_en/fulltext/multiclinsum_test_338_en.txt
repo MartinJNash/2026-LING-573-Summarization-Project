@@ -1,0 +1,47 @@
+A 60-year-old female patient, known case of type-2 diabetes mellitus, began to experience pain and irritation in the left eye after undergoing a left penetrating keratoplasty.
+On examination, the left lid was edematous, and the corneal graft showed edema with buried sutures. An infiltrate of 2 x 1.5 mm and an epithelial defect was observed temporally.
+The visual acuity was limited to finger counting close to the face. Direct microscopy of a corneal scraping revealed septate hyphae, and fungal culture grew A. nidulans.
+The patient was prescribed natamycin 5% and voriconazole eye drop 1% along with oral voriconazole 200 mg for 14 days. However, due to minimal resolution of infection,
+loose sutures were sent to the microbiology lab for a culture that again grew A. nidulans. The infection resolved after two months with an extended voriconazole treatment,
+and there have been no recurrences to date.
+A 65-year-old male farmer presented with diminution of vision and opacity in both eyes. He gave a history of redness and opacity in the right eye three years back and in the
+left eye one month back. The patient had been diagnosed with right anterior staphyloma and corneal melt in the left eye in a private hospital when he referred to our center.
+There was no history of ocular trauma, but a watery discharge and congestion were observed in both eyes. The visual acuity was limited to the perception of light in both eyes.
+The left eye examination revealed a 3x3 mm central corneal thinning. The case was diagnosed with left infective keratitis with corneal thinning and melts.
+The patient was empirically started on vancomycin 5%, tobramycin 1.3%, natamycin 5% eye drops, and oral ciprofloxacin for 14 days. On day 10 of presentation,
+the ulcer in the left eye had a 2.5 x 2.5 mm perforation, for which penetrating keratoplasty (PK) was performed, and an intraoperatively excised cornea was
+sent for microbiological workup. The direct microscopy did not demonstrate any bacterial and fungal etiology. Therefore, the patient was discharged with
+an empirical coverage of vancomycin 5%, natamycin 5%, tobramycin 1.3% eye drops, and oral ciprofloxacin for 7 days and a plan for weekly follow up visits.
+The fungal culture grew A. nidulans after 3 days. However, an oral antifungal could not be started as the patient did not visit the center again and was lost to follow-up.
+A 59-year-old male presented with sudden onset of vision diminution, pain, and redness in the left eye after undergoing cataract surgery five days earlier.
+The visual acuity for distant vision in the left eye was hand movement close to the face. Ophthalmic examination showed conjunctival congestion and the presence of AC cells,
+exudates, and flare in the anterior chamber. A diagnosis of acute post-cataract surgery endophthalmitis was made. Subsequently, an Endophthalmitis Pars Plana Vitrectomy (PPV)
+with intravitreal antibiotic instillation was performed. Vitreous biopsy was sent for microbiological workup, and the patient was discharged with
+an empirical coverage of vancomycin 5%, tobramycin eye drops 1.3% and oral ciprofloxacin for one week. Fungal culture grew A. nidulans.
+However, the patient did not refer for his first follow-up, and an antifungal could not be prescribed. The patient visited the center 18 days later due to the
+deterioration of his condition, and the examination revealed a membrane on the left pupil along with a nasally located fungal ball.
+The patient was operated for PPV with intraocular lens and bag explants, vitreous lavage, and intravitreal voriconazole (100μg /0.1ml) instillation along
+with natamycin eye-drops 5%, and oral voriconazole 200 mg for one month.
+The patient’s symptoms did not mitigate with the given treatment, and a diagnosis of recurrent endophthalmitis was made.
+The PPV was repeated with intraocular lens and bag explants, accompanied with intravitreal amphotericin B (10μg /0.1ml) and vancomycin (1mg /0.1ml) instillation.
+The patient could not visit the center for follow-up due to the COVID-19 pandemic. On teleconsultation, the patient reported left eye discharge, for which he was advised to follow up physically.
+Samples from all three cases were received in the ocular microbiology section. The samples included a corneal scraping and loose
+sutures (from case no. 1); cornea excised in PK procedure (from case no. 2); and two vitreous biopsies (from case no. 3).
+All samples were processed for gram stain, potassium hydroxide (KOH) wet mount, and culture. Sheep Blood agar (5%) and Sabouraud Dextrose Agar (SDA)
+(HiMedia, Mumbai, India) were incubated at 37°C for 18 to 24 h and at 25°C for a minimum of 14 days. Primary microscopy of cases no. 1 and 3 showed thin
+branching septate hyphae with few pus cells . Bacterial cultures were sterile in
+all three cases and SDA grew filamentous fungus between days 3 and 5. The isolation of fungi was considered significant if at least one
+of the following criteria was met: a) observation of fungal elements in primary microscopy and fungal growth in fungal culture medium (b)
+confluent fungal growth on the sample inoculation site . The fungal growth from all samples was initially white cottony and later appeared glabrous. It matured with tan and smoky green alternative rings
+on the obverse and dark brown pigment on the reverse . Lactophenol cotton blue staining showed septate
+hyaline hyphae with short to medium length brown-tinged conidiophores. These conidiophores produced biseriate, flask-shaped vesicles covered by metulae
+and phialides on the upper part bearing round, smooth, green conidia in chains .
+After 10-14 days, large round cleistothecia were observed encompassing asci producing red-brown lenticular ascospores .
+The cleistothecia were surrounded by numerous large, spherical, thick, double-walled hyaline ‘Hulle Cells’ .
+The morphological characteristics of the isolates were confirmed through slide cultures of all the isolates.
+The E-strip method (HiMedia, Mumbai, India) was employed to determine the antifungal susceptibility pattern of all the isolates . Minimum Inhibitory Concentration (MIC) was determined for amphotericin B, posaconazole, itraconazole, and voriconazole using E-test strip.
+All MIC values were recorded 24 and 48 h after the application of strips. The MIC was defined as the lowest concentration preventing
+any discernible growth. presents the results of the antifungal susceptibility test of the three isolates.
+Clinical breakpoints (CBP) were not determined by the Clinical and Laboratory Standard Institute (CLSI) for Aspergillus species.
+Therefore, the results of antifungal susceptibility testing of amphotericin B, posaconazole, itraconazole, and voriconazole were interpreted following
+the ‘modes’ (most frequent MIC) documented for Aspergillus spp. in the M38 document by CLSI .

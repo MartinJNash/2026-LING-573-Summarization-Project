@@ -1,0 +1,24 @@
+A 20-year-old man was admitted to our hospital with gait disturbance. He had no family history of neuromuscular disorders. He first noticed leg dragging at the age of 14. Neurological examination showed marked weakness and atrophy in the distal leg muscles and moderate atrophy in the proximal leg muscles. Cranial muscles were not involved and sensory examination was unremarkable. No deformity of the spine and feet was noted. Serum creatine kinase level was 599 IU/L (normal, 62–287 IU/L) with no other routine biochemical abnormalities including renal, liver, and thyroid functions and a battery of immunological markers (antinuclear antibody, rheumatoid factor, anti-DNA antibody, Jo-1, etc) were all negative. Electromyography showed myogenic changes with some neurogenic changes in all muscles tested. Nerve conduction studies were unremarkable. Muscle magnetic resonance imaging studies showed atrophies and degenerations in the muscles of both anterior and posterior compartments of the legs (Figure
+A). The hamstrings were markedly involved muscles while the vastus lateralis, vastus intermedius, and vastus medius were moderately involved muscles (Figure
+B). Mutational analysis of GNE revealed a homozygous 1714 G>C mutation.
+Muscle biopsy samples were taken from the left quadriceps femoris, and the tissue specimens were immediately frozen in isopentane chilled with liquid nitrogen. Serial 10-μm-thick transverse sections cut using a cryostat were stained by routine muscle histochemical methods. In addition, we performed immunohistochemical and immunofluorescence studies (Additional file shows these methods in more detail).
+Cryostat sections stained with hematoxylin and eosin showed an increased variation in muscle fiber sizes, angular atrophic fibers, central nuclei, and RVs with no inflammatory cell infiltrates (Figure
+A). The RVs and areas surrounding the RVs showed intense AQP4 immunoreactivity, but the centers of the vacuoles were devoid of immunoreactivity (Figure
+B, inset), while many muscle fibers showed weak sarcolemmal AQP4 immunoreactivity (Figure
+C). Immunofluorescence analysis of AQP4 also showed that the RVs and the areas surrounding the RVs were often strongly AQP4 positive (Figure
+D). Further, strong cytoplasmic or cytosolic punctate AQP4 expression was occasionally observed (Figure
+D, inset). Negative controls, which were not incubated with anti-AQP4 antibody, showed no immunoreactivity (Figure
+E). In a control muscle sample without evidence of neuromuscular disorders, AQP4 immunostaining clearly showed the mosaicism in the AQP4 expression on the myofiber surface (Figure
+F). RVs with intensive AQP4 expression and sarcoplasmic AQP4 aggregates were never seen in the control muscle. Moreover, double immunofluorescence analysis of AQP4 and myosin heavy chain-fast (MHCF) showed that AQP4was predominantly expressed in the fast-twitch type 2 fibers (Figure
+G1-G3).
+We next determined whether AQP4 expression was associated with the type of fiber in the DMRV/hIBM patient. RV-positive muscle fibers were predominantly present in MHCF fibers, whereas only some were found in myosin heavy chain-slow (MHCS) fibers in serial sections (Figure
+A-
+C). Double immunofluorescence analysis of AQP4 and MHCF showed that RVs with strong AQP4 expression were localized predominantly in the MHCF fibers (Figure
+D1-D3). In addition, double immunostaining of AQP4 and MHCS showed that RVs with strong AQP4 expression were mostly located in the non-MHCS fibers (Figure
+E1-E3). Furthermore, numerous TDP-43 immunostained aggregates were detected in many muscle fibers (Figure
+F). Double immunostaining of TDP-43 and MHCF or MHCS revealed that the TDP-43 immunostaining was most commonly present in the MHCF-positive fibers (Figure
+G), not in the MHCS fibers (Figure
+H).
+Subsequently, we performed a disease-control study of muscle AQP4/dystrophin expression. RVs with intensive AQP4 expression and sarcoplasmic AQP4 aggregates frequently seen in the DMRV/hIBM patient were not found in a female carrier of Duchenne muscular dystrophy (DMD) or in an ALS patient (Figure
+). As expected, both of the disease-controls showed some lack of AQP4/dystrophin expression in the sarcolemma, as described elsewhere
+[-].

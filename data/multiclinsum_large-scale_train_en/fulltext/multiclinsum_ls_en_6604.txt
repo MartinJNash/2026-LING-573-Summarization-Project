@@ -1,0 +1,6 @@
+A 70-year-old male smoker presented to our hospital with a 1-mo history of body pain, chest discomfort, and right eye soreness .
+A positron emission tomography/computed tomography scan revealed a mass in the superior lobe of the right lung. F-18 fluorodeoxyglucose hypermetabolic nodules in the right kidney suggested tumorous lesions; no hypermetabolic lesions were demonstrated in other sites.
+The patient underwent a thoracoscopic right inferior lobectomy in December 2017. Hematoxylin and eosin (HE) staining showed a typical morphology for adenocarcinoma. Immunohistochemistry (IHC) demonstrated positivity for TTF-1 and Napsin A. Postoperative pathological staging revealed T1N0M0, IA. The tumor tissue was subjected to next generation sequencing (NGS; Geneplus, Beijing, China), which showed a KRAS mutation (p.G12D); EGFR, ALK, and RET were all negative. The NGS assay used HiSEquation 4000 (Illumina, San Diego, CA, United States).
+The family history was unremarkable.
+The patient had a regular examination postoperatively.
+Chest computed tomography (CT) images obtained 2.0 mo postoperatively demonstrated a decrease in tumor size of the right renal lesion.

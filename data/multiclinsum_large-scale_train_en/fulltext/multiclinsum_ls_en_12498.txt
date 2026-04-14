@@ -1,0 +1,92 @@
+A 29-year-old female was presented to the emergency department with chest pain and
+nausea. Her symptoms began suddenly 3 days before the presentation. She complained
+of retrosternal chest pain that radiated to her left arm and shoulder. The pain was
+not positional or pleuritic and not related to her physical activity. She also
+complained of the flu-like syndrome, including mild fever, rhinitis, and myalgia,
+accompanied by mild dyspnea and diaphoresis 1 day before her chest pain began, but
+she denied having any cough. She was vaccinated with 2 doses of the BIBP (Sinopharm)
+vaccine, and her last injection was 3 months before the onset of her symptoms. She
+had a history of hypothyroidism, using levothyroxine for her condition, but no other
+history of cardiovascular or metabolic disease. She had no risk factor for coronary
+artery disease. The intensity of her pain increased gradually from the onset of the
+symptoms; thus, she decided to consult with her primary physician. Her primary
+physician ordered an ECG due to her acute-onset chest pain. Her electrocardiogram
+showed ST-segment elevation in the anterolateral leads with reciprocal ST-depression
+changes in the inferior leads. then she was referred to our tertiary heart center for further
+evaluation. Upon her arrival at the emergency department, her vital sign was stable.
+Her blood pressure was 120/70 mmHg, pulse rate was 80 beats/minute, respiratory rate
+was 18 breaths/minute, body Temperature was 36.8°C, and SPo2 was 96% without
+supplemental oxygen. On physical examination, she was conscious and oriented, no
+cardiac murmur was heard, lung examination was normal, and other examinations were
+unremarkable. She was transferred to the Cath lab with the initial diagnosis of
+ST-segment elevation myocardial infarction caused by suspected spontaneous coronary
+artery dissection (SCAD) according to her age and gender. She was started on
+nitrate, beta-blocker, ondansetron, statin, dual anti-platelet agents including
+aspirin and clopidogrel and morphine sulfate; then, she was undergone coronary
+angiography (CAG).
+There was no evidence of coronary artery obstruction or stenosis in her angiogram
+. Her chest
+pain continued, despite the administration of pain relief agents and normal coronary
+angiogram; therefore she was admitted to CCU for additional evaluation and
+observation. She continued to receive nitrates for her chest pain and ondansetron
+for her nausea, but other medications were discontinued. Her initial laboratory
+tests revealed a normal complete blood count and kidney function but an elevation of
+cardiac troponin I and creatine kinase-MB (85 U/L, normal <28 U/L) .
+A bedside echocardiogram was performed, which revealed a left ventricular ejection
+fraction (LVEF) of 45% and Antero-apical hypokinesia without valvular or pericardial
+abnormalities. During her second day of hospital admission, her blood pressure
+suddenly dropped to 88/53 mmHg, and oxygen saturation fell to 87%, requiring
+inotrope and supplemental oxygen to maintain blood pressure and oxygen saturation,
+respectively. Her dyspnea worsened, and her body temperature rose to 38.6°C. Nitrate
+was discontinued according to her reduced blood pressure. Her ECG showed sinus
+tachycardia with prominent ST-segment elevation in anterolateral leads and new right
+bundle branch block (RBBB). Second echocardiography was performed; Her LVEF dropped to 15%
+with global hypokinesia, especially in the anterior circulation, and significant LV
+enlargement. She was suspected of missed or new myocardial infarction complicated with
+cardiogenic shock, so she was transferred to the Cath-lab and underwent her second
+CAG. Similar to her previous coronary angiogram, there were no signs of obstruction
+or stenosis, and also there was no angiographic evidence of SCAD. According to the
+CDC definition of probable acute myocarditis, she was clinically diagnosed with
+possible acute myocarditis and was scheduled to receive IVIG, colchicine, and
+corticosteroid.
+Because of her flu-like symptoms at the time of the COVID-19 pandemic, a
+nasopharyngeal swab was obtained and tested for SARS-COV-2 virus using the RT-PCR
+method on the third day of her admission; the result was positive. Viral serology
+and autoantibody screening tests were performed, and they were all negative. The
+spiral chest CT scan revealed bilateral pleural effusion, pericardial congestion,
+significant cardiomegaly, and peripheral/hilar ground glass opacity, indicating
+possible COVID-19 lung involvement ; therefore pulmonology
+consultation was requested, and then she was started on antiviral agent remdesivir
+and was continued to receive corticosteroid. The following day the patient’s
+condition continued to deteriorate and her skin became icteric; her liver function
+test showed abnormal AST, ALT, and bilirubin due to possible congestive hepatitis;
+therefore, her remdesivir was discontinued. She was transferred to the intensive
+care unit. During the ICU admission her condition gradually improved, her blood
+pressure back into normal ranges without inotropes, the elevated hepatic and cardiac
+blood test gradually reduced, and her LVEF increased to 35% on following days. She
+was discharged with oral prednisolone taper (50 mg once daily for 2 weeks, then
+25 mg once daily for 1 week and 5 mg twice daily for 2 weeks), colchicine 1 mg once
+daily for 3 months and captopril 12.5 mg 3 times a day after 11 days of
+hospitalization. She was recommended for exercise restriction for 6 months.
+6 days after her discharge a cardiac magnetic resonance imaging (CMR) was performed.
+LVEF was 41.6%, and severe hypokinesia was noted in the mid to apical anterior,
+inferolateral, and anterolateral walls of the left ventricle. Left ventricular
+hypertrophy (LVH) was not reported. The right ventricular ejection fraction was 55%,
+and there was no evidence of regional wall motion abnormalities or systolic
+dysfunction in the right ventricle. There was also no sign of edema on T2 STIR
+weighted imaging, but T2 mapping showed prolongation of T2 relaxation time in
+multiple segments of the left ventricle, which may be considered diffuse
+inflammation/edema .
+Abnormal T1 relaxation time and increased extracellular volume (ECV) were observed in
+the left ventricle’s interventricular septum and lateral wall, which indicates
+scar/necrosis in these segments.
+Mid-wall delayed enhancement was seen in the inferoseptal wall of the left ventricle,
+and subepicardial delayed enhancement was seen in the anterior and lateral wall of
+the left ventricle. ( and )
+On her 4-month follow-up, her general condition was favorable, she complained of
+fatigue and intermittent mild non-typical chest pain but no symptoms similar to
+admission time. Her ECG pattern was regular, and her echocardiography revealed
+normal LV size and mild LV systolic dysfunction (EF: 45%). Her biventricular
+function improved significantly; there was no valvular abnormality except for
+persistent mild to moderate mitral regurgitation. She was scheduled for a follow-up
+CMR 6 months after discharge to evaluate mid-term cardiac risks.
