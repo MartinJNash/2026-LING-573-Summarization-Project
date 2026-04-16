@@ -45,6 +45,7 @@ def main():
         logging_steps=50,
         report_to="none",
         seed=42,
+        dataloader_pin_memory=False
     )
 
     rouge = evaluate.load("rouge")

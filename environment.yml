@@ -3,15 +3,15 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3.12
-  - pytorch=2.10.0
-  - numpy=2.4.3
-  - pandas=3.0.2
-  - datasets=4.8.4
-  - transformers=5.5.4
-  - tokenizers=0.22.2
-  - safetensors=0.7.0
-  - tqdm=4.67.3
+  - python=3.11
+  - pytorch
+  - numpy
+  - pandas
+  - datasets
+  - transformers
+  - tokenizers
+  - safetensors
+  - tqdm
   - regex
   - pyyaml
   - pip
