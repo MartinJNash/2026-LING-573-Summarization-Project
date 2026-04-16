@@ -44,7 +44,7 @@ def main():
         report_to="none",
         seed=42,
         dataloader_pin_memory=False,
-        dataloader_num_workers=4,
+        dataloader_num_workers=2,
     )
 
     rouge = evaluate.load("rouge")
