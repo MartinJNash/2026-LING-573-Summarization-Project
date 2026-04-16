@@ -7,5 +7,4 @@ notification = never
 arguments  = ""
 transfer_executable = false
 request_memory = 8192
-request_GPUs = 1
 queue
