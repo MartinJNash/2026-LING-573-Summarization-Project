@@ -4,7 +4,6 @@ channels:
   - defaults
 dependencies:
   - python=3.11
-  - pytorch
   - numpy
   - pandas
   - datasets
@@ -16,6 +15,7 @@ dependencies:
   - pyyaml
   - pip
   - pip:
+      - torch
       - evaluate
       - rouge_score
       - nltk
