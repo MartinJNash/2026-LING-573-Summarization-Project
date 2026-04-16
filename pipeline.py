@@ -1,23 +1,23 @@
 from read_data import read_gs_training_data
 from datasets import Dataset
-from transformers import AutoTokenizer, BartTokenizer
-from transformers import BartForConditionalGeneration
 from transformers import Seq2SeqTrainingArguments
 from transformers import Seq2SeqTrainer
 from transformers import DataCollatorForSeq2Seq
+from model import Summarizer
 import evaluate
 import numpy as np
 
 
-
-MODEL_NAME = "facebook/bart-large-cnn"
+MODEL_NAME = "facebook/bart-base"
 
 def main():
+    summarizer = Summarizer(MODEL_NAME)
+    tokenizer = summarizer.tokenizer
+    model = summarizer.model
+
     ds = Dataset.from_generator(read_gs_training_data)
     split = ds.train_test_split(test_size=0.1, seed=42)
-    tokenizer = BartTokenizer.from_pretrained(MODEL_NAME)
 
-    # puts
     def preprocess(examples):
         inputs = tokenizer(examples["input"], max_length=1024, truncation=True)
         targets = tokenizer(text_target=examples["target"], max_length=256, truncation=True)
@@ -25,9 +25,7 @@ def main():
         return inputs
 
     tokenized = split.map(preprocess, batched=True, remove_columns=["input", "target"])
-    model = BartForConditionalGeneration.from_pretrained(MODEL_NAME)
     data_collator = DataCollatorForSeq2Seq(tokenizer=tokenizer, model=model)
-
 
     training_args = Seq2SeqTrainingArguments(
         output_dir="./results",
@@ -60,7 +58,6 @@ def main():
         decoded_labels = [label.strip() for label in decoded_labels]
         result = rouge.compute(predictions=decoded_preds, references=decoded_labels, use_stemmer=True)
         return {k: round(v * 100, 4) for k, v in result.items()}
-
 
     trainer = Seq2SeqTrainer(
         model=model,
