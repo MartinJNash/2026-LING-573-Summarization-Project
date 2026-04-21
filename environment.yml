@@ -22,3 +22,4 @@ dependencies:
       - accelerate
       - bert-score
       - textstat
+      - peft

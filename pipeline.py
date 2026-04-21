@@ -6,14 +6,29 @@ from transformers import DataCollatorForSeq2Seq
 from model import Summarizer
 import evaluate
 import numpy as np
+from peft import LoraConfig, get_peft_model
 
 
 MODEL_NAME = "facebook/bart-base"
+USE_PEFT = True
 
 def main():
     summarizer = Summarizer(MODEL_NAME)
     tokenizer = summarizer.tokenizer
     model = summarizer.model
+
+    # PEFT with LoRA
+    if USE_PEFT:
+        lora_config = LoraConfig(
+            r=16,
+            lora_alpha=16,
+            target_modules=["q_proj", "v_proj"],
+            lora_dropout=0.1,
+            bias="none",
+            modules_to_save=["classifier"],
+        )
+        model = get_peft_model(model, lora_config)
+        model.print_trainable_parameters()
 
     ds = Dataset.from_generator(read_gs_training_data)
     split = ds.train_test_split(test_size=0.1, seed=42)
