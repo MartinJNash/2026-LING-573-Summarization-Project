@@ -1,3 +1,4 @@
+import argparse
 from read_data import read_gs_training_data
 from datasets import Dataset
 from transformers import Seq2SeqTrainingArguments
@@ -7,18 +8,28 @@ from model import Summarizer
 import evaluate
 import numpy as np
 from peft import LoraConfig, get_peft_model
+from dataclasses import dataclass
 
-
-MODEL_NAME = "facebook/bart-base"
-USE_PEFT = True
+@dataclass
+class Config:
+    base_model: str
+    use_peft: bool
 
 def main():
-    summarizer = Summarizer(MODEL_NAME)
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--base-model", default="facebook/bart-base", help="Path to base model")
+    parser.add_argument("--use-peft", default=True, help="Whether to use PEFT with LoRA")
+    args = parser.parse_args()
+    config = Config(base_model=args.base_model, use_peft=args.use_peft)
+    train(config)
+
+def train(config: Config):
+    summarizer = Summarizer(config.base_model)
     tokenizer = summarizer.tokenizer
     model = summarizer.model
 
     # PEFT with LoRA
-    if USE_PEFT:
+    if config.use_peft:
         lora_config = LoraConfig(
             r=16,
             lora_alpha=16,
