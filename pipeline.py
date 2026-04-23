@@ -14,13 +14,20 @@ from dataclasses import dataclass
 class Config:
     base_model: str
     use_peft: bool
+    output_dir: str
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--base-model", default="facebook/bart-base", help="Path to base model")
-    parser.add_argument("--use-peft", default=True, help="Whether to use PEFT with LoRA")
+    parser.add_argument("--use-peft", action="store_true", default=False)
+    parser.add_argument("--output-dir", default="./results/final_model", help="Path to output directory")
     args = parser.parse_args()
-    config = Config(base_model=args.base_model, use_peft=args.use_peft)
+
+    config = Config(
+        base_model=args.base_model, 
+        use_peft=args.use_peft, 
+        output_dir=args.output_dir
+    )
     train(config)
 
 def train(config: Config):
@@ -97,7 +104,7 @@ def train(config: Config):
     )
 
     trainer.train()
-    trainer.save_model("./results/final_model")
+    trainer.save_model(config.output_dir)
 
 
 if __name__ == "__main__":
