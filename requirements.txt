@@ -1,0 +1,17 @@
+torch
+numpy
+pandas
+transformers
+datasets
+tokenizers
+safetensors
+tqdm
+regex
+pyyaml
+evaluate
+rouge_score
+nltk
+accelerate
+bert-score
+textstat
+peft
