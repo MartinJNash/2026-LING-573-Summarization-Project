@@ -16,18 +16,21 @@ class Config:
     base_model: str
     use_peft: bool
     output_dir: str
+    batch_size: int = 4
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--base-model", default="facebook/bart-base", help="Path to base model")
     parser.add_argument("--use-peft", action="store_true", default=False)
     parser.add_argument("--output-dir", default="./results/final_model", help="Path to output directory")
+    parser.add_argument("--batch-size", type=int, default=4, help="Per-device train batch size")
     args = parser.parse_args()
 
     config = Config(
-        base_model=args.base_model, 
-        use_peft=args.use_peft, 
-        output_dir=args.output_dir
+        base_model=args.base_model,
+        use_peft=args.use_peft,
+        output_dir=args.output_dir,
+        batch_size=args.batch_size,
     )
     train(config)
 
@@ -66,9 +69,10 @@ def train(config: Config):
         eval_strategy="epoch",
         save_strategy="epoch",
         learning_rate=5e-5,
-        per_device_train_batch_size=4,
+        per_device_train_batch_size=config.batch_size,
         num_train_epochs=10,
         weight_decay=0.01,
+        fp16=True,
         predict_with_generate=True,
         generation_max_length=256,
         load_best_model_at_end=True,
