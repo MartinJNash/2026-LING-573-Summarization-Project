@@ -20,6 +20,7 @@ def main():
     parser.add_argument("--split", choices=["train", "test"], default="test", help="Which data split to run inference on (default: test)")
     parser.add_argument("--num-examples", type=int, default=None, help="Number of examples to run (default: all)")
     parser.add_argument("--output", default="outputs.json", help="Path to save inference outputs (default: outputs.json)")
+    parser.add_argument("--batch-size", type=int, default=8, help="Batch size for inference (default: 8)")
     args = parser.parse_args()
 
     print(f"Loading model: {args.model}")
@@ -28,24 +29,41 @@ def main():
     print(f"Loading data (split={args.split})...")
     loader = read_test_training_data if args.split == "test" else read_gs_training_data
     data = list(loader())
+
     if args.num_examples is not None:
         data = data[:args.num_examples]
 
+    print(f"Running inference on {len(data)} examples (batch_size={args.batch_size})...\n")
+
     results = []
-    print(f"Running inference on {len(data)} examples...\n")
-    for i, example in enumerate(data):
-        pred = summarizer.summarize(example["input"])
+
+    # Prepare inputs
+    inputs = [ex["input"] for ex in data]
+
+    # Run batched inference
+    preds = summarizer.summarize_batch(
+        inputs,
+        batch_size=args.batch_size
+    )
+
+    # Build results
+    for i, (example, pred) in enumerate(zip(data, preds)):
         results.append({
             "id": i,
             "input": example["input"],
             "gold": example["target"],
             "pred": pred,
         })
-        if (i + 1) % 10 == 0:
+
+        if (i + 1) % 50 == 0:
             print(f"  {i + 1}/{len(data)} done.")
 
     with open(args.output, "w") as f:
-        json.dump({"model": args.model, "split": args.split, "examples": results}, f, indent=2)
+        json.dump({
+            "model": args.model,
+            "split": args.split,
+            "examples": results
+        }, f, indent=2)
 
     print(f"\nSaved {len(results)} examples to {args.output}")
 
