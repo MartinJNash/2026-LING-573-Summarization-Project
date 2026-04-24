@@ -7,6 +7,7 @@ from transformers import DataCollatorForSeq2Seq
 from model import Summarizer
 import evaluate
 import numpy as np
+from bert_score import score as bert_score_fn
 from peft import LoraConfig, get_peft_model
 from dataclasses import dataclass
 
@@ -61,7 +62,7 @@ def train(config: Config):
     data_collator = DataCollatorForSeq2Seq(tokenizer=tokenizer, model=model)
 
     training_args = Seq2SeqTrainingArguments(
-        output_dir="./results",
+        output_dir=config.output_dir,
         eval_strategy="epoch",
         save_strategy="epoch",
         learning_rate=5e-5,
@@ -71,7 +72,8 @@ def train(config: Config):
         predict_with_generate=True,
         generation_max_length=256,
         load_best_model_at_end=True,
-        metric_for_best_model="rouge1",
+        metric_for_best_model="bertscore_f1",
+        greater_is_better=True,
         save_total_limit=2,
         logging_steps=50,
         report_to="none",
@@ -90,8 +92,21 @@ def train(config: Config):
         decoded_labels = tokenizer.batch_decode(labels, skip_special_tokens=True)
         decoded_preds = [pred.strip() for pred in decoded_preds]
         decoded_labels = [label.strip() for label in decoded_labels]
-        result = rouge.compute(predictions=decoded_preds, references=decoded_labels, use_stemmer=True)
-        return {k: round(v * 100, 4) for k, v in result.items()}
+
+        rouge_result = rouge.compute(predictions=decoded_preds, references=decoded_labels, use_stemmer=True)
+        metrics = {k: round(v * 100, 4) for k, v in rouge_result.items()}
+
+        # BERTScore — used for checkpoint selection (captures semantic similarity
+        # that ROUGE misses; Angulo & Yeste found ROUGE/BERTScore negatively correlated r=-0.49)
+        _, _, F1 = bert_score_fn(
+            decoded_preds, decoded_labels,
+            lang="en",
+            model_type="distilbert-base-uncased",
+            verbose=False,
+        )
+        metrics["bertscore_f1"] = round(F1.mean().item(), 4)
+
+        return metrics
 
     trainer = Seq2SeqTrainer(
         model=model,
