@@ -13,6 +13,10 @@
 #SBATCH --mail-type=END,FAIL
 #SBATCH --mail-user=pgarg2@uw.edu
 
+export UV_CACHE_DIR=/gscratch/scrubbed/pgarg2/uv-cache
+export HF_HOME=/gscratch/scrubbed/pgarg2/hf-cache
+export TRANSFORMERS_CACHE=/gscratch/scrubbed/pgarg2/hf-cache
+
 source /gscratch/scrubbed/pgarg2/medjargone/bin/activate
 
 mkdir -p logs
