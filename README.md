@@ -21,20 +21,20 @@ uv pip install -r requirements.txt
 
 **Train**
 ```bash
-python pipeline.py --base-model GanjinZero/biobart-v2-base --use-peft --output-dir results/biobart-base
+uv run python pipeline.py --base-model GanjinZero/biobart-v2-base --use-peft --output-dir results/biobart-base
 ```
 
 **Inference**
 ```bash
-python run_inference.py --model results/biobart-base --output outputs/biobart-base.json
+uv run python run_inference.py --model results/biobart-base --output outputs/biobart-base.json
 ```
 
 **Evaluate**
 ```bash
-python eval_pipeline.py --input outputs/biobart-base.json --output eval/biobart-base.json
+uv run python eval_pipeline.py --input outputs/biobart-base.json --output eval/biobart-base.json
 ```
 
-Run `python <script> --help` for all options.
+Run `uv run python <script> --help` for all options.
 
 ## Cluster
 
