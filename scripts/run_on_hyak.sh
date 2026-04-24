@@ -8,8 +8,10 @@
 #SBATCH --mem=32G
 #SBATCH --gpus=1
 #SBATCH --time=24:00:00
+#SBATCH --chdir=/gscratch/scrubbed/pgarg2/2026-LING-573-Summarization-Project
 #SBATCH --output=logs/%j.out
 #SBATCH --error=logs/%j.err
+#SBATCH --export=all
 #SBATCH --mail-type=END,FAIL
 #SBATCH --mail-user=pgarg2@uw.edu
 
