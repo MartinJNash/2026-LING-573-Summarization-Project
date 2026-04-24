@@ -1,7 +1,0 @@
-The patient presented with fever and fatigue that had lasted for 5 d.
-A 33-year-old healthy male presented to a local hospital reporting 5 d of fatigue and fever (from January 25 to 29, 2020). His condition did not improve after treatment (ribavirin, paramivir and tradition Chinese medicine). Then, when his throat swab COVID-19 RNA test came back positive on January 29, 2020, he was diagnosed COVID-19 and was transferred to our hospital.
-The patient had no remarkable past medical history.
-The patient had no markable personal and family history.
-The vital signs on presentation to our hospital were temperature of 37.1 ºC, heart rate of 77 beats/min, blood pressure of 147/74 mmHg, respiratory rate of 15 beats/min, and oxygen saturation (SpO2) of 98% on room air. The examination of respiratory system was normal.
-Laboratory data on presentation in our institution revealed a white blood cell count of 3.18 × 109/L, neutrophil ratio of 75.2%, lymphocyte ratio of 16.2%, aspartate aminotransferase of 27 U/L, alanine aminotransferase of 19 U/L, blood urea nitrogen of 4.7 mmol/L, creatine kinase of 71.1 mmol/L, C-reaction protein of 8.0 mg/L, and an arterial blood gas (ABG) of pH: 7.41, PaO2: 87.0 mmHg, and PaCO2: 38.0 mmHg on room air.
-The results of the patient’s chest computed tomography (CT) scan during hospitalization are shown in the treatment section .

@@ -1,7 +1,0 @@
-Patient concerns: A 32-year-old woman presented with sudden-onset syncope. Her medical history revealed a 5-year history of SLE, and imaging studies identified a retroperitoneal mass.
-
-Diagnoses: A comprehensive diagnostic workup, including magnetic resonance imaging (MRI) and biopsy, confirmed retroperitoneal fibrosis secondary to SLE.
-
-Interventions: The patient was treated with high-dose corticosteroids, immunosuppressive therapy, and the biologic agent rituximab.
-
-Outcomes: The patient's symptoms markedly improved, and follow-up MRI demonstrated significant regression of the retroperitoneal lesion.

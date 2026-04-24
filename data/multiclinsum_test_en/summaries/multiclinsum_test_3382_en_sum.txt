@@ -1,7 +1,0 @@
-Patient concerns: A 30-year-old male was admitted to the hospital with the primary complaint of ascites.
-
-Diagnosis: ALL.
-
-Interventions: The patient was initially diagnosed with suppurative peritonitis through abdominal puncture. The abdominal computed tomography scan revealed ileocecal lesions, which were thought to be the source of the purulent peritonitis. Despite receiving antibacterial therapy and undergoing peritoneal effusion drainage, the treatment proved ineffective. The patient chose to discontinue hospitalization and was discharged on June 22. On August 24, he was readmitted to Nanjing First Hospital. A follow-up abdominal computed tomography scan revealed multiple enlarged lymph nodes in the abdomen, raising suspicion of a hematological malignancy. Bone marrow cytology subsequently confirmed the diagnosis of ALL.
-
-Outcomes: The patient was admitted to the hematology department for further treatment. Unfortunately, despite intervention, the patient passed away.

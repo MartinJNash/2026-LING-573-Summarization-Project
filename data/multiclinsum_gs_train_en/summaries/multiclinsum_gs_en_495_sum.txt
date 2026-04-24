@@ -1,7 +1,0 @@
-Patient concerns: A male patient, aged sixty-three, who was diagnosed with poorly differentiated gastric adenocarcinoma, experienced a progressive decline in visual acuity in both eyes after a 4-month course of nab-paclitaxel therapy.
-
-Diagnoses: Upon Fundus examination, bilateral cystoid macular edema (CME) was seen.
-
-Interventions: Undergo treatment with carbonic anhydrase inhibitors and discontinue the use of nab-paclitaxel.
-
-Outcomes: After eleven days of treatment with carbonic anhydrase inhibitors, the patient reported significant improvement in visual acuity. Furthermore, CME was completely resolved in both eyes 8 weeks after stopping nab-paclitaxel.
