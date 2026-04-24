@@ -14,32 +14,25 @@ source .venv/bin/activate
 ```bash
 uv pip install -r requirements.txt
 ```
-> **GPU:** Replace the torch install with a CUDA-enabled wheel:
-> `uv pip install torch --index-url https://download.pytorch.org/whl/cu118`
-
-4. (Optional) Install scispacy biomedical NER model for medical concept overlap metric:
-```bash
-python -m spacy download en_core_sci_sm
-```
 
 ## Usage
 
 **Train**
 ```bash
-python pipeline.py --base-model GanjinZero/biobart-v2-large --use-peft --output-dir results/biobart-large
+uv run python pipeline.py --base-model GanjinZero/biobart-v2-large --use-peft --output-dir results/biobart-large
 ```
 
 **Inference**
 ```bash
-python run_inference.py --model results/biobart-large --output outputs/biobart-large.json
+uv run python run_inference.py --model results/biobart-large --output outputs/biobart-large.json
 ```
 
 **Evaluate**
 ```bash
-python eval_pipeline.py --input outputs/biobart-large.json --output eval/biobart-large.json
+uv run python eval_pipeline.py --input outputs/biobart-large.json --output eval/biobart-large.json
 ```
 
-Run `python <script> --help` for all options.
+Run `uv run python <script> --help` for all options.
 
 ## Cluster (Hyak)
 
@@ -62,13 +55,11 @@ export HF_HOME=/gscratch/scrubbed/<netid>/hf-cache
 
 # Install dependencies
 uv pip install -r requirements.txt
-uv pip install torch --index-url https://download.pytorch.org/whl/cu118
-python -m spacy download en_core_sci_sm
 ```
 
 ### Submitting a training job
 
-Before submitting, update `--chdir` in `scripts/run_on_hyak.sh` to match your repo path (`pwd` from inside the repo).
+Before submitting, update `NETID` and `--chdir` in `scripts/run_on_hyak.sh`, then:
 
 ```bash
 sbatch scripts/run_on_hyak.sh --base-model GanjinZero/biobart-v2-large --use-peft --output-dir results/biobart-large
@@ -78,10 +69,4 @@ Monitor the job:
 ```bash
 squeue -u <netid>
 tail -f logs/<jobid>.out
-```
-
-### Verifying GPU access
-
-```bash
-srun --partition=gpu-2080ti --account=stf --gpus=1 --pty python -c "import torch; print(torch.cuda.is_available())"
 ```
