@@ -18,6 +18,9 @@
 export UV_CACHE_DIR=/gscratch/scrubbed/pgarg2/uv-cache
 export HF_HOME=/gscratch/scrubbed/pgarg2/hf-cache
 export TRANSFORMERS_CACHE=/gscratch/scrubbed/pgarg2/hf-cache
+export NLTK_DATA=/gscratch/scrubbed/pgarg2/nltk-data
+
+python -c "import nltk; nltk.download('punkt_tab', download_dir='$NLTK_DATA', quiet=True)"
 
 source /gscratch/scrubbed/pgarg2/medjargone/bin/activate
 

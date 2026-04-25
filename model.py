@@ -19,13 +19,13 @@ class Summarizer:
             base_model_name = peft_config.base_model_name_or_path
 
             self.tokenizer = AutoTokenizer.from_pretrained(base_model_name)
-            base_model = AutoModelForSeq2SeqLM.from_pretrained(base_model_name, torch_dtype=dtype).to(self.device)
+            base_model = AutoModelForSeq2SeqLM.from_pretrained(base_model_name, dtype=dtype).to(self.device)
             peft_model = PeftModel.from_pretrained(base_model, model_name)
             # Merge LoRA weights into base model to eliminate per-layer adapter overhead
             self.model = peft_model.merge_and_unload().to(self.device)
         else:
             self.tokenizer = AutoTokenizer.from_pretrained(model_name)
-            self.model = AutoModelForSeq2SeqLM.from_pretrained(model_name, torch_dtype=dtype).to(self.device)
+            self.model = AutoModelForSeq2SeqLM.from_pretrained(model_name, dtype=dtype).to(self.device)
 
         self.model.eval()
 
