@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=medjargone-inference
 #SBATCH --account=stf
-#SBATCH --partition=gpu-a40
+#SBATCH --partition=gpu-l40
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=4

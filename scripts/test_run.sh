@@ -2,7 +2,7 @@
 # Quick smoke test: 5-example inference + eval with GPU/memory diagnostics.
 # Run interactively on a GPU node before submitting the full Slurm job:
 #
-#   srun --account=stf --partition=gpu-a40 --gpus=1 --mem=32G --time=0:30:00 --pty bash
+#   srun --account=stf --partition=gpu-l40 --gpus=1 --mem=32G --time=0:30:00 --pty bash
 #   cd 2026-LING-573-Summarization-Project
 #   bash scripts/test_run.sh
 
