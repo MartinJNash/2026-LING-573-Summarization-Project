@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=medjargone-inference
 #SBATCH --account=stf
-#SBATCH --partition=gpu-2080ti
+#SBATCH --partition=gpu-a40
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=4
@@ -26,6 +26,7 @@ mkdir -p logs results/outputs
 python run_inference.py \
     --model results/biobart-large \
     --split test \
+    --batch-size 16 \
     --output results/outputs/biobart-large-finetuned.json
 
 python eval_pipeline.py \
