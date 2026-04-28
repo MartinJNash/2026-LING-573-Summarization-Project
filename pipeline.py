@@ -15,18 +15,21 @@ class Config:
     base_model: str
     use_peft: bool
     output_dir: str
+    num_epochs: int
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--base-model", default="facebook/bart-base", help="Path to base model")
     parser.add_argument("--use-peft", action="store_true", default=False)
     parser.add_argument("--output-dir", default="./results/final_model", help="Path to output directory")
+    parser.add_argument("--num-epochs", type=int, default=3, help="Number of training epochs")
     args = parser.parse_args()
 
     config = Config(
-        base_model=args.base_model, 
-        use_peft=args.use_peft, 
-        output_dir=args.output_dir
+        base_model=args.base_model,
+        use_peft=args.use_peft,
+        output_dir=args.output_dir,
+        num_epochs=args.num_epochs,
     )
     train(config)
 
@@ -61,12 +64,12 @@ def train(config: Config):
     data_collator = DataCollatorForSeq2Seq(tokenizer=tokenizer, model=model)
 
     training_args = Seq2SeqTrainingArguments(
-        output_dir="./results",
+        output_dir=config.output_dir,
         eval_strategy="epoch",
         save_strategy="epoch",
         learning_rate=5e-5,
         per_device_train_batch_size=4,
-        num_train_epochs=10,
+        num_train_epochs=config.num_epochs,
         weight_decay=0.01,
         predict_with_generate=True,
         generation_max_length=256,
