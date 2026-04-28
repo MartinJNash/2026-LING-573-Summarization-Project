@@ -16,6 +16,7 @@ class Config:
     use_peft: bool
     output_dir: str
     num_epochs: int
+    max_samples: int | None
 
 def main():
     parser = argparse.ArgumentParser()
@@ -23,6 +24,7 @@ def main():
     parser.add_argument("--use-peft", action="store_true", default=False)
     parser.add_argument("--output-dir", default="./results/final_model", help="Path to output directory")
     parser.add_argument("--num-epochs", type=int, default=3, help="Number of training epochs")
+    parser.add_argument("--max-samples", type=int, default=None, help="Limit dataset size for smoke testing")
     args = parser.parse_args()
 
     config = Config(
@@ -30,6 +32,7 @@ def main():
         use_peft=args.use_peft,
         output_dir=args.output_dir,
         num_epochs=args.num_epochs,
+        max_samples=args.max_samples,
     )
     train(config)
 
@@ -52,6 +55,8 @@ def train(config: Config):
         model.print_trainable_parameters()
 
     ds = Dataset.from_generator(read_gs_training_data)
+    if config.max_samples is not None:
+        ds = ds.select(range(min(config.max_samples, len(ds))))
     split = ds.train_test_split(test_size=0.1, seed=42)
 
     def preprocess(examples):
