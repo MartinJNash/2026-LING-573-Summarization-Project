@@ -1,25 +1,23 @@
 import inspect
-import json
 import os
 import torch
 from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
 from peft import PeftModel, PeftConfig
 from peft import LoraConfig
 
+# Monkey-patch LoraConfig to tolerate unknown kwargs from adapter configs saved
+# by newer/custom peft versions (e.g. alora_invocation_tokens, qalora_group_size).
+# PeftModel.from_pretrained also constructs LoraConfig internally, so a try/except
+# around from_pretrained alone is not sufficient.
+_lora_valid_keys = set(inspect.signature(LoraConfig.__init__).parameters.keys()) - {"self"}
+_orig_lora_init = LoraConfig.__init__
 
-def _load_peft_config_tolerant(model_name):
-    """Load PeftConfig, ignoring unknown fields that newer peft versions may have added."""
-    adapter_config_path = os.path.join(model_name, "adapter_config.json")
-    with open(adapter_config_path) as f:
-        config_dict = json.load(f)
 
-    try:
-        return PeftConfig.from_pretrained(model_name)
-    except TypeError:
-        # Strip keys not accepted by LoraConfig.__init__ and retry
-        valid_keys = set(inspect.signature(LoraConfig.__init__).parameters.keys()) - {"self"}
-        stripped = {k: v for k, v in config_dict.items() if k in valid_keys}
-        return LoraConfig(**stripped)
+def _tolerant_lora_init(self, **kwargs):
+    _orig_lora_init(self, **{k: v for k, v in kwargs.items() if k in _lora_valid_keys})
+
+
+LoraConfig.__init__ = _tolerant_lora_init
 
 
 class Summarizer:
