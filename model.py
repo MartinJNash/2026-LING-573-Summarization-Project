@@ -1,7 +1,25 @@
+import inspect
+import json
 import os
 import torch
 from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
 from peft import PeftModel, PeftConfig
+from peft import LoraConfig
+
+
+def _load_peft_config_tolerant(model_name):
+    """Load PeftConfig, ignoring unknown fields that newer peft versions may have added."""
+    adapter_config_path = os.path.join(model_name, "adapter_config.json")
+    with open(adapter_config_path) as f:
+        config_dict = json.load(f)
+
+    try:
+        return PeftConfig.from_pretrained(model_name)
+    except TypeError:
+        # Strip keys not accepted by LoraConfig.__init__ and retry
+        valid_keys = set(inspect.signature(LoraConfig.__init__).parameters.keys()) - {"self"}
+        stripped = {k: v for k, v in config_dict.items() if k in valid_keys}
+        return LoraConfig(**stripped)
 
 
 class Summarizer:
@@ -15,7 +33,7 @@ class Summarizer:
         dtype = torch.float16 if self.device == "cuda" else torch.float32
 
         if os.path.exists(adapter_config_path):
-            peft_config = PeftConfig.from_pretrained(model_name)
+            peft_config = _load_peft_config_tolerant(model_name)
             base_model_name = peft_config.base_model_name_or_path
 
             self.tokenizer = AutoTokenizer.from_pretrained(base_model_name)
