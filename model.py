@@ -31,7 +31,7 @@ class Summarizer:
         dtype = torch.float16 if self.device == "cuda" else torch.float32
 
         if os.path.exists(adapter_config_path):
-            peft_config = _load_peft_config_tolerant(model_name)
+            peft_config = PeftConfig.from_pretrained(model_name)
             base_model_name = peft_config.base_model_name_or_path
 
             self.tokenizer = AutoTokenizer.from_pretrained(base_model_name)
