@@ -1,23 +1,61 @@
 #!/bin/bash
-# Submit inference jobs to multiple partitions and cancel the rest when one starts running.
+# Race inference jobs across partitions — cancel losers, chain eval on the winner.
 
-JOB1=$(sbatch --parsable scripts/run_inference_hyak.sh)   # gpu-2080ti
-JOB2=$(sbatch --parsable scripts/run_inference_ckpt.sh)   # ckpt-all
+INFERENCE_SCRIPTS=(
+    "scripts/run_inference_hyak.sh"   # gpu-2080ti
+    "scripts/run_inference_ckpt.sh"   # ckpt-all
+)
+EVAL_SCRIPT="scripts/run_eval_hyak.sh"
 
-echo "Submitted: gpu-2080ti=$JOB1  ckpt-all=$JOB2"
-echo "Watching for first job to start running..."
+# Submit all inference jobs
+declare -A JOB_LABELS
+for SCRIPT in "${INFERENCE_SCRIPTS[@]}"; do
+    PARTITION=$(grep -oP '(?<=--partition=)\S+' "$SCRIPT")
+    JOB_ID=$(sbatch --parsable "$SCRIPT")
+    JOB_LABELS[$JOB_ID]="$PARTITION"
+    echo "Submitted $SCRIPT -> job $JOB_ID ($PARTITION)"
+done
 
-while true; do
-    for JOB in $JOB1 $JOB2; do
+ALL_JOBS=("${!JOB_LABELS[@]}")
+echo ""
+echo "Racing: ${ALL_JOBS[*]}"
+echo "Polling every 30s for first job to start running..."
+
+WINNER=""
+while [[ -z "$WINNER" ]]; do
+    sleep 30
+    for JOB in "${ALL_JOBS[@]}"; do
         STATE=$(squeue -j "$JOB" -h -o "%T" 2>/dev/null)
         if [[ "$STATE" == "RUNNING" ]]; then
-            echo "Job $JOB is RUNNING — cancelling the others."
-            for OTHER in $JOB1 $JOB2; do
-                [[ "$OTHER" != "$JOB" ]] && scancel "$OTHER" && echo "Cancelled $OTHER"
-            done
-            echo "Done. Watch your winner: squeue -j $JOB"
-            exit 0
+            WINNER=$JOB
+            echo "Winner: job $WINNER (${JOB_LABELS[$WINNER]}) is RUNNING"
+            break
+        elif [[ -z "$STATE" ]]; then
+            # Job ended before any ran (failed/cancelled) — remove from consideration
+            echo "Job $JOB (${JOB_LABELS[$JOB]}) is gone — skipping."
+            ALL_JOBS=("${ALL_JOBS[@]/$JOB}")
         fi
     done
-    sleep 30
+
+    if [[ ${#ALL_JOBS[@]} -eq 0 ]]; then
+        echo "All jobs failed or were cancelled before any started. Exiting."
+        exit 1
+    fi
 done
+
+# Cancel all other inference jobs
+for JOB in "${ALL_JOBS[@]}"; do
+    if [[ "$JOB" != "$WINNER" && -n "$JOB" ]]; then
+        scancel "$JOB"
+        echo "Cancelled job $JOB (${JOB_LABELS[$JOB]})"
+    fi
+done
+
+# Submit eval as dependent on the winning inference job
+EVAL_JOB=$(sbatch --parsable --dependency=afterok:$WINNER "$EVAL_SCRIPT")
+echo ""
+echo "Submitted eval job $EVAL_JOB — will start after job $WINNER completes successfully."
+echo ""
+echo "Monitor inference: tail -f logs/${WINNER}.out"
+echo "Monitor eval:      tail -f logs/${EVAL_JOB}.out"
+echo "Watch queue:       watch -n 30 'squeue -u \$USER'"

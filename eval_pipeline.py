@@ -14,6 +14,7 @@ import argparse
 import evaluate
 import bert_score
 import textstat
+import torch
 from summac.model_summac import SummaCZS
 import spacy
 
@@ -66,7 +67,9 @@ def compute_metrics(preds, golds, sources):
     # SummaC — NLI-based factual consistency; checks summary is supported by source
     # Expected: stable or slight decrease vs. gold (simplification may lose detail)
     print("Computing SummaC faithfulness...")
-    summac_model = SummaCZS(granularity="sentence", model_name="vitc", device="cpu")
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    print(f"  SummaC device: {device}")
+    summac_model = SummaCZS(granularity="sentence", model_name="vitc", device=device)
     summac_result = summac_model.score(sources, preds)
     faithfulness = {
         "summac_avg": sum(summac_result["scores"]) / len(summac_result["scores"])

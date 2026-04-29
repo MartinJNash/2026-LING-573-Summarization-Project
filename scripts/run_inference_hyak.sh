@@ -28,7 +28,3 @@ python run_inference.py \
     --split test \
     --batch-size 16 \
     --output results/outputs/biobart-large-finetuned.json
-
-python eval_pipeline.py \
-    --input results/outputs/biobart-large-finetuned.json \
-    --output results/outputs/biobart-large-finetuned-eval.json
