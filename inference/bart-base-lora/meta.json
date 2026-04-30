@@ -1,0 +1,5 @@
+{
+  "model": "mjnash-uw/bart-base-lora",
+  "base_model": "facebook/bart-base",
+  "num_examples": 300
+}
