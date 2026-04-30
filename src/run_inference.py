@@ -4,8 +4,8 @@ Run this once, then use eval_pipeline.py to compute metrics.
 """
 
 import json
-from read_data import read_gs_training_data
-from model import Summarizer
+from src.read_data import read_gs_training_data
+from src.model import Summarizer
 
 MODEL_NAME = "facebook/bart-base"
 NUM_EXAMPLES = 5

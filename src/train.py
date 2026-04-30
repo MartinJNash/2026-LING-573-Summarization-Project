@@ -1,10 +1,10 @@
 import argparse
-from read_data import read_gs_training_data
+from src.read_data import read_gs_training_data
 from datasets import Dataset
 from transformers import Seq2SeqTrainingArguments
 from transformers import Seq2SeqTrainer
 from transformers import DataCollatorForSeq2Seq
-from model import Summarizer
+from src.model import Summarizer
 import evaluate
 import numpy as np
 from peft import LoraConfig, get_peft_model
