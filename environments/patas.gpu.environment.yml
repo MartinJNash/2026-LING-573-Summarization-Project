@@ -1,28 +1,28 @@
-  name: medjargone-gpu
-  channels:
-    - conda-forge
-  dependencies:
-    - python=3.11
-    - datasets
+name: medjargone-gpu
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - numpy=1.26.4
+  - pandas
+  - tqdm
+  - regex
+  - pyyaml
+  - pip
+  - pip:
+    - --index-url https://download.pytorch.org/whl/cu118
+    - --extra-index-url https://pypi.org/simple
+    - torch>=2.6
     - transformers
     - tokenizers
     - safetensors
     - huggingface_hub
-    - numpy
-    - pandas
-    - tqdm
-    - regex
-    - pyyaml
-    - pip
-    - pip:
-      - --index-url https://download.pytorch.org/whl/cu118
-      - --extra-index-url https://pypi.org/simple
-      - torch>=2.6
-      - accelerate
-      - peft
-      - evaluate
-      - rouge-score
-      - nltk
-      - bert-score
-      - textstat
-      - matplotlib
+    - datasets
+    - accelerate
+    - peft
+    - evaluate
+    - rouge-score
+    - nltk
+    - bert-score
+    - textstat
+    - matplotlib
