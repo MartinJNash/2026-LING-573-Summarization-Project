@@ -30,7 +30,7 @@ def load_outputs(path):
     return preds, golds, sources, model, examples
 
 
-def compute_metrics(preds, golds, sources):
+def compute_metrics(preds, golds, sources, fast=False):
     # ROUGE — all variants; rougeLsum is the primary metric (matches MultiClinSum)
     print("Computing ROUGE...")
     rouge = evaluate.load("rouge")
@@ -42,18 +42,22 @@ def compute_metrics(preds, golds, sources):
     bleu_score = bleu.compute(predictions=preds, references=[[g] for g in golds])
 
     # BERTScore — semantic similarity against reference; consistent model across all runs
-    print("Computing BERTScore...")
-    P, R, F1 = bert_score.score(
-        preds, golds,
-        lang="en",
-        model_type="distilbert-base-uncased",
-        verbose=False,
-    )
-    bertscore_result = {
-        "precision": P.mean().item(),
-        "recall": R.mean().item(),
-        "f1": F1.mean().item(),
-    }
+    if fast:
+        print("Skipping BERTScore (--fast mode).")
+        bertscore_result = {"precision": None, "recall": None, "f1": None}
+    else:
+        print("Computing BERTScore...")
+        P, R, F1 = bert_score.score(
+            preds, golds,
+            lang="en",
+            model_type="distilbert-base-uncased",
+            verbose=False,
+        )
+        bertscore_result = {
+            "precision": P.mean().item(),
+            "recall": R.mean().item(),
+            "f1": F1.mean().item(),
+        }
 
     # Flesch-Kincaid Grade Level — lower pred score = more readable for patients
     print("Computing readability...")
@@ -66,14 +70,18 @@ def compute_metrics(preds, golds, sources):
 
     # SummaC — NLI-based factual consistency; checks summary is supported by source
     # Expected: stable or slight decrease vs. gold (simplification may lose detail)
-    print("Computing SummaC faithfulness...")
-    device = "cuda" if torch.cuda.is_available() else "cpu"
-    print(f"  SummaC device: {device}")
-    summac_model = SummaCZS(granularity="sentence", model_name="vitc", device=device)
-    summac_result = summac_model.score(sources, preds)
-    faithfulness = {
-        "summac_avg": sum(summac_result["scores"]) / len(summac_result["scores"])
-    }
+    if fast:
+        print("Skipping SummaC (--fast mode).")
+        faithfulness = {"summac_avg": None}
+    else:
+        print("Computing SummaC faithfulness...")
+        device = "cuda" if torch.cuda.is_available() else "cpu"
+        print(f"  SummaC device: {device}")
+        summac_model = SummaCZS(granularity="sentence", model_name="vitc", device=device)
+        summac_result = summac_model.score(sources, preds)
+        faithfulness = {
+            "summac_avg": sum(summac_result["scores"]) / len(summac_result["scores"])
+        }
 
     # Medical concept overlap — scispacy biomedical NER F1 vs. gold
     # Approximates MEDCON without a UMLS license
@@ -134,12 +142,13 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", default="outputs.json", help="Path to inference outputs JSON")
     parser.add_argument("--output", default="eval_results.json", help="Path to save eval results")
+    parser.add_argument("--fast", action="store_true", help="Skip BERTScore and SummaC (fast CPU-only metrics only)")
     args = parser.parse_args()
 
     print(f"Loading outputs from {args.input}...")
     preds, golds, sources, model, examples = load_outputs(args.input)
 
-    rouge_scores, bleu_score, bertscore_result, readability, faithfulness, concept_overlap = compute_metrics(preds, golds, sources)
+    rouge_scores, bleu_score, bertscore_result, readability, faithfulness, concept_overlap = compute_metrics(preds, golds, sources, fast=args.fast)
     print_results(rouge_scores, bleu_score, bertscore_result, readability, faithfulness, concept_overlap, model, len(examples))
 
     output = {
