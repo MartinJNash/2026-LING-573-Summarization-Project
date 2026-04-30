@@ -1,4 +1,5 @@
 import argparse
+from bert_score import score as bert_score_fn
 from src.read_data import read_gs_training_data
 from datasets import Dataset
 from transformers import Seq2SeqTrainingArguments
@@ -79,11 +80,13 @@ def train(config: Config):
         predict_with_generate=True,
         generation_max_length=256,
         load_best_model_at_end=True,
-        metric_for_best_model="rouge1",
+        metric_for_best_model="bertscore_f1",
+        greater_is_better=True,
         save_total_limit=2,
         logging_steps=50,
         report_to="none",
         seed=42,
+        fp16=True,
         dataloader_pin_memory=False,
         dataloader_num_workers=2,
     )
@@ -99,7 +102,19 @@ def train(config: Config):
         decoded_preds = [pred.strip() for pred in decoded_preds]
         decoded_labels = [label.strip() for label in decoded_labels]
         result = rouge.compute(predictions=decoded_preds, references=decoded_labels, use_stemmer=True)
-        return {k: round(v * 100, 4) for k, v in result.items()}
+        metrics = {k: round(v * 100, 4) for k, v in result.items()}
+
+        # BERTScore used for checkpoint selection (captures semantic similarity
+        # that ROUGE misses; Angulo & Yeste found ROUGE/BERTScore negatively correlated r=-0.49)
+        _, _, F1 = bert_score_fn(
+            decoded_preds, decoded_labels,
+            lang="en",
+            model_type="distilbert-base-uncased",
+            verbose=False,
+        )
+        metrics["bertscore_f1"] = round(F1.mean().item(), 4)
+
+        return metrics
 
     trainer = Seq2SeqTrainer(
         model=model,
