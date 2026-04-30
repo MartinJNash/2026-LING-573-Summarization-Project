@@ -1,0 +1,5 @@
+{
+  "model": "GanjinZero/biobart-v2-base",
+  "num_examples": 339,
+  "seed": 42
+}

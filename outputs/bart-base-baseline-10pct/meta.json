@@ -1,0 +1,6 @@
+{
+  "model": "facebook/bart-base",
+  "base_model": "facebook/bart-base",
+  "num_examples": 339,
+  "seed": 42
+}
