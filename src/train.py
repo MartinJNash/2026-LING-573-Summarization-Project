@@ -69,7 +69,7 @@ def train(config: Config):
     data_collator = DataCollatorForSeq2Seq(tokenizer=tokenizer, model=model)
 
     training_args = Seq2SeqTrainingArguments(
-        output_dir=config.output_dir,
+        output_dir=config.output_dir + "/checkpoints",
         eval_strategy="epoch",
         save_strategy="epoch",
         learning_rate=5e-5,
@@ -112,7 +112,7 @@ def train(config: Config):
     )
 
     trainer.train()
-    trainer.save_model(config.output_dir)
+    trainer.save_model(config.output_dir + "/best")
 
 
 if __name__ == "__main__":

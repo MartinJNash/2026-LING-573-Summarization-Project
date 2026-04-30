@@ -6,7 +6,7 @@
     "base_model_class": "BartForConditionalGeneration",
     "parent_library": "transformers.models.bart.modeling_bart"
   },
-  "base_model_name_or_path": "facebook/bart-base",
+  "base_model_name_or_path": "facebook/bart-large",
   "bias": "none",
   "corda_config": null,
   "ensure_weight_tying": false,
@@ -35,8 +35,8 @@
   "rank_pattern": {},
   "revision": null,
   "target_modules": [
-    "v_proj",
-    "q_proj"
+    "q_proj",
+    "v_proj"
   ],
   "target_parameters": null,
   "task_type": null,
