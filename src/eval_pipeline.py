@@ -10,18 +10,26 @@ Usage:
 
 import json
 import argparse
+from pathlib import Path
 import evaluate
 import bert_score
 import textstat
 
 
 def load_outputs(path):
+    path = Path(path)
     with open(path, "r") as f:
-        data = json.load(f)
-    examples = data["examples"]
+        examples = [json.loads(line) for line in f if line.strip()]
     preds = [e["pred"] for e in examples]
     golds = [e["gold"] for e in examples]
-    model = data.get("model", "unknown")
+
+    meta_path = path.parent / "meta.json"
+    if meta_path.exists():
+        with open(meta_path) as f:
+            model = json.load(f).get("model", "unknown")
+    else:
+        model = "unknown"
+
     return preds, golds, model, examples
 
 
@@ -78,7 +86,7 @@ def print_results(rouge_scores, bleu_score, bertscore_result, readability, model
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--input", default="outputs.json", help="Path to inference outputs JSON")
+    parser.add_argument("--input", default="outputs/outputs.jsonl", help="Path to inference outputs JSONL")
     parser.add_argument("--output", default="eval_results.json", help="Path to save eval results")
     args = parser.parse_args()
 
@@ -97,6 +105,7 @@ def main():
         "readability": readability,
     }
 
+    Path(args.output).parent.mkdir(parents=True, exist_ok=True)
     with open(args.output, "w") as f:
         json.dump(output, f, indent=2)
 
