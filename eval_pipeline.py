@@ -30,7 +30,7 @@ def load_outputs(path):
     return preds, golds, sources, model, examples
 
 
-def compute_metrics(preds, golds, sources, fast=False):
+def compute_metrics(preds, golds, sources, skip_bertscore=False, skip_summac=False):
     # ROUGE — all variants; rougeLsum is the primary metric (matches MultiClinSum)
     print("Computing ROUGE...")
     rouge = evaluate.load("rouge")
@@ -42,9 +42,9 @@ def compute_metrics(preds, golds, sources, fast=False):
     bleu_score = bleu.compute(predictions=preds, references=[[g] for g in golds])
 
     # BERTScore — semantic similarity against reference; consistent model across all runs
-    if fast:
-        print("Skipping BERTScore (--fast mode).")
-        bertscore_result = {"precision": None, "recall": None, "f1": None}
+    if skip_bertscore:
+        print("Skipping BERTScore.")
+        bertscore_result = None
     else:
         print("Computing BERTScore...")
         P, R, F1 = bert_score.score(
@@ -70,8 +70,8 @@ def compute_metrics(preds, golds, sources, fast=False):
 
     # SummaC — NLI-based factual consistency; checks summary is supported by source
     # Expected: stable or slight decrease vs. gold (simplification may lose detail)
-    if fast:
-        print("Skipping SummaC (--fast mode).")
+    if skip_summac:
+        print("Skipping SummaC.")
         faithfulness = {"summac_avg": None}
     else:
         print("Computing SummaC faithfulness...")
@@ -125,7 +125,7 @@ def print_results(rouge_scores, bleu_score, bertscore_result, readability, faith
         for k, v in bertscore_result.items():
             print(f"  {k}: {round(v, 4)}")
     else:
-        print(f"  skipped (--fast mode)")
+        print(f"  skipped")
 
     print(f"\nFlesch-Kincaid Grade Level (expected pred < gold — lower = more readable):")
     print(f"  pred avg:  {round(readability['pred_fk_grade_avg'], 2)}")
@@ -137,7 +137,7 @@ def print_results(rouge_scores, bleu_score, bertscore_result, readability, faith
     if faithfulness.get('summac_avg') is not None:
         print(f"  avg: {round(faithfulness['summac_avg'], 4)}")
     else:
-        print(f"  skipped (--fast mode)")
+        print(f"  skipped")
 
     print(f"\nMedical Concept Overlap F1 (scispacy NER, expected ↓ with readability gain):")
     val = concept_overlap["concept_f1_avg"]
@@ -149,12 +149,17 @@ def main():
     parser.add_argument("--input", default="outputs.json", help="Path to inference outputs JSON")
     parser.add_argument("--output", default="eval_results.json", help="Path to save eval results")
     parser.add_argument("--fast", action="store_true", help="Skip BERTScore and SummaC (fast CPU-only metrics only)")
+    parser.add_argument("--skip-bertscore", action="store_true", help="Skip BERTScore only")
+    parser.add_argument("--skip-summac", action="store_true", help="Skip SummaC only")
     args = parser.parse_args()
+
+    skip_bertscore = args.fast or args.skip_bertscore
+    skip_summac = args.fast or args.skip_summac
 
     print(f"Loading outputs from {args.input}...")
     preds, golds, sources, model, examples = load_outputs(args.input)
 
-    rouge_scores, bleu_score, bertscore_result, readability, faithfulness, concept_overlap = compute_metrics(preds, golds, sources, fast=args.fast)
+    rouge_scores, bleu_score, bertscore_result, readability, faithfulness, concept_overlap = compute_metrics(preds, golds, sources, skip_bertscore=skip_bertscore, skip_summac=skip_summac)
     print_results(rouge_scores, bleu_score, bertscore_result, readability, faithfulness, concept_overlap, model, len(examples))
 
     output = {
