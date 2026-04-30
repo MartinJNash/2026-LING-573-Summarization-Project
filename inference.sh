@@ -5,4 +5,4 @@ source ~/miniconda3/etc/profile.d/conda.sh
 conda activate medjargone-gpu
 
 # Run code
-python src/run_inference.py "$@"
+python -m src.run_inference "$@"
