@@ -1,8 +1,8 @@
 executable = inference.sh
 arguments  = --lora-path models/$(name) --output-dir results/inference/$(name)
-error      = logs/inference/$(name).inf.err.txt
-output     = logs/inference/$(name).inf.out.txt
-log        = logs/inference/$(name).inf.log.txt
+error      = $(name).inf.err.txt
+output     = $(name).inf.out.txt
+log        = $(name).inf.log.txt
 
 getenv     = true
 notification = never

@@ -1,4 +1,4 @@
-executable = run_on_patas.sh
+executable = train.sh
 arguments  = --base-model $(model) --output-dir results/$(name)/best $(peft)
 error      = $(name).err.txt
 output     = $(name).out.txt
