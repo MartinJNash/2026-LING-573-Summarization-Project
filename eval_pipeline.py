@@ -121,8 +121,11 @@ def print_results(rouge_scores, bleu_score, bertscore_result, readability, faith
     print(f"\nBLEU: {round(bleu_score['bleu'] * 100, 2)}")
 
     print(f"\nBERTScore (expected slight ↓, more stable than ROUGE):")
-    for k, v in bertscore_result.items():
-        print(f"  {k}: {round(v, 4)}")
+    if bertscore_result is not None:
+        for k, v in bertscore_result.items():
+            print(f"  {k}: {round(v, 4)}")
+    else:
+        print(f"  skipped (--fast mode)")
 
     print(f"\nFlesch-Kincaid Grade Level (expected pred < gold — lower = more readable):")
     print(f"  pred avg:  {round(readability['pred_fk_grade_avg'], 2)}")
@@ -131,7 +134,10 @@ def print_results(rouge_scores, bleu_score, bertscore_result, readability, faith
     print(f"  delta:     {round(delta, 2)} ({'↓ more readable' if delta < 0 else '↑ less readable'})")
 
     print(f"\nSummaC Faithfulness (0–1, expected stable/slight ↓):")
-    print(f"  avg: {round(faithfulness['summac_avg'], 4)}")
+    if faithfulness.get('summac_avg') is not None:
+        print(f"  avg: {round(faithfulness['summac_avg'], 4)}")
+    else:
+        print(f"  skipped (--fast mode)")
 
     print(f"\nMedical Concept Overlap F1 (scispacy NER, expected ↓ with readability gain):")
     val = concept_overlap["concept_f1_avg"]
