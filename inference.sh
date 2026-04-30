@@ -14,6 +14,7 @@ conda activate medjargone-gpu
 
 echo "Python: $(which python)"                                                                                                                                    
 
+export HF_HUB_OFFLINE=1
 
 # Run code
 python -m src.run_inference "$@"
