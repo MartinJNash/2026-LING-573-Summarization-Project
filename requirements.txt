@@ -15,5 +15,4 @@ accelerate
 bert-score
 textstat
 peft
-summac
 scispacy

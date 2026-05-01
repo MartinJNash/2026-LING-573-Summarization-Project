@@ -2,14 +2,14 @@
 name = "2026-ling-573-summarization-project"
 version = "0.1.0"
 description = "Add your description here"
-requires-python = ">=3.11"
+requires-python = ">=3.11,<3.14"
 dependencies = [
     "accelerate",
     "bert-score",
     "datasets>=2.17.0",
     "evaluate",
     "nltk",
-    "numpy<2.0",
+    "numpy",
     "pandas",
     "peft",
     "pyyaml",
@@ -17,7 +17,6 @@ dependencies = [
     "rouge-score",
     "safetensors",
     "scispacy",
-    "summac",
     "textstat",
     "tokenizers",
     "torch",
@@ -27,9 +26,18 @@ dependencies = [
 
 [tool.uv]
 override-dependencies = [
-    # summac pins hub<=0.17.0 but that's outdated — override it
-    # transformers 4.35.2 needs <1.0, peft needs >=0.20.0 for errors module
+    # transformers needs <1.0, peft needs >=0.20.0 for errors module
     "huggingface-hub>=0.20.0,<1.0",
-    "numpy<2.0",
     "datasets>=2.17.0",
 ]
+
+# On Linux (Patas/Hyak GPU nodes) install CUDA 11.8 torch instead of CPU-only PyPI torch
+[tool.uv.sources]
+torch = [
+    { index = "pytorch-cu118", marker = "sys_platform == 'linux'" },
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu118"
+url = "https://download.pytorch.org/whl/cu118"
+explicit = true

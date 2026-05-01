@@ -1,6 +1,6 @@
 # Model Registry
 
-Fine-tuned on [MultiClinSum](https://zenodo.org/records/15546018) GS training split (594 examples, 90/10 train/val, seed=42) using LoRA (r=16, α=16, q_proj + v_proj, dropout=0.1). Checkpoints selected by best BERTScore F1 on validation set.
+Fine-tuned on [MultiClinSum](https://zenodo.org/records/17341582) GS training split (594 examples, 90/10 train/val, seed=42) using LoRA (r=16, α=16, q_proj + v_proj, dropout=0.1). Checkpoints selected by best BERTScore F1 on validation set.
 
 ## Models
 

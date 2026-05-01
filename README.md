@@ -1,6 +1,6 @@
 # MedJarGone
 
-Abstractive summarization of medical clinical notes for LING 573 (UW, Spring 2026), using the [MultiClinSum](https://zenodo.org/records/15546018) dataset.
+Abstractive summarization of medical clinical notes for LING 573 (UW, Spring 2026), using the [MultiClinSum](https://zenodo.org/records/17341582) dataset.
 
 See **[MODELS.md](MODELS.md)** for trained models, parameter counts, and evaluation results.
 
@@ -15,7 +15,16 @@ source ~/.bashrc  # or restart your shell
 
 ### Install dependencies
 
-1. Download the dataset from [Zenodo](https://zenodo.org/records/15546018) and place it under `data/`
+1. Download the dataset from [Zenodo](https://zenodo.org/records/17341582) and place it under `data/`:
+```bash
+mkdir -p data && cd data
+# Use -4 to force IPv4 (required on Patas/Dryas — IPv6 not supported)
+wget -4 -O multiclinsum_gs_train_en.zip "https://zenodo.org/records/17341582/files/multiclinsum_gs_train_en.zip?download=1"
+wget -4 -O multiclinsum_test_en.zip "https://zenodo.org/records/17341582/files/multiclinsum_test_en.zip?download=1"
+unzip multiclinsum_gs_train_en.zip
+unzip multiclinsum_test_en.zip
+cd ..
+```
 2. Create and activate a virtual environment:
 ```bash
 uv venv --python 3.11
@@ -43,7 +52,7 @@ python run_inference.py --model results/biobart-large --output results/outputs/b
 python eval_pipeline.py --input results/outputs/biobart-large.json --output results/outputs/biobart-large-eval.json
 ```
 
-Run `python <script> --help` for all options including `--num-epochs`, `--dataset`, `--batch-size`, `--num-examples`, `--fast`, `--skip-bertscore`, `--skip-summac`.
+Run `python <script> --help` for all options including `--num-epochs`, `--dataset`, `--batch-size`, `--num-examples`, `--fast`, `--skip-bertscore`.
 
 ## Cluster Setup
 

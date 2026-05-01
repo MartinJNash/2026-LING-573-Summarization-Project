@@ -13,7 +13,7 @@ language:
 
 # BioBART-v2-large + LoRA — MultiClinSum
 
-LoRA adapter fine-tuned on the [MultiClinSum](https://zenodo.org/records/15546018) GS training split for abstractive summarization of clinical notes into plain-language patient summaries. Part of UW LING 573 (Spring 2026) — MedJarGone project.
+LoRA adapter fine-tuned on the [MultiClinSum](https://zenodo.org/records/17341582) GS training split for abstractive summarization of clinical notes into plain-language patient summaries. Part of UW LING 573 (Spring 2026) — MedJarGone project.
 
 ## Model Details
 

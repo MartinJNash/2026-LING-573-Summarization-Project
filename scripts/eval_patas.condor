@@ -1,0 +1,21 @@
+executable = scripts/eval_patas.sh
+arguments  = --input results/outputs/$(name).json --output results/outputs/$(name)-eval.json
+error      = logs/$(name).eval.err.txt
+output     = logs/$(name).eval.out.txt
+log        = logs/$(name).eval.log.txt
+
+getenv            = true
+notification      = never
+transfer_executable = false
+request_memory    = 16384
++Research         = True
+
+# No GPU needed — BERTScore runs on CPU
+
+queue name from (
+  bart-base-baseline
+  bart-base-lora
+  biobart-base-baseline
+  biobart-base-lora
+  biobart-large-lora
+)
