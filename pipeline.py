@@ -1,5 +1,5 @@
 import argparse
-from read_data import read_gs_training_data
+from read_data import read_gs_training_data, read_large_scale_training_data
 from datasets import Dataset
 from transformers import Seq2SeqTrainingArguments
 from transformers import Seq2SeqTrainer
@@ -17,6 +17,9 @@ class Config:
     use_peft: bool
     output_dir: str
     batch_size: int = 4
+    num_epochs: int = 10
+    max_samples: int | None = None
+    dataset: str = "gs"
 
 def main():
     parser = argparse.ArgumentParser()
@@ -24,6 +27,9 @@ def main():
     parser.add_argument("--use-peft", action="store_true", default=False)
     parser.add_argument("--output-dir", default="./results/final_model", help="Path to output directory")
     parser.add_argument("--batch-size", type=int, default=4, help="Per-device train batch size")
+    parser.add_argument("--num-epochs", type=int, default=10, help="Number of training epochs")
+    parser.add_argument("--max-samples", type=int, default=None, help="Limit dataset size for smoke testing")
+    parser.add_argument("--dataset", default="gs", choices=["gs", "large-scale"], help="Training split: gs (594 examples) or large-scale")
     args = parser.parse_args()
 
     config = Config(
@@ -31,6 +37,9 @@ def main():
         use_peft=args.use_peft,
         output_dir=args.output_dir,
         batch_size=args.batch_size,
+        num_epochs=args.num_epochs,
+        max_samples=args.max_samples,
+        dataset=args.dataset,
     )
     train(config)
 
@@ -52,7 +61,10 @@ def train(config: Config):
         model = get_peft_model(model, lora_config)
         model.print_trainable_parameters()
 
-    ds = Dataset.from_generator(read_gs_training_data)
+    data_loader = read_large_scale_training_data if config.dataset == "large-scale" else read_gs_training_data
+    ds = Dataset.from_generator(data_loader)
+    if config.max_samples is not None:
+        ds = ds.select(range(min(config.max_samples, len(ds))))
     split = ds.train_test_split(test_size=0.1, seed=42)
 
     def preprocess(examples):
@@ -70,7 +82,7 @@ def train(config: Config):
         save_strategy="epoch",
         learning_rate=5e-5,
         per_device_train_batch_size=config.batch_size,
-        num_train_epochs=10,
+        num_train_epochs=config.num_epochs,
         weight_decay=0.01,
         fp16=True,
         predict_with_generate=True,
