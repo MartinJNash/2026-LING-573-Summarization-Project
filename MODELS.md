@@ -19,22 +19,17 @@ Fine-tuned on [MultiClinSum](https://zenodo.org/records/17341582) GS training sp
 Computed with `eval_pipeline.py`. Primary metric: **rougeLsum** (matches MultiClinSum shared task).
 FK grade: lower pred vs. gold = more patient-readable.
 
-### 339 examples (10% of test set, seed=42)
-
-| Model | ROUGE-1 | ROUGE-2 | ROUGE-L | rougeLsum | BLEU | BERTScore F1 | FK pred | FK gold |
-|---|---|---|---|---|---|---|---|---|
-| BART-base baseline | 35.15 | 15.09 | 22.70 | 22.77 | 10.51 | 84.67 | 12.24 | 14.70 |
-| BART-base LoRA | 36.46 | 15.88 | 23.47 | 23.47 | 10.93 | 85.15 | 12.35 | 14.70 |
-| BioBART-v2-base baseline | 35.80 | 15.44 | 23.06 | 23.13 | 10.64 | 84.54 | 12.65 | 14.70 |
-| BioBART-v2-base LoRA | 36.27 | 15.70 | 23.35 | 23.41 | 10.95 | 84.80 | 12.67 | 14.70 |
-
 ### Full test set (3,396 examples)
 
 | Model | ROUGE-1 | ROUGE-2 | ROUGE-L | rougeLsum | BLEU | BERTScore F1 | FK pred | FK gold |
 |---|---|---|---|---|---|---|---|---|
-| BioBART-v2-large LoRA | *pending* | | | | | | | |
+| BART-base baseline | 34.88 | 15.11 | 22.67 | 22.71 | 10.57 | 84.63 | 12.24 | 14.58 |
+| BART-base LoRA | 36.11 | 15.88 | 23.24 | 23.29 | 11.02 | 85.04 | 12.32 | 14.58 |
+| BioBART-v2-base baseline | 35.32 | 15.28 | 22.85 | 22.89 | 10.60 | 84.49 | 12.71 | 14.58 |
+| BioBART-v2-base LoRA | 35.85 | 15.49 | 23.08 | 23.12 | 10.85 | 84.73 | 12.75 | 14.58 |
+| BioBART-v2-large LoRA | 37.03 | 16.46 | 24.92 | 24.97 | 13.00 | 85.44 | 13.02 | 14.58 |
 
-> Run eval: `python eval_pipeline.py --input results/outputs/biobart-large-lora.json --output results/outputs/biobart-large-lora-eval.json`
+> Run eval: `python eval_pipeline.py --input results/outputs/<model>.json --output results/outputs/<model>-eval.json`
 
 ## Inference Outputs
 
@@ -42,8 +37,8 @@ All outputs in `results/outputs/`. JSONL format includes a `meta.json` alongside
 
 | Model | Path | Examples | Format |
 |---|---|---|---|
-| BART-base baseline | `results/outputs/bart-base-baseline/` | 339 | JSONL |
-| BART-base LoRA | `results/outputs/bart-base-lora/` | 339 | JSONL |
-| BioBART-v2-base baseline | `results/outputs/biobart-base-baseline/` | 339 | JSONL |
-| BioBART-v2-base LoRA | `results/outputs/biobart-base-lora/` | 339 | JSONL |
+| BART-base baseline | `results/outputs/bart-base-baseline.json` | 3,396 | JSON |
+| BART-base LoRA | `results/outputs/bart-base-lora.json` | 3,396 | JSON |
+| BioBART-v2-base baseline | `results/outputs/biobart-base-baseline.json` | 3,396 | JSON |
+| BioBART-v2-base LoRA | `results/outputs/biobart-base-lora.json` | 3,396 | JSON |
 | BioBART-v2-large LoRA | `results/outputs/biobart-large-lora.json` | 3,396 | JSON |
