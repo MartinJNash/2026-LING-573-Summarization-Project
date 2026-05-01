@@ -1,5 +1,4 @@
 import inspect
-import os
 import torch
 from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
 from peft import PeftModel, PeftConfig
@@ -25,11 +24,15 @@ class Summarizer:
         self.model_name = model_name
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
 
-        adapter_config_path = os.path.join(model_name, "adapter_config.json")
         dtype = torch.float16 if self.device == "cuda" else torch.float32
 
-        if os.path.exists(adapter_config_path):
+        try:
             peft_config = PeftConfig.from_pretrained(model_name)
+            is_peft = True
+        except Exception:
+            is_peft = False
+
+        if is_peft:
             base_model_name = peft_config.base_model_name_or_path
             self.tokenizer = AutoTokenizer.from_pretrained(base_model_name)
             base_model = AutoModelForSeq2SeqLM.from_pretrained(base_model_name, torch_dtype=dtype).to(self.device)
