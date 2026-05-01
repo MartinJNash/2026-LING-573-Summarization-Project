@@ -1,5 +1,5 @@
 executable = train.sh
-arguments  = --base-model $(model) --output-dir results/$(name)/best $(peft)
+arguments  = --base-model $(model) --output-dir results/train/$(name) $(peft) --dataset $(dataset)
 error      = $(name).err.txt
 output     = $(name).out.txt
 log        = $(name).log.txt
@@ -11,9 +11,9 @@ request_memory = 8192
 request_GPUs = 1                                                                                     
 Requirements = (Machine == "patas-gn3.ling.washington.edu")
 
-queue model, name, peft from (
-  GanjinZero/biobart-v2-base,    gpu-biobart-base-lora,   --use-peft
-  GanjinZero/biobart-v2-large,   gpu-biobart-large-lora,  --use-peft
-  facebook/bart-base,            gpu-bart-base-lora,      --use-peft
-  facebook/bart-large,           gpu-bart-large-lora,     --use-peft
+queue model, name, peft, dataset from (
+  GanjinZero/biobart-v2-base,    biobart-base-large-scale-lora,   --use-peft,  large-scale
+  GanjinZero/biobart-v2-large,   biobart-large-large-scale-lora,  --use-peft,  large-scale
+  facebook/bart-base,            bart-base-large-scale-lora,      --use-peft,  large-scale
+  facebook/bart-large,           bart-large-large-scale-lora,     --use-peft,  large-scale
 )
