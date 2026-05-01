@@ -1,6 +1,6 @@
 import argparse
 from bert_score import score as bert_score_fn
-from src.read_data import read_gs_training_data
+from src.read_data import read_gs_training_data, read_large_scale_training_data
 from datasets import Dataset
 from transformers import Seq2SeqTrainingArguments
 from transformers import Seq2SeqTrainer
@@ -18,6 +18,7 @@ class Config:
     output_dir: str
     num_epochs: int
     max_samples: int | None
+    dataset: str
 
 def main():
     parser = argparse.ArgumentParser()
@@ -26,6 +27,7 @@ def main():
     parser.add_argument("--output-dir", default="./results/final_model", help="Path to output directory")
     parser.add_argument("--num-epochs", type=int, default=3, help="Number of training epochs")
     parser.add_argument("--max-samples", type=int, default=None, help="Limit dataset size for smoke testing")
+    parser.add_argument("--dataset", default="gs", choices=["gs", "large-scale"], help="Training split: gs (594 examples) or large-scale")
     args = parser.parse_args()
 
     config = Config(
@@ -34,6 +36,7 @@ def main():
         output_dir=args.output_dir,
         num_epochs=args.num_epochs,
         max_samples=args.max_samples,
+        dataset=args.dataset,
     )
     train(config)
 
@@ -55,7 +58,8 @@ def train(config: Config):
         model = get_peft_model(model, lora_config)
         model.print_trainable_parameters()
 
-    ds = Dataset.from_generator(read_gs_training_data)
+    generator = read_gs_training_data if config.dataset == "gs" else read_large_scale_training_data
+    ds = Dataset.from_generator(generator)
     if config.max_samples is not None:
         ds = ds.select(range(min(config.max_samples, len(ds))))
     split = ds.train_test_split(test_size=0.1, seed=42)
