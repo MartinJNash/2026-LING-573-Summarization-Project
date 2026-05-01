@@ -9,6 +9,7 @@ Usage:
     python eval_pipeline.py --input outputs/biobart-base.json --output eval/biobart-base.json
 """
 
+import os
 import json
 import argparse
 import evaluate
@@ -27,14 +28,17 @@ def load_outputs(path):
 
 
 def compute_metrics(preds, golds, skip_bertscore=False):
+    # Use PID as experiment_id to avoid temp file collisions across parallel jobs
+    experiment_id = str(os.getpid())
+
     # ROUGE — all variants; rougeLsum is the primary metric (matches MultiClinSum)
     print("Computing ROUGE...")
-    rouge = evaluate.load("rouge")
+    rouge = evaluate.load("rouge", experiment_id=experiment_id)
     rouge_scores = rouge.compute(predictions=preds, references=golds, use_stemmer=True)
 
     # BLEU — reported for completeness
     print("Computing BLEU...")
-    bleu = evaluate.load("bleu")
+    bleu = evaluate.load("bleu", experiment_id=experiment_id)
     bleu_score = bleu.compute(predictions=preds, references=[[g] for g in golds])
 
     # BERTScore — semantic similarity against reference
