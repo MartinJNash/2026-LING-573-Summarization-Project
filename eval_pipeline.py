@@ -63,30 +63,10 @@ def compute_metrics(preds, golds, skip_bertscore=False):
         "gold_fk_grade_avg": sum(fk_golds) / len(fk_golds),
     }
 
-    # Medical concept overlap — scispacy biomedical NER F1 vs. gold
-    print("Computing medical concept overlap...")
-    try:
-        nlp = spacy.load("en_core_sci_sm")
-        concept_f1s = []
-        for pred, gold in zip(preds, golds):
-            pred_concepts = {ent.text.lower() for ent in nlp(pred).ents}
-            gold_concepts = {ent.text.lower() for ent in nlp(gold).ents}
-            if not gold_concepts:
-                continue
-            precision = len(pred_concepts & gold_concepts) / len(pred_concepts) if pred_concepts else 0
-            recall = len(pred_concepts & gold_concepts) / len(gold_concepts)
-            f1 = 2 * precision * recall / (precision + recall) if (precision + recall) > 0 else 0
-            concept_f1s.append(f1)
-        concept_overlap = {"concept_f1_avg": sum(concept_f1s) / len(concept_f1s) if concept_f1s else 0}
-    except OSError:
-        print("  scispacy model not found — skipping concept overlap.")
-        print("  Install with: pip install scispacy && python -m spacy download en_core_sci_sm")
-        concept_overlap = {"concept_f1_avg": None}
-
-    return rouge_scores, bleu_score, bertscore_result, readability, concept_overlap
+    return rouge_scores, bleu_score, bertscore_result, readability
 
 
-def print_results(rouge_scores, bleu_score, bertscore_result, readability, concept_overlap, model, n):
+def print_results(rouge_scores, bleu_score, bertscore_result, readability, model, n):
     print(f"\n========== EVAL RESULTS ==========")
     print(f"Model: {model} | Examples: {n}")
 
@@ -111,10 +91,6 @@ def print_results(rouge_scores, bleu_score, bertscore_result, readability, conce
     delta = readability['pred_fk_grade_avg'] - readability['gold_fk_grade_avg']
     print(f"  delta:     {round(delta, 2)} ({'↓ more readable' if delta < 0 else '↑ less readable'})")
 
-    print(f"\nMedical Concept Overlap F1 (scispacy NER):")
-    val = concept_overlap["concept_f1_avg"]
-    print(f"  avg: {round(val, 4) if val is not None else 'n/a'}")
-
 
 def main():
     parser = argparse.ArgumentParser()
@@ -129,10 +105,10 @@ def main():
     print(f"Loading outputs from {args.input}...")
     preds, golds, model, examples = load_outputs(args.input)
 
-    rouge_scores, bleu_score, bertscore_result, readability, concept_overlap = compute_metrics(
+    rouge_scores, bleu_score, bertscore_result, readability = compute_metrics(
         preds, golds, skip_bertscore=skip_bertscore
     )
-    print_results(rouge_scores, bleu_score, bertscore_result, readability, concept_overlap, model, len(examples))
+    print_results(rouge_scores, bleu_score, bertscore_result, readability, model, len(examples))
 
     output = {
         "model": model,
@@ -141,7 +117,6 @@ def main():
         "bleu": bleu_score["bleu"],
         "bertscore": bertscore_result,
         "readability": readability,
-        "concept_overlap": concept_overlap,
     }
 
     with open(args.output, "w") as f:

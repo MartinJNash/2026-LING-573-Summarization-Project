@@ -46,16 +46,6 @@ check("rouge_score",        lambda: __import__("rouge_score") and "ok")
 check("nltk",               lambda: __import__("nltk").__version__)
 check("textstat",           lambda: __import__("textstat").__version__ if hasattr(__import__("textstat"), "__version__") else "ok")
 
-# --- SummaC ---
-check("summac import",      lambda: __import__("summac") and "ok")
-check("summac SummaCZS",    lambda: __import__("summac.model_summac", fromlist=["SummaCZS"]).SummaCZS and "ok")
-
-# --- spacy / scispacy ---
-check("spacy",              lambda: __import__("spacy").__version__)
-check("scispacy",           lambda: __import__("scispacy").__version__)
-check("thinc",              lambda: __import__("thinc").__version__)
-check("spacy en_core_sci_sm", lambda: __import__("spacy").load("en_core_sci_sm") and "ok")
-
 # --- Project modules ---
 check("read_data",          lambda: __import__("read_data") and "ok")
 check("model (Summarizer)", lambda: __import__("model", fromlist=["Summarizer"]).Summarizer and "ok")
