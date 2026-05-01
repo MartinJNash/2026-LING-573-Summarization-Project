@@ -23,6 +23,4 @@ source /gscratch/scrubbed/pgarg2/medjargone/bin/activate
 
 mkdir -p logs results/outputs
 
-python eval_pipeline.py \
-    --input results/outputs/biobart-large-finetuned.json \
-    --output results/outputs/biobart-large-finetuned-eval.json
+python eval_pipeline.py "$@"

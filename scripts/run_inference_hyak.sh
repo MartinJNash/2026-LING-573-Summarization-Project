@@ -23,8 +23,4 @@ source /gscratch/scrubbed/pgarg2/medjargone/bin/activate
 
 mkdir -p logs results/outputs
 
-python run_inference.py \
-    --model results/biobart-large \
-    --split test \
-    --batch-size 16 \
-    --output results/outputs/biobart-large-finetuned.json
+python run_inference.py --split test --batch-size 16 "$@"
