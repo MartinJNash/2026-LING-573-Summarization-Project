@@ -1,8 +1,8 @@
 executable = scripts/inference_patas.sh
-arguments  = --model mjnash-uw/$(name) --output results/inference/$(name).json
-error      = $(name).inf.err.txt
-output     = $(name).inf.out.txt
-log        = $(name).inf.log.txt
+arguments  = --model $(model) --output results/outputs/$(name).json
+error      = logs/$(name).inf.err.txt
+output     = logs/$(name).inf.out.txt
+log        = logs/$(name).inf.log.txt
 
 getenv     = true
 notification = never
@@ -11,9 +11,10 @@ request_memory = 8192
 request_GPUs = 1
 Requirements = (Machine == "patas-gn3.ling.washington.edu")
 
-queue name from (
-  bart-base-lora
-#  bart-large-lora
-  biobart-base-lora
-#  biobart-large-lora
+queue model, name from (
+  facebook/bart-base,                               bart-base-baseline
+  mjnash-uw/bart-base-lora,                         bart-base-lora
+  GanjinZero/biobart-v2-base,                       biobart-base-baseline
+  mjnash-uw/biobart-base-lora,                      biobart-base-lora
+  Pika4028/biobart-v2-large-multiclinsum-lora,      biobart-large-lora
 )

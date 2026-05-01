@@ -1,6 +1,6 @@
 # MedJarGone
 
-Abstractive summarization of medical clinical notes for LING 573 (UW, Spring 2026), using the [MultiClinSum](https://doi.org/10.5281/zenodo.10813550) dataset.
+Abstractive summarization of medical clinical notes for LING 573 (UW, Spring 2026), using the [MultiClinSum](https://zenodo.org/records/15546018) dataset.
 
 See **[MODELS.md](MODELS.md)** for trained models, parameter counts, and evaluation results.
 
@@ -15,7 +15,7 @@ source ~/.bashrc  # or restart your shell
 
 ### Install dependencies
 
-1. Download the dataset from [Zenodo](https://doi.org/10.5281/zenodo.10813550) and place it under `data/`
+1. Download the dataset from [Zenodo](https://zenodo.org/records/15546018) and place it under `data/`
 2. Create and activate a virtual environment:
 ```bash
 uv venv --python 3.11
