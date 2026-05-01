@@ -14,7 +14,6 @@ import argparse
 import evaluate
 import bert_score
 import textstat
-import spacy
 
 
 def load_outputs(path):

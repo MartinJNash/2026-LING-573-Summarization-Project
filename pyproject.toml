@@ -16,7 +16,6 @@ dependencies = [
     "regex",
     "rouge-score",
     "safetensors",
-    "scispacy",
     "textstat",
     "tokenizers",
     "torch",
