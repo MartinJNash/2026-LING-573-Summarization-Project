@@ -20,5 +20,6 @@ logs/
 *.bin
 *.ckpt
 
-# but track evaluation outputs
-!results/outputs/*.json
+# but track inference and eval outputs
+!results/outputs/
+!results/outputs/**

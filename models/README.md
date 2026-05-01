@@ -1,6 +1,5 @@
-Models are hosted at HuggingFace
+Models are hosted on HuggingFace. See [MODELS.md](../MODELS.md) for parameter counts, training details, and evaluation results.
 
-- mjnash-uw/biobart-large-lora
-- mjnash-uw/biobart-base-lora
-- mjnash-uw/bart-large-lora
-- mjnash-uw/bart-base-lora
+- `mjnash-uw/bart-base-lora`
+- `mjnash-uw/biobart-base-lora`
+- `Pika4028/biobart-v2-large-multiclinsum-lora`

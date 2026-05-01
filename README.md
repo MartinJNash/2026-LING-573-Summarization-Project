@@ -2,7 +2,18 @@
 
 Abstractive summarization of medical clinical notes for LING 573 (UW, Spring 2026), using the [MultiClinSum](https://doi.org/10.5281/zenodo.10813550) dataset.
 
+See **[MODELS.md](MODELS.md)** for trained models, parameter counts, and evaluation results.
+
 ## Setup
+
+### Install uv (if not already installed)
+
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+source ~/.bashrc  # or restart your shell
+```
+
+### Install dependencies
 
 1. Download the dataset from [Zenodo](https://doi.org/10.5281/zenodo.10813550) and place it under `data/`
 2. Create and activate a virtual environment:
@@ -15,85 +26,77 @@ source .venv/bin/activate
 uv pip install -r requirements.txt
 ```
 
-> **Note:** If `uv` is not installed: `curl -LsSf https://astral.sh/uv/install.sh | sh`
-
 ## Usage
-
-### Flat scripts (recommended)
 
 **Train**
 ```bash
-uv run python pipeline.py --base-model GanjinZero/biobart-v2-large --use-peft --output-dir results/biobart-large
+python train.py --base-model GanjinZero/biobart-v2-large --use-peft --output-dir results/biobart-large
 ```
 
 **Inference**
 ```bash
-uv run python run_inference.py --model results/biobart-large --output outputs/biobart-large.json
+python run_inference.py --model results/biobart-large --output results/outputs/biobart-large.json
 ```
 
 **Evaluate**
 ```bash
-uv run python eval_pipeline.py --input outputs/biobart-large.json --output eval/biobart-large.json
+python eval_pipeline.py --input results/outputs/biobart-large.json --output results/outputs/biobart-large-eval.json
 ```
 
-### Module interface (`src/`)
+Run `python <script> --help` for all options including `--num-epochs`, `--dataset`, `--batch-size`, `--num-examples`, `--fast`, `--skip-bertscore`, `--skip-summac`.
 
-```sh
-python -m src.train \
-  --base-model GanjinZero/biobart-v2-large \
-  --output-dir results/biobart-large \
-  --num-epochs 3 \
-  --use-peft
-```
+## Cluster Setup
 
-```sh
-python -m src.run_inference \
-  --lora-path results/biobart-large \
-  --max-examples 300 \
-  --output-dir outputs/
-```
+### Hyak / Klone (UW HPC — SLURM)
 
-```sh
-python -m src.eval_pipeline \
-  --input outputs/outputs.jsonl \
-  --output eval_results.json
-```
+Hyak uses SLURM for job scheduling. Home directory quota is small — put venv and caches in `/gscratch/scrubbed/<netid>/`.
 
-Run `uv run python <script> --help` for all options.
-
-## Cluster (Hyak)
-
-### First-time setup
-
-Storage on Hyak: the home directory has a small quota. Put the venv and all caches in `/gscratch/scrubbed/<netid>/` (large, but files are auto-deleted after 21 days).
-
+**First-time setup:**
 ```bash
-# Install uv
-curl -LsSf https://astral.sh/uv/install.sh | sh
-source ~/.bashrc
+curl -LsSf https://astral.sh/uv/install.sh | sh && source ~/.bashrc
 
-# Create venv in scrubbed
 uv venv /gscratch/scrubbed/<netid>/medjargone --python 3.11
 source /gscratch/scrubbed/<netid>/medjargone/bin/activate
 
-# Point caches to scrubbed so home quota is not exceeded
 export UV_CACHE_DIR=/gscratch/scrubbed/<netid>/uv-cache
 export HF_HOME=/gscratch/scrubbed/<netid>/hf-cache
 
-# Install dependencies
 uv pip install -r requirements.txt
 ```
 
-### Submitting a training job
+> Update `<netid>` and `--chdir` in SLURM scripts before submitting.
 
-Before submitting, update `NETID` and `--chdir` in `scripts/run_on_hyak.sh`, then:
-
+**Submit jobs:**
 ```bash
 sbatch scripts/run_on_hyak.sh --base-model GanjinZero/biobart-v2-large --use-peft --output-dir results/biobart-large
+sbatch scripts/run_inference_hyak.sh
+sbatch scripts/run_eval_hyak.sh
 ```
 
-Monitor the job:
+**Monitor:**
 ```bash
 squeue -u <netid>
 tail -f logs/<jobid>.out
 ```
+
+### Patas (UW Ling — Condor)
+
+Patas uses HTCondor. Activate the conda env before running.
+
+**Submit jobs:**
+```bash
+condor_submit scripts/train_patas.condor
+condor_submit scripts/inference_patas.condor
+```
+
+**Run interactively:**
+```bash
+bash scripts/run_on_patas.sh --base-model GanjinZero/biobart-v2-large --use-peft --output-dir results/biobart-large
+```
+
+**Monitor:**
+```bash
+condor_q
+```
+
+> GPU nodes on Patas require `Requirements = (Machine == "patas-gn3.ling.washington.edu")` in the condor file (already set).

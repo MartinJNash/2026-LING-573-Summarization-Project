@@ -5,202 +5,57 @@ tags:
 - base_model:adapter:GanjinZero/biobart-v2-large
 - lora
 - transformers
+- summarization
+- medical
+language:
+- en
 ---
 
-# Model Card for Model ID
+# BioBART-v2-large + LoRA — MultiClinSum
 
-<!-- Provide a quick summary of what the model is/does. -->
-
-
+LoRA adapter fine-tuned on the [MultiClinSum](https://doi.org/10.5281/zenodo.10813550) GS training split for abstractive summarization of clinical notes into plain-language patient summaries. Part of UW LING 573 (Spring 2026) — MedJarGone project.
 
 ## Model Details
 
-### Model Description
+- **Base model:** `GanjinZero/biobart-v2-large` (~406M parameters)
+- **Fine-tuning method:** LoRA (PEFT) — only adapter weights are stored here
+- **Trainable parameters:** ~2.36M / 406M total (~0.58%)
+- **LoRA config:** r=16, α=16, dropout=0.1, targets: q_proj + v_proj
+- **Task:** Abstractive summarization (seq2seq)
+- **Language:** English
 
-<!-- Provide a longer summary of what this model is. -->
+## Training
 
+- **Dataset:** MultiClinSum GS split — 594 examples (476 train / 53 val, 90/10 split, seed=42)
+- **Epochs:** 10
+- **Batch size:** 4 (per device)
+- **Learning rate:** 5e-5, weight decay 0.01
+- **Precision:** fp16
+- **Checkpoint selection:** best BERTScore F1 on validation set
+- **Hardware:** Hyak GPU cluster (UW), ~31 minutes on a single NVIDIA GPU
+- **Framework:** PEFT 0.19.1, Transformers
 
+## Usage
 
-- **Developed by:** [More Information Needed]
-- **Funded by [optional]:** [More Information Needed]
-- **Shared by [optional]:** [More Information Needed]
-- **Model type:** [More Information Needed]
-- **Language(s) (NLP):** [More Information Needed]
-- **License:** [More Information Needed]
-- **Finetuned from model [optional]:** [More Information Needed]
+```python
+from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
+from peft import PeftModel
 
-### Model Sources [optional]
+base = "GanjinZero/biobart-v2-large"
+adapter = "Pika4028/biobart-v2-large-multiclinsum-lora"
 
-<!-- Provide the basic links for the model. -->
+tokenizer = AutoTokenizer.from_pretrained(base)
+model = AutoModelForSeq2SeqLM.from_pretrained(base, torch_dtype="auto")
+model = PeftModel.from_pretrained(model, adapter)
+model = model.merge_and_unload()  # merge LoRA weights for inference
 
-- **Repository:** [More Information Needed]
-- **Paper [optional]:** [More Information Needed]
-- **Demo [optional]:** [More Information Needed]
-
-## Uses
-
-<!-- Address questions around how the model is intended to be used, including the foreseeable users of the model and those affected by the model. -->
-
-### Direct Use
-
-<!-- This section is for the model use without fine-tuning or plugging into a larger ecosystem/app. -->
-
-[More Information Needed]
-
-### Downstream Use [optional]
-
-<!-- This section is for the model use when fine-tuned for a task, or when plugged into a larger ecosystem/app -->
-
-[More Information Needed]
-
-### Out-of-Scope Use
-
-<!-- This section addresses misuse, malicious use, and uses that the model will not work well for. -->
-
-[More Information Needed]
-
-## Bias, Risks, and Limitations
-
-<!-- This section is meant to convey both technical and sociotechnical limitations. -->
-
-[More Information Needed]
-
-### Recommendations
-
-<!-- This section is meant to convey recommendations with respect to the bias, risk, and technical limitations. -->
-
-Users (both direct and downstream) should be made aware of the risks, biases and limitations of the model. More information needed for further recommendations.
-
-## How to Get Started with the Model
-
-Use the code below to get started with the model.
-
-[More Information Needed]
-
-## Training Details
-
-### Training Data
-
-<!-- This should link to a Dataset Card, perhaps with a short stub of information on what the training data is all about as well as documentation related to data pre-processing or additional filtering. -->
-
-[More Information Needed]
-
-### Training Procedure
-
-<!-- This relates heavily to the Technical Specifications. Content here should link to that section when it is relevant to the training procedure. -->
-
-#### Preprocessing [optional]
-
-[More Information Needed]
-
-
-#### Training Hyperparameters
-
-- **Training regime:** [More Information Needed] <!--fp32, fp16 mixed precision, bf16 mixed precision, bf16 non-mixed precision, fp16 non-mixed precision, fp8 mixed precision -->
-
-#### Speeds, Sizes, Times [optional]
-
-<!-- This section provides information about throughput, start/end time, checkpoint size if relevant, etc. -->
-
-[More Information Needed]
+inputs = tokenizer("Patient clinical note here...", return_tensors="pt", truncation=True, max_length=1024)
+summary_ids = model.generate(**inputs, max_new_tokens=256, num_beams=4)
+print(tokenizer.decode(summary_ids[0], skip_special_tokens=True))
+```
 
 ## Evaluation
 
-<!-- This section describes the evaluation protocols and provides the results. -->
+Evaluated on the full MultiClinSum test set (3,396 examples). Inference output at `results/outputs/biobart-large-lora.json`. See [MODELS.md](../../MODELS.md) for results.
 
-### Testing Data, Factors & Metrics
-
-#### Testing Data
-
-<!-- This should link to a Dataset Card if possible. -->
-
-[More Information Needed]
-
-#### Factors
-
-<!-- These are the things the evaluation is disaggregating by, e.g., subpopulations or domains. -->
-
-[More Information Needed]
-
-#### Metrics
-
-<!-- These are the evaluation metrics being used, ideally with a description of why. -->
-
-[More Information Needed]
-
-### Results
-
-[More Information Needed]
-
-#### Summary
-
-
-
-## Model Examination [optional]
-
-<!-- Relevant interpretability work for the model goes here -->
-
-[More Information Needed]
-
-## Environmental Impact
-
-<!-- Total emissions (in grams of CO2eq) and additional considerations, such as electricity usage, go here. Edit the suggested text below accordingly -->
-
-Carbon emissions can be estimated using the [Machine Learning Impact calculator](https://mlco2.github.io/impact#compute) presented in [Lacoste et al. (2019)](https://arxiv.org/abs/1910.09700).
-
-- **Hardware Type:** [More Information Needed]
-- **Hours used:** [More Information Needed]
-- **Cloud Provider:** [More Information Needed]
-- **Compute Region:** [More Information Needed]
-- **Carbon Emitted:** [More Information Needed]
-
-## Technical Specifications [optional]
-
-### Model Architecture and Objective
-
-[More Information Needed]
-
-### Compute Infrastructure
-
-[More Information Needed]
-
-#### Hardware
-
-[More Information Needed]
-
-#### Software
-
-[More Information Needed]
-
-## Citation [optional]
-
-<!-- If there is a paper or blog post introducing the model, the APA and Bibtex information for that should go in this section. -->
-
-**BibTeX:**
-
-[More Information Needed]
-
-**APA:**
-
-[More Information Needed]
-
-## Glossary [optional]
-
-<!-- If relevant, include terms and calculations in this section that can help readers understand the model or model card. -->
-
-[More Information Needed]
-
-## More Information [optional]
-
-[More Information Needed]
-
-## Model Card Authors [optional]
-
-[More Information Needed]
-
-## Model Card Contact
-
-[More Information Needed]
-### Framework versions
-
-- PEFT 0.19.1
+Primary metric: rougeLsum (matches MultiClinSum shared task scoring).
