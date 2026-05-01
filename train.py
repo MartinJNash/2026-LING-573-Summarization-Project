@@ -117,7 +117,6 @@ def train(config: Config):
         _, _, F1 = bert_score_fn(
             decoded_preds, decoded_labels,
             lang="en",
-            model_type="distilbert-base-uncased",
             verbose=False,
         )
         metrics["bertscore_f1"] = round(F1.mean().item(), 4)

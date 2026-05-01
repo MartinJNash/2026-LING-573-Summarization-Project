@@ -50,7 +50,6 @@ def compute_metrics(preds, golds, sources, skip_bertscore=False, skip_summac=Fal
         P, R, F1 = bert_score.score(
             preds, golds,
             lang="en",
-            model_type="distilbert-base-uncased",
             verbose=False,
         )
         bertscore_result = {

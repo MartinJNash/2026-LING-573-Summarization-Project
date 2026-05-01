@@ -17,7 +17,7 @@ Fine-tuned on [MultiClinSum](https://doi.org/10.5281/zenodo.10813550) GS trainin
 ## Evaluation Results
 
 Computed with `eval_pipeline.py`. Primary metric: **rougeLsum** (matches MultiClinSum shared task).
-BERTScore model: `distilbert-base-uncased`. FK grade: lower pred vs. gold = more patient-readable.
+FK grade: lower pred vs. gold = more patient-readable.
 
 ### 339 examples (10% of test set, seed=42)
 
