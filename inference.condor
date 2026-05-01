@@ -1,0 +1,19 @@
+executable = inference.sh
+arguments  = --lora-path mjnash-uw/$(name) --output-dir results/inference/$(name)
+error      = $(name).inf.err.txt
+output     = $(name).inf.out.txt
+log        = $(name).inf.log.txt
+
+getenv     = true
+notification = never
+transfer_executable = false
+request_memory = 8192
+request_GPUs = 1
+Requirements = (Machine == "patas-gn3.ling.washington.edu")
+
+queue name from (
+  bart-base-lora
+#  bart-large-lora
+  biobart-base-lora
+#  biobart-large-lora
+)

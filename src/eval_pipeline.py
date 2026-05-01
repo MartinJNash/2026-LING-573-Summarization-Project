@@ -1,12 +1,11 @@
 """
-Compatibility entry point for `python -m src.eval_pipeline`.
-Reads from outputs.jsonl + meta.json produced by src/run_inference.py.
+Eval pipeline for MedJarGone summarization.
+Reads from outputs.json produced by run_inference.py.
 Computes BLEU, ROUGE, BERTScore, and Flesch-Kincaid readability.
 
-For the richer eval with SummaC and medical concept overlap, use eval_pipeline.py directly.
-
 Usage:
-    python -m src.eval_pipeline --input outputs/outputs.jsonl
+    python eval_pipeline.py
+    python eval_pipeline.py --input my_outputs.json
 """
 
 import json

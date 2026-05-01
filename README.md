@@ -15,7 +15,11 @@ source .venv/bin/activate
 uv pip install -r requirements.txt
 ```
 
+> **Note:** If `uv` is not installed: `curl -LsSf https://astral.sh/uv/install.sh | sh`
+
 ## Usage
+
+### Flat scripts (recommended)
 
 **Train**
 ```bash
@@ -30,6 +34,29 @@ uv run python run_inference.py --model results/biobart-large --output outputs/bi
 **Evaluate**
 ```bash
 uv run python eval_pipeline.py --input outputs/biobart-large.json --output eval/biobart-large.json
+```
+
+### Module interface (`src/`)
+
+```sh
+python -m src.train \
+  --base-model GanjinZero/biobart-v2-large \
+  --output-dir results/biobart-large \
+  --num-epochs 3 \
+  --use-peft
+```
+
+```sh
+python -m src.run_inference \
+  --lora-path results/biobart-large \
+  --max-examples 300 \
+  --output-dir outputs/
+```
+
+```sh
+python -m src.eval_pipeline \
+  --input outputs/outputs.jsonl \
+  --output eval_results.json
 ```
 
 Run `uv run python <script> --help` for all options.

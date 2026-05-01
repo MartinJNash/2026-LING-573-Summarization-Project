@@ -8,9 +8,10 @@ __pycache__/
 *.pytest_cache/
 .cache/*
 
+.vscode
+
 # datasets
 data/
-results/
 logs/
 
 # large artifacts
@@ -18,3 +19,6 @@ logs/
 *.pt
 *.bin
 *.ckpt
+
+# but track evaluation outputs
+!results/outputs/*.json
