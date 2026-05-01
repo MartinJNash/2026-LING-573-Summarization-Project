@@ -18,6 +18,7 @@
 export HF_HOME=/gscratch/scrubbed/pgarg2/hf-cache
 export TRANSFORMERS_CACHE=/gscratch/scrubbed/pgarg2/hf-cache
 export NLTK_DATA=/gscratch/scrubbed/pgarg2/nltk-data
+export HF_EVALUATE_CACHE=/gscratch/scrubbed/pgarg2/hf-cache/evaluate_${SLURM_JOB_ID}
 
 source /gscratch/scrubbed/pgarg2/medjargone/bin/activate
 
