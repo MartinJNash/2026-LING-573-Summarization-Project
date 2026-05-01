@@ -1,5 +1,5 @@
-executable = inference.sh
-arguments  = --lora-path mjnash-uw/$(name) --output-dir results/inference/$(name)
+executable = scripts/inference_patas.sh
+arguments  = --model mjnash-uw/$(name) --output results/inference/$(name).json
 error      = $(name).inf.err.txt
 output     = $(name).inf.out.txt
 log        = $(name).inf.log.txt

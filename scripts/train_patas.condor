@@ -1,4 +1,4 @@
-executable = train.sh
+executable = scripts/train_patas.sh
 arguments  = --base-model $(model) --output-dir results/train/$(name) $(peft) --dataset $(dataset)
 error      = train.$(name).err.txt
 output     = train.$(name).out.txt
@@ -8,7 +8,7 @@ getenv     = true
 notification = never
 transfer_executable = false
 request_memory = 8192
-request_GPUs = 1                                                                                     
+request_GPUs = 1
 Requirements = (Machine == "patas-gn3.ling.washington.edu")
 
 queue model, name, peft, dataset from (

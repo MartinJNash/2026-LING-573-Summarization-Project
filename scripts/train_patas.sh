@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "=== inference.sh started at $(date) ==="
+echo "=== train_patas.sh started at $(date) ==="
 echo "host: $(hostname)"
 echo "cwd:  $(pwd)"
 echo "args: $@"
@@ -11,5 +11,5 @@ conda activate medjargone-gpu
 echo "python: $(which python)"
 echo "conda env: $CONDA_DEFAULT_ENV"
 
-python -m src.run_inference "$@"
-echo "=== inference.sh finished at $(date) ==="
+python train.py "$@"
+echo "=== train_patas.sh finished at $(date) ==="

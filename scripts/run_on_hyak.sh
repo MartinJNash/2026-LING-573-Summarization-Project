@@ -23,4 +23,4 @@ source /gscratch/scrubbed/pgarg2/medjargone/bin/activate
 
 mkdir -p logs
 
-python pipeline.py "$@"
+python train.py "$@"
