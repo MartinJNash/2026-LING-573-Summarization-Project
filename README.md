@@ -4,7 +4,7 @@ MedJarGone - Summarize medical notes and remove technical terms.
 # running
 
 ```sh
-pyton -m src.train
+python -m src.train
   --base-model hf-model-name
   --output-dir path/to/results/dir
   --num-epochs 3
@@ -21,5 +21,5 @@ python -m src.run_inference
 ```sh
 python -m src.eval_pipeline 
   --input path/to/outputs.jsonl
-  --output path/to/results/dir
+  --output path/to/eval_results.json
 ```
