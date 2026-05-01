@@ -1,8 +1,8 @@
 executable = train.sh
 arguments  = --base-model $(model) --output-dir results/train/$(name) $(peft) --dataset $(dataset)
-error      = $(name).err.txt
-output     = $(name).out.txt
-log        = $(name).log.txt
+error      = train.$(name).err.txt
+output     = train.$(name).out.txt
+log        = train.$(name).log.txt
 
 getenv     = true
 notification = never
