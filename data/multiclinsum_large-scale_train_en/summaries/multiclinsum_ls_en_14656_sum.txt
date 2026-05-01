@@ -1,1 +1,0 @@
-Here, we report a de novo GRIA2 variant (NM_001083619.3: c.2308G &gt; A, p.Ala770Thr) in a patient with obvious behavior regression and psychiatric symptoms. It encodes GluA2, which is the crucial subunit of the AMPA receptor, and the missense variation is predicted to result in instability of the protein structure.

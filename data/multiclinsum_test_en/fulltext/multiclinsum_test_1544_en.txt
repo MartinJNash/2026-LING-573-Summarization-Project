@@ -1,7 +1,0 @@
-A 63-year-old male, suffering from toothache accompanied by coughing, sputum, and bloody sputum for three months.
-A 63-year-old male, suffering from toothache accompanied by coughing, sputum, and bloody sputum for three months, was given a blood test after experiencing continuous bleeding resulting from a tooth extraction at a local hospital. The results of the blood test included a white blood cell count of 111.34 × 109/L, monocyte count of 81.99 × 109/L, hemoglobin concentration 99 g/L, and platelet count of 150 × 109/L.
-The patient was previously healthy.
-The patient in this case had a long history of heavy smoking, had no history of other major diseases nor any significant family history of disease.
-The rest of physical examination was normal.
-The results of the blood test included a white blood cell count of 111.34 × 109/L, monocyte count of 81.99 × 109/L, hemoglobin concentration 99 g/L, and platelet count of 150 × 109/L. Flow cytometry showed that myeloid blasts and monocytes (with a predominantly mature phenotype) accounted for 1.31% and 52.6% of nucleated cells, respectively. Next-generation sequencing (NGS) showed ASXL1 gene mutation [exon12:c.1934 dupG:p.Gly646fs; variant allele frequency (VAF) = 33.72%], and EZH2 gene mutation (exon18:c.2084C>T:p.Ser695Leu; VAF = 49.73%; exonc.2077A>T:p.Asn693Tyr; VAF = 46.05%). No abnormal chromosomal results were observed.
-A subsequent ultrasound revealed an enlarged spleen.

@@ -1,6 +1,12 @@
 """
-Run inference on MultiClinSum examples and save outputs to JSONL.
-Run this once, then use eval_pipeline.py to compute metrics.
+Compatibility entry point for `python -m src.run_inference`.
+Preserves Martin's original CLI and JSONL output format (outputs.jsonl + meta.json).
+
+For the newer JSON format (used by eval_pipeline.py), use run_inference.py directly.
+
+Usage:
+    python -m src.run_inference --lora-path models/bart-base-lora/best
+    python -m src.run_inference --lora-path models/bart-base-lora/best --output-dir outputs/
 """
 
 import argparse

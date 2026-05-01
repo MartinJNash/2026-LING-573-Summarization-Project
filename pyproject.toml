@@ -1,0 +1,35 @@
+[project]
+name = "2026-ling-573-summarization-project"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.11"
+dependencies = [
+    "accelerate",
+    "bert-score",
+    "datasets>=2.17.0",
+    "evaluate",
+    "nltk",
+    "numpy<2.0",
+    "pandas",
+    "peft",
+    "pyyaml",
+    "regex",
+    "rouge-score",
+    "safetensors",
+    "scispacy",
+    "summac",
+    "textstat",
+    "tokenizers",
+    "torch",
+    "tqdm",
+    "transformers",
+]
+
+[tool.uv]
+override-dependencies = [
+    # summac pins hub<=0.17.0 but that's outdated — override it
+    # transformers 4.35.2 needs <1.0, peft needs >=0.20.0 for errors module
+    "huggingface-hub>=0.20.0,<1.0",
+    "numpy<2.0",
+    "datasets>=2.17.0",
+]

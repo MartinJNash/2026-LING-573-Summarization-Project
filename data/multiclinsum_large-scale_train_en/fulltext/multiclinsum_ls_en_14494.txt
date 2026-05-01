@@ -1,7 +1,0 @@
-We recently encountered a SARS-CoV-2 infection in a 41-year-old female ITx-recipient, acquired during hospitalization for dehydration and electrolyte disturbances, during the second European COVID-19 wave in November 2020.
-She underwent an isolated intestinal re-transplantation, combined with a kidney, in August 2019 for chronic allograft enteropathy. After her re-ITx, she underwent a conversion of her terminal ileostomy to a low ileorectal anastomosis with protective loopileostomy on September 29, 2020.
-Her first isolated ITx was in December 2004 for chronic intestinal pseudo-obstruction with recurrent catheter sepsis. In between the two ITx procedures, she was in good health and never encountered an acute rejection, until she developed chronic allograft enteropathy for which she was back on parenteral nutrition since February 2019.
-Negative.
-On admission, on October 28, 2020, she was on tacrolimus (3.5 mg bidaily, target trough level: 7-8 μg/L), azathioprine (50 mg/d), and methylprednisolone (4 mg/d). She had no fever, respiratory issues, nor recent contact with a potential COVID-19 positive patient.
-She tested negative on SARS-CoV-2 on a nasopharyngeal polymerase chain reaction (PCR)-test . Her lab values revealed an acute deterioration of kidney function and electrolyte disturbances. Six days after admission, on November 3, 2020, she tested positive for SARS-CoV-2 on a screening PCR-test.
-There were no clinical nor biochemical signs of infection or chest X-ray alterations.

@@ -1,7 +1,0 @@
-A 27-year-old male presented with a painless mass in his right mandibular fossa.
-Review of systems was negative. The patient denied constitutional B symptoms (fever, night sweats, weight loss), signs of gastrointestinal distress (e.g., pain, nausea, vomiting, diarrhea), and oral pain or dysphagia.
-Past medical history was pertinent for CD on long-term vedolizumab therapy.
-All other personal and family medical history was noncontributory.
-Physical exam appreciated submandibular and upper cervical lymphadenopathy; there were no other concerning findings. Abdomen was soft, non-tender, non-distended, and without palpable masses; bowel sounds were present.
-Core-needle biopsy of the parotid mass demonstrated neoplastic infiltrate with a follicular pattern. The follicles did not have polarized germinal centers and immunophenotype. The neoplastic cells were intermediate-sized with scant cytoplasm and irregular nuclei. The neoplastic cells expressed CD10, CD20, BCL6, PAX5, and CD23; they did not express CD3, CD5, CD21, cyclin D1, BCL2, MUM1, or BCL2. Ki-67 stain was positive in approximately 70% of cells . Molecular studies identified a MAP2K1p.g128D mutation.
-Computed tomography confirmed the mass within the parotid gland encasing the right-sided facial nerve.

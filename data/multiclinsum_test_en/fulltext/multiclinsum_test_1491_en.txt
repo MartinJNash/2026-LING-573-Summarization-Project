@@ -1,7 +1,0 @@
-A 51-year-old Asian man presented with a fever.
-The patient was admitted to our hospital with fever for 3 d in November 2018 .
-No significant past medical history was inquiry, including asbestosis.
-No remarkable family history.
-Physical examination suggested lower breath sounds on the right side.
-To determine potential therapeutic methods, the whole blood was collected for next-generation sequencing with a gene panel (Yucebio, Shenzhen, China). The sequencing showed TP53 splicing exon 4 (6.44%), microsatellite stability and moderate tumor mutational burden (2.70 Mut/Mb). The patient refused repeat biospy and PD-L1 detection could not be performed.
-Chest computed tomography (CT) showed right pleural occupation with effusion . Whole-body CT showed a tumor involving all ipsilateral pleural surfaces, without distant metastasis.

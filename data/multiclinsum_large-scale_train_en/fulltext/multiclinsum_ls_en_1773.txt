@@ -1,7 +1,0 @@
-A 7- month old infant, raised as a male, was clinically diagnosed as an intersex case. On examination the patient showed a big phallus, labia majora and minora, a blind vagina and a male urethra . Ultrasonographic investigations did not detect the presence of uterus or testes. The patient was referred for chromosomal analysis.
-Patient peripheral blood was subjected to short-term culturing in RPMI 1640 medium for 72 hours. After metaphase arrest through exposure to Colcemide, cells were harvested, treated with hypotonic solution, and then fixed with methanol and acetic acid according to standard procedures. The harvested cells were dropped on clean slides and stained with Wright's stain, for chromosome banding . The clonality criteria and the karyotypic descriptions were according to the ISCN recommendations .
-FISH with whole chromosome painting, and X centromeric probe, and the SRY gene specific probe (Vysis, Naperville, IL) was applied to fixated metaphases cells according to standard procedures .
-DNA extraction and amplification methods were according to . Primers were designed for PCR amplification using Genosys primer.3 software .
-Analysis of 11 metaphase cells showed 46,X,del(X)(p11) in all cells, which is a deletion within the breakpoint in band 11 in the p arm of one of the X chromosomes .
-FISH analysis with whole chromosome painting probes and gene specific probes for the SRY gene showed a translocation of SRY material to the q-arm of the del(X) .
-PCR analysis corroborated the presence of SRY material in the peripheral blood of the patient .

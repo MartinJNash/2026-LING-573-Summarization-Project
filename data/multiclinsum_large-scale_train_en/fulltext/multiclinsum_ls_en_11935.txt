@@ -1,7 +1,0 @@
-A 45-year-old man was admitted to the hospital for fever and fatigue after his way back from Wuhan, China 2 d ago.
-The patient had a history of HBV infection for over 20 years. He was initially treated with adefovir dipivoxil and entecavir since then. Adfovir was discontinued 5 years ago.
-The patient had no history of high blood pressure, diabetes, heart disease, or tumor.
-The patient was married at the age of 25, with two sons. His wife was in good health and his family relations were harmonious. His parents were alive and healthy, and his two younger sisters were healthy.
-Physical examination revealed no swelling of lymph nodes throughout the body, clear breath sounds in both lungs, and no rales.
-The patient was positive for nucleic acid test for COVID-19. The initial laboratory results included: His blood lymphocyte count was 1.61 × 109/L, the percentage of CD4+ T cells was 32.82%, and alanine aminotransferase (ALT) and aspartate transaminase (AST) were 56 U/L and 30 U/L, respectively. After that, ALT was increased to 102 U/L, and AST was slightly increased to 48 U/L. HBV DNA was lower than the detection limit (30 IU/mL). Hepatitis B surface antigen was 1356 cutoff index (COI; < 1.000), hepatitis B surface antibody 2 iu/L (2-10 iu/L), hepatitis B e-antigen 0.34 COI (< 1.000), hepatitis B e-antibody 0.563COI (> 1.000), and hepatitis B c-antibody 0.416 COI (> 1.000).
-On day 6, a chest computed tomography scan showed progressive pneumonia.

@@ -1,8 +1,0 @@
-Patient concerns:
-A 54-year-old male patient with chronic nephropathy, who received long-term immunosuppressants, was admitted to the Department of Respiratory Medicine due to the symptoms of fever, cough, expectoration, and dyspnea.
-
-Diagnoses:
-Pulmonary radiology revealed multiple bilateral ground-glass opacity. Laboratory tests revealed elevated inflammation indicators, implying infection with bacteria, viruses, and/or fungi. Furthermore, the patient was positive for RSV antibodies, without positive results for other pathogens. Moreover, the patient was immunocompromised due to the long-term use of corticosteroids and immunosuppressants, as evidenced by decreased total IgG levels and reduced CD4 and CD8 T-lymphocyte counts.
-
-Interventions and outcome:
-Despite the intensive anti-infection treatment and respiratory support, the patient developed rapid progression, and subsequently died of respiratory failure.

@@ -9,4 +9,16 @@ __pycache__/
 .cache/*
 
 .vscode
-results/
+
+# datasets
+data/
+logs/
+
+# large artifacts
+*.json
+*.pt
+*.bin
+*.ckpt
+
+# but track evaluation outputs
+!results/outputs/*.json
