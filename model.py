@@ -50,7 +50,7 @@ class Summarizer:
 
         self.model.eval()
 
-    def summarize(self, text, max_new_tokens=256):
+    def summarize(self, text, max_new_tokens=384):
         inputs = self.tokenizer(
             text,
             return_tensors="pt",
@@ -69,7 +69,7 @@ class Summarizer:
 
         return self.tokenizer.decode(summary_ids[0], skip_special_tokens=True)
 
-    def summarize_batch(self, texts, max_new_tokens=256, batch_size=8):
+    def summarize_batch(self, texts, max_new_tokens=384, batch_size=8):
         outputs = []
 
         for i in range(0, len(texts), batch_size):
