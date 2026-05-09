@@ -16,18 +16,53 @@ import evaluate
 import bert_score
 import textstat
 
+try:
+    from easse.sari import corpus_sari as _easse_corpus_sari
+    _EASSE_AVAILABLE = True
+except ImportError:
+    _EASSE_AVAILABLE = False
+
 
 def load_outputs(path):
+    # Support both JSON ({"examples": [...]}) and JSONL (one record per line)
     with open(path, "r") as f:
-        data = json.load(f)
-    examples = data["examples"]
+        content = f.read()
+    try:
+        data = json.loads(content)
+        examples = data["examples"]
+        model = data.get("model", "unknown")
+    except (json.JSONDecodeError, KeyError):
+        examples = [json.loads(line) for line in content.splitlines() if line.strip()]
+        model = "unknown"
+
     preds = [e["pred"] for e in examples]
     golds = [e["gold"] for e in examples]
-    model = data.get("model", "unknown")
-    return preds, golds, model, examples
+    sources = [e["input"] for e in examples] if examples and "input" in examples[0] else None
+    return preds, golds, sources, model, examples
 
 
-def compute_metrics(preds, golds, skip_bertscore=False):
+def compute_sari(sources, preds, golds):
+    """
+    Compute SARI score using easse. Returns None if easse is not installed
+    or sources are unavailable.
+    refs_sents shape: (n_references, n_samples) — wrap single reference list.
+    """
+    if not _EASSE_AVAILABLE:
+        print("Skipping SARI (easse not installed).")
+        return None
+    if sources is None:
+        print("Skipping SARI (no source/input text in outputs).")
+        return None
+    print("Computing SARI...")
+    score = _easse_corpus_sari(
+        orig_sents=sources,
+        sys_sents=preds,
+        refs_sents=[golds],
+    )
+    return score
+
+
+def compute_metrics(preds, golds, sources=None, skip_bertscore=False):
     # Use PID as experiment_id to avoid temp file collisions across parallel jobs
     experiment_id = str(os.getpid())
 
@@ -67,10 +102,12 @@ def compute_metrics(preds, golds, skip_bertscore=False):
         "gold_fk_grade_avg": sum(fk_golds) / len(fk_golds),
     }
 
-    return rouge_scores, bleu_score, bertscore_result, readability
+    sari_score = compute_sari(sources, preds, golds)
+
+    return rouge_scores, bleu_score, bertscore_result, readability, sari_score
 
 
-def print_results(rouge_scores, bleu_score, bertscore_result, readability, model, n):
+def print_results(rouge_scores, bleu_score, bertscore_result, readability, sari_score, model, n):
     print(f"\n========== EVAL RESULTS ==========")
     print(f"Model: {model} | Examples: {n}")
 
@@ -95,24 +132,34 @@ def print_results(rouge_scores, bleu_score, bertscore_result, readability, model
     delta = readability['pred_fk_grade_avg'] - readability['gold_fk_grade_avg']
     print(f"  delta:     {round(delta, 2)} ({'↓ more readable' if delta < 0 else '↑ less readable'})")
 
+    print(f"\nSARI:")
+    if sari_score is not None:
+        print(f"  {round(sari_score, 4)}")
+    else:
+        print(f"  skipped (requires source/input text in outputs)")
+
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--input", default="outputs.json", help="Path to inference outputs JSON")
+    parser.add_argument("--input", default="outputs.json", help="Path to inference outputs JSON or JSONL")
     parser.add_argument("--output", default="eval_results.json", help="Path to save eval results")
     parser.add_argument("--fast", action="store_true", help="Skip BERTScore (fast CPU-only metrics only)")
     parser.add_argument("--skip-bertscore", action="store_true", help="Skip BERTScore")
+    parser.add_argument("--skip-sari", action="store_true", help="Skip SARI even if source text is available")
     args = parser.parse_args()
 
     skip_bertscore = args.fast or args.skip_bertscore
 
     print(f"Loading outputs from {args.input}...")
-    preds, golds, model, examples = load_outputs(args.input)
+    preds, golds, sources, model, examples = load_outputs(args.input)
 
-    rouge_scores, bleu_score, bertscore_result, readability = compute_metrics(
-        preds, golds, skip_bertscore=skip_bertscore
+    if args.skip_sari:
+        sources = None
+
+    rouge_scores, bleu_score, bertscore_result, readability, sari_score = compute_metrics(
+        preds, golds, sources=sources, skip_bertscore=skip_bertscore
     )
-    print_results(rouge_scores, bleu_score, bertscore_result, readability, model, len(examples))
+    print_results(rouge_scores, bleu_score, bertscore_result, readability, sari_score, model, len(examples))
 
     output = {
         "model": model,
@@ -121,6 +168,7 @@ def main():
         "bleu": bleu_score["bleu"],
         "bertscore": bertscore_result,
         "readability": readability,
+        "sari": sari_score,
     }
 
     with open(args.output, "w") as f:
