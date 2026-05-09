@@ -1,0 +1,17 @@
+{
+  "model": "Pika4028/biobart-v2-large-multiclinsum-lora",
+  "num_examples": 3396,
+  "rouge": {
+    "rouge1": 0.3701630195950216,
+    "rouge2": 0.16447509907092767,
+    "rougeL": 0.24922713402985955,
+    "rougeLsum": 0.24976199880901376
+  },
+  "bleu": 0.13000460683587442,
+  "bertscore": null,
+  "readability": {
+    "pred_fk_grade_avg": 13.015238317371304,
+    "gold_fk_grade_avg": 14.575303175683572
+  },
+  "sari": 37.21108319734733
+}
