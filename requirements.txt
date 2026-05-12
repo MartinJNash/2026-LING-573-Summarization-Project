@@ -15,3 +15,4 @@ accelerate
 bert-score
 textstat
 peft
+easse @ git+https://github.com/feralvam/easse.git

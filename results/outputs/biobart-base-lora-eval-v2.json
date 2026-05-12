@@ -1,0 +1,17 @@
+{
+  "model": "mjnash-uw/biobart-base-lora",
+  "num_examples": 3396,
+  "rouge": {
+    "rouge1": 0.35830062332315094,
+    "rouge2": 0.15479697869827763,
+    "rougeL": 0.23070101293480288,
+    "rougeLsum": 0.23118115746247309
+  },
+  "bleu": 0.10850217627715789,
+  "bertscore": null,
+  "readability": {
+    "pred_fk_grade_avg": 12.752589653350695,
+    "gold_fk_grade_avg": 14.575303175683572
+  },
+  "sari": 35.28730037860609
+}

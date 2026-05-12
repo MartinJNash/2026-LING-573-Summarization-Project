@@ -17,6 +17,7 @@ dependencies = [
     "rouge-score",
     "safetensors",
     "textstat",
+    "easse",
     "tokenizers",
     "torch",
     "tqdm",
@@ -32,6 +33,7 @@ override-dependencies = [
 
 # On Linux (Patas/Hyak GPU nodes) install CUDA 11.8 torch instead of CPU-only PyPI torch
 [tool.uv.sources]
+easse = { git = "https://github.com/feralvam/easse.git" }
 torch = [
     { index = "pytorch-cu118", marker = "sys_platform == 'linux'" },
 ]
