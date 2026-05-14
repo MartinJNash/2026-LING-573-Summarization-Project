@@ -16,8 +16,5 @@ All stats computed on the full test set (n=3,396).
 
 ## Key Takeaways
 
-- **Truncation drops sharply** with each limit increase: 38% → 11% → 2.3%.
-- **384 → 512 has negligible length impact** (+2w avg): the model isn't generating longer text, it's completing sentences that were previously cut off.
-- **The default (256) ceiling is visible in the data**: median (139w) exceeds mean (127w) because many outputs pile up against the hard token cap, skewing the distribution.
-- **All settings over-generate vs. gold**: even at 512 tokens, outputs average +46w more than human summaries. This is a model behavior issue, not a token limit issue.
-- **79 outputs remain truncated at 512**: these are edge cases averaging 183w (max 368w); 72 were also truncated at 384. They can reasonably be filtered from eval.
+- **512 tokens reduces truncation to a negligible 2.3%** (vs. 38% at default and 11% at 384), with almost no change in average output length (+2w over 384) — the extra headroom completes sentences rather than generating more text.
+- **All settings over-generate relative to gold**: model outputs compress to ~26% of the input across all token limits, compared to ~19% for human-written summaries (~46 extra words per summary on average). This is a model behavior issue independent of the token limit.
