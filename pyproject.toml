@@ -12,6 +12,7 @@ dependencies = [
     "numpy",
     "pandas",
     "peft",
+    "requests",
     "pyyaml",
     "regex",
     "rouge-score",
