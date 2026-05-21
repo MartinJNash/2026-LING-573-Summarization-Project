@@ -6,28 +6,19 @@ concepts that need clarification for a general reader, making it a natural
 source of lay-language descriptions for technical terms.
 """
 
-import json
-from pathlib import Path
-from nltk.tokenize import sent_tokenize
 import requests
 
 class WikiDefinitionLookup:
     """
     Looks up lay-language descriptions for terms via the Wikipedia REST API.
-    Results are cached to disk to avoid redundant API calls across runs.
+    Results are cached in memory to avoid redundant API calls in same run.
     """
 
     _MAX_DESCRIPTION_LEN = 120
     _TIMEOUT = 5
 
-    def __init__(self, cache_path: str | Path = "lay_term_cache.json"):
-        self.cache_path = Path(cache_path)
+    def __init__(self):
         self._cache: dict[str, str | None] = {}
-
-        try:
-            self._cache = json.loads(self.cache_path.read_text())
-        except (json.JSONDecodeError, FileNotFoundError):
-            self._cache = {}
 
     def _wikipedia_url(self, term: str) -> str:
         formatted = requests.utils.quote(term, safe="")
@@ -57,7 +48,7 @@ class WikiDefinitionLookup:
             return description
 
         extract = data.get("extract", "")
-        first_sentence = sent_tokenize(extract)[0] if extract else ""
+        first_sentence = extract.split(". ")[0] if extract else ""
         return first_sentence or None
 
     def lookup(self, term: str) -> str | None:
@@ -76,6 +67,3 @@ class WikiDefinitionLookup:
         self._cache[key] = result
         return result
 
-    def save_cache(self):
-        with open(self.cache_path, "w") as f:
-            json.dump(self._cache, f, indent=2)
