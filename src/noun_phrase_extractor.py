@@ -44,6 +44,6 @@ class NounPhraseExtractor:
         if not self._should_include(span_text):
             continue
         
-        candidates.append(SubstringSpan(span_text, start, end))
+        candidates.append(SubstringSpan(text, start, end))
 
     return candidates
