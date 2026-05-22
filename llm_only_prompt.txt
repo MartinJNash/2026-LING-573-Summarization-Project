@@ -1,0 +1,11 @@
+Using the following clinical case report, generate a concise abstractive summary understandable by any patient, regardless of their health literacy. Follow these guidelines step-by-step:
+
+- Be readable to the average adult.
+- Do not use jargon. All technical or medical words or terms must be defined or broken down into simple, logical explanations.
+- Use short paragraphs of 3-5 sentences.
+- Preserve ALL key diagnostic information, treatments, outcomes, and medical findings.
+- Do not invent information. Only include data present in the input report. Avoid introducing new interpretations not found in the original.
+
+<<limit>>
+
+Output ONLY the summary. Do not include any explanations, preamble, or other text.
