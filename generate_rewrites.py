@@ -30,7 +30,7 @@ def main():
     print(f"Loading pipeline summaries...")
     outputs_df = pd.read_json(args.pipeline_file)
     pipeline_texts = list(outputs_df["pred"].data)
-    mlm_scores = [[jargon["text"] for jargon in row] for row in list(outputs_df["mlm-scores"].data)]
+    jargon_lists = [[jargon["text"] for jargon in row] for row in list(outputs_df["mlm-scores"].data)]
 
     # create an LLM
     # max_model_len caps context to avoid OOM on 11 GB 2080 Ti

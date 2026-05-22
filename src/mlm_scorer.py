@@ -1,5 +1,5 @@
 import torch
-from transformers import BertForMaskedLM, BertTokenizer
+from transformers import BertForMaskedLM, AutoTokenizer
 from transformers import logging as hf_logging
 
 class MLMScorer:
@@ -26,7 +26,7 @@ class MLMScorer:
         self.device = device or ("cuda" if torch.cuda.is_available() else "cpu")
         hf_logging.set_verbosity_error()  # Suppress transformers warnings
 
-        self.tokenizer = BertTokenizer.from_pretrained(model_name)
+        self.tokenizer = AutoTokenizer.from_pretrained(model_name, use_fast=True)
         self.model = BertForMaskedLM.from_pretrained(model_name).to(self.device)
         self.model.eval()
 
