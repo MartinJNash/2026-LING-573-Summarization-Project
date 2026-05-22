@@ -2,7 +2,7 @@
 name = "2026-ling-573-summarization-project"
 version = "0.1.0"
 description = "Add your description here"
-requires-python = ">=3.11,<3.14"
+requires-python = ">=3.11,<3.13"
 dependencies = [
     "accelerate",
     "bert-score",
@@ -12,34 +12,47 @@ dependencies = [
     "numpy",
     "pandas",
     "peft",
-    "requests",
     "pyyaml",
     "regex",
+    "requests",
     "rouge-score",
     "safetensors",
     "textstat",
     "easse",
     "tokenizers",
     "torch",
+    "torchvision",
     "tqdm",
     "transformers",
+    "spacy",
 ]
+
+[dependency-groups]
+inference = ["vllm>=0.5.0"]
 
 [tool.uv]
 override-dependencies = [
-    # transformers needs <1.0, peft needs >=0.20.0 for errors module
+    # peft needs >=0.20.0; transformers 4.x needs <1.0
     "huggingface-hub>=0.20.0,<1.0",
     "datasets>=2.17.0",
+    # vllm 0.8.x was built against transformers 4.x; transformers 5.0 removed
+    # all_special_tokens_extended which vllm still calls
+    "transformers>=4.45,<5.0",
 ]
 
-# On Linux (Patas/Hyak GPU nodes) install CUDA 11.8 torch instead of CPU-only PyPI torch
+# On Linux (Patas/Hyak GPU nodes) install CUDA 12.4 torch instead of CPU-only PyPI torch
+# cu124 has torch 2.6+/2.7+ which unlocks vllm 0.8+ (compatible with current transformers)
+# cu121 only went up to torch 2.5.1, which forced vllm down to 0.7.3 (too old for transformers)
 [tool.uv.sources]
 easse = { git = "https://github.com/feralvam/easse.git" }
 torch = [
-    { index = "pytorch-cu118", marker = "sys_platform == 'linux'" },
+    { index = "pytorch-cu124", marker = "sys_platform == 'linux'" },
+]
+torchvision = [
+    { index = "pytorch-cu124", marker = "sys_platform == 'linux'" },
 ]
 
 [[tool.uv.index]]
-name = "pytorch-cu118"
-url = "https://download.pytorch.org/whl/cu118"
+name = "pytorch-cu124"
+url = "https://download.pytorch.org/whl/cu124"
 explicit = true
