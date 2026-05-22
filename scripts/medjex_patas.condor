@@ -1,0 +1,19 @@
+executable = scripts/medjex_patas.sh
+arguments  = --input results/outputs/$(name).json --output results/outputs/$(name)-medjex.json
+error      = medjex.$(name).err.txt
+output     = medjex.$(name).out.txt
+log        = medjex.$(name).log.txt
+
+getenv            = true
+notification      = never
+transfer_executable = false
+request_memory    = 16384
++Research         = True
+
+queue name from (
+  bart-base-baseline
+  bart-base-lora
+  biobart-base-baseline
+  biobart-base-lora
+  biobart-large-lora
+)
