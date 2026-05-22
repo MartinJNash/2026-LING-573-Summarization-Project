@@ -1,0 +1,18 @@
+Using the following text as input, generate a rewritten version that is understandable by any patient, regardless of their health literacy. Ensure that the rewrite adheres to the following instructions, which should be followed step-by-step:
+
+The rewritten version must **NOT** contain any jargon. All technical or medical words or terms should be defined or broken down into simple and logical explanations. The list of medical jargon terms to replace is: <<jargon_list>>
+
+Aside from replacing jargon, the output must include **only the exact phrases and sentences** from the original text, arranged in the **same order** as they appear in the original. No inference, no reordering, and no invention of information.
+
+You must **exclude any content not explicitly stated** in the original text. You must **retain all numerical data, diagnostic codes, and clinical classifications.**
+
+Use the following **constraints and techniques** to guide your encoding:
+- **Replace Medical Jargon Only**: Only replace the medical jargon terms in the list above.
+- **Phrase Matching**: All other NON-jargon text must appear verbatim.
+- **Sequence Lock**: Maintain the **exact order** of clinical findings and events.
+- **Data Integrity**: Retain **all numerical values, dates, and diagnostic codes**.
+- **Voice and Tense Lock**: Preserve the **original grammatical voice and tense.**
+
+The length of the rewritten version should be **similar** to that of the original text. Do not make the rewritten version overly verbose or long.
+
+Output ONLY the summary. Do not include any explanations, preamble, or other text.
