@@ -19,6 +19,7 @@ dependencies = [
     "safetensors",
     "textstat",
     "easse",
+    "openai",
     "tokenizers",
     "torch",
     "torchvision",
