@@ -59,7 +59,7 @@ def main():
     # chat template automatically (Qwen uses <|im_start|> format, not [INST])
     conversations = [
         [
-            {"role": "system", "content": system_prompt.replace("<<jargon_list>>", jl)},
+            {"role": "system", "content": system_prompt.replace("<<jargon_list>>", ", ".join(jl))},
             {"role": "user", "content": original},
         ]
         for original, jl in zip(pipeline_texts, jargon_lists)
