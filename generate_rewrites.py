@@ -33,6 +33,7 @@ def main():
     
     examples = [ex for ex in data["examples"]]
     pipeline_texts = [ex["pred"] for ex in examples]
+    gold_texts = [ex["gold"] for ex in examples]
     jargon_lists = [[entry["text"] for entry in row] for row in examples["mlm-scores"]]
 
     # create an LLM
@@ -71,10 +72,11 @@ def main():
 
     # build results
     results = []
-    for i, (text, output) in enumerate(zip(pipeline_texts, outputs)):
+    for i, (text, gold, output) in enumerate(zip(pipeline_texts, gold_texts, outputs)):
         results.append({
             "id": i,
             "input": text,
+            "gold": gold,
             "pred": output.outputs[0].text, # get generated text only
         })
 
