@@ -28,9 +28,12 @@ def main():
 
     # combine the template with the pipeline texts to create prompts
     print(f"Loading pipeline summaries...")
-    outputs_df = pd.read_json(args.pipeline_file)
-    pipeline_texts = list(outputs_df["pred"].data)
-    jargon_lists = [[jargon["text"] for jargon in row] for row in list(outputs_df["mlm-scores"].data)]
+    with open(args.pipeline_file, "r") as f:
+        data = json.load(f)
+    
+    examples = [ex for ex in data["examples"]]
+    pipeline_texts = [ex["pred"] for ex in examples]
+    jargon_lists = [[entry["text"] for entry in row] for row in examples["mlm-scores"]]
 
     # create an LLM
     # max_model_len caps context to avoid OOM on 11 GB 2080 Ti
