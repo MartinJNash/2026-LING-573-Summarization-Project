@@ -2,7 +2,9 @@
 
 Abstractive summarization of medical clinical notes for LING 573 (UW, Spring 2026), using the [MultiClinSum](https://zenodo.org/records/17341582) dataset.
 
-See **[MODELS.md](MODELS.md)** for trained models, parameter counts, and evaluation results.
+**Baseline System (D2)**: See **[V1_MODELS.md](V1_MODELS.md)** for trained models, parameter counts, and evaluation results.
+
+**Improved System (D3)**: Markdown file in progress...
 
 ## Setup
 
@@ -27,7 +29,7 @@ cd ..
 ```
 2. Create and activate a virtual environment:
 ```bash
-uv venv --python 3.11
+uv venv
 source .venv/bin/activate
 ```
 3. Install dependencies:
