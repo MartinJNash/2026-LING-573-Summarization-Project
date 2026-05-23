@@ -22,12 +22,9 @@ SARI Score: [0, 100] -> higher score = higher correlation with human judgment
 
 | Model | ROUGE-1 | ROUGE-2 | ROUGE-L | rougeLsum | BLEU | BERTScore F1 | FK pred | FK gold | SARI |
 |---|---|---|---|---|---|---|---|---|---|
-| BART-base baseline | 34.88 | 15.11 | 22.67 | 22.71 | 10.57 | 84.63 | 12.24 | 14.58 |
-| BART-base LoRA | 36.11 | 15.88 | 23.24 | 23.29 | 11.02 | 85.04 | 12.32 | 14.58 |
-| BioBART-v2-base baseline | 35.32 | 15.28 | 22.85 | 22.89 | 10.60 | 84.49 | 12.71 | 14.58 |
-| BioBART-v2-base LoRA | 35.85 | 15.49 | 23.08 | 23.12 | 10.85 | 84.73 | 12.75 | 14.58 |
-| BioBART-v2-large LoRA | 37.03 | 16.46 | 24.92 | 24.97 | 13.00 | 85.44 | 13.02 | 14.58 |
-
+| BioBART-v2-large LoRA | 36.68 | 16.54 | 24.79 | 24.83 | 12.25 | 85.47 | 13.05 | 14.58 | 36.53 |
+| BioBART + MedJEx + Qwen | 33.92 | 12.86 | 21.99 | 22.17 | 8.98 | 85.08 | 11.92 | 14.58 | 30.63 |
+| Qwen2.5 | 33.45 | 9.22 | 19.34 | 21.75 | 5.19 | 85.36 | 11.61 | 14.58 | 40.53 |
 > Run eval: `python eval_pipeline.py --input results/v2_results/v2_outputs/<model>.json --output results/v2_results/v2_eval/<model>-eval.json`
 
 ## Inference Outputs

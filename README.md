@@ -4,7 +4,7 @@ Abstractive summarization of medical clinical notes for LING 573 (UW, Spring 202
 
 **Baseline System (D2)**: See **[V1_MODELS.md](V1_MODELS.md)** for trained models, parameter counts, and evaluation results.
 
-**Improved System (D3)**: Markdown file in progress...
+**Improved System (D3)**: See **[V2_MODELS.md](V2_MODELS.md)** for trained models, parameter counts, and evaluation results.
 
 ## Setup
 
