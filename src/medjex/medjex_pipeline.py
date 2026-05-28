@@ -1,8 +1,9 @@
 import argparse
 import json
-from src.mlm_scorer import MLMScorer
-from src.noun_phrase_extractor import NounPhraseExtractor, SubstringSpan
-from src.wiki_definition_lookup import WikiDefinitionLookup
+
+from mlm_scorer import MLMScorer
+from noun_phrase_extractor import NounPhraseExtractor, SubstringSpan
+from wiki_definition_lookup import WikiDefinitionLookup
 
 MIN_MLM_SCORE = 8
 

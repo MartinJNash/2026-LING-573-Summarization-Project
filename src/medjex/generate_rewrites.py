@@ -10,7 +10,6 @@ Usage:
 import vllm
 import argparse
 import json
-import pandas as pd
 
 def main():
     # add optional command-line args to add a soft limit to the length of the generated summary
@@ -23,7 +22,7 @@ def main():
 
     # read prompt template (plain instructions; no chat-format wrappers)
     print("Reading prompt template...")
-    with open("./rewrite_prompt.txt", "r", encoding="utf-8") as prompt_file:
+    with open("../prompts/rewrite_prompt.txt", "r", encoding="utf-8") as prompt_file:
         system_prompt = prompt_file.read()
 
     # combine the template with the pipeline texts to create prompts

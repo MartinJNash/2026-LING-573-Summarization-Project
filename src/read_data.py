@@ -2,15 +2,15 @@ from pathlib import Path
 from datasets import Dataset
 
 def read_gs_training_data():
-    parent = "data/multiclinsum_gs_train_en"
+    parent = "../data/multiclinsum_gs_train_en"
     yield from read_folder(parent)
 
 def read_large_scale_training_data():
-    parent = "data/multiclinsum_large-scale_train_en"
+    parent = "../data/multiclinsum_large-scale_train_en"
     yield from read_folder(parent)
 
 def read_test_training_data():
-    parent = "data/multiclinsum_test_en"
+    parent = "../data/multiclinsum_test_en"
     yield from read_folder(parent)
 
 def read_folder(root: str):

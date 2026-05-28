@@ -2,11 +2,11 @@
 
 Abstractive summarization of medical clinical notes for LING 573 (UW, Spring 2026), using the [MultiClinSum](https://zenodo.org/records/17341582) dataset.
 
-**Baseline System (D2)**: See **[V1_MODELS.md](V1_MODELS.md)** for trained models, parameter counts, and evaluation results.
+**Baseline System (D2)**: See **[V1_MODELS.md](models/V1_MODELS.md)** for trained models, parameter counts, and evaluation results.
 
 > NOTE: We also fixed the model truncation issue from the baseline system. See **[token-limit-analysis.md](results/token-limit-analysis.md)** for more information.
 
-**Improved System (D3)**: See **[V2_MODELS.md](V2_MODELS.md)** for trained models, parameter counts, and evaluation results.
+**Improved System (D3)**: See **[V2_MODELS.md](models/V2_MODELS.md)** for trained models, parameter counts, and evaluation results.
 
 ## Setup
 

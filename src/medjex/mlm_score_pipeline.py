@@ -1,7 +1,7 @@
 import argparse
 import json
-from src.mlm_scorer import MLMScorer
-from src.noun_phrase_extractor import NounPhraseExtractor, SubstringSpan
+from mlm_scorer import MLMScorer
+from noun_phrase_extractor import NounPhraseExtractor, SubstringSpan
 from dataclasses import dataclass, asdict
 
 @dataclass

@@ -10,6 +10,10 @@ Usage:
 import vllm
 import argparse
 import json
+import sys
+
+sys.path.append("..")
+
 from read_data import read_gs_training_data, read_test_training_data
 
 def main():
