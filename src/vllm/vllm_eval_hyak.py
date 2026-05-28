@@ -7,94 +7,136 @@ Usage:
     python llm_eval.py --input results/outputs/biobart-large-lora.json --output llm_eval_results.csv --max 50
 """
 
-import os
 import json
-import time
 import logging
 import argparse
+import numpy as np
 import pandas as pd
 import vllm
-
-logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
-logger = logging.getLogger(__name__)
-
-with open("../prompts/llm_eval_prompt.txt", "r", encoding="utf-8") as prompt_file:
-    SYSTEM_PROMPT_TEMPLATE = prompt_file.read()
 
 USER_PROMPT_TEMPLATE = """Clinical source document: {source}
 Generated plain language summary: {generated}"""
 
-def score_summary(source: str, generated: str, max_retries: int = 5) -> dict | None:
-    prompt = PROMPT_TEMPLATE.format(source=source, generated=generated)
-    for attempt in range(max_retries):
+MAX_MODEL_LEN = 8192 # using default from our previous vLLM Python scripts
+
+logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
+logger = logging.getLogger(__name__)
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--model", required=True, help="Path to HuggingFace Transformers model to run inference with")
+    parser.add_argument("--input", required=True, help="Path to inference outputs JSON (must have 'input' field!)")
+    parser.add_argument("--output", default="vllm_eval_results.json", help="Path to save results CSV (default: llm_eval_results.csv)")
+    parser.add_argument("--num_examples", type=int, default=None, help="Number of examples to evaluate (default: all)")
+    args = parser.parse_args()
+
+    logger.info(f"Loading examples from {args.input}...")
+    df = load_examples(args.input, num_examples=args.num_examples)
+
+    results = run_eval_on_dataset(args.model, df, args.output)
+
+    logger.info(f"Saved to {args.output}.")
+
+    llm_inform = np.mean([ex["informativeness"] for ex in results])
+    llm_simp = np.mean([ex["simplification"] for ex in results])
+    llm_faith = np.mean([ex["faithfulness"] for ex in results])
+
+    print(f"\n========== LLM EVAL RESULTS ==========")
+    print(f"Examples: {len(df)}")
+    print(f"  Informativeness: {llm_inform:.2f} (mean)")
+    print(f"  Simplification: {llm_simp:.2f} (mean)")
+    print(f"  Faithfulness: {llm_faith:.2f} (mean)")
+
+
+if __name__ == "__main__":
+    main()
+
+def run_eval_on_dataset(model, df: pd.DataFrame, output_path: str):
+    """
+    Expects df columns: source, generated.
+    Writes scores to a JSON file with the associated example ID.
+    Returns results, which is a list of score dictionaries.
+    """
+
+    # create an LLM
+    print(f"Loading model: {model}...")
+    llm = vllm.LLM(
+        model=model,
+        dtype="float16", # some GPUs do not meet min compute for Bfloat16
+        gpu_memory_utilization=0.90,
+        max_model_len=MAX_MODEL_LEN,
+    )
+
+    # Recommended sampling params for Qwen3.5 non-thinking mode (text tasks)
+    sampling_params = vllm.SamplingParams(
+        temperature=1.0,
+        top_p=1.0,
+        top_k=20,
+        presence_penalty=2.0,
+        max_tokens=512,
+    )
+    
+    logger.info("Reading prompt template...")
+    with open("../prompts/llm_eval_prompt.txt", "r", encoding="utf-8") as prompt_file:
+        SYSTEM_PROMPT_TEMPLATE = prompt_file.read()
+
+    # Build one conversation per example; llm.chat() applies the model's
+
+    conversations = [
+        [
+            {"role": "system", "content": SYSTEM_PROMPT_TEMPLATE},
+            {"role": "user", "content": USER_PROMPT_TEMPLATE.format(source=source, generated=generated)}
+        ]
+        for source, generated in zip(df["source"], df["generated"])
+    ]
+
+    # generate scores
+    print(f"Generating scores on {len(conversations)} examples...")
+    outputs = llm.chat(conversations, sampling_params)
+
+    raw_scores = [output.outputs[0].text.strip() for output in outputs]
+
+    # preprocess outputs if necessary
+    scores_dicts = []
+    for rs in raw_scores:
         try:
-            response = client.chat.completions.create(
-                model=MODEL,
-                messages=[{"role": "user", "content": prompt}],
-                temperature=0.0,
-                max_tokens=64,
-            )
-            raw = response.choices[0].message.content.strip()
-            if raw.startswith("```"):
-                raw = raw.split("```")[1]
-                if raw.startswith("json"):
-                    raw = raw[4:]
-            scores = json.loads(raw)
-            return {
+            if rs.startswith("```"):
+                rs = rs.split("```")[1]
+                if rs.startswith("json"):
+                    rs = rs[4:]
+            scores = json.loads(rs)
+            scores_dict = {
                 "informativeness": float(scores["informativeness"]),
                 "simplification":  float(scores["simplification"]),
                 "faithfulness":    float(scores["faithfulness"]),
             }
-        except RateLimitError:
-            wait = 60 * (attempt + 1)
-            logger.warning(f"Rate limited — waiting {wait}s before retry {attempt + 1}/{max_retries}")
-            time.sleep(wait)
+            scores_dicts.append(scores_dict)
         except json.JSONDecodeError as e:
-            logger.warning(f"JSON parse failed: {e} | raw response: {raw!r}")
+            logger.warning(f"JSON parse failed: {e} | raw response: {rs!r}")
             return None
-        except Exception as e:
-            logger.error(f"API call failed: {e}")
-            return None
-    logger.error("Max retries exceeded, skipping example.")
-    return None
+    
 
-
-def run_eval_on_dataset(df: pd.DataFrame, output_path: str) -> pd.DataFrame:
-    """
-    Expects columns: source, generated.
-    Writes results incrementally to output_path after each example.
-    Returns df with added columns: llm_informativeness, llm_simplification, llm_faithfulness.
-    """
+    # build results
     results = []
-    n = len(df)
-    write_header = True
-
-    for i, row in df.iterrows():
-        logger.info(f"Scoring {i + 1}/{n}...")
-        scores = score_summary(row["source"], row["generated"])
-        result = scores if scores else {"informativeness": None, "simplification": None, "faithfulness": None}
-        results.append(result)
-
-        # Write this row immediately to CSV
-        row_out = row.to_dict()
-        row_out["llm_informativeness"] = result["informativeness"]
-        row_out["llm_simplification"]  = result["simplification"]
-        row_out["llm_faithfulness"]    = result["faithfulness"]
-        pd.DataFrame([row_out]).to_csv(output_path, mode="a", header=write_header, index=False)
-        write_header = False
-
-        if i < n - 1:
-            time.sleep(SLEEP_BETWEEN)
-
-    scores_df = pd.DataFrame(results)
-    df = df.copy()
-    df["llm_informativeness"] = scores_df["informativeness"].values
-    df["llm_simplification"]  = scores_df["simplification"].values
-    df["llm_faithfulness"]    = scores_df["faithfulness"].values
-    return df
+    for i, scores_dict in enumerate(scores_dicts):
+        results.append({
+            "id": i,
+            "informativeness": scores_dict["informativeness"],
+            "simplification": scores_dict["simplification"],
+            "faithfulness": scores_dict["faithfulness"],
+        })
+    
+    # write to final outputs JSON
+    with open(output_path, "w") as f:
+        json.dump({
+            "model": model,
+            "examples": results
+        }, f, indent=2)
+    
+    return results
 
 
-def load_examples(path: str, max_examples: int | None = None) -> pd.DataFrame:
+def load_examples(path: str, num_examples: int | None = None) -> pd.DataFrame:
     with open(path) as f:
         content = f.read()
     try:
@@ -103,52 +145,13 @@ def load_examples(path: str, max_examples: int | None = None) -> pd.DataFrame:
     except (json.JSONDecodeError, KeyError):
         examples = [json.loads(line) for line in content.splitlines() if line.strip()]
 
-    if max_examples:
-        examples = examples[:max_examples]
+    if num_examples:
+        examples = examples[:num_examples]
 
     rows = []
     for ex in examples:
         if "input" not in ex:
             raise ValueError("Examples must have an 'input' field for LLM eval (source text required).")
-        rows.append({"source": ex["input"], "generated": ex["pred"], "gold": ex["gold"]})
-    return pd.DataFrame(rows)
-
-
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--input", required=True, help="Path to inference outputs JSON (must have 'input' field!)")
-    parser.add_argument("--output", default="vllm_eval_results.csv", help="Path to save results CSV (default: llm_eval_results.csv)")
-    parser.add_argument("--num_examples", type=int, default=None, help="Number of examples to evaluate (default: all)")
-    args = parser.parse_args()
-
-    if not os.environ.get("NVIDIA_API_KEY"):
-        raise EnvironmentError("NVIDIA_API_KEY not set. Add it to your .env and source it.")
-
-    logger.info(f"Loading examples from {args.input}...")
-    df = load_examples(args.input, max_examples=args.max)
-    logger.info(f"Evaluating {len(df)} examples at {RATE_LIMIT_RPM} RPM (~{len(df) * SLEEP_BETWEEN / 60:.1f} min)...")
-
-    df = run_eval_on_dataset(df, output_path=args.output)
-
-    logger.info(f"Saved to {args.output}")
-
-    print(f"\n========== LLM EVAL RESULTS ==========")
-    print(f"Examples: {len(df)}")
-    for col in ["llm_informativeness", "llm_simplification", "llm_faithfulness"]:
-        print(f"  {col}: {df[col].mean():.2f} (mean)")
-
-
-if __name__ == "__main__":
-    main()
-
-
-# --- Example: run on our test set outputs ---
-#
-# Load NVIDIA_API_KEY first:
-#   export NVIDIA_API_KEY=$(grep NVIDIA_API_KEY .env | cut -d= -f2)
-#
-# Run on biobart-large-lora full outputs (has 'input' field), first 50 examples:
-#   python llm_eval.py --input results/outputs/biobart-large-lora.json --max 50
-#
-# Run on all 3396 examples (~85 min at 40 RPM):
-#   python llm_eval.py --input results/outputs/biobart-large-lora.json --output llm_eval_biobart_large.csv
+        rows.append({"source": ex["input"], "generated": ex["pred"]})
+    examples_df = pd.DataFrame(rows)
+    return examples_df
