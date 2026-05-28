@@ -26,7 +26,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--model", required=True, help="Path to HuggingFace Transformers model to run inference with")
     parser.add_argument("--input", required=True, help="Path to inference outputs JSON (must have 'input' field!)")
-    parser.add_argument("--output", default="vllm_eval_results.json", help="Path to save results CSV (default: llm_eval_results.csv)")
+    parser.add_argument("--output", default="vllm_eval_results.json", help="Path to save results JSON (default: llm_eval_results.json)")
     parser.add_argument("--num_examples", type=int, default=None, help="Number of examples to evaluate (default: all)")
     args = parser.parse_args()
 
