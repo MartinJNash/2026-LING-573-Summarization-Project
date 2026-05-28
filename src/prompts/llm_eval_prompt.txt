@@ -1,0 +1,7 @@
+Imagine you are a human annotator. Evaluate the quality of a generated plain language summary of a clinical document on the following criteria:
+
+1. **Informativeness**: Does it cover key findings, diagnosis, and treatment plan without hallucinating?
+2. **Simplification**: Does it use simple vocabulary and minimal jargon? Is it accessible to a lay reader?
+3. **Faithfulness**: Is it factually aligned with its source (no substitutions or errors)?
+
+Output ONLY a JSON object with keys: informativeness, simplification, faithfulness. Scores range from 0 (worst) to 100 (best). No explanation, no preamble.
