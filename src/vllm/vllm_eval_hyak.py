@@ -22,35 +22,6 @@ MAX_MODEL_LEN = 8192 # using default from our previous vLLM Python scripts
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 logger = logging.getLogger(__name__)
 
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--model", required=True, help="Path to HuggingFace Transformers model to run inference with")
-    parser.add_argument("--input", required=True, help="Path to inference outputs JSON (must have 'input' field!)")
-    parser.add_argument("--output", default="vllm_eval_results.json", help="Path to save results JSON (default: llm_eval_results.json)")
-    parser.add_argument("--num_examples", type=int, default=None, help="Number of examples to evaluate (default: all)")
-    args = parser.parse_args()
-
-    logger.info(f"Loading examples from {args.input}...")
-    df = load_examples(args.input, num_examples=args.num_examples)
-
-    results = run_eval_on_dataset(args.model, df, args.output)
-
-    logger.info(f"Saved to {args.output}.")
-
-    llm_inform = np.mean([ex["informativeness"] for ex in results])
-    llm_simp = np.mean([ex["simplification"] for ex in results])
-    llm_faith = np.mean([ex["faithfulness"] for ex in results])
-
-    print(f"\n========== LLM EVAL RESULTS ==========")
-    print(f"Examples: {len(df)}")
-    print(f"  Informativeness: {llm_inform:.2f} (mean)")
-    print(f"  Simplification: {llm_simp:.2f} (mean)")
-    print(f"  Faithfulness: {llm_faith:.2f} (mean)")
-
-
-if __name__ == "__main__":
-    main()
-
 def run_eval_on_dataset(model, df: pd.DataFrame, output_path: str):
     """
     Expects df columns: source, generated.
@@ -155,3 +126,32 @@ def load_examples(path: str, num_examples: int | None = None) -> pd.DataFrame:
         rows.append({"source": ex["input"], "generated": ex["pred"]})
     examples_df = pd.DataFrame(rows)
     return examples_df
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--model", required=True, help="Path to HuggingFace Transformers model to run inference with")
+    parser.add_argument("--input", required=True, help="Path to inference outputs JSON (must have 'input' field!)")
+    parser.add_argument("--output", default="vllm_eval_results.json", help="Path to save results JSON (default: llm_eval_results.json)")
+    parser.add_argument("--num_examples", type=int, default=None, help="Number of examples to evaluate (default: all)")
+    args = parser.parse_args()
+
+    logger.info(f"Loading examples from {args.input}...")
+    df = load_examples(args.input, num_examples=args.num_examples)
+
+    results = run_eval_on_dataset(args.model, df, args.output)
+
+    logger.info(f"Saved to {args.output}.")
+
+    llm_inform = np.mean([ex["informativeness"] for ex in results])
+    llm_simp = np.mean([ex["simplification"] for ex in results])
+    llm_faith = np.mean([ex["faithfulness"] for ex in results])
+
+    print(f"\n========== LLM EVAL RESULTS ==========")
+    print(f"Examples: {len(df)}")
+    print(f"  Informativeness: {llm_inform:.2f} (mean)")
+    print(f"  Simplification: {llm_simp:.2f} (mean)")
+    print(f"  Faithfulness: {llm_faith:.2f} (mean)")
+
+
+if __name__ == "__main__":
+    main()
