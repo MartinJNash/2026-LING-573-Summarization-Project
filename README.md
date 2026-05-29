@@ -2,6 +2,29 @@
 
 Abstractive summarization of medical clinical notes for LING 573 (UW, Spring 2026), using the [MultiClinSum](https://zenodo.org/records/17341582) dataset.
 
+## Quick start on Hyak
+
+```bash
+# 1. One-time setup (store venv in scrubbed to avoid home quota)
+uv venv /gscratch/scrubbed/<netid>/medjargone --python 3.11
+source /gscratch/scrubbed/<netid>/medjargone/bin/activate
+export HF_HOME=/gscratch/scrubbed/<netid>/hf-cache
+uv pip install -r requirements.txt
+pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.4/en_ner_bc5cdr_md-0.5.4.tar.gz \
+            https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.4/en_ner_bionlp13cg_md-0.5.4.tar.gz
+
+# 2. Set your UMLS API key (get one at uts.nlm.nih.gov)
+export UMLS_API_KEY=<your_key>
+
+# 3. Run tests (no GPU needed for levels 0–4)
+PYTHONPATH=src python -m medjargone.tests.run_all
+
+# 4. Run the full pipeline on the test set (GPU node required)
+sbatch scripts/run_on_hyak.sh
+```
+
+> Replace `<netid>` with your UW NetID. GPU jobs require a node with CUDA — request via `--partition=gpu-a40` or similar.
+
 **Baseline System (D2)**: See **[V1_MODELS.md](models/V1_MODELS.md)** for trained models, parameter counts, and evaluation results.
 
 > NOTE: We also fixed the model truncation issue from the baseline system. See **[token-limit-analysis.md](results/token-limit-analysis.md)** for more information.
