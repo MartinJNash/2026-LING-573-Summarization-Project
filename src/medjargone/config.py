@@ -16,7 +16,7 @@ CACHE_DIR = DATA_DIR / "cache"
 
 UMLS_SUBSET_DB   = DATA_DIR / "umls_subset.sqlite"
 UTS_CACHE_DB     = CACHE_DIR / "uts_cache.sqlite"
-CURATED_ANATOMY  = DATA_DIR / "curated_anatomy.json"
+CURATED_ANATOMY  = Path(__file__).resolve().parent / "resources" / "curated_anatomy.json"
 
 # ── MultiClinSum data ─────────────────────────────────────────────────────────
 MULTICLINSUM_TEST_DIR  = PROJECT_ROOT / "data" / "multiclinsum_test_en"
