@@ -1,11 +1,11 @@
 #!/bin/bash
 #SBATCH --job-name=medjargone-v4
 #SBATCH --account=stf
-#SBATCH --partition=gpu-a40
+#SBATCH --partition=gpu-l40
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=8
-#SBATCH --mem=48G
+#SBATCH --mem=64G
 #SBATCH --gpus=1
 #SBATCH --time=04:00:00
 #SBATCH --chdir=/mmfs1/home/pgarg2/2026-LING-573-Summarization-Project
