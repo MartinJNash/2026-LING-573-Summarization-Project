@@ -21,5 +21,9 @@ logs/
 *.ckpt
 
 # but track inference and eval outputs
-!results/outputs/
-!results/outputs/**
+#!results/outputs/
+#!results/outputs/**
+!results/v1/
+!results/v1/**
+!results/v2/
+!results/v2/**
