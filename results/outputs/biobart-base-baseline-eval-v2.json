@@ -1,0 +1,17 @@
+{
+  "model": "GanjinZero/biobart-v2-base",
+  "num_examples": 3396,
+  "rouge": {
+    "rouge1": 0.35330132854646107,
+    "rouge2": 0.15269745125933484,
+    "rougeL": 0.2285346544163992,
+    "rougeLsum": 0.22879715457694413
+  },
+  "bleu": 0.10600396834530619,
+  "bertscore": null,
+  "readability": {
+    "pred_fk_grade_avg": 12.710602414569212,
+    "gold_fk_grade_avg": 14.575303175683572
+  },
+  "sari": 34.574006609137236
+}

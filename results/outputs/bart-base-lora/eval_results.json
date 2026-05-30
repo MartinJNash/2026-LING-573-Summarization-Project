@@ -1,0 +1,20 @@
+{
+  "model": "mjnash-uw/bart-base-lora",
+  "num_examples": 339,
+  "rouge": {
+    "rouge1": 0.36458064452088984,
+    "rouge2": 0.1587773089901912,
+    "rougeL": 0.23472883352031293,
+    "rougeLsum": 0.23469241545807817
+  },
+  "bleu": 0.1093401623231736,
+  "bertscore": {
+    "precision": 0.8366566896438599,
+    "recall": 0.8671698570251465,
+    "f1": 0.8514596819877625
+  },
+  "readability": {
+    "pred_fk_grade_avg": 12.347198252390022,
+    "gold_fk_grade_avg": 14.699768266105998
+  }
+}
