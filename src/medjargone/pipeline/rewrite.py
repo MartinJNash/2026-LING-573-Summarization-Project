@@ -44,6 +44,10 @@ GLOSSARY:
 SUMMARY:"""
 
 
+_CONFIDENCE_ORDER = {"high": 0, "medium": 1, "low": 2}
+_MAX_GLOSSARY_ENTRIES = 20
+
+
 def generate_rewrite(
     facts: dict,
     glossary: list[GlossaryEntry],
@@ -55,6 +59,11 @@ def generate_rewrite(
     llm_fn : callable(prompt: str) -> str
     Returns the rewritten summary string.
     """
+    top_entries = sorted(
+        [e for e in glossary if e.needs_gloss],
+        key=lambda e: _CONFIDENCE_ORDER.get(e.confidence, 3),
+    )[:_MAX_GLOSSARY_ENTRIES]
+
     active = [
         {
             "term": e.term,
@@ -63,8 +72,7 @@ def generate_rewrite(
             "confidence": e.confidence,
             **({"instruction": e.instruction} if e.instruction else {}),
         }
-        for e in glossary
-        if e.needs_gloss
+        for e in top_entries
     ]
 
     prompt = _REWRITE_PROMPT.format(

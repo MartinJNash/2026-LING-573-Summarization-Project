@@ -235,6 +235,8 @@ def minicheck_verify(
 _FIX_PROMPT = """\
 The patient summary below has the following specific issues. Fix ONLY these issues \
 and return the corrected summary. Do not change anything else.
+Do NOT explain what you changed. Do NOT add headings or preamble.
+Begin the corrected summary immediately with the first sentence about the patient.
 
 ISSUES:
 {issues}
@@ -242,8 +244,7 @@ ISSUES:
 ORIGINAL SUMMARY:
 {summary}
 
-Output ONLY the corrected summary text.
-"""
+CORRECTED SUMMARY:"""
 
 
 def _build_fix_text(report: VerificationReport, unsupported: list[str]) -> str:
@@ -300,7 +301,10 @@ def verify_and_fix(
     final = draft
     if report.has_rule_failures or report.has_model_failures:
         fix_text = _build_fix_text(report, report.unsupported_claims)
-        revised  = llm_fn(_FIX_PROMPT.format(issues=fix_text, summary=draft)).strip()
+        revised  = llm_fn(
+            _FIX_PROMPT.format(issues=fix_text, summary=draft),
+            max_tokens=config.LLM_MAX_NEW_TOKENS_S3,
+        ).strip()
         if revised:
             final = revised
             report.revised = True
