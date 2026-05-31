@@ -42,6 +42,8 @@ def main():
     parser = argparse.ArgumentParser(description="MedJarGone v4 batch inference")
     parser.add_argument("--split",        choices=["train", "test"], default="test")
     parser.add_argument("--num-examples", type=int, default=None)
+    parser.add_argument("--start-idx",    type=int, default=0,
+                        help="First example index (for job-array slicing)")
     parser.add_argument("--model",        default=config.LLM_MODEL)
     parser.add_argument("--output",       default=None,
                         help="Output JSON path (default: results/outputs/medjargone-v4-<split>.json)")
@@ -61,11 +63,19 @@ def main():
     examples = list(_read_folder(data_dir))
     print(f"Loaded {len(examples)} examples from {data_dir}")
 
+    start = args.start_idx
+    end   = start + args.num_examples if args.num_examples is not None else len(examples)
+    slice_examples = examples[start:end]
+    print(f"Running v4 pipeline on examples {start}–{min(end, len(examples))-1} "
+          f"({len(slice_examples)} total)...")
+
     print(f"Loading LLM: {args.model}")
     llm_fn = load_llm(args.model)
 
-    print(f"Running v4 pipeline on {args.num_examples or len(examples)} examples...")
-    results = run_batch(examples, llm_fn, num_examples=args.num_examples)
+    results = run_batch(slice_examples, llm_fn)
+    # Rewrite local IDs to absolute dataset indices
+    for r in results:
+        r["id"] += start
 
     output_path = Path(args.output) if args.output else (
         Path("results/outputs") / f"medjargone-v4-{args.split}.json"
