@@ -70,7 +70,9 @@ class GlossaryEntry:
 class APICache:
     def __init__(self, db_path: Path = config.UTS_CACHE_DB):
         db_path.parent.mkdir(parents=True, exist_ok=True)
-        self._conn = sqlite3.connect(db_path, check_same_thread=False)
+        self._conn = sqlite3.connect(db_path, check_same_thread=False, timeout=30)
+        self._conn.execute("PRAGMA journal_mode=WAL")
+        self._conn.execute("PRAGMA synchronous=NORMAL")
         self._conn.execute("""
             CREATE TABLE IF NOT EXISTS cache (key TEXT PRIMARY KEY, value TEXT)
         """)
