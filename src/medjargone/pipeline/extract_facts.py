@@ -29,20 +29,20 @@ REQUIRED_FIELDS = {
 _SCHEMA_BLOCK = """\
 {
   "patient_context":         "age, sex, relevant history — no name, no address",
+  "diagnosis":               "primary diagnosis exactly as stated in the report",
+  "treatment_or_procedure":  ["each treatment or procedure mentioned"],
+  "outcome_or_followup":     "patient outcome as stated (discharged, improved, etc.)",
+  "complications_or_safety": ["complications, adverse events, or safety warnings — empty list if none"],
+  "not_stated_in_source":    ["list any REQUIRED field absent from the source"],
   "presentation":            "chief complaint and how they presented",
   "exam_or_vitals":          ["key examination findings and vital signs"],
   "tests_and_findings":      ["imaging, labs, pathology results as stated"],
   "numbers_units_dates":     ["every number with its unit, e.g. '88 mmHg', '9 g Hb'"],
   "anatomy_and_laterality":  ["organ/site strings verbatim, e.g. 'left renal vein'"],
-  "diagnosis":               "primary diagnosis exactly as stated in the report",
   "diagnosis_span":          "verbatim sentence(s) from the report supporting diagnosis",
-  "treatment_or_procedure":  ["each treatment or procedure mentioned"],
   "treatment_spans":         ["verbatim phrase for each treatment"],
-  "outcome_or_followup":     "patient outcome as stated (discharged, improved, etc.)",
   "outcome_span":            "verbatim sentence(s) from the report",
-  "complications_or_safety": ["complications, adverse events, or safety warnings — empty list if none"],
-  "complication_spans":      ["verbatim phrase for each complication"],
-  "not_stated_in_source":    ["list any REQUIRED field that is absent from the source"]
+  "complication_spans":      ["verbatim phrase for each complication"]
 }"""
 
 _RULES = """\
@@ -60,31 +60,62 @@ _PROMPT_PLAIN = (
     + "\n\nCASE REPORT:\n"
 )
 
+# Shorter retry prompt: only required fields, no verbatim span fields.
+# Used when the full prompt fails (truncated JSON or missing fields).
+_RETRY_SCHEMA = """\
+{
+  "patient_context":         "age, sex, relevant history",
+  "presentation":            "chief complaint",
+  "diagnosis":               "primary diagnosis as stated",
+  "treatment_or_procedure":  ["each treatment or procedure"],
+  "outcome_or_followup":     "patient outcome as stated, or null",
+  "complications_or_safety": ["complications or adverse events, or empty list"],
+  "not_stated_in_source":    ["required fields absent from the source"]
+}"""
+
+_PROMPT_RETRY = (
+    "You are a clinical fact extractor. Extract ONLY the fields below from the "
+    "case report. Use null or [] for any field not mentioned in the report.\n\n"
+    + _RETRY_SCHEMA + "\n\n"
+    "Rules: output ONLY valid JSON. No preamble, no markdown fences.\n\n"
+    "CASE REPORT:\n"
+)
+
+# Truncate source for retry to avoid token overflow on very long documents
+_RETRY_MAX_CHARS = 6000
+
+
+def _parse_and_validate(raw: str) -> dict:
+    raw = re.sub(r"^```(?:json)?\s*", "", raw.strip(), flags=re.IGNORECASE)
+    raw = re.sub(r"\s*```$", "", raw.strip())
+    facts = json.loads(raw)
+    missing = REQUIRED_FIELDS - set(facts.keys())
+    if missing:
+        raise ValueError(f"Stage 1: LLM output missing required fields: {missing}")
+    return facts
+
+
 def extract_facts(source_text: str, llm_fn) -> dict:
     """
     Stage 1 entry point.
 
     llm_fn : callable(prompt: str) -> str
     Returns a validated dict or raises ValueError.
+    On JSON/field failure retries once with a shorter prompt + truncated source.
     """
     raw = llm_fn(_PROMPT_PLAIN + source_text)
-
-    # Strip markdown fences
-    raw = re.sub(r"^```(?:json)?\s*", "", raw.strip(), flags=re.IGNORECASE)
-    raw = re.sub(r"\s*```$", "", raw.strip())
-
     try:
-        facts = json.loads(raw)
-    except json.JSONDecodeError as exc:
-        raise ValueError(
-            f"Stage 1: LLM returned invalid JSON: {exc}\nRaw output: {raw[:400]}"
-        )
-
-    missing = REQUIRED_FIELDS - set(facts.keys())
-    if missing:
-        raise ValueError(
-            f"Stage 1: LLM output missing required fields: {missing}"
-        )
+        facts = _parse_and_validate(raw)
+    except (json.JSONDecodeError, ValueError):
+        # Retry: shorter schema, source truncated to avoid token overflow
+        truncated = source_text[:_RETRY_MAX_CHARS]
+        raw2 = llm_fn(_PROMPT_RETRY + truncated)
+        try:
+            facts = _parse_and_validate(raw2)
+        except json.JSONDecodeError as exc:
+            raise ValueError(
+                f"Stage 1: LLM returned invalid JSON: {exc}\nRaw output: {raw2[:400]}"
+            )
 
     # Normalise list fields
     for lf in ("exam_or_vitals", "tests_and_findings", "numbers_units_dates",
