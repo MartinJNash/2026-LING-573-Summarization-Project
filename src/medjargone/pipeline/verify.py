@@ -27,8 +27,9 @@ from typing import Optional
 from medjargone import config
 from medjargone.pipeline.glossary import GlossaryEntry
 
-# Lazy model handle
-_minicheck = None
+# Lazy model handle — _minicheck_tried prevents repeated import attempts / warnings
+_minicheck       = None
+_minicheck_tried = False
 
 
 # ── Verification report ────────────────────────────────────────────────────────
@@ -83,6 +84,15 @@ _NUM_RE = re.compile(
 )
 
 
+def _as_str(val) -> str:
+    """Coerce a fact field to str — model sometimes returns lists for string fields."""
+    if val is None:
+        return ""
+    if isinstance(val, list):
+        return " ".join(str(v) for v in val)
+    return str(val)
+
+
 def _nums(text: str) -> set[str]:
     return {m.group().lower().replace(",", ".").replace(" ", "")
             for m in _NUM_RE.finditer(text)}
@@ -91,12 +101,12 @@ def _nums(text: str) -> set[str]:
 def _check_numbers(facts: dict, summary: str) -> list[str]:
     source_nums: set[str] = set()
     for key in ("diagnosis_span", "outcome_span"):
-        source_nums |= _nums(facts.get(key) or "")
+        source_nums |= _nums(_as_str(facts.get(key)))
     for spans_key in ("treatment_spans", "complication_spans"):
         for s in facts.get(spans_key) or []:
-            source_nums |= _nums(s)
+            source_nums |= _nums(_as_str(s))
     for n in facts.get("numbers_units_dates") or []:
-        source_nums |= _nums(n)
+        source_nums |= _nums(_as_str(n))
     return sorted(source_nums - _nums(summary))
 
 
@@ -118,7 +128,7 @@ def _check_coverage(facts: dict, summary: str) -> list[str]:
         ("diagnosis", "diagnosis"),
         ("outcome_or_followup", "outcome"),
     ]:
-        val = facts.get(field_name) or ""
+        val = _as_str(facts.get(field_name))
         if val in (facts.get("not_stated_in_source") or []):
             continue
         words = [w for w in re.findall(r"\b\w{5,}\b", val.lower())
@@ -149,15 +159,15 @@ def _check_organ_identity(facts: dict, summary: str) -> list[str]:
 # ── Tier 2: MiniCheck ─────────────────────────────────────────────────────────
 
 def _load_minicheck():
-    global _minicheck
-    if _minicheck is not None:
+    global _minicheck, _minicheck_tried
+    if _minicheck_tried:
         return
+    _minicheck_tried = True
     try:
         from minicheck.minicheck import MiniCheck
         _minicheck = MiniCheck(model_name=config.MINICHECK_MODEL, enable_prefix_caching=False)
     except ImportError:
-        print("[warn] MiniCheck not installed — Tier 2 skipped")
-        print("  pip install minicheck  (see github.com/Liyan06/MiniCheck)")
+        print("[warn] MiniCheck not installed — Tier 2 skipped (once)")
     except Exception as exc:
         print(f"[warn] MiniCheck load failed: {exc}")
 
@@ -176,11 +186,12 @@ def _best_premise(claim: str, facts: dict, source_text: str) -> str:
     """
     claim_words = set(re.findall(r"\b\w{4,}\b", claim.lower()))
     for key in ("diagnosis_span", "outcome_span"):
-        span = facts.get(key) or ""
+        span = _as_str(facts.get(key))
         if span and len(claim_words & set(re.findall(r"\b\w{4,}\b", span.lower()))) >= 2:
             return span
     for spans_key in ("treatment_spans", "complication_spans"):
         for span in (facts.get(spans_key) or []):
+            span = _as_str(span)
             if span and len(claim_words & set(re.findall(r"\b\w{4,}\b", span.lower()))) >= 2:
                 return span
     return source_text
