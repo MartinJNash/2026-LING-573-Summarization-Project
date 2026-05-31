@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import json
 
+from medjargone import config
 from medjargone.pipeline.glossary import GlossaryEntry
 
 
@@ -69,4 +70,4 @@ def generate_rewrite(
         glossary_json=json.dumps(active, indent=2),
     )
 
-    return llm_fn(prompt).strip()
+    return llm_fn(prompt, max_tokens=config.LLM_MAX_NEW_TOKENS_S3).strip()

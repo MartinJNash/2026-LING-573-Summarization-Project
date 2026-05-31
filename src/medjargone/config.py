@@ -59,7 +59,8 @@ CONTEXT_EXCLUDE_MODIFIERS = {"NEGATED_EXISTENCE", "POSSIBLE_EXISTENCE",
 
 # ── LLM (Ollama) ─────────────────────────────────────────────────────────────
 LLM_MODEL          = "qwen2.5:3b"
-LLM_MAX_NEW_TOKENS = 512
+LLM_MAX_NEW_TOKENS    = 2048   # S1 JSON schema has 15 fields + verbatim spans; 512 caused 61% truncation
+LLM_MAX_NEW_TOKENS_S3 = 768    # rewrite summary — shorter output, caps runaway generation
 OLLAMA_HOST        = os.environ.get("OLLAMA_HOST", "http://localhost:11434")
 
 # ── Stage 4 — MiniCheck ──────────────────────────────────────────────────────

@@ -37,7 +37,6 @@ import sys
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
 from medjargone import config
-from medjargone.pipeline.preprocess import PreprocessedDoc, run_context
 
 # ── NLP models (lazy) ─────────────────────────────────────────────────────────
 _nlp_bc5cdr  = None
@@ -531,7 +530,6 @@ def _clinical_tables_gloss(term: str, cache: APICache) -> Optional[str]:
 
 def build_glossary(
     source_text: str,
-    preprocessed: Optional[PreprocessedDoc] = None,
     umls_index: Optional[UMLSIndex] = None,
     uts_client: Optional[UTSClient] = None,
     cache: Optional[APICache] = None,
@@ -540,8 +538,6 @@ def build_glossary(
     """
     Stage 2 entry point. Returns GlossaryEntry list for every medical term in text.
 
-    preprocessed : PreprocessedDoc from preprocess.py — provides sections and
-                   ConText modifiers. Pass None to skip medspaCy integration.
     umls_index / uts_client : shared across batch runs (init once in run.py).
     """
     if cache is None:
@@ -560,10 +556,6 @@ def build_glossary(
 
     candidates, abbrev_map = _extract_candidates(source_text)
 
-    # ── Run medspaCy ConText on the candidate spans ───────────────────────────
-    ent_positions = [(sc, ec) for _, _, _, sc, ec in candidates]
-    ctx_modifiers = run_context(source_text, ent_positions)
-
     entries: list[GlossaryEntry] = []
     seen: set[str] = set()
 
@@ -573,24 +565,11 @@ def build_glossary(
             continue
         seen.add(key)
 
-        # Drop entities that are negated / historical / family / hypothetical
-        mods = ctx_modifiers.get(key)
-        if mods is not None and mods.should_exclude:
-            continue
-
-        # Determine which clinical section this entity came from
-        section_name: Optional[str] = None
-        if preprocessed is not None:
-            sec = preprocessed.section_for_char(start_c)
-            if sec is not None:
-                section_name = sec.category
-
         entry = _gloss_one(
             term, ner_type, context,
             umls_index, uts_client, cache,
             abbrev_map, curated,
         )
-        entry.section = section_name
         entries.append(entry)
 
     return entries

@@ -1,13 +1,11 @@
 """
 Stage 1 — Whole-document clinical fact extraction.
 
-Input : source text (str), optional PreprocessedDoc (medspaCy sections)
+Input : source text (str)
 Output: validated fact schema dict (every field carries source spans)
 
-When a PreprocessedDoc is supplied the LLM prompt is built from the section-
-tagged text rather than the raw report. This prevents the front-copying failure
-(D2/D3 extracting only from the first few sentences) by showing the model
-exactly which text belongs to History, Diagnosis, Treatment, and Outcome.
+Processes the full document in one pass — avoids the D2/D3 positional truncation
+failure where only the opening sentences were summarised.
 
 Mandatory fields: diagnosis, treatment_or_procedure, outcome_or_followup,
 complications_or_safety. Absent fields go to not_stated_in_source — they are
@@ -18,10 +16,6 @@ from __future__ import annotations
 
 import json
 import re
-from typing import Optional, TYPE_CHECKING
-
-if TYPE_CHECKING:
-    from medjargone.pipeline.preprocess import PreprocessedDoc
 
 REQUIRED_FIELDS = {
     "patient_context",
@@ -66,44 +60,14 @@ _PROMPT_PLAIN = (
     + "\n\nCASE REPORT:\n"
 )
 
-_PROMPT_SECTIONED = (
-    "You are a clinical fact extractor. The case report below has been divided "
-    "into labelled clinical sections. Use the section labels to guide which "
-    "schema field each piece of information belongs to. Return a JSON object "
-    "with EXACTLY the following fields.\n\n"
-    + _SCHEMA_BLOCK + "\n\n"
-    + _RULES
-    + "\n\nCASE REPORT (with section labels):\n"
-)
-
-
-def extract_facts(
-    source_text: str,
-    llm_fn,
-    preprocessed: Optional["PreprocessedDoc"] = None,
-) -> dict:
+def extract_facts(source_text: str, llm_fn) -> dict:
     """
     Stage 1 entry point.
 
-    llm_fn       : callable(prompt: str) -> str
-    preprocessed : PreprocessedDoc from preprocess.py — when present its
-                   structured_for_llm text is used instead of the raw source.
-
+    llm_fn : callable(prompt: str) -> str
     Returns a validated dict or raises ValueError.
     """
-    # Use the section-tagged text if sections were found (not just one narrative)
-    use_sections = (
-        preprocessed is not None
-        and preprocessed.structured_for_llm
-        and len(preprocessed.sections) > 1
-    )
-
-    if use_sections:
-        prompt = _PROMPT_SECTIONED + preprocessed.structured_for_llm
-    else:
-        prompt = _PROMPT_PLAIN + source_text
-
-    raw = llm_fn(prompt)
+    raw = llm_fn(_PROMPT_PLAIN + source_text)
 
     # Strip markdown fences
     raw = re.sub(r"^```(?:json)?\s*", "", raw.strip(), flags=re.IGNORECASE)
@@ -128,8 +92,5 @@ def extract_facts(
                "complications_or_safety", "complication_spans", "not_stated_in_source"):
         if facts.get(lf) is None:
             facts[lf] = []
-
-    # Record whether sections were used (useful for ablation analysis)
-    facts["_sections_used"] = use_sections
 
     return facts

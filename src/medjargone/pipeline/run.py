@@ -30,7 +30,6 @@ from typing import Callable, Optional
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
 from medjargone import config
-from medjargone.pipeline.preprocess import preprocess_clinical_text
 from medjargone.pipeline.extract_facts import extract_facts
 from medjargone.pipeline.glossary import (
     build_glossary, UMLSIndex, UTSClient, APICache
@@ -48,7 +47,7 @@ def load_llm(model_name: str = config.LLM_MODEL) -> Callable[[str], str]:
     """
     import ollama as _ollama
 
-    def llm_fn(prompt: str) -> str:
+    def llm_fn(prompt: str, max_tokens: int = config.LLM_MAX_NEW_TOKENS) -> str:
         response = _ollama.chat(
             model=model_name,
             messages=[
@@ -58,7 +57,7 @@ def load_llm(model_name: str = config.LLM_MODEL) -> Callable[[str], str]:
             options={
                 "temperature": 0.2,
                 "top_p": 0.9,
-                "num_predict": config.LLM_MAX_NEW_TOKENS,
+                "num_predict": max_tokens,
             },
         )
         return response["message"]["content"]
@@ -84,7 +83,7 @@ def run_pipeline(
       "facts": dict,
       "glossary": list[dict],
       "verification": {
-          "missing_numbers", "wrong_laterality", "wrong_organs", "wrong_drugs",
+          "missing_numbers", "wrong_laterality", "wrong_organs",
           "missing_coverage", "unsupported_claims", "gray_zone_claims",
           "revised", "summary_str"
       },
@@ -93,21 +92,15 @@ def run_pipeline(
     """
     times: dict[str, int] = {}
 
-    # medspaCy preprocessing — section detection + ConText infrastructure
+    # Stage 1 — whole-document fact extraction to fixed schema
     t = time.monotonic()
-    preprocessed = preprocess_clinical_text(source_text)
-    times["s0_preprocess"] = int((time.monotonic() - t) * 1000)
-
-    # Stage 1 — fact extraction (uses section-tagged text when available)
-    t = time.monotonic()
-    facts = extract_facts(source_text, llm_fn, preprocessed=preprocessed)
+    facts = extract_facts(source_text, llm_fn)
     times["s1"] = int((time.monotonic() - t) * 1000)
 
-    # Stage 2 — UMLS-grounded glossary (ConText filtering via preprocessed)
+    # Stage 2 — UMLS-grounded jargon glossary
     t = time.monotonic()
     glossary = build_glossary(
         source_text,
-        preprocessed=preprocessed,
         umls_index=umls_index,
         uts_client=uts_client,
         cache=cache,
@@ -119,24 +112,19 @@ def run_pipeline(
     draft = generate_rewrite(facts, glossary, llm_fn)
     times["s3"] = int((time.monotonic() - t) * 1000)
 
-    # Stage 4 — 3-tier verify-and-fix
+    # Stage 4 — deterministic rules + MiniCheck verify-and-fix
     t = time.monotonic()
-    final, report = verify_and_fix(draft, facts, source_text, llm_fn, glossary)
+    final, report = verify_and_fix(draft, facts, source_text, llm_fn)
     times["s4"] = int((time.monotonic() - t) * 1000)
 
     return {
         "summary": final,
         "facts": facts,
         "glossary": [e.to_dict() for e in glossary],
-        "sections_found": [
-            {"category": s.category, "title": s.title}
-            for s in preprocessed.sections
-        ],
         "verification": {
             "missing_numbers":    report.missing_numbers,
             "wrong_laterality":   report.wrong_laterality,
             "wrong_organs":       report.wrong_organs,
-            "wrong_drugs":        report.wrong_drugs,
             "missing_coverage":   report.missing_coverage,
             "unsupported_claims": report.unsupported_claims,
             "gray_zone_claims":   report.gray_zone_claims,
