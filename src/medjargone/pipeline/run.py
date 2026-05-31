@@ -58,6 +58,7 @@ def load_llm(model_name: str = config.LLM_MODEL) -> Callable[[str], str]:
                 "temperature": 0.2,
                 "top_p": 0.9,
                 "num_predict": max_tokens,
+                "num_ctx": 8192,
             },
         )
         return response["message"]["content"]

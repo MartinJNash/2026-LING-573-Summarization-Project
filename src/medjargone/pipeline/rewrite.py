@@ -31,15 +31,17 @@ Order:
   (6) any complication or warning
 
 Keep all numbers, dates, anatomy, and left/right exactly as given in the facts.
-Write in plain prose at a Grade 7 reading level. No headings.
-Output ONLY the summary text.
+Write in plain prose at a Grade 7 reading level. No headings. No preamble.
+Do NOT explain what you are doing. Do NOT repeat these instructions.
+Begin the summary immediately with the first sentence about the patient.
 
 FACTS:
 {facts_json}
 
 GLOSSARY:
 {glossary_json}
-"""
+
+SUMMARY:"""
 
 
 def generate_rewrite(
