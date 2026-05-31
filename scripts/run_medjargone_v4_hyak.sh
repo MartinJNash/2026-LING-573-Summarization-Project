@@ -23,6 +23,11 @@ export TORCH_HOME=/gscratch/scrubbed/pgarg2/torch-cache
 export XDG_CACHE_HOME=/gscratch/scrubbed/pgarg2/xdg-cache
 export APPTAINER_CACHEDIR=/gscratch/scrubbed/pgarg2/apptainer-cache
 
+# Squid proxy intercepts 127.0.0.1 requests — exclude it so the ollama
+# Python client can reach the local ollama server directly
+export no_proxy="${no_proxy},127.0.0.1"
+export NO_PROXY="${NO_PROXY},127.0.0.1"
+
 # Ollama model storage — keeps models out of the 10GB home dir
 export OLLAMA_MODELS=/gscratch/scrubbed/pgarg2/ollama-models
 mkdir -p "$OLLAMA_MODELS"
