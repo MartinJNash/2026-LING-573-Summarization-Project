@@ -57,11 +57,10 @@ MEDSPACY_BASE_MODEL = "en_core_web_sm"
 CONTEXT_EXCLUDE_MODIFIERS = {"NEGATED_EXISTENCE", "POSSIBLE_EXISTENCE",
                               "HISTORICAL", "HYPOTHETICAL", "FAMILY"}
 
-# ── LLM (vllm / Qwen) ────────────────────────────────────────────────────────
-LLM_MODEL          = "Qwen/Qwen2.5-3B-Instruct"
-LLM_MAX_MODEL_LEN  = 8192
+# ── LLM (Ollama) ─────────────────────────────────────────────────────────────
+LLM_MODEL          = "qwen2.5:3b"
 LLM_MAX_NEW_TOKENS = 512
-LLM_DTYPE          = "float16"
+OLLAMA_HOST        = os.environ.get("OLLAMA_HOST", "http://localhost:11434")
 
 # ── Stage 4 — MiniCheck ──────────────────────────────────────────────────────
 # Use Flan-T5-Large locally (CPU-friendly); swap to Bespoke-7B if GPU available.

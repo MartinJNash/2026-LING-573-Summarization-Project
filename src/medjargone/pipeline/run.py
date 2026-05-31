@@ -43,34 +43,25 @@ from medjargone.pipeline.verify import verify_and_fix
 
 def load_llm(model_name: str = config.LLM_MODEL) -> Callable[[str], str]:
     """
-    Returns llm_fn(prompt: str) -> str backed by vllm.
-    Model is lazy-loaded on first call.
+    Returns llm_fn(prompt: str) -> str backed by Ollama.
+    Requires `ollama serve` to be running (started by the Slurm script).
     """
-    _state: dict = {}
-
-    def _ensure():
-        if "llm" not in _state:
-            import vllm
-            _state["llm"] = vllm.LLM(
-                model=model_name,
-                dtype=config.LLM_DTYPE,
-                gpu_memory_utilization=0.85,
-                max_model_len=config.LLM_MAX_MODEL_LEN,
-            )
-            _state["params"] = vllm.SamplingParams(
-                temperature=0.2,
-                top_p=0.9,
-                max_tokens=config.LLM_MAX_NEW_TOKENS,
-            )
+    import ollama as _ollama
 
     def llm_fn(prompt: str) -> str:
-        _ensure()
-        conversation = [
-            {"role": "system", "content": "You are a precise medical assistant."},
-            {"role": "user",   "content": prompt},
-        ]
-        outputs = _state["llm"].chat([conversation], _state["params"])
-        return outputs[0].outputs[0].text
+        response = _ollama.chat(
+            model=model_name,
+            messages=[
+                {"role": "system", "content": "You are a precise medical assistant."},
+                {"role": "user",   "content": prompt},
+            ],
+            options={
+                "temperature": 0.2,
+                "top_p": 0.9,
+                "num_predict": config.LLM_MAX_NEW_TOKENS,
+            },
+        )
+        return response["message"]["content"]
 
     return llm_fn
 

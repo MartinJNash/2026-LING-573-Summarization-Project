@@ -16,7 +16,7 @@ bert-score
 textstat
 peft
 requests
-vllm
+ollama
 easse @ git+https://github.com/feralvam/easse.git
 openai
 pydantic
