@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=medjargone-v4-prelim
-#SBATCH --account=ckpt-all
+#SBATCH --account=ckpt
 #SBATCH --partition=ckpt
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
