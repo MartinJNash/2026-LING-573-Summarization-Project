@@ -20,17 +20,18 @@ from medjargone.pipeline.glossary import GlossaryEntry
 _REWRITE_PROMPT = """\
 Write a patient-friendly summary using ONLY the verified facts and glossary below.
 Add no diagnosis, cause, outcome, reassurance, or mechanism not in the facts.
-Replace medical terms with their glossary plain-language version; if a term has no
-gloss, keep it with a short neutral description of its type (e.g. "a medication").
-Order:
-  (1) why they came in
-  (2) what doctors found
-  (3) main problem / diagnosis
-  (4) treatment or procedure
-  (5) outcome / follow-up
-  (6) any complication or warning
+Replace medical terms with their plain-language version from the glossary; if a term \
+has no gloss, keep it with a short neutral description (e.g. "a medication").
 
-Keep all numbers, dates, anatomy, and left/right exactly as given in the facts.
+Begin with the patient's age and sex if known. Cover in 4-5 sentences:
+  (1) why they came in
+  (2) main problem / diagnosis
+  (3) treatment or procedure
+  (4) outcome / follow-up and any complications
+
+Aim for 100-150 words. Do NOT list every test result — include only the key finding \
+that led to the diagnosis.
+Keep all numbers with units, dates, anatomy, and left/right exactly as given in the facts.
 Write in plain prose at a Grade 7 reading level. No headings. No preamble.
 Do NOT explain what you are doing. Do NOT repeat these instructions.
 Begin the summary immediately with the first sentence about the patient.

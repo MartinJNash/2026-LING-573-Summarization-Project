@@ -104,7 +104,6 @@ def _safety_flags_from_verification(v: dict) -> dict:
         "missing_numbers":    int(bool(v.get("missing_numbers"))),
         "wrong_laterality":   int(v.get("wrong_laterality", False)),
         "wrong_organs":       int(bool(v.get("wrong_organs"))),
-        "wrong_drugs":        int(bool(v.get("wrong_drugs"))),
         "missing_coverage":   int(bool(v.get("missing_coverage"))),
         "unsupported_claims": len(v.get("unsupported_claims", [])),
         "revised":            int(v.get("revised", False)),
@@ -136,7 +135,6 @@ def compute_safety_metrics(
                 "missing_numbers":    int(bool(report.missing_numbers)),
                 "wrong_laterality":   int(report.wrong_laterality),
                 "wrong_organs":       int(bool(report.wrong_organs)),
-                "wrong_drugs":        int(bool(report.wrong_drugs)),
                 "missing_coverage":   int(bool(report.missing_coverage)),
                 "unsupported_claims": len(unsupported),
                 "revised":            0,
@@ -148,7 +146,6 @@ def compute_safety_metrics(
                 "missing_numbers":    None,
                 "wrong_laterality":   None,
                 "wrong_organs":       None,
-                "wrong_drugs":        None,
                 "missing_coverage":   None,
                 "unsupported_claims": len(unsupported),
                 "revised":            0,
@@ -173,7 +170,15 @@ def main():
     parser.add_argument("--output", type=Path, default=Path("eval/v4_safety_table.csv"))
     parser.add_argument("--metrics-output", type=Path,
                         default=Path("eval/v4_standard_metrics.json"))
+    parser.add_argument("--ids", type=Path, default=None,
+                        help="JSON file with list of integer IDs to evaluate (for subset comparison)")
     args = parser.parse_args()
+
+    # Optional ID filter — lets us compare all systems on the same prelim subset
+    id_filter: Optional[set] = None
+    if args.ids:
+        with open(args.ids) as fh:
+            id_filter = {str(i) for i in json.load(fh)}
 
     systems = {
         k: v for k, v in [
@@ -194,6 +199,10 @@ def main():
     for tag, path in systems.items():
         print(f"\n=== {tag}: {path} ===")
         model_name, examples = load_output_json(path)
+
+        if id_filter:
+            examples = [e for e in examples if str(e.get("id", "")) in id_filter]
+            print(f"  Filtered to {len(examples)} examples matching --ids")
 
         preds   = [e.get("pred", "") for e in examples]
         golds   = [e.get("gold",  "") for e in examples]
@@ -222,7 +231,7 @@ def main():
     args.output.parent.mkdir(parents=True, exist_ok=True)
     fieldnames = [
         "system", "id",
-        "missing_numbers", "wrong_laterality", "wrong_organs", "wrong_drugs",
+        "missing_numbers", "wrong_laterality", "wrong_organs",
         "missing_coverage", "unsupported_claims", "revised",
     ]
     with open(args.output, "w", newline="") as fh:
@@ -234,7 +243,7 @@ def main():
     # ── Summary safety counts ─────────────────────────────────────────────────
     print("\n=== Safety summary (counts over all examples) ===")
     header = f"{'System':<8}  {'NoBadNums':>9}  {'BadLat':>6}  {'BadOrg':>6}  "
-    header += f"{'BadDrug':>7}  {'NoCovg':>6}  {'Unsupport':>9}"
+    header += f"{'NoCovg':>6}  {'Unsupport':>9}"
     print(header)
     for tag in systems:
         rows = [r for r in all_safety_rows if r["system"] == tag]
@@ -243,8 +252,8 @@ def main():
             return sum(vals) if vals else "N/A"
         print(
             f"{tag:<8}  {_sum('missing_numbers'):>9}  {_sum('wrong_laterality'):>6}  "
-            f"{_sum('wrong_organs'):>6}  {_sum('wrong_drugs'):>7}  "
-            f"{_sum('missing_coverage'):>6}  {_sum('unsupported_claims'):>9}"
+            f"{_sum('wrong_organs'):>6}  {_sum('missing_coverage'):>6}  "
+            f"{_sum('unsupported_claims'):>9}"
         )
 
 

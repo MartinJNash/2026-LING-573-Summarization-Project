@@ -79,7 +79,7 @@ class VerificationReport:
 # ── Tier 1: Deterministic rules ───────────────────────────────────────────────
 
 _NUM_RE = re.compile(
-    r"\b\d+(?:[.,]\d+)?(?:\s*(?:mg|ml|g|mmol|mmhg|%|bpm|kg|cm|mm|iu|meq))?\b",
+    r"\b\d+(?:[.,]\d+)?\s*(?:mg|ml|g|mmol|mmhg|%|bpm|kg|cm|mm|iu|meq)\b",
     re.IGNORECASE,
 )
 
