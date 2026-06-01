@@ -71,11 +71,18 @@ def run_eval_on_dataset(model, df: pd.DataFrame, output_path: str):
     scores_dicts = []
     for rs in raw_scores:
         try:
+            # remove formatting from chat function
             if rs.startswith("```"):
                 rs = rs.split("```")[1]
                 if rs.startswith("json"):
                     rs = rs[4:]
+            # also need to remove whitespace from the keys if they appear!!!
             scores = json.loads(rs)
+            original_keys = list(scores.keys())
+            stripped_keys = [k.strip() for k in original_keys]
+            for i in range(len(original_keys)):
+                # pop the keys with whitespace and reinsert with the stripped key
+                scores[stripped_keys[i]] = scores.pop(original_keys[i])
             scores_dict = {
                 "informativeness": float(scores["informativeness"]),
                 "simplification":  float(scores["simplification"]),
