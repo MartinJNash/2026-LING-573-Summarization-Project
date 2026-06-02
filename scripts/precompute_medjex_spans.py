@@ -4,24 +4,16 @@ Standalone MedJEx jargon-span precomputation pass.
 Runs the released MedJEx BERT-CRF model on the MultiClinSum corpus and writes
 a JSON of {doc_id: [{term, start, end}]} for use by glossary.py.
 
-Run this in a separate environment from the D4 stack to avoid version conflicts:
-    pip install torch transformers medspacy nltk
-    python -c "import nltk; nltk.download('punkt'); nltk.download('punkt_tab')"
+Requires a separate env (see scripts/setup_medjex_env_hyak.sh).
 
-Download the checkpoint (~500 MB):
-    python -c "import urllib.request; urllib.request.urlretrieve(
-        'https://huggingface.co/Mozzi/MedJEx/resolve/main/model.pth',
-        'src/medjargone/MedJEx/results/MedJEx.pth')"
-
-UMLS matcher (one of):
-    --medcat-path  /path/to/umls_sm_wstatus_2021_oct   (MedCAT binary)
-    --quickumls-path /path/to/QuickUMLS                (QuickUMLS install)
+Download the checkpoint (~500 MB, done automatically on first run).
 
 Usage:
-    python scripts/precompute_medjex_spans.py \
-        --split test \
-        --medcat-path /gscratch/scrubbed/pgarg2/medcat/umls_sm_wstatus_2021_oct \
-        --output data/medjargone/medjex_spans_test.json
+    python scripts/precompute_medjex_spans.py --split test \
+        --medcat-path /gscratch/scrubbed/pgarg2/medcat/umls_sm_wstatus_2021_oct
+
+    # If checkpoint flags show no UMLS features needed:
+    python scripts/precompute_medjex_spans.py --split test --no-umls
 """
 
 from __future__ import annotations
@@ -405,9 +397,10 @@ def main():
     parser.add_argument("--data-root",    default=str(root / "data"),
                         help="Root of data/ directory")
     parser.add_argument("--medcat-path",  default=None,
-                        help="Path to MedCAT UMLS binary dir")
-    parser.add_argument("--quickumls-path", default=None,
-                        help="Path to QuickUMLS install")
+                        help="Path to MedCAT model pack dir")
+    parser.add_argument("--no-umls",      action="store_true",
+                        help="Run without UMLS matcher (valid only if checkpoint "
+                             "Binary_flag/TF_flag/MLM_flag are all False)")
     parser.add_argument("--batch-size",   type=int, default=4)
     parser.add_argument("--ignore-mlm",   action="store_true",
                         help="Zero out MLM features (faster, may hurt detection)")
@@ -430,13 +423,23 @@ def main():
         from utils.MedCAT import MedCAT_wrapper
         umls_matcher = MedCAT_wrapper(args.medcat_path)
         print(f"Using MedCAT: {args.medcat_path}")
-    elif args.quickumls_path:
-        from quickumls import QuickUMLS
-        umls_matcher = QuickUMLS(args.quickumls_path,
-                                  overlapping_criteria="score")
-        print(f"Using QuickUMLS: {args.quickumls_path}")
+    elif args.no_umls:
+        umls_matcher = None
+        print("No UMLS matcher (--no-umls); will validate against checkpoint flags")
     else:
-        parser.error("Provide --medcat-path or --quickumls-path")
+        parser.error("Provide --medcat-path or --no-umls")
+
+    # Peek at checkpoint flags before building the full model
+    if args.no_umls:
+        _ckpt_peek = torch.load(str(ckpt_path), map_location="cpu", weights_only=False)
+        needs_umls = (_ckpt_peek.get("Binary_flag") or
+                      _ckpt_peek.get("TF_flag") or
+                      _ckpt_peek.get("MLM_flag"))
+        if needs_umls:
+            flags = {k: _ckpt_peek.get(k) for k in ("Binary_flag", "TF_flag", "MLM_flag")}
+            raise SystemExit(f"Checkpoint requires UMLS features {flags}; "
+                             "provide --medcat-path instead of --no-umls")
+        del _ckpt_peek
 
     predictor = MedJExPredictor(
         checkpoint=ckpt_path,
