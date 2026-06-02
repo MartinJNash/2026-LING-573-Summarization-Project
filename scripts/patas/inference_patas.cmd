@@ -1,8 +1,8 @@
 executable = scripts/inference_patas.sh
 arguments  = --model $(model) --output results/outputs/$(name).json
-error      = logs/$(name).inf.err.txt
-output     = logs/$(name).inf.out.txt
-log        = logs/$(name).inf.log.txt
+error      = logs/$(name).inf.err
+output     = logs/$(name).inf.out
+log        = logs/$(name).inf.log
 getenv              = true
 notification        = never
 transfer_executable = false

@@ -21,4 +21,4 @@ source .venv/bin/activate
 mkdir -p logs
 
 uv sync
-uv run python train.py "$@"
+uv run python src/train.py "$@"

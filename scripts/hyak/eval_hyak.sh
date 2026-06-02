@@ -20,4 +20,4 @@ source .venv/bin/activate
 
 mkdir -p logs results/outputs
 
-python eval_pipeline.py "$@"
+uv run python src/eval_pipeline.py "$@"
