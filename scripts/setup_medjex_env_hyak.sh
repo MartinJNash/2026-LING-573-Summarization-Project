@@ -28,10 +28,13 @@ fi
 
 # ── Conda env (stored in scrubbed to avoid home quota) ───────────────────────
 module load conda
+eval "$(conda shell.bash hook)"
 
-if [ ! -d "$ENV_DIR" ]; then
+if [ ! -d "$ENV_DIR/conda-meta" ]; then
     echo "Creating conda env at $ENV_DIR..."
     conda create --prefix "$ENV_DIR" python=3.10 -y
+else
+    echo "Conda env already exists: $ENV_DIR"
 fi
 conda activate "$ENV_DIR"
 
