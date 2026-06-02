@@ -5,11 +5,9 @@ echo "host: $(hostname)"
 echo "cwd:  $(pwd)"
 echo "args: $@"
 
-source ~/miniconda3/etc/profile.d/conda.sh
-conda activate medjargone-gpu
+source environments/.envrc
+source .venv/bin/activate
+uv sync
+uv run python train.py "$@"
 
-echo "python: $(which python)"
-echo "conda env: $CONDA_DEFAULT_ENV"
-
-python train.py "$@"
 echo "=== train_patas.sh finished at $(date) ==="

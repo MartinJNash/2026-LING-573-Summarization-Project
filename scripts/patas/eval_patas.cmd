@@ -1,8 +1,8 @@
 executable = scripts/eval_patas.sh
 arguments  = --input results/outputs/$(name).json --output results/outputs/$(name)-eval.json
-error      = logs/$(name).eval.err.txt
-output     = logs/$(name).eval.out.txt
-log        = logs/$(name).eval.log.txt
+error      = logs/$(name).eval.err
+output     = logs/$(name).eval.out
+log        = logs/$(name).eval.log
 
 getenv            = true
 notification      = never

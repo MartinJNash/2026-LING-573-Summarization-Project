@@ -3,13 +3,11 @@ arguments  = --model $(model) --output results/outputs/$(name).json
 error      = logs/$(name).inf.err.txt
 output     = logs/$(name).inf.out.txt
 log        = logs/$(name).inf.log.txt
-
 getenv              = true
 notification        = never
 transfer_executable = false
 request_memory      = 8192
 request_GPUs        = 1
-+Research           = True
 Requirements        = (Machine == "patas-gn3.ling.washington.edu")
 
 queue model, name from (

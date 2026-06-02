@@ -1,8 +1,8 @@
 executable = scripts/medjex_patas.sh
 arguments  = --input results/outputs/$(name).json --output results/outputs/$(name)-medjex.json
-error      = medjex.$(name).err.txt
-output     = medjex.$(name).out.txt
-log        = medjex.$(name).log.txt
+error      = medjex.$(name).err
+output     = medjex.$(name).out
+log        = medjex.$(name).log
 
 getenv            = true
 notification      = never
