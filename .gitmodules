@@ -1,0 +1,3 @@
+[submodule "src/medjargone/MedJEx"]
+	path = src/medjargone/MedJEx
+	url = https://github.com/MozziTasteBitter/MedJEx.git

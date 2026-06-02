@@ -18,13 +18,13 @@ echo "=== MedJEx env setup ==="
 echo "ENV_DIR:     $ENV_DIR"
 echo "MEDCAT_DIR:  $MEDCAT_DIR"
 
-# ── Clone MedJEx repo if not present ─────────────────────────────────────────
+# ── Init submodule if not already populated ───────────────────────────────────
 MEDJEX_DST="$REPO_ROOT/src/medjargone/MedJEx"
-if [ ! -d "$MEDJEX_DST" ]; then
-    echo "Cloning MedJEx repo…"
-    git clone https://github.com/EMNLP2022-MedJEx/MedJEx.git "$MEDJEX_DST"
+if [ ! -f "$MEDJEX_DST/README.md" ]; then
+    echo "Initialising MedJEx submodule..."
+    git -C "$REPO_ROOT" submodule update --init src/medjargone/MedJEx
 else
-    echo "MedJEx repo already present: $MEDJEX_DST"
+    echo "MedJEx submodule already present: $MEDJEX_DST"
 fi
 
 # ── Create Python venv ────────────────────────────────────────────────────────
