@@ -43,7 +43,8 @@ echo "=== MedJEx precompute started at $(date) ==="
 echo "host: $(hostname)"
 echo "args: $*"
 
-source "$ENV_DIR/bin/activate"
+source ~/miniconda3/etc/profile.d/conda.sh
+conda activate "$ENV_DIR"
 echo "python: $(which python)"
 
 python scripts/precompute_medjex_spans.py \

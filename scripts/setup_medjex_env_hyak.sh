@@ -12,7 +12,6 @@ set -euo pipefail
 REPO_ROOT=/mmfs1/home/pgarg2/2026-LING-573-Summarization-Project
 ENV_DIR=/gscratch/scrubbed/pgarg2/medjex-env
 MEDCAT_DIR=/gscratch/scrubbed/pgarg2/medcat
-HF_CACHE=/gscratch/scrubbed/pgarg2/hf-cache
 
 echo "=== MedJEx env setup ==="
 echo "ENV_DIR:     $ENV_DIR"
@@ -27,21 +26,21 @@ else
     echo "MedJEx submodule already present: $MEDJEX_DST"
 fi
 
-# ── Create Python venv ────────────────────────────────────────────────────────
-if [ ! -d "$ENV_DIR" ]; then
-    echo "Creating venv at $ENV_DIR…"
-    python3 -m venv "$ENV_DIR"
-fi
-source "$ENV_DIR/bin/activate"
+# ── Conda env (stored in scrubbed to avoid home quota) ───────────────────────
+source ~/miniconda3/etc/profile.d/conda.sh
 
-pip install --upgrade pip --quiet
+if [ ! -d "$ENV_DIR" ]; then
+    echo "Creating conda env at $ENV_DIR..."
+    conda create --prefix "$ENV_DIR" python=3.10 -y
+fi
+conda activate "$ENV_DIR"
 
 # ── Install deps ──────────────────────────────────────────────────────────────
-# torch with CUDA 12.4 (matches Hyak klone L40/A100 nodes)
-pip install torch --index-url https://download.pytorch.org/whl/cu124 --quiet
+# PyTorch with CUDA 12.4 via the official conda channel
+conda install pytorch pytorch-cuda=12.4 -c pytorch -c nvidia -y --quiet
+
 pip install transformers medspacy nltk scikit-learn pandas tqdm medcat --quiet
-# quickumls must be installed to satisfy loader.py's top-level import;
-# we never actually use it (MedCAT is the matcher).
+# quickumls satisfies loader.py's top-level import; we never call it.
 pip install quickumls --quiet
 
 # ── Download NLTK data ────────────────────────────────────────────────────────
