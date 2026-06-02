@@ -27,7 +27,6 @@ else
 fi
 
 # ── Conda env (stored in scrubbed to avoid home quota) ───────────────────────
-module load conda
 eval "$(conda shell.bash hook)"
 
 if [ ! -d "$ENV_DIR/conda-meta" ]; then

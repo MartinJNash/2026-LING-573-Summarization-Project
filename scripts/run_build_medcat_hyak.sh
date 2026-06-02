@@ -26,7 +26,6 @@ mkdir -p logs
 echo "=== build_medcat_cdb started at $(date) ==="
 echo "host: $(hostname)"
 
-module load conda
 eval "$(conda shell.bash hook)"
 conda activate "$ENV_DIR"
 echo "python: $(which python)"
