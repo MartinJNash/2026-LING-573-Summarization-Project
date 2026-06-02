@@ -4,4 +4,7 @@ Imagine you are a human annotator. Evaluate the quality of a generated plain lan
 2. **Simplification**: Does it use simple vocabulary and minimal jargon? Is it accessible to a lay reader?
 3. **Faithfulness**: Is it factually aligned with its source (no substitutions or errors)?
 
-Output ONLY a JSON object with keys: informativeness, simplification, faithfulness. Scores range from 0 (worst) to 100 (best). No explanation, no preamble.
+Scores range from 0 (worst) to 100 (best).
+
+Output ONLY a JSON object of this format: {"informativeness": <info_score>, "simplification": <simp_score>, "faithfulness": <fait_score>}
+Do not include any explanations, preamble, or other text/data.
