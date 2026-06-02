@@ -38,21 +38,33 @@ def run_eval_on_dataset(model, df: pd.DataFrame, output_path: str):
         max_model_len=MAX_MODEL_LEN,
     )
 
-    # Recommended sampling params for Qwen3.5 non-thinking mode (text tasks)
+    # making sure our output is in JSON format!!!
+    from vllm.sampling_params import GuidedDecodingParams
+    json_schema = {
+    "type": "object",
+    "properties": {
+        "informativeness": {"type": "integer"},
+        "simplification": {"type": "integer"},
+        "faithfulness": {"type": "integer"}
+        },
+    "required": ["informativeness", "simplification", "faithfulness"]
+    }
+    output_format = GuidedDecodingParams(json=json_schema)
+
     sampling_params = vllm.SamplingParams(
         temperature=1.0,
         top_p=1.0,
         top_k=20,
         presence_penalty=2.0,
-        max_tokens=512,
+        max_tokens=64,
+        guided_decoding=output_format,
     )
     
     logger.info("Reading prompt template...")
     with open("../prompts/llm_eval_prompt.txt", "r", encoding="utf-8") as prompt_file:
         SYSTEM_PROMPT_TEMPLATE = prompt_file.read()
 
-    # Build one conversation per example; llm.chat() applies the model's
-
+    # Build one conversation per example
     conversations = [
         [
             {"role": "system", "content": SYSTEM_PROMPT_TEMPLATE},
@@ -76,17 +88,12 @@ def run_eval_on_dataset(model, df: pd.DataFrame, output_path: str):
                 rs = rs.split("```")[1]
                 if rs.startswith("json"):
                     rs = rs[4:]
-            # also need to remove whitespace from the keys if they appear!!!
             scores = json.loads(rs)
-            original_keys = list(scores.keys())
-            stripped_keys = [k.strip() for k in original_keys]
-            for i in range(len(original_keys)):
-                # pop the keys with whitespace and reinsert with the stripped key
-                scores[stripped_keys[i]] = scores.pop(original_keys[i])
+            info, simp, faith = [float(val) for val in list(scores.values())]
             scores_dict = {
-                "informativeness": float(scores["informativeness"]),
-                "simplification":  float(scores["simplification"]),
-                "faithfulness":    float(scores["faithfulness"]),
+                "informativeness": info,
+                "simplification":  simp,
+                "faithfulness":    faith,
             }
             scores_dicts.append(scores_dict)
         except json.JSONDecodeError as e:
@@ -110,6 +117,7 @@ def run_eval_on_dataset(model, df: pd.DataFrame, output_path: str):
             "model": model,
             "examples": results
         }, f, indent=2)
+        logger.info(f"Saved to {output_path}.")
     
     return results
 
@@ -146,8 +154,6 @@ def main():
     df = load_examples(args.input, num_examples=args.num_examples)
 
     results = run_eval_on_dataset(args.model, df, args.output)
-
-    logger.info(f"Saved to {args.output}.")
 
     llm_inform = np.mean([ex["informativeness"] for ex in results])
     llm_simp = np.mean([ex["simplification"] for ex in results])
