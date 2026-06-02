@@ -27,7 +27,7 @@ else
 fi
 
 # ── Conda env (stored in scrubbed to avoid home quota) ───────────────────────
-source ~/miniconda3/etc/profile.d/conda.sh
+module load conda
 
 if [ ! -d "$ENV_DIR" ]; then
     echo "Creating conda env at $ENV_DIR..."
