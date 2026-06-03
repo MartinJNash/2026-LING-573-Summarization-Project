@@ -36,8 +36,8 @@ rm *.zip # delete zip files after expansion
 cd ..
 
 # activate Python environment and install dependencies from pyproject.toml
-uv venv
+uv venv --python 3.12 # must be within versions 3.11 and 3.13
 source .venv/bin/activate
-uv pip install environments/requirements.txt
+uv pip install -r environments/requirements.txt
 uv sync
 uv lock
