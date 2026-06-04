@@ -44,7 +44,7 @@ os.environ.pop("CUDA_VISIBLE_DEVICES", None)
 
 from nltk.tokenize import word_tokenize, sent_tokenize
 
-from loader.loader import load_file, load_data, load_ner_file
+from loader import load_file, load_data, load_ner_file
 from utils.sequence_labeler import SequenceLabeler
 from utils.term_weighting import TermFrequency, MLM_weight
 from utils.normalization import Normalizer

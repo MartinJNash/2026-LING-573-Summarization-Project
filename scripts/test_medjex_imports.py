@@ -45,7 +45,7 @@ checks = [
      "from quickumls import QuickUMLS; print('     quickumls OK')"),
 
     ("loader.loader",
-     "from loader.loader import load_file, load_data, load_ner_file"),
+     "from loader import load_file, load_data, load_ner_file"),
 
     ("utils.sequence_labeler",
      "from utils.sequence_labeler import SequenceLabeler"),
