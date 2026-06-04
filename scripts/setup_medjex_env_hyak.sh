@@ -44,6 +44,8 @@ conda install pytorch pytorch-cuda=12.4 -c pytorch -c nvidia -y --quiet
 pip install transformers medspacy nltk scikit-learn pandas tqdm medcat --quiet
 # quickumls satisfies loader.py's top-level import; we never call it.
 pip install quickumls --quiet
+# thinc 8.x was compiled against numpy <2.0; pin to avoid binary incompatibility
+pip install "numpy<2.0.0" --quiet
 
 # ── Download NLTK data ────────────────────────────────────────────────────────
 python -c "import nltk; nltk.download('punkt', quiet=True); nltk.download('punkt_tab', quiet=True)"
