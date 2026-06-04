@@ -52,7 +52,6 @@ python -m pip install --no-cache-dir \
     "numpy>=2.0,<3" \
     "thinc>=8.3.4,<8.4" \
     "spacy==3.8.2" \
-    "medspacy==1.3.1" \
     "medcat[spacy]==2.8.1" \
     transformers nltk scikit-learn pandas tqdm --quiet
 
@@ -61,9 +60,6 @@ pip install quickumls --quiet
 
 # ── Download NLTK data ────────────────────────────────────────────────────────
 python -c "import nltk; nltk.download('punkt', quiet=True); nltk.download('punkt_tab', quiet=True)"
-
-# ── Download spaCy model used by medspacy ────────────────────────────────────
-python -m spacy download en_core_web_sm --quiet
 
 # ── Sanity check ─────────────────────────────────────────────────────────────
 python - <<'PY'

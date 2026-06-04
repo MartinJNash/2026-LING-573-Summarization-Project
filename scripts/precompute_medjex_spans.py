@@ -42,8 +42,7 @@ import torch
 # Fix for 3-year-old code: disable CUDA env overrides before torch import
 os.environ.pop("CUDA_VISIBLE_DEVICES", None)
 
-from nltk.tokenize import word_tokenize
-import medspacy
+from nltk.tokenize import word_tokenize, sent_tokenize
 
 from loader.loader import load_file, load_data, load_ner_file
 from utils.sequence_labeler import SequenceLabeler
@@ -208,7 +207,6 @@ class MedJExPredictor:
         self.device       = device
         self.ignore_mlm   = ignore_mlm
         self.umls_matcher = umls_matcher
-        self.mednlp       = medspacy.load()
 
         print(f"Loading tokenizer: {MODEL_NAME}")
         self.tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
@@ -268,7 +266,7 @@ class MedJExPredictor:
                           MAX_TOKEN_LEN, B, T, M, self.UMLS_labeler)
 
     def _sentencify(self, text: str) -> list[str]:
-        return [s.text.strip() for s in self.mednlp(text).sents if s.text.strip()]
+        return [s.strip() for s in sent_tokenize(text) if s.strip()]
 
     def _load_sents(self, sents: list[str]) -> dict:
         TEMP_TSV.parent.mkdir(parents=True, exist_ok=True)
