@@ -4,18 +4,20 @@
 #
 #   bash scripts/setup_medjex_env_hyak.sh
 #
-# After this completes, submit the precompute job:
-#   sbatch scripts/run_precompute_medjex_hyak.sh
+# After this completes, convert the v1 model pack once (see step 2 below),
+# then submit the precompute job.
 
 set -euo pipefail
 
 REPO_ROOT=/mmfs1/home/pgarg2/2026-LING-573-Summarization-Project
 ENV_DIR=/gscratch/scrubbed/pgarg2/medjex-env
 MEDCAT_DIR=/gscratch/scrubbed/pgarg2/medcat
+MEDCAT_V2_DIR=/gscratch/scrubbed/pgarg2/medcat/umls_sm_v2
 
 echo "=== MedJEx env setup ==="
-echo "ENV_DIR:     $ENV_DIR"
-echo "MEDCAT_DIR:  $MEDCAT_DIR"
+echo "ENV_DIR:      $ENV_DIR"
+echo "MEDCAT_DIR:   $MEDCAT_DIR"
+echo "MEDCAT_V2_DIR:$MEDCAT_V2_DIR"
 
 # ── Init submodule if not already populated ───────────────────────────────────
 MEDJEX_DST="$REPO_ROOT/src/medjargone/MedJEx"
@@ -41,31 +43,66 @@ conda activate "$ENV_DIR"
 # PyTorch with CUDA 12.4 via the official conda channel
 conda install pytorch pytorch-cuda=12.4 -c pytorch -c nvidia -y --quiet
 
-pip install transformers medspacy nltk scikit-learn pandas tqdm medcat --quiet
-# quickumls satisfies loader.py's top-level import; we never call it.
+python -m pip install -U pip setuptools wheel --quiet
+
+# Pin spaCy/Thinc/MedSpaCy so they all support numpy>=2.0.
+# medcat 2.8.1 requires numpy>=2.0; thinc>=8.3.4 was recompiled against numpy 2.x.
+# medspacy 1.3.1 is the last release tested against spacy 3.8.2.
+python -m pip install --no-cache-dir \
+    "numpy>=2.0,<3" \
+    "thinc>=8.3.4,<8.4" \
+    "spacy==3.8.2" \
+    "medspacy==1.3.1" \
+    "medcat[spacy]==2.8.1" \
+    transformers nltk scikit-learn pandas tqdm --quiet
+
+# quickumls satisfies loader.py's unconditional top-level import; never called.
 pip install quickumls --quiet
-# thinc 8.x was compiled against numpy <2.0; pin to avoid binary incompatibility
-pip install "numpy<2.0.0" --quiet
 
 # ── Download NLTK data ────────────────────────────────────────────────────────
 python -c "import nltk; nltk.download('punkt', quiet=True); nltk.download('punkt_tab', quiet=True)"
 
-# ── Download spaCy model used by medspacy ─────────────────────────────────────
+# ── Download spaCy model used by medspacy ────────────────────────────────────
 python -m spacy download en_core_web_sm --quiet
 
-# ── Create MedCAT model dir ───────────────────────────────────────────────────
+# ── Sanity check ─────────────────────────────────────────────────────────────
+python - <<'PY'
+import numpy, thinc, spacy, medcat
+from medcat.cat import CAT
+print(f"numpy   {numpy.__version__}")
+print(f"thinc   {thinc.__version__}")
+print(f"spacy   {spacy.__version__}")
+print(f"medcat  {medcat.__version__}")
+print("CAT import OK")
+PY
+
+# ── Convert v1 model pack to v2 (one-time, skip if already done) ─────────────
+V1_ZIP="$MEDCAT_DIR/umls_sm_pt2ch_533bab5115c6c2d6.zip"
+if [ -f "$V1_ZIP" ] && [ ! -d "$MEDCAT_V2_DIR" ]; then
+    echo "Converting v1 model pack to v2 format (one-time, ~5 min)..."
+    mkdir -p "$MEDCAT_V2_DIR"
+    python -m medcat.utils.legacy.legacy_converter \
+        "$V1_ZIP" \
+        "$MEDCAT_V2_DIR" \
+        --verbose
+    echo "Converted model at: $MEDCAT_V2_DIR"
+elif [ -d "$MEDCAT_V2_DIR" ]; then
+    echo "v2 model pack already present: $MEDCAT_V2_DIR"
+else
+    echo "[warn] v1 zip not found at $V1_ZIP — skipping conversion."
+    echo "       Download the model pack first, then re-run this script."
+fi
+
 mkdir -p "$MEDCAT_DIR"
 
 echo ""
 echo "=== Setup complete ==="
 echo ""
 echo "Next steps:"
-echo "  1. Download a MedCAT UMLS model pack into $MEDCAT_DIR/"
-echo "     e.g.  mc_modelpack_snomed_int_16_mar_2022_25be3857ba34bdd5.zip"
-echo "     from  https://huggingface.co/medcat (requires HuggingFace login)"
-echo "     Unzip so the .zip or unpacked dir is at:"
-echo "       $MEDCAT_DIR/<model_pack_name>"
+echo "  1. If conversion was skipped above, download the v1 model pack to:"
+echo "       $V1_ZIP"
+echo "     then re-run this script to trigger conversion."
 echo ""
 echo "  2. Submit the precompute job:"
 echo "       sbatch scripts/run_precompute_medjex_hyak.sh \\"
-echo "           --medcat-path $MEDCAT_DIR/<model_pack_name>"
+echo "           --medcat-path $MEDCAT_V2_DIR"
