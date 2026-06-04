@@ -53,7 +53,7 @@ python -m pip install --no-cache-dir \
     "thinc>=8.3.4,<8.4" \
     "spacy==3.8.2" \
     "medcat[spacy]==2.8.1" \
-    transformers nltk scikit-learn pandas tqdm --quiet
+    transformers nltk scikit-learn pandas tqdm torchcrf --quiet
 
 # quickumls satisfies loader.py's unconditional top-level import; never called.
 pip install quickumls --quiet
