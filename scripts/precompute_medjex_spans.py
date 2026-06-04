@@ -26,10 +26,8 @@ from pathlib import Path
 
 # ── Path setup: vendor the MedJEx repo modules ───────────────────────────────
 MEDJEX_DIR = Path(__file__).parents[1] / "src" / "medjargone" / "MedJEx"
-sys.path.insert(0, str(MEDJEX_DIR))
-sys.path.insert(0, str(MEDJEX_DIR / "loader"))
-sys.path.insert(0, str(MEDJEX_DIR / "utils"))
-sys.path.insert(0, str(MEDJEX_DIR / "models"))
+if str(MEDJEX_DIR) not in sys.path:
+    sys.path.insert(0, str(MEDJEX_DIR))
 
 # ── Imports from vendored MedJEx ──────────────────────────────────────────────
 import random
@@ -44,7 +42,7 @@ os.environ.pop("CUDA_VISIBLE_DEVICES", None)
 
 from nltk.tokenize import word_tokenize, sent_tokenize
 
-from loader import load_file, load_data, load_ner_file
+from loader.loader import load_file, load_data, load_ner_file
 from utils.sequence_labeler import SequenceLabeler
 from utils.term_weighting import TermFrequency, MLM_weight
 from utils.normalization import Normalizer

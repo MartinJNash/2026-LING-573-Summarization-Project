@@ -14,10 +14,8 @@ from pathlib import Path
 REPO_ROOT  = Path(__file__).parents[1]
 MEDJEX_DIR = REPO_ROOT / "src" / "medjargone" / "MedJEx"
 
-sys.path.insert(0, str(MEDJEX_DIR))
-sys.path.insert(0, str(MEDJEX_DIR / "loader"))
-sys.path.insert(0, str(MEDJEX_DIR / "utils"))
-sys.path.insert(0, str(MEDJEX_DIR / "models"))
+if str(MEDJEX_DIR) not in sys.path:
+    sys.path.insert(0, str(MEDJEX_DIR))
 
 OK  = "OK "
 ERR = "ERR"
