@@ -8,19 +8,22 @@ Usage:
 """
 
 import json
-import logging
 import argparse
 import numpy as np
 import pandas as pd
-import vllm
+from ollama import chat, ChatResponse
+from pydantic import BaseModel
 
 USER_PROMPT_TEMPLATE = """Clinical source document: {source}
 Generated plain language summary: {generated}"""
 
 MAX_MODEL_LEN = 8192 # using default from our previous vLLM Python scripts
 
-logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
-logger = logging.getLogger(__name__)
+# JSON SCHEMA FOR LLM-AS-A-JUDGE EVALUATION
+class Evaluation(BaseModel):
+    informativeness: float
+    simplification: float
+    faithfulness: float
 
 def run_eval_on_dataset(model, df: pd.DataFrame, output_path: str):
     """
@@ -28,44 +31,13 @@ def run_eval_on_dataset(model, df: pd.DataFrame, output_path: str):
     Writes scores to a JSON file with the associated example ID.
     Returns results, which is a list of score dictionaries.
     """
-
-    # create an LLM
-    print(f"Loading model: {model}...")
-    llm = vllm.LLM(
-        model=model,
-        dtype="float16", # some GPUs do not meet min compute for Bfloat16
-        gpu_memory_utilization=0.90,
-        max_model_len=MAX_MODEL_LEN,
-    )
-
-    # making sure our output is in JSON format!!!
-    from vllm.sampling_params import GuidedDecodingParams
-    json_schema = {
-    "type": "object",
-    "properties": {
-        "informativeness": {"type": "integer"},
-        "simplification": {"type": "integer"},
-        "faithfulness": {"type": "integer"}
-        },
-    "required": ["informativeness", "simplification", "faithfulness"]
-    }
-    output_format = GuidedDecodingParams(json=json_schema)
-
-    sampling_params = vllm.SamplingParams(
-        temperature=1.0,
-        top_p=1.0,
-        top_k=20,
-        presence_penalty=2.0,
-        max_tokens=64,
-        guided_decoding=output_format,
-    )
     
-    logger.info("Reading prompt template...")
-    with open("../prompts/llm_eval_prompt.txt", "r", encoding="utf-8") as prompt_file:
+    print("Reading prompt template...")
+    with open("prompts/llm_eval_prompt.txt", "r", encoding="utf-8") as prompt_file:
         SYSTEM_PROMPT_TEMPLATE = prompt_file.read()
 
     # Build one conversation per example
-    conversations = [
+    messages = [
         [
             {"role": "system", "content": SYSTEM_PROMPT_TEMPLATE},
             {"role": "user", "content": USER_PROMPT_TEMPLATE.format(source=source, generated=generated)}
@@ -74,31 +46,10 @@ def run_eval_on_dataset(model, df: pd.DataFrame, output_path: str):
     ]
 
     # generate scores
-    print(f"Generating scores on {len(conversations)} examples...")
-    outputs = llm.chat(conversations, sampling_params)
-
-    raw_scores = [output.outputs[0].text.strip() for output in outputs]
-
-    # preprocess outputs if necessary
-    scores_dicts = []
-    for rs in raw_scores:
-        try:
-            # remove formatting from chat function
-            if rs.startswith("```"):
-                rs = rs.split("```")[1]
-                if rs.startswith("json"):
-                    rs = rs[4:]
-            scores = json.loads(rs)
-            info, simp, faith = [float(val) for val in list(scores.values())]
-            scores_dict = {
-                "informativeness": info,
-                "simplification":  simp,
-                "faithfulness":    faith,
-            }
-            scores_dicts.append(scores_dict)
-        except json.JSONDecodeError as e:
-            logger.warning(f"JSON parse failed: {e} | raw response: {rs!r}")
-            return None
+    print(f"Generating scores on {len(messages)} examples using {model}...")
+    outputs = [chat(model=model, messages=m, format=Evaluation.model_json_schema()) for m in messages]
+    jsons = [Evaluation.model_validate_json(response.message.content) for response in outputs]
+    scores_dicts = [json.loads(j.model_dump_json()) for j in jsons]
     
 
     # build results
@@ -117,10 +68,9 @@ def run_eval_on_dataset(model, df: pd.DataFrame, output_path: str):
             "model": model,
             "examples": results
         }, f, indent=2)
-        logger.info(f"Saved to {output_path}.")
+        print(f"Saved to {output_path}.")
     
     return results
-
 
 def load_examples(path: str, num_examples: int | None = None) -> pd.DataFrame:
     with open(path) as f:
@@ -150,7 +100,7 @@ def main():
     parser.add_argument("--num_examples", type=int, default=None, help="Number of examples to evaluate (default: all)")
     args = parser.parse_args()
 
-    logger.info(f"Loading examples from {args.input}...")
+    print(f"Loading examples from {args.input}...")
     df = load_examples(args.input, num_examples=args.num_examples)
 
     results = run_eval_on_dataset(args.model, df, args.output)
