@@ -8,31 +8,33 @@
 #SBATCH --mem=16G
 #SBATCH --gpus=1
 #SBATCH --time=08:00:00
-#SBATCH --chdir=/gscratch/scrubbed/srigor/medjargone
+#SBATCH --chdir=/gscratch/scrubbed/<net-id>/2026-LING-573-Summarization-Project
 #SBATCH --output=logs/%j.out
 #SBATCH --error=logs/%j.err
 #SBATCH --export=all
 #SBATCH --mail-type=END,FAIL
-#SBATCH --mail-user=srigor@uw.edu
+#SBATCH --mail-user=<net-id>@uw.edu
 
 # Squid proxy intercepts 127.0.0.1 requests — exclude it so the ollama
 # Python client can reach the local ollama server directly
 export no_proxy="${no_proxy},127.0.0.1,localhost"
 export NO_PROXY="${NO_PROXY},127.0.0.1,localhost"
 
-# Ollama model storage — keeps models out of the 10GB home dir
-export OLLAMA_MODELS=/gscratch/scrubbed/srigor/ollama/models
-mkdir -p "$OLLAMA_MODELS"
+# Ollama storage — keeps models/cache out of the 10GB home dir
+#   you can comment or uncomment out these lines as needed!!!
+# rm -rf ~/.ollama # remove ollama dir from home directory on hyak
+# mkdir /gscratch/scrubbed/<net-id>/.ollama # make ollama dir in temp storage
+# ln -s /gscratch/scrubbed/<net-id>/.ollama ~/.ollama # make a symlink to the temp storage
+export OLLAMA_CACHE=/gscratch/scrubbed/<net-id>/.ollama/cache
+export OLLAMA_MODELS=/gscratch/scrubbed/<net-id>/.ollama/models
+mkdir -p "$OLLAMA_MODELS" "$OLLAMA_CACHE"
 
-
-module load apptainer
-#apptainer cache clean
-#export APPTAINER_CACHEDIR=/tmp
-#apptainer build --fakeroot ollama.sif ollama.def
-
-OLLAMA_SIF=/mmfs1/gscratch/scrubbed/srigor/medjargone/ollama.sif
+# use the ollama.sif from this repo so you can use pydantic's json schema :)
+OLLAMA_SIF=/gscratch/scrubbed/<net-id>/2026-LING-573-Summarization-Project/src/llm_eval/ollama.sif
 
 # Start the Ollama server in the background via the prebuilt container
+module load apptainer
+export APPTAINER_CACHEDIR=/tmp
 apptainer exec --nv \
     --bind /gscratch/ \
     --env OLLAMA_MODELS="$OLLAMA_MODELS" \
@@ -50,14 +52,14 @@ done
 apptainer exec --nv \
     --bind /gscratch/ \
     --env OLLAMA_MODELS="$OLLAMA_MODELS" \
-    "$OLLAMA_SIF" ollama pull llama3.1:8b-instruct-q2_K # using a WAY faster model now
+    "$OLLAMA_SIF" ollama pull llama3.1:8b-instruct-q2_K
+    # make sure to use a model that ISN'T the same as the zero-shot/rewrite model!
+    # using quantized version for time + memory efficiency
 
-source /mmfs1/home/srigor/medjargone/.envrc
+source environments/.envrc
 source .venv/bin/activate
 
 mkdir -p quicker_eval
 
 uv sync
-uv run python llm_eval_hyak.py --model llama3.1:8b-instruct-q2_K --input results/qwen_outputs.json --output quicker_eval/qwen.json
-uv run python llm_eval_hyak.py --model llama3.1:8b-instruct-q2_K --input results/biobart-large-lora-512.json --output quicker_eval/d2_baseline_eval.json
-uv run python llm_eval_hyak.py --model llama3.1:8b-instruct-q2_K --input results/biobart-medjex-qwen_outputs.json --output quicker_eval/d3_medjex_eval.json
+uv run python llm_eval_hyak.py "$@"

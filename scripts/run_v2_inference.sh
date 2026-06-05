@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=medjargone-v2
+#SBATCH --job-name=medjargone-v2-inference
 #SBATCH --account=stf
 #SBATCH --partition=ckpt-all
 #SBATCH --nodes=1
@@ -8,15 +8,15 @@
 #SBATCH --mem=16G
 #SBATCH --gpus=1
 #SBATCH --time=04:00:00
-#SBATCH --chdir=/gscratch/scrubbed/srigor/medjargone
+#SBATCH --chdir=/gscratch/scrubbed/<net-id>/2026-LING-573-Summarization-Project
 #SBATCH --output=logs/%j.out
 #SBATCH --error=logs/%j.err
 #SBATCH --export=all
 #SBATCH --mail-type=END,FAIL
-#SBATCH --mail-user=srigor@uw.edu
+#SBATCH --mail-user=<net-id>@uw.edu
 
-source /mmfs1/home/srigor/medjargone/.envrc
-source /gscratch/scrubbed/srigor/medjargone/bin/activate
+source ./environments/.envrc
+source .venv/bin/activate
 
 mkdir -p logs results/outputs
 
@@ -29,5 +29,3 @@ uv run python mlm_score_pipeline.py \
 uv sync --group inference
 uv run python generate_rewrites.py \
     --model Qwen/Qwen2.5-3B-Instruct --pipeline_file ./results/outputs/biobart-medjex_outputs.json  --output ./results/outputs/biobart-medjex-qwen_outputs.json
-
-uv lock

@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=medjargone-llm-inference
+#SBATCH --job-name=medjargone-zeroshot-qwen
 #SBATCH --account=stf
 #SBATCH --partition=ckpt-all
 #SBATCH --nodes=1
@@ -8,15 +8,15 @@
 #SBATCH --mem=11G
 #SBATCH --gpus=1
 #SBATCH --time=04:00:00
-#SBATCH --chdir=/gscratch/scrubbed/srigor/medjargone
+#SBATCH --chdir=/gscratch/scrubbed/<net-id>/2026-LING-573-Summarization-Project
 #SBATCH --output=logs/%j.out
 #SBATCH --error=logs/%j.err
 #SBATCH --export=all
 #SBATCH --mail-type=END,FAIL
-#SBATCH --mail-user=srigor@uw.edu
+#SBATCH --mail-user=<net-id>@uw.edu
 
-source /mmfs1/home/srigor/medjargone/.envrc
-source /gscratch/scrubbed/srigor/medjargone/bin/activate
+source ./environments/.envrc
+source .venv/bin/activate
 
 mkdir -p logs results/outputs
 
