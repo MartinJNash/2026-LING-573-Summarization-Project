@@ -11,8 +11,10 @@ import json
 import argparse
 import numpy as np
 import pandas as pd
-from ollama import chat, ChatResponse
+from ollama import chat
 from pydantic import BaseModel
+
+EVALUATION_MODEL = "llama3.1:8b-instruct-q2_K" # you can change models in the shell script!
 
 USER_PROMPT_TEMPLATE = """Clinical source document: {source}
 Generated plain language summary: {generated}"""
@@ -94,16 +96,15 @@ def load_examples(path: str, num_examples: int | None = None) -> pd.DataFrame:
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model", required=True, help="Path to HuggingFace Transformers model to run inference with")
     parser.add_argument("--input", required=True, help="Path to inference outputs JSON (must have 'input' field!)")
-    parser.add_argument("--output", default="vllm_eval_results.json", help="Path to save results JSON (default: llm_eval_results.json)")
+    parser.add_argument("--output", default="llm_eval_results.json", help="Path to save results JSON (default: llm_eval_results.json)")
     parser.add_argument("--num_examples", type=int, default=None, help="Number of examples to evaluate (default: all)")
     args = parser.parse_args()
 
     print(f"Loading examples from {args.input}...")
     df = load_examples(args.input, num_examples=args.num_examples)
 
-    results = run_eval_on_dataset(args.model, df, args.output)
+    results = run_eval_on_dataset(EVALUATION_MODEL, df, args.output)
 
     llm_inform = np.mean([ex["informativeness"] for ex in results])
     llm_simp = np.mean([ex["simplification"] for ex in results])
