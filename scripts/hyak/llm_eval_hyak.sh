@@ -29,12 +29,14 @@ export OLLAMA_CACHE=/gscratch/scrubbed/<net-id>/.ollama/cache
 export OLLAMA_MODELS=/gscratch/scrubbed/<net-id>/.ollama/models
 mkdir -p "$OLLAMA_MODELS" "$OLLAMA_CACHE"
 
-# use the ollama.sif from this repo so you can use pydantic's json schema :)
+# the ollama.sif on hyak is outdated and doesn't allow pydantic json schemas. need to build from scratch!
+OLLAMA_DEF=/gscratch/scrubbed<net-id>/2026-LING-573-Summarization-Project/src/llm_eval/ollama.def
 OLLAMA_SIF=/gscratch/scrubbed/<net-id>/2026-LING-573-Summarization-Project/src/llm_eval/ollama.sif
-
-# Start the Ollama server in the background via the prebuilt container
 module load apptainer
 export APPTAINER_CACHEDIR=/tmp
+apptainer build --fakeroot "$OLLAMA_SIF" "$OLLAMA_DEF"
+
+# Start the Ollama server in the background via the prebuilt container
 apptainer exec --nv \
     --bind /gscratch/ \
     --env OLLAMA_MODELS="$OLLAMA_MODELS" \
@@ -62,4 +64,4 @@ source .venv/bin/activate
 mkdir -p quicker_eval
 
 uv sync
-uv run python llm_eval_hyak.py "$@"
+uv run python src/llm_eval/llm_eval_hyak.py "$@"

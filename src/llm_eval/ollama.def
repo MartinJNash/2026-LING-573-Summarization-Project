@@ -1,0 +1,11 @@
+Bootstrap: docker
+From: nvcr.io/nvidia/nvhpc:24.9-devel-cuda_multi-rockylinux8
+
+%post
+    # zstd install (needed for .zst files)
+    dnf -y install epel-release
+    dnf -y install zstd
+    # Ollama install
+    rm -rf /usr/local/ollama /usr/bin/ollama # this deletes any existing Ollama installations, if they exist
+    curl -fsSL https://ollama.com/download/ollama-linux-amd64.tar.zst | tar -I zstd -x -C .
+    curl -fsSL https://ollama.com/download/ollama-linux-amd64-rocm.tar.zst  | tar -I zstd -x -C .

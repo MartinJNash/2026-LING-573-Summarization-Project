@@ -19,8 +19,6 @@ EVALUATION_MODEL = "llama3.1:8b-instruct-q2_K" # you can change models in the sh
 USER_PROMPT_TEMPLATE = """Clinical source document: {source}
 Generated plain language summary: {generated}"""
 
-MAX_MODEL_LEN = 8192 # using default from our previous vLLM Python scripts
-
 # JSON SCHEMA FOR LLM-AS-A-JUDGE EVALUATION
 class Evaluation(BaseModel):
     informativeness: float
@@ -35,7 +33,7 @@ def run_eval_on_dataset(model, df: pd.DataFrame, output_path: str):
     """
     
     print("Reading prompt template...")
-    with open("prompts/llm_eval_prompt.txt", "r", encoding="utf-8") as prompt_file:
+    with open("../prompts/llm_eval_prompt.txt", "r", encoding="utf-8") as prompt_file:
         SYSTEM_PROMPT_TEMPLATE = prompt_file.read()
 
     # Build one conversation per example

@@ -21,7 +21,7 @@ source .venv/bin/activate
 mkdir -p logs results/outputs
 
 uv sync --group inference
-uv run python llm_summarizer.py \
+uv run python src/vllm/llm_summarizer.py \
     --model Qwen/Qwen2.5-3B-Instruct \
     --split test \
     --output results/outputs/llm_only_outputs.json
