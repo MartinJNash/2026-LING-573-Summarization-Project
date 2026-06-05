@@ -61,7 +61,5 @@ apptainer exec --nv \
 source environments/.envrc
 source .venv/bin/activate
 
-mkdir -p quicker_eval
-
 uv sync
 uv run python src/llm_eval/llm_eval_hyak.py "$@"
