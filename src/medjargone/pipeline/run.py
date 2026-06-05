@@ -71,9 +71,10 @@ def load_llm(model_name: str = config.LLM_MODEL) -> Callable[[str], str]:
 def run_pipeline(
     source_text: str,
     llm_fn: Callable[[str], str],
-    umls_index: Optional[UMLSIndex] = None,
-    uts_client: Optional[UTSClient] = None,
-    cache: Optional[APICache]       = None,
+    umls_index: Optional[UMLSIndex]  = None,
+    uts_client: Optional[UTSClient]  = None,
+    cache: Optional[APICache]        = None,
+    jargon_terms: Optional[list]     = None,
 ) -> dict:
     """
     Run all four stages for one case report.
@@ -105,6 +106,7 @@ def run_pipeline(
         umls_index=umls_index,
         uts_client=uts_client,
         cache=cache,
+        jargon_terms=jargon_terms,
     )
     times["s2"] = int((time.monotonic() - t) * 1000)
 
@@ -142,10 +144,17 @@ def run_batch(
     examples: list[dict],
     llm_fn: Callable[[str], str],
     num_examples: Optional[int] = None,
+    medjex_spans: Optional[dict] = None,
+    start_idx: int = 0,
 ) -> list[dict]:
     """
     Run over a list of {"input": str, "target"/"gold": str} dicts.
     Shared UMLS resources are initialised once for the whole batch.
+
+    medjex_spans : {str(doc_id): [{term, start, end}, …]} loaded from the
+                   precomputed spans JSON; keyed by absolute dataset index.
+    start_idx    : absolute index of the first example in this batch (for
+                   correct span lookup in array-job slices).
     """
     cache = APICache()
 
@@ -163,12 +172,16 @@ def run_batch(
     results = []
     for i, ex in enumerate(examples):
         print(f"  [{i+1}/{len(examples)}]", end="\r")
+        jargon_terms = None
+        if medjex_spans is not None:
+            jargon_terms = medjex_spans.get(str(start_idx + i))
         try:
             out = run_pipeline(
                 ex["input"], llm_fn,
                 umls_index=umls_index,
                 uts_client=uts_client,
                 cache=cache,
+                jargon_terms=jargon_terms,
             )
             results.append({
                 "id": i,

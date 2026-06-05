@@ -44,9 +44,11 @@ def main():
     parser.add_argument("--num-examples", type=int, default=None)
     parser.add_argument("--start-idx",    type=int, default=0,
                         help="First example index (for job-array slicing)")
-    parser.add_argument("--model",        default=config.LLM_MODEL)
-    parser.add_argument("--output",       default=None,
+    parser.add_argument("--model",         default=config.LLM_MODEL)
+    parser.add_argument("--output",        default=None,
                         help="Output JSON path (default: results/outputs/medjargone-v4-<split>.json)")
+    parser.add_argument("--medjex-spans",  default=str(config.MEDJEX_SPANS_TEST),
+                        help="Precomputed MedJEx spans JSON (default: data/medjargone/medjex_spans_test.json)")
     args = parser.parse_args()
 
     if not config.UMLS_API_KEY and not config.UMLS_SUBSET_DB.exists():
@@ -69,10 +71,19 @@ def main():
     print(f"Running v4 pipeline on examples {start}–{min(end, len(examples))-1} "
           f"({len(slice_examples)} total)...")
 
+    medjex_spans = None
+    spans_path = Path(args.medjex_spans)
+    if spans_path.exists():
+        with open(spans_path, encoding="utf-8") as f:
+            medjex_spans = json.load(f)
+        print(f"Loaded MedJEx spans for {len(medjex_spans)} docs from {spans_path}")
+    else:
+        print(f"[warn] MedJEx spans not found at {spans_path} — running without jargon seeding")
+
     print(f"Loading LLM: {args.model}")
     llm_fn = load_llm(args.model)
 
-    results = run_batch(slice_examples, llm_fn)
+    results = run_batch(slice_examples, llm_fn, medjex_spans=medjex_spans, start_idx=start)
     # Rewrite local IDs to absolute dataset indices
     for r in results:
         r["id"] += start

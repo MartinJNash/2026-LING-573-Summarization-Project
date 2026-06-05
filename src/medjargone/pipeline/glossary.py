@@ -536,11 +536,14 @@ def build_glossary(
     uts_client: Optional[UTSClient] = None,
     cache: Optional[APICache] = None,
     curated_path: Path = config.CURATED_ANATOMY,
+    jargon_terms: Optional[list[dict]] = None,
 ) -> list[GlossaryEntry]:
     """
     Stage 2 entry point. Returns GlossaryEntry list for every medical term in text.
 
     umls_index / uts_client : shared across batch runs (init once in run.py).
+    jargon_terms : precomputed MedJEx spans [{term, start, end}, …] injected as
+                   additional candidates after scispaCy NER (no duplicates added).
     """
     if cache is None:
         cache = APICache()
@@ -557,6 +560,21 @@ def build_glossary(
             curated = json.load(fh)
 
     candidates, abbrev_map = _extract_candidates(source_text)
+
+    # Inject MedJEx jargon spans as additional candidates (deduped against NER output)
+    if jargon_terms:
+        ner_keys: set[str] = {c[0].lower() for c in candidates}
+        for span_info in jargon_terms:
+            term = (span_info.get("term") or "").strip()
+            if not term or len(term) < 2 or _BLOCKLIST.match(term):
+                continue
+            if term.lower() in ner_keys:
+                continue
+            ner_keys.add(term.lower())
+            s = span_info.get("start", 0)
+            e = span_info.get("end", s + len(term))
+            ctx = "…" + source_text[max(0, s - 40):min(len(source_text), e + 40)].strip() + "…"
+            candidates.append((term, "JARGON", ctx, s, e))
 
     entries: list[GlossaryEntry] = []
     seen: set[str] = set()
