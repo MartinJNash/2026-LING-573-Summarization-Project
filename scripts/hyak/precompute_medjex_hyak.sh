@@ -2,11 +2,12 @@
 # Precompute MedJEx jargon spans for the full MultiClinSum test split on Hyak.
 #
 # First run setup_medjex_env_hyak.sh once, then:
-#   sbatch scripts/run_precompute_medjex_hyak.sh \
+#   sbatch scripts/hyak/precompute_medjex_hyak.sh \
 #       --medcat-path /gscratch/scrubbed/pgarg2/medcat/<model_pack>
 #
-# If checkpoint flags show no UMLS features needed (check inspect_medjex_checkpoint.py):
-#   sbatch scripts/run_precompute_medjex_hyak.sh --no-umls
+# If the MedJEx checkpoint uses no UMLS features (Binary_flag=False, TF_flag=False,
+# MLM_flag=False), pass --no-umls to skip MedCAT:
+#   sbatch scripts/hyak/precompute_medjex_hyak.sh --no-umls
 #
 # The script checkpoints every 10 docs — safe to requeue if it times out.
 #

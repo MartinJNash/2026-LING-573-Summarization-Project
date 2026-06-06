@@ -3,6 +3,8 @@
 # Run this before the array inference job to pre-populate uts_cache.sqlite.
 # Once complete, every UMLS lookup in the array tasks is a local SQLite read.
 #
+# Submit:  sbatch scripts/hyak/prewarm_umls_cache_hyak.sh
+#
 #SBATCH --job-name=medjargone-prewarm
 #SBATCH --account=stf
 #SBATCH --partition=cpu-g2

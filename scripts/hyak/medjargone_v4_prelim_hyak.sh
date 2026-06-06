@@ -1,23 +1,21 @@
 #!/bin/bash
-# Job array — splits 3396 test examples across 16 tasks (213 examples each).
-# Max 8 concurrent to stay within stf fairshare limits (Hyak best practice).
+# Preliminary run — 75 examples on ckpt partition.
+# Used to validate pipeline before full array job.
 #
-# Submit:  sbatch scripts/run_medjargone_v4_array_hyak.sh
-# Merge:   python scripts/merge_v4_chunks.py
+# Submit:  sbatch scripts/hyak/medjargone_v4_prelim_hyak.sh
 #
-#SBATCH --job-name=medjargone-v4-array
-#SBATCH --account=stf
-#SBATCH --partition=gpu-l40
+#SBATCH --job-name=medjargone-v4-prelim
+#SBATCH --account=stf-ckpt
+#SBATCH --partition=ckpt
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=64G
 #SBATCH --gpus=1
-#SBATCH --time=04:00:00
-#SBATCH --array=0-15%8
+#SBATCH --time=01:30:00
 #SBATCH --chdir=/mmfs1/home/pgarg2/2026-LING-573-Summarization-Project
-#SBATCH --output=logs/v4array_%A_%a.out
-#SBATCH --error=logs/v4array_%A_%a.err
+#SBATCH --output=logs/%j.out
+#SBATCH --error=logs/%j.err
 #SBATCH --export=all
 #SBATCH --mail-type=END,FAIL
 #SBATCH --mail-user=pgarg2@uw.edu
@@ -42,7 +40,7 @@ apptainer exec --nv \
     "$OLLAMA_SIF" ollama serve &
 OLLAMA_PID=$!
 
-echo "Waiting for Ollama server (task ${SLURM_ARRAY_TASK_ID})..."
+echo "Waiting for Ollama server..."
 for i in $(seq 1 30); do
     curl -sf http://localhost:11434 > /dev/null 2>&1 && break
     sleep 2
@@ -56,17 +54,13 @@ apptainer exec --nv \
 source /gscratch/scrubbed/pgarg2/medjargone/bin/activate
 uv pip install ollama
 
-mkdir -p logs results/outputs/chunks
+mkdir -p logs results/outputs
 
-CHUNK_SIZE=213
-START=$(( SLURM_ARRAY_TASK_ID * CHUNK_SIZE ))
-
-echo "Array task ${SLURM_ARRAY_TASK_ID}: examples ${START}–$((START + CHUNK_SIZE - 1))"
-
+# 75 examples ≈ 59 min at observed ~47 s/example; 90-min wall is intentional buffer
 PYTHONPATH=src python src/run_medjargone_v4.py \
     --split test \
-    --start-idx "$START" \
-    --num-examples "$CHUNK_SIZE" \
-    --output "results/outputs/chunks/medjargone-v4-test-chunk-${SLURM_ARRAY_TASK_ID}.json"
+    --num-examples 75 \
+    --output results/outputs/medjargone-v4-prelim.json \
+    "$@"
 
 kill "$OLLAMA_PID" 2>/dev/null || true

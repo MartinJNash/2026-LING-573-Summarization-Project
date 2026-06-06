@@ -2,7 +2,7 @@
 # One-time setup for the MedJEx precompute environment on Hyak.
 # Run interactively on a login node (no GPU needed):
 #
-#   bash scripts/setup_medjex_env_hyak.sh
+#   bash scripts/hyak/setup_medjex_env_hyak.sh
 #
 # After this completes, convert the v1 model pack once (see step 2 below),
 # then submit the precompute job.
@@ -100,5 +100,5 @@ echo "       $V1_ZIP"
 echo "     then re-run this script to trigger conversion."
 echo ""
 echo "  2. Submit the precompute job:"
-echo "       sbatch scripts/run_precompute_medjex_hyak.sh \\"
+echo "       sbatch scripts/hyak/precompute_medjex_hyak.sh \\"
 echo "           --medcat-path $MEDCAT_V2_DIR"
