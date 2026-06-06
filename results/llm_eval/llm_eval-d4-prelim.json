@@ -1,0 +1,455 @@
+{
+  "model": "llama3.1:8b-instruct-q2_K",
+  "examples": [
+    {
+      "id": 0,
+      "informativeness": 95.0,
+      "simplification": 80.0,
+      "faithfulness": 100.0
+    },
+    {
+      "id": 1,
+      "informativeness": 70.0,
+      "simplification": 60.0,
+      "faithfulness": 90.0
+    },
+    {
+      "id": 2,
+      "informativeness": 50.0,
+      "simplification": 30.0,
+      "faithfulness": 90.0
+    },
+    {
+      "id": 3,
+      "informativeness": 85.0,
+      "simplification": 70.0,
+      "faithfulness": 95.0
+    },
+    {
+      "id": 4,
+      "informativeness": 95.0,
+      "simplification": 90.0,
+      "faithfulness": 98.0
+    },
+    {
+      "id": 5,
+      "informativeness": 85.0,
+      "simplification": 95.0,
+      "faithfulness": 90.0
+    },
+    {
+      "id": 6,
+      "informativeness": 80.0,
+      "simplification": 70.0,
+      "faithfulness": 90.0
+    },
+    {
+      "id": 7,
+      "informativeness": 85.0,
+      "simplification": 70.0,
+      "faithfulness": 95.0
+    },
+    {
+      "id": 8,
+      "informativeness": 87.0,
+      "simplification": 83.0,
+      "faithfulness": 92.0
+    },
+    {
+      "id": 9,
+      "informativeness": 86.0,
+      "simplification": 80.0,
+      "faithfulness": 98.0
+    },
+    {
+      "id": 10,
+      "informativeness": 95.0,
+      "simplification": 90.0,
+      "faithfulness": 98.0
+    },
+    {
+      "id": 11,
+      "informativeness": 60.0,
+      "simplification": 40.0,
+      "faithfulness": 80.0
+    },
+    {
+      "id": 12,
+      "informativeness": 80.0,
+      "simplification": 90.0,
+      "faithfulness": 95.0
+    },
+    {
+      "id": 13,
+      "informativeness": 96.0,
+      "simplification": 92.0,
+      "faithfulness": 98.0
+    },
+    {
+      "id": 14,
+      "informativeness": 95.0,
+      "simplification": 90.0,
+      "faithfulness": 98.0
+    },
+    {
+      "id": 15,
+      "informativeness": 86.0,
+      "simplification": 80.0,
+      "faithfulness": 92.0
+    },
+    {
+      "id": 16,
+      "informativeness": 85.0,
+      "simplification": 90.0,
+      "faithfulness": 95.0
+    },
+    {
+      "id": 17,
+      "informativeness": 92.0,
+      "simplification": 96.0,
+      "faithfulness": 98.0
+    },
+    {
+      "id": 18,
+      "informativeness": 95.0,
+      "simplification": 85.0,
+      "faithfulness": 100.0
+    },
+    {
+      "id": 19,
+      "informativeness": 85.0,
+      "simplification": 90.0,
+      "faithfulness": 95.0
+    },
+    {
+      "id": 20,
+      "informativeness": 95.0,
+      "simplification": 92.0,
+      "faithfulness": 98.0
+    },
+    {
+      "id": 21,
+      "informativeness": 87.0,
+      "simplification": 93.0,
+      "faithfulness": 91.0
+    },
+    {
+      "id": 22,
+      "informativeness": 80.0,
+      "simplification": 90.0,
+      "faithfulness": 95.0
+    },
+    {
+      "id": 23,
+      "informativeness": 60.0,
+      "simplification": 40.0,
+      "faithfulness": 90.0
+    },
+    {
+      "id": 24,
+      "informativeness": 85.0,
+      "simplification": 65.0,
+      "faithfulness": 95.0
+    },
+    {
+      "id": 25,
+      "informativeness": 85.0,
+      "simplification": 90.0,
+      "faithfulness": 95.0
+    },
+    {
+      "id": 26,
+      "informativeness": 60.0,
+      "simplification": 40.0,
+      "faithfulness": 80.0
+    },
+    {
+      "id": 27,
+      "informativeness": 95.0,
+      "simplification": 90.0,
+      "faithfulness": 100.0
+    },
+    {
+      "id": 28,
+      "informativeness": 95.0,
+      "simplification": 80.0,
+      "faithfulness": 90.0
+    },
+    {
+      "id": 29,
+      "informativeness": 85.0,
+      "simplification": 90.0,
+      "faithfulness": 95.0
+    },
+    {
+      "id": 30,
+      "informativeness": 85.0,
+      "simplification": 90.0,
+      "faithfulness": 95.0
+    },
+    {
+      "id": 31,
+      "informativeness": 40.0,
+      "simplification": 30.0,
+      "faithfulness": 50.0
+    },
+    {
+      "id": 32,
+      "informativeness": 20.0,
+      "simplification": 40.0,
+      "faithfulness": 60.0
+    },
+    {
+      "id": 33,
+      "informativeness": 95.0,
+      "simplification": 92.0,
+      "faithfulness": 98.0
+    },
+    {
+      "id": 34,
+      "informativeness": 98.0,
+      "simplification": 96.0,
+      "faithfulness": 99.0
+    },
+    {
+      "id": 35,
+      "informativeness": 0.0,
+      "simplification": 20.0,
+      "faithfulness": 10.0
+    },
+    {
+      "id": 36,
+      "informativeness": 90.0,
+      "simplification": 80.0,
+      "faithfulness": 95.0
+    },
+    {
+      "id": 37,
+      "informativeness": 85.0,
+      "simplification": 80.0,
+      "faithfulness": 95.0
+    },
+    {
+      "id": 38,
+      "informativeness": 85.0,
+      "simplification": 80.0,
+      "faithfulness": 95.0
+    },
+    {
+      "id": 39,
+      "informativeness": 95.0,
+      "simplification": 90.0,
+      "faithfulness": 98.0
+    },
+    {
+      "id": 40,
+      "informativeness": 95.0,
+      "simplification": 80.0,
+      "faithfulness": 100.0
+    },
+    {
+      "id": 41,
+      "informativeness": 95.0,
+      "simplification": 85.0,
+      "faithfulness": 100.0
+    },
+    {
+      "id": 42,
+      "informativeness": 85.0,
+      "simplification": 90.0,
+      "faithfulness": 95.0
+    },
+    {
+      "id": 43,
+      "informativeness": 85.0,
+      "simplification": 80.0,
+      "faithfulness": 95.0
+    },
+    {
+      "id": 44,
+      "informativeness": 60.0,
+      "simplification": 20.0,
+      "faithfulness": 40.0
+    },
+    {
+      "id": 45,
+      "informativeness": 85.0,
+      "simplification": 70.0,
+      "faithfulness": 95.0
+    },
+    {
+      "id": 46,
+      "informativeness": 95.0,
+      "simplification": 80.0,
+      "faithfulness": 98.0
+    },
+    {
+      "id": 47,
+      "informativeness": 95.0,
+      "simplification": 90.0,
+      "faithfulness": 98.0
+    },
+    {
+      "id": 48,
+      "informativeness": 95.0,
+      "simplification": 90.0,
+      "faithfulness": 98.0
+    },
+    {
+      "id": 49,
+      "informativeness": 95.0,
+      "simplification": 90.0,
+      "faithfulness": 98.0
+    },
+    {
+      "id": 50,
+      "informativeness": 95.0,
+      "simplification": 85.0,
+      "faithfulness": 98.0
+    },
+    {
+      "id": 51,
+      "informativeness": 85.0,
+      "simplification": 80.0,
+      "faithfulness": 95.0
+    },
+    {
+      "id": 52,
+      "informativeness": 95.0,
+      "simplification": 80.0,
+      "faithfulness": 98.0
+    },
+    {
+      "id": 53,
+      "informativeness": 95.0,
+      "simplification": 85.0,
+      "faithfulness": 98.0
+    },
+    {
+      "id": 54,
+      "informativeness": 60.0,
+      "simplification": 80.0,
+      "faithfulness": 90.0
+    },
+    {
+      "id": 55,
+      "informativeness": 90.0,
+      "simplification": 80.0,
+      "faithfulness": 95.0
+    },
+    {
+      "id": 56,
+      "informativeness": 92.0,
+      "simplification": 95.0,
+      "faithfulness": 98.0
+    },
+    {
+      "id": 57,
+      "informativeness": 85.0,
+      "simplification": 90.0,
+      "faithfulness": 95.0
+    },
+    {
+      "id": 58,
+      "informativeness": 95.0,
+      "simplification": 90.0,
+      "faithfulness": 98.0
+    },
+    {
+      "id": 59,
+      "informativeness": 60.0,
+      "simplification": 40.0,
+      "faithfulness": 90.0
+    },
+    {
+      "id": 60,
+      "informativeness": 90.0,
+      "simplification": 95.0,
+      "faithfulness": 100.0
+    },
+    {
+      "id": 61,
+      "informativeness": 85.0,
+      "simplification": 90.0,
+      "faithfulness": 95.0
+    },
+    {
+      "id": 62,
+      "informativeness": 92.0,
+      "simplification": 85.0,
+      "faithfulness": 95.0
+    },
+    {
+      "id": 63,
+      "informativeness": 95.0,
+      "simplification": 70.0,
+      "faithfulness": 90.0
+    },
+    {
+      "id": 64,
+      "informativeness": 95.0,
+      "simplification": 90.0,
+      "faithfulness": 99.0
+    },
+    {
+      "id": 65,
+      "informativeness": 70.0,
+      "simplification": 80.0,
+      "faithfulness": 90.0
+    },
+    {
+      "id": 66,
+      "informativeness": 60.0,
+      "simplification": 80.0,
+      "faithfulness": 90.0
+    },
+    {
+      "id": 67,
+      "informativeness": 80.0,
+      "simplification": 60.0,
+      "faithfulness": 90.0
+    },
+    {
+      "id": 68,
+      "informativeness": 60.0,
+      "simplification": 55.0,
+      "faithfulness": 95.0
+    },
+    {
+      "id": 69,
+      "informativeness": 96.0,
+      "simplification": 90.0,
+      "faithfulness": 98.0
+    },
+    {
+      "id": 70,
+      "informativeness": 95.0,
+      "simplification": 80.0,
+      "faithfulness": 98.0
+    },
+    {
+      "id": 71,
+      "informativeness": 90.0,
+      "simplification": 95.0,
+      "faithfulness": 98.0
+    },
+    {
+      "id": 72,
+      "informativeness": 96.0,
+      "simplification": 82.0,
+      "faithfulness": 98.0
+    },
+    {
+      "id": 73,
+      "informativeness": 92.0,
+      "simplification": 88.0,
+      "faithfulness": 98.0
+    },
+    {
+      "id": 74,
+      "informativeness": 87.0,
+      "simplification": 90.0,
+      "faithfulness": 95.0
+    }
+  ]
+}
