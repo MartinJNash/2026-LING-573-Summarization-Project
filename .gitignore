@@ -27,3 +27,6 @@ logs/
 !results/v1/**
 !results/v2/
 !results/v2/**
+!results/v4/
+!results/v4/**
+!src/medjargone/resources/curated_anatomy.json

@@ -1,0 +1,17 @@
+{
+  "D4-medjargone-v4": {
+    "bertscore_f1": 0.8561,
+    "sari": 39.8,
+    "n": 75
+  },
+  "BioBART-large-lora-512": {
+    "bertscore_f1": 0.8507,
+    "sari": 36.17,
+    "n": 75
+  },
+  "Qwen2.5-3B-zero-shot": {
+    "bertscore_f1": 0.8521,
+    "sari": 40.2,
+    "n": 75
+  }
+}
