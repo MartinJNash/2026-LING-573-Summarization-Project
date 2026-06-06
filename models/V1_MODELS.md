@@ -27,18 +27,18 @@ FK grade: lower pred vs. gold = more patient-readable.
 | BART-base LoRA | 36.11 | 15.88 | 23.24 | 23.29 | 11.02 | 85.04 | 12.32 | 14.58 |
 | BioBART-v2-base baseline | 35.32 | 15.28 | 22.85 | 22.89 | 10.60 | 84.49 | 12.71 | 14.58 |
 | BioBART-v2-base LoRA | 35.85 | 15.49 | 23.08 | 23.12 | 10.85 | 84.73 | 12.75 | 14.58 |
-| BioBART-v2-large LoRA | 37.03 | 16.46 | 24.92 | 24.97 | 13.00 | 85.44 | 13.02 | 14.58 |
+| BioBART-v2-large LoRA | 37.03 | 16.46 | 24.92 | 24.97 | 13.00 | 85.44 | 13.01 | 14.58 |
 
-> Run eval: `python eval_pipeline.py --input results/outputs/<model>.json --output results/outputs/<model>-eval.json`
+> Run eval: `python src/eval_pipeline.py --input results/v1/<model>/<model>.json --output results/v1/<model>/<model>-eval.json`
 
 ## Inference Outputs
 
-All outputs in `results/outputs/`. JSONL format includes a `meta.json` alongside; JSON format is self-contained.
+All outputs in `results/v1/`. Each model has its own subdirectory containing the predictions JSON and eval results.
 
 | Model | Path | Examples | Format |
 |---|---|---|---|
-| BART-base baseline | `results/outputs/bart-base-baseline.json` | 3,396 | JSON |
-| BART-base LoRA | `results/outputs/bart-base-lora.json` | 3,396 | JSON |
-| BioBART-v2-base baseline | `results/outputs/biobart-base-baseline.json` | 3,396 | JSON |
-| BioBART-v2-base LoRA | `results/outputs/biobart-base-lora.json` | 3,396 | JSON |
-| BioBART-v2-large LoRA | `results/outputs/biobart-large-lora.json` | 3,396 | JSON |
+| BART-base baseline | `results/v1/bart-base-baseline/bart-base-baseline.json` | 3,396 | JSON |
+| BART-base LoRA | `results/v1/bart-base-lora/bart-base-lora.json` | 3,396 | JSON |
+| BioBART-v2-base baseline | `results/v1/biobart-base-baseline/biobart-base-baseline.json` | 3,396 | JSON |
+| BioBART-v2-base LoRA | `results/v1/biobart-base-lora/biobart-base-lora.json` | 3,396 | JSON |
+| BioBART-v2-large LoRA | `results/v1/biobart-large-lora/biobart-large-lora.json` | 3,396 | JSON |

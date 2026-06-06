@@ -1,7 +1,7 @@
 [project]
 name = "2026-ling-573-summarization-project"
 version = "0.1.0"
-description = "Add your description here"
+description = "Medical clinical note summarization for LING 573 (UW, Spring 2026) using the MultiClinSum dataset"
 requires-python = ">=3.11,<3.13"
 dependencies = [
     "accelerate",

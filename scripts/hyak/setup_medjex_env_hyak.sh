@@ -9,10 +9,10 @@
 
 set -euo pipefail
 
-REPO_ROOT=/mmfs1/home/pgarg2/2026-LING-573-Summarization-Project
-ENV_DIR=/gscratch/scrubbed/pgarg2/medjex-env
-MEDCAT_DIR=/gscratch/scrubbed/pgarg2/medcat
-MEDCAT_V2_DIR=/gscratch/scrubbed/pgarg2/medcat/umls_sm_v2
+REPO_ROOT=/mmfs1/home/<netid>/2026-LING-573-Summarization-Project
+ENV_DIR=/gscratch/scrubbed/<netid>/medjex-env
+MEDCAT_DIR=/gscratch/scrubbed/<netid>/medcat
+MEDCAT_V2_DIR=/gscratch/scrubbed/<netid>/medcat/umls_sm_v2
 
 echo "=== MedJEx env setup ==="
 echo "ENV_DIR:      $ENV_DIR"

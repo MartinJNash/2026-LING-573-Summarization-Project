@@ -8,7 +8,7 @@ the array job runs later every lookup is a local SQLite read (~0 ms) instead
 of a live API call (~1-2 s).
 
 Usage (on Hyak, after git pull):
-    source /gscratch/scrubbed/pgarg2/medjargone/bin/activate
+    source /gscratch/scrubbed/<netid>/medjargone/bin/activate
     export UMLS_API_KEY=<your_key>
     PYTHONPATH=src python scripts/prewarm_umls_cache.py
     PYTHONPATH=src python scripts/prewarm_umls_cache.py --split train

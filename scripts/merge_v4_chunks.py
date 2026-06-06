@@ -3,8 +3,8 @@ Merge per-chunk outputs from run_medjargone_v4_array_hyak.sh into a single file.
 
 Usage:
     python scripts/merge_v4_chunks.py
-    python scripts/merge_v4_chunks.py --chunks-dir results/outputs/chunks \
-        --output results/outputs/medjargone-v4-test.json
+    python scripts/merge_v4_chunks.py --chunks-dir results/v4/chunks \
+        --output results/v4/medjargone-v4-test.json
 """
 
 import argparse
@@ -15,8 +15,8 @@ from pathlib import Path
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--chunks-dir", default="results/outputs/chunks")
-    parser.add_argument("--output",     default="results/outputs/medjargone-v4-test.json")
+    parser.add_argument("--chunks-dir", default="results/v4/chunks")
+    parser.add_argument("--output",     default="results/v4/medjargone-v4-test.json")
     parser.add_argument("--num-chunks", type=int, default=16)
     args = parser.parse_args()
 

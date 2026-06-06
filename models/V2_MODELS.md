@@ -25,14 +25,24 @@ SARI Score: [0, 100] -> higher score = higher correlation with human judgment
 | BioBART-v2-large LoRA | 36.68 | 16.54 | 24.79 | 24.83 | 12.25 | 85.47 | 13.05 | 14.58 | 36.53 |
 | BioBART + MedJEx + Qwen | 33.92 | 12.86 | 21.99 | 22.17 | 8.98 | 85.08 | 11.92 | 14.58 | 30.63 |
 | Qwen2.5 | 33.45 | 9.22 | 19.34 | 21.75 | 5.19 | 85.36 | 11.61 | 14.58 | 40.53 |
-> Run eval: `python eval_pipeline.py --input results/v2_results/v2_outputs/<model>.json --output results/v2_results/v2_eval/<model>-eval.json`
+> Run eval: `python src/eval_pipeline.py --input results/v2/v2_outputs/<model>.json --output results/v2/v2_eval/<model>-eval.json`
+
+### LLM-as-Judge evaluation (full test set, 3,396 examples)
+
+Scored by GPT-4o on informativeness, simplification quality, and faithfulness (each 0–100).
+
+| System | Informativeness | Simplification | Faithfulness |
+|---|---|---|---|
+| BioBART-large LoRA (D2) | 88.67 | 84.13 | 96.01 |
+| BioBART + MedJEx + Qwen (D3) | 91.65 | 87.48 | 97.04 |
+| Qwen2.5 zero-shot | 91.23 | 86.74 | 96.21 |
 
 ## Inference Outputs
 
-All outputs in `results/v2_results/v2_outputs`. JSONL format includes a `meta.json` alongside; JSON format is self-contained.
+All outputs in `results/v2/v2_outputs/`.
 
 | Model | Path | Examples | Format |
 |---|---|---|---|
-| BioBART-v2-large LoRA | `results/v2_results/v2_outputs/biobart-large-lora-512.json` | 3,396 | JSON |
-| BioBART + MedJEx + Qwen | `results/v2_results/v2_outputs/biobart_large_lora_rewritten.json` | 3,396 | JSON |
-| Qwen2.5 | `results/v2_results/v2_outputs/llm_only_outputs.json` | 3,396 | JSON |
+| BioBART-v2-large LoRA | `results/v2/v2_outputs/biobart-large-lora-512.json` | 3,396 | JSON |
+| BioBART + MedJEx + Qwen | `results/v2/v2_outputs/biobart-medjex-qwen_outputs.json` | 3,396 | JSON |
+| Qwen2.5 | `results/v2/v2_outputs/qwen_outputs.json` | 3,396 | JSON |

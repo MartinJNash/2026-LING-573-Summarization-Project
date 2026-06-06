@@ -10,7 +10,7 @@ Download the checkpoint (~500 MB, done automatically on first run).
 
 Usage:
     python scripts/precompute_medjex_spans.py --split test \
-        --medcat-path /gscratch/scrubbed/pgarg2/medcat/umls_sm_wstatus_2021_oct
+        --medcat-path /gscratch/scrubbed/<netid>/medcat/umls_sm_wstatus_2021_oct
 
     # If checkpoint flags show no UMLS features needed:
     python scripts/precompute_medjex_spans.py --split test --no-umls

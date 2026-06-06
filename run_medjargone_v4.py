@@ -9,7 +9,7 @@ Usage:
     python run_medjargone_v4.py
     python run_medjargone_v4.py --split train --num-examples 50
     python run_medjargone_v4.py --model Qwen/Qwen2.5-3B-Instruct \\
-        --output results/outputs/medjargone-v4-test.json
+        --output results/v4/medjargone-v4-test.json
 
 Environment:
     export UMLS_API_KEY=...  # set before running
@@ -20,7 +20,7 @@ import json
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
+sys.path.insert(0, str(Path(__file__).resolve().parent / "src"))
 
 from medjargone.pipeline.run import load_llm, run_batch
 from medjargone import config
@@ -46,7 +46,7 @@ def main():
                         help="First example index (for job-array slicing)")
     parser.add_argument("--model",         default=config.LLM_MODEL)
     parser.add_argument("--output",        default=None,
-                        help="Output JSON path (default: results/outputs/medjargone-v4-<split>.json)")
+                        help="Output JSON path (default: results/v4/medjargone-v4-<split>.json)")
     parser.add_argument("--medjex-spans",  default=str(config.MEDJEX_SPANS_TEST),
                         help="Precomputed MedJEx spans JSON (default: data/medjargone/medjex_spans_test.json)")
     args = parser.parse_args()
@@ -89,7 +89,7 @@ def main():
         r["id"] += start
 
     output_path = Path(args.output) if args.output else (
-        Path("results/outputs") / f"medjargone-v4-{args.split}.json"
+        Path("results/v4") / f"medjargone-v4-{args.split}.json"
     )
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
