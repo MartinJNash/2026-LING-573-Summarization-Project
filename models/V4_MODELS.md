@@ -47,7 +47,7 @@ Scored by GPT-4o on informativeness, simplification quality, and faithfulness (e
 
 ```bash
 export UMLS_API_KEY=<your_key>
-python run_medjargone_v4.py --split test --output results/v4/medjargone-v4-test.json
+python src/run_medjargone_v4.py --split test --output results/v4/medjargone-v4-test.json
 ```
 
 On Hyak (GPU required for Qwen2.5 via Ollama):

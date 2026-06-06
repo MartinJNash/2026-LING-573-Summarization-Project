@@ -39,7 +39,7 @@ src/
   model.py               # shared LoRA model wrapper
   train.py               # D2/D3 fine-tuning entry point
   run_inference.py       # D2/D3 inference entry point
-run_medjargone_v4.py     # D4 batch inference entry point
+  run_medjargone_v4.py   # D4 batch inference entry point
 ```
 
 ---
@@ -133,7 +133,7 @@ export UMLS_API_KEY=<your_key>
 ### Run locally
 
 ```bash
-python run_medjargone_v4.py --split test --output results/v4/medjargone-v4-test.json
+python src/run_medjargone_v4.py --split test --output results/v4/medjargone-v4-test.json
 ```
 
 ### Run on Hyak

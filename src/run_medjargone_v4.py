@@ -6,9 +6,9 @@ Loads examples from the MultiClinSum dataset, runs the full v4 pipeline
 saves results as a JSON file compatible with eval_pipeline.py.
 
 Usage:
-    python run_medjargone_v4.py
-    python run_medjargone_v4.py --split train --num-examples 50
-    python run_medjargone_v4.py --model Qwen/Qwen2.5-3B-Instruct \\
+    python src/run_medjargone_v4.py
+    python src/run_medjargone_v4.py --split train --num-examples 50
+    python src/run_medjargone_v4.py --model Qwen/Qwen2.5-3B-Instruct \\
         --output results/v4/medjargone-v4-test.json
 
 Environment:
@@ -20,7 +20,7 @@ import json
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parent / "src"))
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from medjargone.pipeline.run import load_llm, run_batch
 from medjargone import config

@@ -63,7 +63,7 @@ START=$(( SLURM_ARRAY_TASK_ID * CHUNK_SIZE ))
 
 echo "Array task ${SLURM_ARRAY_TASK_ID}: examples ${START}–$((START + CHUNK_SIZE - 1))"
 
-python run_medjargone_v4.py \
+python src/run_medjargone_v4.py \
     --split test \
     --start-idx "$START" \
     --num-examples "$CHUNK_SIZE" \

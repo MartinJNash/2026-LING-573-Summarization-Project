@@ -64,7 +64,7 @@ uv pip install ollama
 
 mkdir -p logs results/v4
 
-python run_medjargone_v4.py \
+python src/run_medjargone_v4.py \
     --split test \
     --output results/v4/medjargone-v4-test.json \
     "$@"

@@ -57,7 +57,7 @@ uv pip install ollama
 mkdir -p logs results/v4
 
 # 75 examples ≈ 59 min at observed ~47 s/example; 90-min wall is intentional buffer
-python run_medjargone_v4.py \
+python src/run_medjargone_v4.py \
     --split test \
     --num-examples 75 \
     --output results/v4/medjargone-v4-prelim.json \
