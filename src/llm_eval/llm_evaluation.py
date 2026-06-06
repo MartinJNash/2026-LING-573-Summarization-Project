@@ -72,7 +72,7 @@ def run_eval_on_dataset(model, df: pd.DataFrame, output_path: str):
     
     return results
 
-def load_examples(path: str, num_examples: int | None = None) -> pd.DataFrame:
+def load_examples(path: str, max: int | None = None) -> pd.DataFrame:
     with open(path) as f:
         content = f.read()
     try:
@@ -81,8 +81,8 @@ def load_examples(path: str, num_examples: int | None = None) -> pd.DataFrame:
     except (json.JSONDecodeError, KeyError):
         examples = [json.loads(line) for line in content.splitlines() if line.strip()]
 
-    if num_examples:
-        examples = examples[:num_examples]
+    if max:
+        examples = examples[:max]
 
     rows = []
     for ex in examples:
@@ -96,11 +96,11 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", required=True, help="Path to inference outputs JSON (must have 'input' field!)")
     parser.add_argument("--output", default="llm_eval_results.json", help="Path to save results JSON (default: llm_eval_results.json)")
-    parser.add_argument("--num_examples", type=int, default=None, help="Number of examples to evaluate (default: all)")
+    parser.add_argument("--max", type=int, default=None, help="Maximum number of examples to evaluate (default: all)")
     args = parser.parse_args()
 
     print(f"Loading examples from {args.input}...")
-    df = load_examples(args.input, num_examples=args.num_examples)
+    df = load_examples(args.input, max=args.max)
 
     results = run_eval_on_dataset(EVALUATION_MODEL, df, args.output)
 
