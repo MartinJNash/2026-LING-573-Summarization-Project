@@ -22,8 +22,8 @@ from collections import Counter
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
-from medjargone import config
-from medjargone.pipeline.glossary import (
+from medjargone_d4 import config
+from medjargone_d4.pipeline.glossary import (
     _extract_candidates, _gloss_one,
     APICache, UMLSIndex, UTSClient,
 )

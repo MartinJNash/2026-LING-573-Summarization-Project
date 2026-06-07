@@ -3,18 +3,16 @@
 Use an LLM on MultiClinSum examples to generate summaries, which are saved to JSON.
 
 Usage:
-    python llm_summarizer.py --model path/to/model/ --output results/outputs/output.json
+    python src/llm_summarizer.py --model path/to/model/ --output results/outputs/output.json
 
 """
 
 import vllm
 import argparse
 import json
-import sys
+from pathlib import Path
 
-sys.path.append("..")
-
-from read_data import read_gs_training_data, read_test_training_data
+from finetune.read_data import read_gs_training_data, read_test_training_data
 
 def main():
     parser = argparse.ArgumentParser()
@@ -35,7 +33,8 @@ def main():
 
     # read system prompt (plain instruction, no chat-format wrappers)
     print("Reading prompt template...")
-    with open("./llm_only_prompt.txt", "r", encoding="utf-8") as prompt_file:
+    prompt_path = Path(__file__).parent / "prompts" / "llm_only_prompt.txt"
+    with open(prompt_path, "r", encoding="utf-8") as prompt_file:
         system_prompt = prompt_file.read()
 
     if args.percent_limit <= 0 or args.percent_limit > 100:

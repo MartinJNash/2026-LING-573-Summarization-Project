@@ -24,7 +24,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
-from medjargone import config
+from medjargone_d4 import config
 
 RELEASES_URL = "https://uts-ws.nlm.nih.gov/releases"
 DOWNLOAD_BASE = "https://uts-ws.nlm.nih.gov/download"

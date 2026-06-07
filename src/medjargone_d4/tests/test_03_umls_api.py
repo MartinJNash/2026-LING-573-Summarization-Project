@@ -16,8 +16,8 @@ import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
-from medjargone import config
-from medjargone.pipeline.glossary import UTSClient, APICache, rxnorm_lookup
+from medjargone_d4 import config
+from medjargone_d4.pipeline.glossary import UTSClient, APICache, rxnorm_lookup
 
 # Known term → expected CUI (UMLS 2024AB)
 KNOWN_TERMS = {
@@ -77,7 +77,7 @@ def test_semantic_types():
     else:
         print("  WARN  expected 'Disease or Syndrome', got:", stys)
     # Confirm it passes the medical filter
-    from medjargone.pipeline.glossary import _is_medical
+    from medjargone_d4.pipeline.glossary import _is_medical
     assert _is_medical(stys), "Expected myocardial infarction to pass medical filter"
     print("  PASS  passes MEDICAL_SEMANTIC_TYPES filter")
 

@@ -27,7 +27,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
-from medjargone import config
+from medjargone_d4 import config
 
 # Default RRF directory (MetamorphoSys output)
 DEFAULT_RRF_DIR = config.PROJECT_ROOT / "data" / "medjargone" / "umls_subset_rrf"

@@ -46,7 +46,7 @@ except ImportError:
 
 
 # ── Safety check (runs Stage-4 Tier 1 rules only — no LLM needed) ─────────────
-from medjargone.pipeline.verify import (
+from medjargone_d4.pipeline.verify import (
     rule_check, minicheck_verify, VerificationReport
 )
 

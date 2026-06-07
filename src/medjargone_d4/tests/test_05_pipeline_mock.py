@@ -11,12 +11,12 @@ import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
-from medjargone import config
-from medjargone.pipeline.preprocess import preprocess_clinical_text
-from medjargone.pipeline.extract_facts import extract_facts
-from medjargone.pipeline.rewrite import generate_rewrite
-from medjargone.pipeline.verify import verify_and_fix, rule_check
-from medjargone.pipeline.glossary import build_glossary, APICache
+from medjargone_d4 import config
+from medjargone_d4.pipeline.preprocess import preprocess_clinical_text
+from medjargone_d4.pipeline.extract_facts import extract_facts
+from medjargone_d4.pipeline.rewrite import generate_rewrite
+from medjargone_d4.pipeline.verify import verify_and_fix, rule_check
+from medjargone_d4.pipeline.glossary import build_glossary, APICache
 
 SOURCE_TEXT = """\
 A 43-year-old woman at 30 days post-partum presented with left flank pain and hematuria \

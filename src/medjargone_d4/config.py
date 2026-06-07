@@ -7,7 +7,7 @@ UMLS_API_KEY must be set as an environment variable — never hard-coded.
 import os
 from pathlib import Path
 
-# Project root: src/medjargone/config.py → ../../
+# Project root: src/medjargone_d4/config.py → ../../
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 
 # ── Data directories ──────────────────────────────────────────────────────────

@@ -36,7 +36,7 @@ import requests
 import sys
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
-from medjargone import config
+from medjargone_d4 import config
 
 # ── NLP models (lazy) ─────────────────────────────────────────────────────────
 _nlp_bc5cdr  = None

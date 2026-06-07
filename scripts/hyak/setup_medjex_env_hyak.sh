@@ -20,10 +20,10 @@ echo "MEDCAT_DIR:   $MEDCAT_DIR"
 echo "MEDCAT_V2_DIR:$MEDCAT_V2_DIR"
 
 # ── Init submodule if not already populated ───────────────────────────────────
-MEDJEX_DST="$REPO_ROOT/src/medjargone/MedJEx"
+MEDJEX_DST="$REPO_ROOT/src/medjargone_d4/MedJEx"
 if [ ! -f "$MEDJEX_DST/README.md" ]; then
     echo "Initialising MedJEx submodule..."
-    git -C "$REPO_ROOT" submodule update --init src/medjargone/MedJEx
+    git -C "$REPO_ROOT" submodule update --init src/medjargone_d4/MedJEx
 else
     echo "MedJEx submodule already present: $MEDJEX_DST"
 fi

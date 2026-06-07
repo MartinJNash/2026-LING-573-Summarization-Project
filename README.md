@@ -35,10 +35,10 @@ scripts/
 src/
   medjargone/            # D4 pipeline package (UMLS lookup, rewrite, verify)
   medjex/                # MedJEx jargon-detection submodule
-  eval_pipeline.py       # shared evaluation script (ROUGE, BLEU, BERTScore, SARI)
-  model.py               # shared LoRA model wrapper
-  train.py               # D2/D3 fine-tuning entry point
-  run_inference.py       # D2/D3 inference entry point
+  finetune/              # D2/D3 LoRA fine-tuning (model, data, train, eval)
+  llm_eval/              # LLM-as-judge evaluators (Ollama + NIM backends)
+  prompts/               # prompt templates for LLM summarization and eval
+  llm_summarizer.py      # LLM zero-shot summarization entry point (vLLM)
   run_medjargone_v4.py   # D4 batch inference entry point
 ```
 

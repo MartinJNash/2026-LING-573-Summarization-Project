@@ -9,7 +9,7 @@ import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
-from medjargone import config
+from medjargone_d4 import config
 
 PASS = "  PASS"
 FAIL = "  FAIL"

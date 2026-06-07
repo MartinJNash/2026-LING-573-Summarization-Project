@@ -21,4 +21,4 @@ source .venv/bin/activate
 mkdir -p logs results/outputs
 
 uv sync
-uv run python src/eval_pipeline.py "$@"
+uv run python src/finetune/eval_pipeline.py "$@"

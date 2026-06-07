@@ -8,6 +8,6 @@ echo "args: $@"
 source environments/.envrc
 source .venv/bin/activate
 uv sync
-uv run python train.py "$@"
+uv run python src/finetune/train.py "$@"
 
 echo "=== train_patas.sh finished at $(date) ==="

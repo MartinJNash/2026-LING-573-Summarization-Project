@@ -24,8 +24,8 @@ import re
 from dataclasses import dataclass, field
 from typing import Optional
 
-from medjargone import config
-from medjargone.pipeline.glossary import GlossaryEntry
+from medjargone_d4 import config
+from medjargone_d4.pipeline.glossary import GlossaryEntry
 
 # Lazy model handle — _minicheck_tried prevents repeated import attempts / warnings
 _minicheck       = None

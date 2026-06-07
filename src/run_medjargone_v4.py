@@ -22,8 +22,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from medjargone.pipeline.run import load_llm, run_batch
-from medjargone import config
+from medjargone_d4.pipeline.run import load_llm, run_batch
+from medjargone_d4 import config
 
 
 def _read_folder(root: Path):

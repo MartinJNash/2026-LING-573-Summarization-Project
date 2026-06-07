@@ -28,7 +28,7 @@ from pathlib import Path
 from typing import Optional
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
-from medjargone import config
+from medjargone_d4 import config
 
 # ── Lazy model handle ─────────────────────────────────────────────────────────
 _med_nlp = None

@@ -3,8 +3,8 @@ LLM-based evaluation of MedJarGone summarization outputs using NVIDIA NIM.
 Scores each (source, generated) pair on informativeness, simplification, faithfulness.
 
 Usage:
-    python llm_eval.py --input results/outputs/biobart-large-lora.json
-    python llm_eval.py --input results/outputs/biobart-large-lora.json --output llm_eval_results.csv --max 50
+    python src/llm_eval/llm_eval_nim.py --input results/outputs/biobart-large-lora.json
+    python src/llm_eval/llm_eval_nim.py --input results/outputs/biobart-large-lora.json --output llm_eval_results.csv --max 50
 """
 
 import os

@@ -389,7 +389,7 @@ def main():
     root = Path(__file__).parents[1]
     parser.add_argument("--split",        default="test")
     parser.add_argument("--output",       default=str(root / "data/medjargone/medjex_spans_test.json"))
-    parser.add_argument("--checkpoint",   default=str(root / "src/medjargone/MedJEx/results/MedJEx.pth"))
+    parser.add_argument("--checkpoint",   default=str(root / "src/medjargone_d4/MedJEx/results/MedJEx.pth"))
     parser.add_argument("--data-root",    default=str(root / "data"),
                         help="Root of data/ directory")
     parser.add_argument("--medcat-path",  default=None,

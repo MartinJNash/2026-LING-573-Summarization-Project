@@ -9,7 +9,7 @@ import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
-from medjargone.pipeline.verify import (
+from medjargone_d4.pipeline.verify import (
     rule_check, _check_numbers, _check_laterality, _check_coverage
 )
 

@@ -20,4 +20,4 @@ source .venv/bin/activate
 
 mkdir -p logs results/outputs
 
-uv run python src/run_inference.py "$@"
+uv run python src/finetune/run_inference.py "$@"

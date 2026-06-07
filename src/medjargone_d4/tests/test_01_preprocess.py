@@ -10,8 +10,8 @@ import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
-from medjargone import config
-from medjargone.pipeline.preprocess import preprocess_clinical_text
+from medjargone_d4 import config
+from medjargone_d4.pipeline.preprocess import preprocess_clinical_text
 
 # A short clinical snippet with explicit sections (ideal case)
 STRUCTURED_TEXT = """\
@@ -94,7 +94,7 @@ def test_context_negation():
     Verifies ConText integration: scispaCy entities tagged as negated/historical
     should surface via run_context. Requires medspaCy to be installed.
     """
-    import medjargone.pipeline.preprocess as _pre
+    import medjargone_d4.pipeline.preprocess as _pre
     _pre._load_medspacy()
     if not _pre._medspacy_ok:
         print("  SKIP  ConText test (medspaCy not installed)")

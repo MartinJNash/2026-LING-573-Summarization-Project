@@ -11,9 +11,9 @@ import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
-from medjargone import config
-from medjargone.pipeline.preprocess import preprocess_clinical_text
-from medjargone.pipeline.glossary import build_glossary, APICache, UTSClient
+from medjargone_d4 import config
+from medjargone_d4.pipeline.preprocess import preprocess_clinical_text
+from medjargone_d4.pipeline.glossary import build_glossary, APICache, UTSClient
 
 # A short excerpt from the brucellosis case with varied jargon and negations
 SAMPLE_TEXT = """\
@@ -63,7 +63,7 @@ def test_negated_terms_excluded():
     if not _has_umls():
         print("  SKIP  no UMLS access")
         return
-    import medjargone.pipeline.preprocess as _pre
+    import medjargone_d4.pipeline.preprocess as _pre
     _pre._load_medspacy()
     if not _pre._medspacy_ok:
         print("  SKIP  medspaCy not installed — ConText filtering inactive")
@@ -87,7 +87,7 @@ def test_acronym_handling():
     if not _has_umls():
         print("  SKIP  no UMLS access")
         return
-    import medjargone.pipeline.glossary as _gmod
+    import medjargone_d4.pipeline.glossary as _gmod
     _gmod._load_nlp()
     if not _gmod._abbrev_ok:
         print("  SKIP  AbbreviationDetector not available")

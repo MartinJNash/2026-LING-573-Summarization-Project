@@ -8,7 +8,7 @@ Usage (CLI):
         --input path/to/report.txt
 
 Usage (library):
-    from medjargone.pipeline.run import run_pipeline, load_llm
+    from medjargone_d4.pipeline.run import run_pipeline, load_llm
     llm_fn = load_llm("Qwen/Qwen2.5-3B-Instruct")
     result = run_pipeline(source_text, llm_fn)
     print(result["summary"])
@@ -29,13 +29,13 @@ from typing import Callable, Optional
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
-from medjargone import config
-from medjargone.pipeline.extract_facts import extract_facts
-from medjargone.pipeline.glossary import (
+from medjargone_d4 import config
+from medjargone_d4.pipeline.extract_facts import extract_facts
+from medjargone_d4.pipeline.glossary import (
     build_glossary, UMLSIndex, UTSClient, APICache
 )
-from medjargone.pipeline.rewrite import generate_rewrite
-from medjargone.pipeline.verify import verify_and_fix
+from medjargone_d4.pipeline.rewrite import generate_rewrite
+from medjargone_d4.pipeline.verify import verify_and_fix
 
 
 # ── LLM wrapper ───────────────────────────────────────────────────────────────

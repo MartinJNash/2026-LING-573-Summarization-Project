@@ -13,8 +13,8 @@ from __future__ import annotations
 
 import json
 
-from medjargone import config
-from medjargone.pipeline.glossary import GlossaryEntry
+from medjargone_d4 import config
+from medjargone_d4.pipeline.glossary import GlossaryEntry
 
 
 _REWRITE_PROMPT = """\
